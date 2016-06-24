@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).load(function() {
 
 	$('.col1').each(
 		function()

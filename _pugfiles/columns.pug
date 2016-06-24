@@ -5,44 +5,16 @@ section
 
 				// COLUMN 1
 				h2 About Me
-				p I am a Part 1 graduate of Architecture hailing from Sheffield, the Steel City in England. I recently moved to Berlin to complete some research for my thesis project on the city, and I liked it so much that I decided to stay... now I just need to learn the language.
-				p When it comes to the built environment, I am driven by design that is aware of its context in place but also in society, design as a tool of civic creation, engagement and participation. My recent research in Berlin and Northern England, has led me down a path of grass-roots projects that seek to progressively re-use existing spaces for communal gain. This is the kind of architecture that excites me and as I familiarize myself with Berlin, I hope to get more involved with some of these projects.
-				p This website is still under construction but please take a look around and get in touch if anything interests you, or of course if you are involved in any projects that you think might interest me!
-				h4 Contact
-				p
-					| email: info@eandrew.xyz
-					br
-					br
-					| phone: +49 176 77966 871
+
+				| {%include modules-aboutme.html%}
 
 		.col1
 			.content
 
 				// COLUMN 2
 				h2 Projects
-				a(href="y3p2.html")
-					.pcard-y3p2
-						.pcard-title
-							span
-								.t1 Freespace Workshop
-								.t2 -
-								.t2 Leeds
 
-				a(href="y3p1.html")
-					.pcard-y3p1
-						.pcard-title
-							span
-								.t1 The Peer Gallery
-								.t2 -
-								.t2 Scarborough
-
-				a(href="y3diss.html")
-					.pcard-y3diss
-						.pcard-title
-							span
-								.t1 Re-use Mechanisms
-								.t2 -
-								.t2 Berlin
+				| {%include modules-pcard.html%}
 
 				.column-end
 				p ...that's all for now
@@ -52,23 +24,5 @@ section
 
 				// COLUMN 3
 				h2 In the Field
-				.blogcard
-					img(src="/assets/imgs/may04_400.png")
-					p
-						h3 Tag Der Arbeit
-						p2 01.05.2016 Berlin
-					p Taking in Berlin on my first May 1st. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
-					p
-						a(href="", class="tag") Liminal Space
-						a(href="", class="tag") Photography
-						a(href="", class="tag") Dissertation
 
-				.blogcard
-					img(src="/assets/imgs/tfe03_400.jpg")
-					h3 Stadtteilgarten Schillerkiez
-					p2 01.05.2016 Berlin
-					p Taking in Berlin on my first May 1st. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
-					p
-						a(href="", class="tag") Liminal Space
-						a(href="", class="tag") Community
-						a(href="", class="tag") Dissertation
+				| {%include modules-bcard.html%}
