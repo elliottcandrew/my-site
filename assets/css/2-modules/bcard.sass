@@ -1,21 +1,28 @@
 .bcard
 	display: block
 	position: relative
-	//background: darken($silver, .5%)
-	margin-bottom: 46px
+	//background: darken($silver, .2%)
+	padding-bottom: 26px
+
+	a:hover
+		h3
+			color: $dark
+			span
+				background-color: $yellow
 
 	img
 		max-width: 100%
 
-	p2
-		align-self: flex-end
+	h3
+		margin-top: 6px
 
-	h4
-		margin-right: 12px
+	.p2
+		margin-top: 6px
+		&:last-of-type
+			margin-bottom: 6px
+
+	.textlink
+		font-style: italic
 
 	ul
 		padding-left: 0
-
-	a
-		display: block
-		position: relative

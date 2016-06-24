@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Tag der Arbeit"
 date:   2016-05-01
 location: Berlin

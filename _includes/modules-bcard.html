@@ -1,1 +1,4 @@
-{% for post in site.posts %}<div class="bcard"><img class=".pic" src="assets/imgs/thumbs/{{post.thumbnail}}"/><span><h3>{{post.title}}</h3><p2>{{post.date | date: "%d.%m.%Y"}} {{post.location}}</p2></span>{{post.excerpt}}<a href="post.url">continue reading</a><ul><a class="tag" href="">Liminal Space</a><a class="tag" href="">Photography</a><a class="tag" href="">Dissertation</a></ul></div>{% endfor %}
+{% for post in site.posts %}<div class="bcard"><a href="post.url"><img class=".pic" src="assets/imgs/thumbs/{{post.thumbnail}}"/><h3><span>{{post.title}}</span></h3></a><p>{{post.date | date: "%d.%m.%Y"}} - {{post.location}}</p><div class="excerpt"><p>{{post.excerpt | remove: '<p>' | remove: '</p>'}}<a class="textlink" href="post.url">more</a></p></div><!--ula(href="", class="tag") Liminal Space
+a(href="", class="tag") Photography
+a(href="", class="tag") Dissertation
+--></div>{% endfor %}
