@@ -204,7 +204,7 @@ th {
   top: 0;
   left: 0;
   cursor: pointer; }
-  .jspDrag:hover {
+  .jspDrag:hover, .jspDrag:focus {
     background: #333333; }
 
 /*.jspHorizontalBar
@@ -372,7 +372,7 @@ hr {
 .bcard {
   display: block;
   position: relative;
-  margin-bottom: 100px; }
+  margin-bottom: 46px; }
   .bcard img {
     max-width: 100%; }
   .bcard p2 {
@@ -380,6 +380,11 @@ hr {
         align-self: flex-end; }
   .bcard h4 {
     margin-right: 12px; }
+  .bcard ul {
+    padding-left: 0; }
+  .bcard a {
+    display: block;
+    position: relative; }
 
 .content {
   width: calc(100% - 16px);
@@ -427,8 +432,8 @@ hr {
   left: 0;
   right: 0;
   bottom: 0;
-  -webkit-transition: 0.8s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
+  -webkit-transition: 450ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: 450ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 .pcard-y3p2 {
   position: relative;
@@ -439,8 +444,8 @@ hr {
   margin-bottom: 20px; }
   .pcard-y3p2:hover .pcard-title {
     opacity: 1;
-    -webkit-transition: 0.2s cubic-bezier(0.19, 1, 0.22, 1);
-    transition: 0.2s cubic-bezier(0.19, 1, 0.22, 1); }
+    -webkit-transition: 1ms ease-in-out;
+            transition: 1ms ease-in-out; }
 
 .pcard-y3p2:before {
   content: "";
@@ -537,7 +542,8 @@ hr {
       -ms-flex: 1;
           flex: 1;
   margin-right: 17px;
-  overflow: auto; }
+  overflow-y: auto;
+  overflow-x: hidden; }
   .col1:last-child {
     margin-right: 0; }
 
