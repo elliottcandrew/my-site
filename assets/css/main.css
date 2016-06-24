@@ -279,14 +279,16 @@ h3 {
   font-family: Fira Mono, monospace;
   font-size: 12px;
   text-decoration: underline;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 400; }
 
 h4 {
   margin: 0;
   font-family: Fira Mono, monospace;
   font-size: 12px;
   line-height: 1.1;
-  text-decoration: underline; }
+  text-decoration: underline;
+  font-weight: 400; }
 
 .t1 {
   color: #f7f7f7;
@@ -307,17 +309,20 @@ h4 {
   margin-left: 1px;
   font-family: Fira Mono, monospace;
   font-size: 12px;
-  line-height: 1.1; }
+  line-height: 1.1;
+  font-weight: 400; }
 
 p2 {
   font-family: Fira Mono, monospace;
   font-size: 10px;
-  line-height: 1.1; }
+  line-height: 1.1;
+  font-weight: 400; }
 
 p {
   font-family: Fira Mono, monospace;
   font-size: 12px;
-  line-height: 1.1; }
+  line-height: 1.1;
+  font-weight: 400; }
 
 em {
   font-style: italic; }
