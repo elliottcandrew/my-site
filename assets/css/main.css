@@ -418,18 +418,25 @@ hr {
   padding-top: 125%; }
 
 .blogcard {
+  display: block;
+  position: relative;
   margin-bottom: 46px; }
   .blogcard img {
-    padding-bottom: 0;
     max-width: 100%; }
+  .blogcard p2 {
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
+  .blogcard h4 {
+    margin-right: 12px; }
 
 .tag {
-  color: #f05555;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  float: left;
   margin-right: 10px;
+  float: left;
+  color: #f05555;
+  font-family: Fira Mono, monospace;
   font-size: 10px;
   text-transform: uppercase;
   white-space: nowrap; }
@@ -441,6 +448,9 @@ hr {
   margin-top: 12px;
   color: #1c1c1c;
   overflow: hidden; }
+  .content h2 {
+    padding-bottom: 6px;
+    text-transform: uppercase; }
 
 .column-end {
   height: 500px;
@@ -449,6 +459,36 @@ hr {
 @media (max-width: 640px) {
   .column-end {
     display: none; } }
+
+.media-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1); }
+  .media-links:hover {
+    -webkit-transition: 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+    opacity: .75; }
+  .media-links .icon {
+    display: inline-block;
+    position: relative;
+    width: 12%;
+    height: auto;
+    margin-right: 16px;
+    opacity: .95; }
+    .media-links .icon ::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      content: ''; }
+    .media-links .icon object {
+      width: 100%; }
 
 .aboutme {
   background: #ddd; }

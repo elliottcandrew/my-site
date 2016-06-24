@@ -1,9 +1,14 @@
+// MAIN COLUMNS
+
 .content
 	width: calc(100% - 11px)
 	margin-top: 12px
-	//margin-right: 12px
-	color: #1c1c1c
+	color: $dark
 	overflow: hidden
+
+	h2
+		padding-bottom: 6px
+		text-transform: uppercase
 
 .column-end
 	height: 500px
@@ -12,3 +17,34 @@
 @media (max-width: 640px)
 	.column-end
 		display: none
+
+// CONTACT ICONS
+.media-links
+	display: flex
+	width: 50%
+	margin-top: 20px
+	margin-bottom: 20px
+
+	&:hover
+		@include transition(.2s $ease-out-expo)
+		opacity: .75
+	@include transition(.4s $ease-out-expo)
+
+	.icon
+		display: inline-block
+		position: relative
+		width: 12%
+		height: auto
+		margin-right: 16px
+		opacity: .95
+
+		::after
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			content: ''
+
+		object
+			width: 100%
