@@ -354,14 +354,14 @@ hr {
   display: -ms-flexbox;
   display: flex;
   width: 50%;
-  margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-top: 16px;
+  margin-bottom: 16px; }
   .media-links a:hover {
     opacity: .75; }
   .media-links .icon {
     display: inline-block;
     position: relative;
-    width: 12%;
+      position-width: 20px;
     height: auto;
     margin-right: 16px;
     opacity: .95; }
@@ -423,6 +423,8 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   height: 56px; }
+  .header .p1 {
+    margin-top: -4px; }
 
 .pcard-title {
   display: -webkit-box;
