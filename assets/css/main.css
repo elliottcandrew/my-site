@@ -361,7 +361,7 @@ hr {
   .media-links .icon {
     display: inline-block;
     position: relative;
-      position-width: 20px;
+    width: 12%;
     height: auto;
     margin-right: 16px;
     opacity: .95; }
