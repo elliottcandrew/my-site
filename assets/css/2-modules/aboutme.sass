@@ -10,15 +10,13 @@
 .media-links
 	display: flex
 	width: 50%
-	argin-top: 20px
+	margin-top: 20px
 	margin-bottom: 20px
-	*
-		opacity: 0.95
-		margin-right: 16px
-		&:hover
-			opacity: 0.75
-			@include transition(200ms $ease-out-expo)
-		@include transition(400ms $ease-out-expo)
+
+	a:hover
+		//@include transition(.2s $ease-out-expo)
+		opacity: .75
+	//@include transition(.4s $ease-out-expo)
 
 	.icon
 		display: inline-block
@@ -28,7 +26,7 @@
 		margin-right: 16px
 		opacity: .95
 
-		::after
+		&:after
 			position: absolute
 			top: 0
 			right: 0
