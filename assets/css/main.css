@@ -493,7 +493,6 @@ hr {
 .aboutme {
   background: #ddd; }
 
-/* HOME */
 .home-wrap {
   display: block;
   width: 80vw;
@@ -503,8 +502,6 @@ hr {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1; }
-  .home-sections section {
-    padding: 0 0; }
 
 @media (max-width: 1024px) {
   .home-wrap {
@@ -522,22 +519,22 @@ hr {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   will-change: overflow;
-  height: calc(100vh - 56px);
-  overflow: hidden; }
+  height: calc(100vh - 56px); }
 
-.col1, .col2, .col3 {
+.col1 {
+  position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  position: relative;
-  overflow: hidden;
-  margin-right: 12px; }
-  .col1:last-child, .col2:last-child, .col3:last-child {
+  margin-right: 12px;
+  overflow: hidden; }
+  .col1:last-child {
     margin-right: 0; }
 
 @media (max-width: 640px) {
-  .home-sections .container {
+  .home-sections,
+  .container {
     display: block; }
-  .col1, .col2, .col3 {
-    margin-right: 0;
-    max-width: 100%; } }
+  .col1 {
+    max-width: 100%;
+    margin-right: 0; } }

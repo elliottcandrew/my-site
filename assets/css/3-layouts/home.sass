@@ -1,59 +1,49 @@
-/* HOME */
+// HOME
 
 .home-wrap
 	display: block
 	width: 80vw
-	//overflow: hidden
-	
 	margin: 0 auto
-	
+
 .home-sections
 	flex: 1
-	//overflow: hidden
-
-	section
-		padding: 0 0
-
-	//.container ?not sure about this
-		display: flex
-		flex-direction: rows
-		justify-content: center
-		//background: $silver
 
 @media (max-width: 1024px)
 	.home-wrap
 		width: 85vw
-	
+
 @media (max-width: 768px)
 	.home-wrap
 		width: 90vw
-	
-//scroll test	
+
+//scroll test
+
 .container
 	display: flex
 	position: relative
 	backface-visibility: hidden
 	will-change: overflow
 	height: calc(100vh - 56px)
-	overflow: hidden
+	//overflow: hidden
+	// where does z-index go?
 
 
 // columns
 
-.col1, .col2, .col3
-	flex: 1
+.col1
 	position: relative
-	overflow: hidden
+	flex: 1
 	margin-right: 12px
-	//background: pink
+	overflow: hidden
 
 	&:last-child
 		margin-right: 0
 
 @media (max-width: 640px)
-	.home-sections .container
+	.home-sections,
+	.container
 		display: block
 
-	.col1, .col2, .col3
-		margin-right: 0
+	.col1
 		max-width: 100%
+		margin-right: 0
