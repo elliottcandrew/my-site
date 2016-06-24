@@ -33,7 +33,7 @@ rules:
   no-mergeable-selectors: 1
   no-misspelled-properties: 1
   no-qualifying-elements: 1
-  no-trailing-whitespace: 1
+  no-trailing-whitespace: 0
   no-trailing-zero: 1
   no-transition-all: 1
   no-universal-selectors: 0
@@ -64,7 +64,7 @@ rules:
   empty-args: 1
   hex-length: 1
   hex-notation: 1
-  indentation: 1
+  indentation: 'tab'
   leading-zero: 1
   nesting-depth: 1
   property-sort-order:

@@ -215,9 +215,6 @@ th {
 * html .jspCorner {
   margin: 0 -3px 0 0; }
 
-* {
-  box-sizing: border-box; }
-
 html {
   padding: 0;
   margin: 0;
@@ -227,38 +224,21 @@ body {
   padding: 0;
   margin: 0;
   overflow: hidden;
-    overflow-font-size: 14px;
-    overflow-line-height: 1.6;
-    overflow-font-family: 'Fira Sans', sans-serif;
-    overflow-color: #1c1c1c;
-    overflow--webkit-font-smoothing: antialiased;
-    overflow--webkit-text-size-adjust: 100%; }
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: 'Fira Sans', sans-serif;
+  color: #1c1c1c; }
 
 ::-moz-selection {
-  background: #ffdc00; }
+  background: #FFF498; }
 
 ::selection {
-  background: #ffdc00; }
-
-::-moz-selection {
-  background: #ffdc00; }
-
-img::-moz-selection {
-  background: transparent; }
-
-img::selection {
-  background: transparent; }
-
-img::-moz-selection {
-  background: transparent; }
-
-body {
-  -webkit-tap-highlight-color: #FFF498; }
+  background: #FFF498; }
 
 a {
-  text-decoration: none;
-  color: #1c1c1c; }
-  a:hover:focus {
+  color: #1c1c1c;
+  text-decoration: none; }
+  a:hover, a:focus {
     color: #4f4f4f; }
 
 .textlink {
@@ -267,64 +247,62 @@ a {
     text-decoration: line-through; }
 
 h1 {
+  margin: 0;
+  font-family: Fira Sans, sans-serif;
   font-size: 22px;
-  font-family: ff-nuvo-web-pro;
   font-style: normal;
-  font-weight: 800;
-  margin: 0; }
+  font-weight: 700; }
 
 h2 {
+  font-family: Fira Sans, sans-serif;
   font-size: 14px;
-  font-family: ff-nuvo-web-pro;
   font-style: normal;
-  font-weight: 800;
-  margin: 0; }
+  font-weight: 500; }
 
 h3 {
+  margin: 0;
+  font-family: Fira Mono, monospace;
   font-size: 12px;
-  font-family: monospace;
   text-decoration: underline;
-  text-transform: uppercase;
-  margin: 0; }
+  text-transform: uppercase; }
 
 h4 {
+  margin: 0;
+  font-family: Fira Mono, monospace;
   font-size: 12px;
   line-height: 1.1;
-  font-family: monospace;
-  text-decoration: underline;
-  margin: 0; }
+  text-decoration: underline; }
 
 .t1 {
+  color: #f7f7f7;
+  font-family: Fira Sans, sans-serif;
   font-size: 14px;
-  font-family: ff-nuvo-web-pro;
   font-style: normal;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #f7f7f7; }
+  font-weight: 700;
+  text-transform: uppercase; }
 
 .t2 {
+  color: #f7f7f7;
+  font-family: Fira Sans, sans-serif;
   font-size: 14px;
-  font-family: ff-nuvo-web-pro;
   font-style: normal;
-  font-weight: 400;
-  color: #f7f7f7; }
+  font-weight: 500; }
 
 .p1 {
+  margin-left: 1px;
+  font-family: Fira Mono, monospace;
   font-size: 12px;
-  line-height: 1.1;
-  font-family: monospace;
-  margin-left: 1px; }
+  line-height: 1.1; }
 
 p2 {
+  font-family: Fira Mono, monospace;
   font-size: 10px;
-  font-family: monospace; }
+  line-height: 1.1; }
 
 p {
+  font-family: Fira Mono, monospace;
   font-size: 12px;
-  line-height: 1.1;
-  font-family: monospace;
-  /*padding-left: 10px */
-  /*padding-right: 10px */ }
+  line-height: 1.1; }
 
 em {
   font-style: italic; }
@@ -471,6 +449,9 @@ hr {
 @media (max-width: 640px) {
   .column-end {
     display: none; } }
+
+.aboutme {
+  background: #ddd; }
 
 /* HOME */
 .home-wrap {
