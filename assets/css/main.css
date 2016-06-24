@@ -328,6 +328,9 @@ strong {
 hr {
   margin: 0; }
 
+.aboutme p:first-of-type {
+  margin-top: 0; }
+
 .aboutme img {
   max-width: 100%; }
 
@@ -374,13 +377,14 @@ hr {
     margin-right: 12px; }
 
 .content {
-  width: calc(100% - 21px);
+  width: calc(100% - 16px);
   margin-top: 12px;
   color: #1c1c1c;
   overflow: hidden; }
   .content h2 {
     padding-bottom: 6px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin: 0; }
 
 .column-end {
   height: 500px;
@@ -527,7 +531,7 @@ hr {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-right: 22px;
+  margin-right: 17px;
   overflow: auto; }
   .col1:last-child {
     margin-right: 0; }
