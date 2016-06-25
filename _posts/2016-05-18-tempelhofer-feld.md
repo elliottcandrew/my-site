@@ -3,9 +3,11 @@ layout: post
 title:  "Tempelhofer Feld"
 date:   2016-05-18
 location: Berlin
-categories: jekyll update
+category: blog
 thumbnail: post-2.jpg
 excerpt_separator: <!--more-->
+headline: Tempelhofer Feld
+tagline: The garden I always wanted, but never had
 ---
 
 When the weather is good the site plays host to hoardes of cyclists, skaters, tourists and revellers alike. As you would expect, the old airfield is completely flat with most of the 300 hectares covered in open grass. Narrow gravel and tarmac paths criss-cross the expanse, while two parallel runways are the lasting scars of its previous life.

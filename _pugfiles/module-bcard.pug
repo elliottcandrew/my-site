@@ -1,14 +1,14 @@
 | {% for post in site.posts %}
 .bcard
 
-	a(href="post.url")
-		img(src="assets/imgs/thumbs/{{post.thumbnail}}", class=".pic")
+	a(href="{{post.url}}")
+		img(src="/assets/imgs/thumbs/{{post.thumbnail}}", class=".pic")
 		h3
 			span {{post.title}}
 	p {{post.date | date: "%d.%m.%Y"}} - {{post.location}}
 	.excerpt
 		p {{post.excerpt | remove: '<p>' | remove: '</p>'}}
-			a(href="post.url").textlink more
+			a(href="post.url").textlink ...more!
 	//ul
 		a(href="", class="tag") Liminal Space
 		a(href="", class="tag") Photography

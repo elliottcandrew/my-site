@@ -1,0 +1,11 @@
+section
+	.container2
+		.col-fixed
+			.content
+				| {{post.location}}
+				| {{post.date | date: "%b %m %Y"}}
+				| {{content}}
+
+		.col1
+			.content
+				img(src="/assets/imgs/thumbs/{{post.thumbnail}}", class=".pic")
