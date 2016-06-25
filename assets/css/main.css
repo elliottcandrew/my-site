@@ -481,7 +481,7 @@ hr {
     -webkit-transition: 0ms;
             transition: 0ms;
     opacity: 1;
-    background: #c83939; }
+    background: #f8a91e; }
 
 .pcard-y3diss {
   position: relative;
@@ -627,3 +627,5 @@ ppage-sections.col1 {
   margin-bottom: 48px; }
   .ppage-sections img:first-of-type {
     margin-top: 28px; }
+  .ppage-sections img:last-of-type {
+    margin-bottom: 28px; }
