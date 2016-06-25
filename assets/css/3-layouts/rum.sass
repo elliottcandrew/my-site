@@ -1,20 +1,35 @@
 // RE-USE MECHANISM
 
+// PAGE SIZING + MEDIA QUERIES
+
 .ppage-wrap
-	display: block
-	width: 80vw
-	margin: 0 auto
+  display: block
+  width: 80vw
+  margin: 0 auto
 
 .ppage-sections
-	flex: 1
+  flex: 1
 
 @media (max-width: 1024px)
 	.ppage-wrap
-		width: 85vw
+    width: 85vw
 
 @media (max-width: 768px)
-	.ppage-wrap
-		width: 90vw
+  .ppage-wrap
+    width: 90vw
+
+// COLUMN MOBILE REFLOW - needs revising!!!
+
+@media (max-width: 640px)
+  .ppage-sections,
+  .container
+    display: block
+
+  .ppage-sections.col1
+    max-width: 100%
+    margin-right: 0
+
+// CONTAINER + CONTENT
 
 .container2
 	display: flex
@@ -22,65 +37,38 @@
 	backface-visibility: hidden
 	will-change: overflow
 	height: calc(100vh - 56px)
-	// where does z-index go?
 
-// columns
-
-ppage-sections.col1
+.col2
 	position: relative
 	flex: 1
-	margin-right: 0
+	margin-right: 17px
 	overflow-y: auto
 	overflow-x: hidden
-	background: pink
-
-	//&:last-child
-		margin-right: 0
-
-@media (max-width: 640px)
-	.ppage-sections,
-	.container
-		display: block
-
-	ppage-sections.col1
-		max-width: 100%
-		margin-right: 0
-
 
 .col-fixed
-	position: relative
-	width: calc(33.3% - 20px)
-	flex: none
-	margin-right: 17px
-	overflow: hidden
+	//.content
+		width: 300px
+	  flex: none
+	  overflow: hidden
+		z-index: 10
+		position: fixed
 
-	//&:last-child
-		margin-right: 0
+.col-img
+	//.content
+		background: pink
+		flex-direction: column
+		display: flex
+	  align-items: center
+		margin-left: auto
+		margin-right: auto
 
-@media (max-width: 640px)
-	.ppage-sections,
-	.container
-		display: block
+  img
+    width: 100%
+    max-width: 600px
+    margin-bottom: 48px
 
-	.col1
-		max-width: 100%
-		margin-right: 0
+  &:first-of-type
+    margin-top: 28px
 
-// CONTENT
-
-.ppage-sections
-	.col1
-		.content
-			margin-left: auto
-			margin-right: auto
-			display: flex
-			align-items: center
-			flex-direction: column
-
-	img
-		width: 100%
-		max-width: 600px
-		margin-bottom: 48px
-
-		&:first-of-type
-			margin-top: 28px
+  &:last-of-type
+    margin-bottom: 28px
