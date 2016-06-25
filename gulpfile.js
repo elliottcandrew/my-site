@@ -115,7 +115,7 @@ gulp.task('watch', function () {
     gulp.watch('assets/js/*.js', ['js']).on("change", browserSync.reload);
     gulp.watch('assets/css/*/*.sass', ['sass']);
     //gulp.watch('assets/css/*/*.scss', ['scss']);
-    gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_includes/*'], ['jekyll-rebuild']);
+    gulp.watch(['*/*.html', '_layouts/*.html', '_posts/*', '_includes/*'], ['jekyll-rebuild']);
     gulp.watch('_pugfiles/*.pug', ['pug']);
 });
 
