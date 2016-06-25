@@ -22,44 +22,48 @@
 		display: block
 		padding-top: 125%
 
+//can this be done with a mixin?
 
 .pcard-y3p2
 	position: relative
+	width: 100%
 	max-width: 400px
 	background: url(/assets/imgs/proj_y3p2.jpg)
 	background-size: cover
 	background-position: center
-	margin-bottom: 20px
+	margin-bottom: 16px
+
 	&:hover .pcard-title
 		transition: 0ms
 		opacity: 1
-
-		background: $citrus
+		background: $blue
 
 
 .pcard-y3p1
 	position: relative
 	width: 100%
+	max-width: 400px
 	background: url(/assets/imgs/proj_y3p1.jpg)
 	background-size: cover
 	background-position: center
-	margin-bottom: 20px
+	margin-bottom: 16px
+
 	&:hover .pcard-title
 		transition: 0ms
 		opacity: 1
-
-		background: darken($aqua, 30%)
+		background: $red
 
 
 .pcard-y3diss
 	position: relative
 	width: 100%
+	max-width: 400px
 	background: url(/assets/imgs/diss_400.png)
 	background-size: cover
 	background-position: center
-	margin-bottom: 20px
+	margin-bottom: 16px
+
 	&:hover .pcard-title
 		transition: 0ms
 		opacity: 1
-
-		background: $orange
+		background: $citrus
