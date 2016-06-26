@@ -382,19 +382,18 @@ hr {
   padding-bottom: 2px;
   margin-bottom: 16px; }
   .bcard:hover {
-    background: #ededed; }
+    background: #efefef; }
     .bcard:hover * {
       color: #1c1c1c; }
     .bcard:hover span {
       background: #ffdc00; }
+    .bcard:hover h3 {
+      background: #ffdc00; }
   .bcard img {
     max-width: 100%; }
   .bcard h3 {
-    margin-top: 6px; }
-  .bcard .textlink {
-    font-style: italic; }
-  .bcard ul {
-    padding-left: 0; }
+    margin-top: 6px;
+    display: inline; }
 
 .content {
   width: calc(100% - 16px);
