@@ -685,3 +685,57 @@ bpage-sections .col1 {
 
 .bpage-sections p {
   margin-top: 6px; }
+
+.bpage-wrap {
+  display: block;
+  width: 80vw;
+  margin: 0 auto; }
+
+@media (max-width: 1024px) {
+  .bpage-wrap {
+    width: 85vw; } }
+
+@media (max-width: 768px) {
+  .bpage-wrap {
+    width: 90vw; } }
+
+@media (max-width: 640px) {
+  .bpage-sections,
+  .container {
+    display: block; }
+  bpage-sections.col1 {
+    max-width: 100%;
+    margin-right: 0; } }
+
+bpage-sections .col1 {
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.photography .col1 .content {
+  margin-left: 0;
+  margin-right: auto; }
+
+.photography img {
+  max-width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.photography .small, .photography .small-left {
+  width: calc(50% - 3px);
+  float: left;
+  margin-bottom: 6px;
+  padding: 0;
+  margin-top: 0; }
+
+.photography .small-left {
+  margin-right: 6px; }
+
+.photography .spacer object {
+  width: 6px;
+  height: auto;
+  background: pink;
+  float: left; }
+
+.photography .large:last-of-type {
+  margin-bottom: 6px; }

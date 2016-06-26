@@ -1,0 +1,93 @@
+// BLOG
+
+// PAGE SIZE AND MEDIA QUERIES
+
+.bpage-wrap
+	display: block
+	width: 80vw
+	margin: 0 auto
+
+//.bpage-sections
+	flex: 1
+
+@media (max-width: 1024px)
+	.bpage-wrap
+		width: 85vw
+
+@media (max-width: 768px)
+	.bpage-wrap
+		width: 90vw
+
+@media (max-width: 640px)
+	.bpage-sections,
+	.container
+		display: block
+
+	bpage-sections.col1
+		max-width: 100%
+		margin-right: 0
+
+// CONTAINER
+
+//.container
+	position: relative
+	backface-visibility: hidden
+	will-change: overflow
+	//background: pink
+	height: calc(100vh - 56px)
+	// where does z-index go?
+
+bpage-sections
+	.col1
+		position: relative
+		overflow-y: auto
+		overflow-x: hidden
+
+// CONTENT
+
+.photography
+	.col1
+		.content
+			margin-left: 0
+			margin-right: auto
+
+	img
+		max-width: 100%
+		margin: 0
+		padding: 0
+
+	.small, .small-left
+		width: calc(50% - 3px)
+		float: left
+		margin-bottom: 6px
+		padding: 0
+		margin-top: 0
+
+	.small-left
+		margin-right: 6px
+
+	.spacer
+		object
+			width: 6px
+			height: auto
+			background: pink
+			float: left
+
+	.large:last-of-type
+		margin-bottom: 6px
+
+// PHOTOCARD
+// .small:before
+// 		content: ""
+// 		display: block
+// 		padding-top: 66.75%
+//
+// .small
+// 	position: relative
+// 	width: calc(50% - 3px)
+// 	background: url(/assets/imgs/may04_400.png)
+// 	background-size: contain
+// 	background-repeat: no-repeat
+// 	background-position: center
+// 	margin-bottom: 12px
+// 	float: left
