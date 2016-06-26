@@ -379,19 +379,18 @@ hr {
 .bcard {
   display: block;
   position: relative;
-  padding-bottom: 12px; }
-  .bcard a:hover h3 {
-    color: #1c1c1c; }
-    .bcard a:hover h3 span {
-      background-color: #ffdc00; }
+  padding-bottom: 2px;
+  margin-bottom: 16px; }
+  .bcard:hover {
+    background: #ededed; }
+    .bcard:hover * {
+      color: #1c1c1c; }
+    .bcard:hover span {
+      background: #ffdc00; }
   .bcard img {
     max-width: 100%; }
   .bcard h3 {
     margin-top: 6px; }
-  .bcard .p2 {
-    margin-top: 6px; }
-    .bcard .p2:last-of-type {
-      margin-bottom: 6px; }
   .bcard .textlink {
     font-style: italic; }
   .bcard ul {
