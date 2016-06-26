@@ -1,6 +1,6 @@
 ---
 layout: blog
-title:  "Denim Riders"
+title:  "Elliott Andrew | blog"
 date:   2015-09-22
 location: Dunkirk to Amsterdam
 category: blog

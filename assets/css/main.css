@@ -239,7 +239,15 @@ a {
   color: #1c1c1c;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #4f4f4f; }
+    color: #1c1c1c; }
+
+.link {
+  -webkit-transition: all 200ms ease-in-out;
+          transition: all 200ms ease-in-out; }
+  .link:hover, .link:focus {
+    color: #f05555;
+    -webkit-transition: all 1ms;
+            transition: all 1ms; }
 
 .textlink {
   color: #f05555;
@@ -399,11 +407,13 @@ hr {
   display: block;
   position: relative;
   padding-bottom: 2px;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  -webkit-transition: all 250ms ease-in-out;
+          transition: all 250ms ease-in-out; }
   .bcard:hover {
-    background: #ededed; }
-    .bcard:hover * {
-      color: #1c1c1c; }
+    background: #ededed;
+    -webkit-transition: all 1ms;
+            transition: all 1ms; }
     .bcard:hover .pic {
       background: #ffdc00; }
     .bcard:hover h3 {
@@ -429,6 +439,9 @@ hr {
 .column-end {
   padding-bottom: 500px;
   opacity: 0; }
+
+.columns .textlink {
+  padding-bottom: 12px; }
 
 @media (max-width: 640px) {
   .column-end {
@@ -681,7 +694,7 @@ bpage-sections .col1 {
 .bpage-sections img {
   opacity: 1;
   max-width: 100%;
-  margin-bottom: 24px; }
+  margin-bottom: 12px; }
 
 .bpage-sections p {
   margin-top: 6px; }
@@ -739,3 +752,18 @@ bpage-sections .col1 {
 
 .photography .large:last-of-type {
   margin-bottom: 6px; }
+
+.layout-inthefield img {
+  max-height: 40vh; }
+
+.layout-inthefield .textlink {
+  margin-bottom: 24px; }
+
+.layout-inthefield hr {
+  margin: 24px 0 30px 0;
+  padding: 0;
+  opacity: 0.4; }
+  .layout-inthefield hr:last-of-type {
+    visibility: hidden;
+    margin: 0;
+    padding: 0; }
