@@ -1,4 +1,5 @@
-{% for post in site.posts %}<a href="{{post.url}}"><div class="bcard"><span><img class=".pic" src="/assets/imgs/thumbs/{{post.thumbnail}}"/><h3>{{post.title}}</h3><p>{{post.date | date: "%b %d %Y"}} - {{post.location}}</p><div class="excerpt"><p>{{post.excerpt | remove: '<p>' | remove: '</p>'}}<!--a(href="post.url").textlink ...more!--></p></div><!--ula(href="", class="tag") Liminal Space
+{% for post in site.posts %}<a href="{{post.url}}"><div class="bcard"><span><img class=".pic" src="/assets/imgs/thumbs/{{post.thumbnail}}"/><div class="line"></div></span><h3>{{post.title}}</h3><p>{{post.date | date: "%b %d %Y"}} - {{post.location}}</p><div class="excerpt"><p>{{post.excerpt | remove: '<p>' | remove: '</p>'}}</p></div><div class="line"></div></div></a>{% endfor %}<!--deprecated	a(href="post.url").textlink ...more!
+ul
+a(href="", class="tag") Liminal Space
 a(href="", class="tag") Photography
-a(href="", class="tag") Dissertation
---></span></div></a>{% endfor %}
+a(href="", class="tag") Dissertation-->

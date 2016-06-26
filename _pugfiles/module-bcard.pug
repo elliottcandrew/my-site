@@ -1,17 +1,22 @@
 | {% for post in site.posts %}
+
 a(href="{{post.url}}")
 	.bcard
 
 		span
 			img(src="/assets/imgs/thumbs/{{post.thumbnail}}", class=".pic")
-			h3 {{post.title}}
-			p {{post.date | date: "%b %d %Y"}} - {{post.location}}
-			.excerpt
-				p {{post.excerpt | remove: '<p>' | remove: '</p>'}}
-					//a(href="post.url").textlink ...more!
-			//ul
-				a(href="", class="tag") Liminal Space
-				a(href="", class="tag") Photography
-				a(href="", class="tag") Dissertation
+			.line
+		h3 {{post.title}}
+		p {{post.date | date: "%b %d %Y"}} - {{post.location}}
+		.excerpt
+			p {{post.excerpt | remove: '<p>' | remove: '</p>'}}
+		.line
 
 | {% endfor %}
+
+//deprecated
+		a(href="post.url").textlink ...more!
+	ul
+	a(href="", class="tag") Liminal Space
+	a(href="", class="tag") Photography
+	a(href="", class="tag") Dissertation

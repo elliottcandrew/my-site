@@ -1,18 +1,18 @@
 .bcard
 	display: block
 	position: relative
-	//background: darken($snow, 2.5%)
-	padding-bottom: 2px
+	padding-bottom: 1px
 	margin-bottom: 16px
 
 	&:hover
-		background: darken($snow, 4%)
+		//background: darken($snow, 5%)
 
 		*
 			color: $dark
 
-		span
-			background: $yellow
+
+		.line
+			opacity: 1
 
 	img
 		max-width: 100%
@@ -20,8 +20,15 @@
 	h3
 		margin-top: 6px
 
-	.textlink
+	.line
+		height: 4px
+		width: 100%
+		background: $yellow
+		opacity: 0
+
+
+	//.textlink
 		font-style: italic
 
-	ul
+	//ul
 		padding-left: 0
