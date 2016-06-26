@@ -358,7 +358,7 @@ hr {
   margin-top: 16px;
   margin-bottom: 16px; }
   .media-links a:hover {
-    opacity: .75; }
+    opacity: 0.75; }
   .media-links .icon {
     display: inline-block;
     position: relative;
@@ -376,16 +376,35 @@ hr {
     .media-links .icon object {
       width: 100%; }
 
+.pcard-photos:before {
+  content: "";
+  display: block;
+  padding-top: 71%; }
+
+.pcard-photos {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  background: url(/assets/imgs/personal01.png);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 16px; }
+  .pcard-photos:hover .pcard-title {
+    -webkit-transition: 0ms;
+            transition: 0ms;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.4); }
+
 .bcard {
   display: block;
   position: relative;
   padding-bottom: 2px;
   margin-bottom: 16px; }
   .bcard:hover {
-    background: #efefef; }
+    background: #ededed; }
     .bcard:hover * {
       color: #1c1c1c; }
-    .bcard:hover span {
+    .bcard:hover .pic {
       background: #ffdc00; }
     .bcard:hover h3 {
       background: #ffdc00; }
@@ -394,6 +413,8 @@ hr {
   .bcard h3 {
     margin-top: 6px;
     display: inline; }
+  .bcard .p2 {
+    margin-top: -2px; }
 
 .content {
   width: calc(100% - 16px);

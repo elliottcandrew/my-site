@@ -15,9 +15,8 @@
 	margin-bottom: 16px
 
 	a:hover
-		//@include transition(.2s $ease-out-expo)
 		opacity: .75
-	//@include transition(.4s $ease-out-expo)
+    //fill: $yellow
 
 	.icon
 		display: inline-block
@@ -37,3 +36,40 @@
 
 		object
 			width: 100%
+
+// PHOTOCARD
+.pcard-photos:before
+		content: ""
+		display: block
+		padding-top: 71%
+
+.pcard-photos
+	position: relative
+	width: 100%
+	max-width: 400px
+	background: url(/assets/imgs/personal01.png)
+	background-size: cover
+	background-position: center
+	margin-bottom: 16px
+
+	&:hover .pcard-title
+		transition: 0ms
+		opacity: 1
+		background: rgba(0, 0, 0, 0.4)
+
+//.pcard-title
+	display: flex
+	text-align: center
+	align-items: center
+	justify-content: center
+	letter-spacing: .15em
+
+	opacity: 0
+
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+
+	transition: 250ms ease-in-out
