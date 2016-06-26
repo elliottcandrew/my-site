@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: blog
 title:  "Tempelhofer Feld"
 date:   2016-05-18
 location: Berlin
 category: blog
 thumbnail: post-2.jpg
+banner: TFe-skate01-400.png
 excerpt_separator: <!--more-->
 headline: Tempelhofer Feld
 tagline: The garden I always wanted, but never had

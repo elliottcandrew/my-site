@@ -1,11 +1,11 @@
 section
-	.container2
-		.col-fixed
-			.content
-				| {{post.location}}
-				| {{post.date | date: "%b %m %Y"}}
-				| {{content}}
-
+	.container
 		.col1
 			.content
-				img(src="/assets/imgs/thumbs/{{post.thumbnail}}", class=".pic")
+
+				img(src="/assets/imgs/{{page.banner}}", class=".pic")
+				//img(src="/assets/imgs/banner01.jpg", class=".pic")
+				span
+					h4 {{page.location}}
+					p {{page.date | date: "%b %m %Y"}}
+				| {{content}}
