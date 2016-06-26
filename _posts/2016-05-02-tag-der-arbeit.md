@@ -4,7 +4,7 @@ title:  "Tag der Arbeit"
 date:   2016-05-01
 location: Berlin
 category: blog
-thumbnail: post-1.png
+thumbnail: tag-der-arbeit.png
 banner: may04_400.png
 excerpt_separator: <!--more-->
 headline: Tag der Arbeit
