@@ -218,6 +218,7 @@ th {
 html {
   padding: 0;
   margin: 0;
+  min-width: 320px;
   background: #f7f7f7; }
 
 body {
@@ -259,8 +260,9 @@ a {
 
 .textlink-dark {
   color: #1c1c1c;
-  font-family: Fira Mono, monospace; }
-  .textlink-dark:hover {
+  font-family: Fira Mono, monospace;
+  font-size: 12px; }
+  .textlink-dark:hover, .textlink-dark:focus, .textlink-dark:active {
     text-decoration: line-through;
     color: #1c1c1c; }
 
@@ -321,7 +323,7 @@ h4 {
   font-family: Fira Sans, sans-serif;
   font-size: 14px;
   font-style: normal;
-  font-weight: 500; }
+  font-weight: 300; }
 
 .p1 {
   margin-left: 1px;
@@ -455,9 +457,32 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 56px; }
   .header .p1 {
     margin-top: -4px; }
+  .header ul {
+    position: relative;
+    margin: 30px 1px 0 0; }
+    .header ul a {
+      margin-right: 8px; }
+      .header ul a:last-of-type {
+        margin-right: 0; }
+
+@media (max-width: 640px) {
+  .header {
+    height: 32px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    .header h1 {
+      font-size: 14px; }
+    .header .p1 {
+      display: none; }
+    .header ul {
+      margin: 0 1px 0 0; } }
 
 .pcard-title {
   display: -webkit-box;
@@ -528,6 +553,25 @@ hr {
             transition: 0ms;
     opacity: 1;
     background: #f05555; }
+
+@media (max-width: 640px) {
+  .pcard-title {
+    opacity: 1; }
+    .pcard-title span {
+      background: rgba(255, 255, 255, 0.6);
+      padding: 18px 0;
+      width: 100%; }
+      .pcard-title span .t1, .pcard-title span .t2 {
+        color: #1c1c1c;
+        opacity: 0.9; }
+  .pcard-y3p2:hover .pcard-title,
+  .pcard-y3p1:hover .pcard-title,
+  .pcard-y3diss:hover .pcard-title {
+    background: rgba(255, 255, 255, 0.6); }
+  .pcard-y3p2:hover span,
+  .pcard-y3p1:hover span,
+  .pcard-y3diss:hover span {
+    background: transparent; } }
 
 .home-wrap {
   display: block;

@@ -67,3 +67,28 @@
 		transition: 0ms
 		opacity: 1
 		background: $citrus
+
+@media (max-width: 640px)
+	.pcard-title
+		// align-items: flex-start
+		opacity: 1
+
+		span
+			// background: rgba(0, 0, 0, 0.6)
+			background: rgba(255, 255, 255, 0.6)
+			padding: 18px 0
+			width: 100%
+
+			.t1, .t2
+				color: $dark
+				opacity: 0.9
+
+	.pcard-y3p2:hover,
+	.pcard-y3p1:hover,
+	.pcard-y3diss:hover
+
+		.pcard-title
+			background: rgba(255, 255, 255, 0.6)
+
+		span
+			background: transparent
