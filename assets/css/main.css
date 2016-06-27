@@ -236,6 +236,16 @@ body {
 ::selection {
   background: #ffdc00; }
 
+mark {
+  background: #ffdc00;
+  color: #1c1c1c; }
+
+img::-moz-selection {
+  background: transparent; }
+
+img::selection {
+  background: transparent; }
+
 a {
   color: #1c1c1c;
   text-decoration: none; }
@@ -260,8 +270,7 @@ a {
 
 .textlink-dark {
   color: #1c1c1c;
-  font-family: Fira Mono, monospace;
-  font-size: 12px; }
+  font-family: Fira Mono, monospace; }
   .textlink-dark:hover, .textlink-dark:focus, .textlink-dark:active {
     text-decoration: line-through;
     color: #1c1c1c; }
@@ -359,6 +368,9 @@ hr {
 .aboutme img {
   max-width: 100%;
   padding-bottom: 12px; }
+
+.aboutme .textlink-dark {
+  font-size: 11px; }
 
 .media-links {
   display: -webkit-box;
@@ -470,6 +482,8 @@ hr {
       margin-right: 8px; }
       .header ul a:last-of-type {
         margin-right: 0; }
+  .header .textlink-dark {
+    font-size: 12px; }
 
 @media (max-width: 640px) {
   .header {
