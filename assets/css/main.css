@@ -719,13 +719,18 @@ ppage-sections.col1 {
   .ppage-sections img:last-of-type {
     margin-bottom: 28px; }
 
-.bpage-wrap2 .container2 {
-  height: 100vh; }
+.bpage-wrap2 .bpage-header {
+  margin-top: -12px; }
 
-.bpage-wrap2 .content {
+.bpage-wrap2 .container2 {
   display: block;
   width: 80vw;
-  margin: 12px auto 0 auto; }
+  margin: 12px auto 0 auto;
+  padding-left: 10px; }
+
+.bpage-wrap2 .content {
+  margin-top: 12px;
+  width: 80vw; }
 
 .bpage-wrap2 .jspVerticalBar {
   margin: 3px 3px 0 0;
@@ -734,16 +739,16 @@ ppage-sections.col1 {
 .bpage-wrap2 .jspDrag {
   width: 6px; }
 
-.bpage-sections img {
-  opacity: 1;
-  max-width: 100%;
-  margin-bottom: 12px; }
-
-.bpage-sections p {
-  margin-top: 6px; }
-
-.bpage-sections .textlink {
-  margin-bottom: 30px; }
+.bpage-scroll {
+  height: 100vh; }
+  .bpage-scroll img {
+    opacity: 1;
+    max-width: 100%;
+    margin-bottom: 12px; }
+  .bpage-scroll p {
+    margin-top: 6px; }
+  .bpage-scroll .textlink {
+    margin-bottom: 30px; }
 
 .bpage-wrap {
   display: block;

@@ -1,14 +1,15 @@
 .blog
 	.container2
-		.content
 
-			| {% include header.html %}
+			.bpage-header
+				| {% include header.html %}
 
-			img(src="/assets/imgs/{{page.banner}}", class=".pic")
-			span
-				h4 {{page.location}}
-				p {{page.date | date: "%b %m %Y"}}
-			| {{content}}
+			.content
+				img(src="/assets/imgs/{{page.banner}}", class=".pic")
+				span
+					h4 {{page.location}}
+					p {{page.date | date: "%b %m %Y"}}
+				| {{content}}
 
-			a(href="/in-the-field")
-				.textlink See more blog entries
+				a(href="/in-the-field")
+					.textlink See more blog entries
