@@ -5,6 +5,10 @@
 
   img
     max-width: 100%
+    padding-bottom: 12px
+
+  .textlink-dark
+    font-size: 11px
 
 // CONTACT ICONS
 .media-links
@@ -14,9 +18,8 @@
 	margin-bottom: 16px
 
 	a:hover
-		//@include transition(.2s $ease-out-expo)
 		opacity: .75
-	//@include transition(.4s $ease-out-expo)
+    //fill: $yellow
 
 	.icon
 		display: inline-block
@@ -36,3 +39,23 @@
 
 		object
 			width: 100%
+
+// PHOTOCARD
+.pcard-photos:before
+		content: ""
+		display: block
+		padding-top: 71%
+
+.pcard-photos
+	position: relative
+	width: 100%
+	max-width: 400px
+	background: url(/assets/imgs/personal01.png)
+	background-size: cover
+	background-position: center
+	margin-bottom: 16px
+
+	&:hover .pcard-title
+		transition: 0ms
+		opacity: 1
+		background: rgba(0, 0, 0, 0.4)

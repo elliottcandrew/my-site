@@ -1,4 +1,0 @@
-{% for post in site.posts %}<div class="bcard"><a href="post.url"><img class=".pic" src="assets/imgs/thumbs/{{post.thumbnail}}"/><h3><span>{{post.title}}</span></h3></a><p>{{post.date | date: "%d.%m.%Y"}} - {{post.location}}</p><div class="excerpt"><p>{{post.excerpt | remove: '<p>' | remove: '</p>'}}<a class="textlink" href="post.url">more</a></p></div><!--ula(href="", class="tag") Liminal Space
-a(href="", class="tag") Photography
-a(href="", class="tag") Dissertation
---></div>{% endfor %}

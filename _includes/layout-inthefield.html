@@ -1,0 +1,1 @@
+<div class="layout-inthefield"><div class="container"><div class="col1"><div class="content">{% for post in site.posts %}<img src="/assets/imgs/{{post.banner}}"/><span><h4>{{post.headline}}</h4><p>{{post.date | date: "%b %m %Y"}}</p></span><p>{{post.content}}</p><a href="{{post.url}}"><div class="textlink">Read the full post here</div></a><hr/>{% endfor %}</div></div></div></div>

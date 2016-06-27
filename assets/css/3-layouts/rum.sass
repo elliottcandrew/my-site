@@ -1,0 +1,88 @@
+// RE-USE MECHANISM
+
+.ppage-wrap
+	display: block
+	width: 80vw
+	margin: 0 auto
+
+.ppage-sections
+	flex: 1
+
+@media (max-width: 1024px)
+	.ppage-wrap
+		width: 85vw
+
+@media (max-width: 768px)
+	.ppage-wrap
+		width: 90vw
+
+.container2
+	display: flex
+	position: relative
+	backface-visibility: hidden
+	will-change: overflow
+	height: calc(100vh - 56px)
+	// where does z-index go?
+
+// columns
+
+ppage-sections.col1
+	position: relative
+	flex: 1
+	margin-right: 0
+	overflow-y: auto
+	overflow-x: hidden
+
+	//&:last-child
+		margin-right: 0
+
+@media (max-width: 640px)
+	.ppage-sections,
+	.container
+		display: block
+
+	ppage-sections.col1
+		max-width: 100%
+		margin-right: 0
+
+
+.col-fixed
+	position: relative
+	width: calc(33.3% - 20px)
+	flex: none
+	margin-right: 17px
+	overflow: hidden
+
+	//&:last-child
+		margin-right: 0
+
+@media (max-width: 640px)
+	.ppage-sections,
+	.container
+		display: block
+
+	.col1
+		max-width: 100%
+		margin-right: 0
+
+// CONTENT
+
+.ppage-sections
+	.col1
+		.content
+			margin-left: auto
+			margin-right: auto
+			display: flex
+			align-items: center
+			flex-direction: column
+
+	img
+		width: 100%
+		max-width: 600px
+		margin-bottom: 48px
+
+		&:first-of-type
+			margin-top: 28px
+
+		&:last-of-type
+			margin-bottom: 28px

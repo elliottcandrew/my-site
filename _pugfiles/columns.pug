@@ -1,4 +1,4 @@
-section
+.columns
 	.container
 		.col1
 			.content
@@ -6,7 +6,7 @@ section
 				// COLUMN 1
 				h2 About Me
 
-				| {%include modules-aboutme.html%}
+				| {%include module-aboutme.html%}
 
 		.col1
 			.content
@@ -14,10 +14,10 @@ section
 				// COLUMN 2
 				h2 Projects
 
-				| {%include modules-pcard.html%}
+				| {%include module-pcard.html%}
 
 				.column-end
-				p ...that's all for now
+				p more coming soon!
 
 		.col1
 			.content
@@ -25,4 +25,7 @@ section
 				// COLUMN 3
 				h2 In the Field
 
-				| {%include modules-bcard.html%}
+				| {%include module-bcard.html%}
+
+				a(href="/in-the-field")
+					.textlink See all blog entries

@@ -3,14 +3,18 @@
 a
 	color: $dark
 	text-decoration: none
-	// font-family: Fira Mono, monospace
-	// font-size: 12px
-	// font-style: italic
 
 	&:hover,
 	&:focus
-		//text-decoration: line-through
-		color: lighten($dark, 20%)
+		color: $dark
+
+.link
+	transition: all 200ms ease-in-out
+
+	&:hover,
+	&:focus
+		color: $citrus
+		transition: all 1ms
 
 .textlink
 	color: $citrus
@@ -25,9 +29,19 @@ a
 	color: $dark
 	font-family: Fira Mono, monospace
 
-	&:hover
+	&:hover,
+	&:focus,
+	&:active,
 		text-decoration: line-through
 		color: $dark
+
+//.hilink
+
+	*
+		display: inline
+
+	&:hover
+		background: $yellow
 
 .tag
 	display: flex

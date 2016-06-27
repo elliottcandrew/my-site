@@ -1,28 +1,32 @@
 .bcard
 	display: block
 	position: relative
-	//background: darken($silver, .2%)
-	padding-bottom: 26px
+	padding-bottom: 2px
+	margin-bottom: 16px
+	transition: all 250ms ease-in-out
 
-	a:hover
+	&:hover
+		background: darken($snow, 4%)
+		transition: all 1ms
+
+		.pic
+			background: $yellow
+
 		h3
-			color: $dark
-			span
-				background-color: $yellow
+			background: $yellow
+
 
 	img
 		max-width: 100%
 
+	//span
+		*
+			margin-left: 8px
+			margin-right: 8px
+
 	h3
 		margin-top: 6px
+		display: inline
 
 	.p2
-		margin-top: 6px
-		&:last-of-type
-			margin-bottom: 6px
-
-	.textlink
-		font-style: italic
-
-	ul
-		padding-left: 0
+		margin-top: -2px

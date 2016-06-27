@@ -3,11 +3,7 @@ $(window).load(function() {
 	$('.col1').each(
 		function()
 		{
-			$(this).jScrollPane(
-				{
-					showArrows: $(this).is('.arrow')
-				}
-			);
+			$(this).jScrollPane();
 			var api = $(this).data('jsp');
 			var throttleTimeout;
 			$(window).bind(
@@ -34,11 +30,7 @@ if ($('.container').css('display') == 'block') {
 	$('.container').each(
 		function()
 		{
-			$(this).jScrollPane(
-				{
-					showArrows: $(this).is('.arrow')
-				}
-			);
+			$(this).jScrollPane();
 			var api = $(this).data('jsp');
 			var throttleTimeout;
 			$(window).bind(
