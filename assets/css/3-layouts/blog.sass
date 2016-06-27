@@ -2,30 +2,46 @@
 
 // PAGE SIZE AND MEDIA QUERIES
 
-.bpage-wrap
-	display: block
-	width: 80vw
-	margin: 0 auto
+.bpage-wrap2
+	.container2
+		// background: pink
+		height: 100vh
+
+	.content
+		display: block
+		width: 80vw
+		margin: 12px auto 0 auto
+
+	.jspVerticalBar
+		// margin: 24px 6px 24px 0
+		// height: calc(100vh - 48px)
+		margin: 3px 3px 0 0
+		width: 6px
+
+	.jspDrag
+		width: 6px
 
 //.bpage-sections
 	flex: 1
 
-@media (max-width: 1024px)
-	.bpage-wrap
-		width: 85vw
-
-@media (max-width: 768px)
-	.bpage-wrap
-		width: 90vw
-
-@media (max-width: 640px)
-	.bpage-sections,
-	.container
-		display: block
-
-	bpage-sections.col1
-		max-width: 100%
-		margin-right: 0
+// @media (max-width: 1024px)
+// 	.bpage-wrap
+// 		.content
+// 			width: 85vw
+//
+// @media (max-width: 768px)
+// 	.bpage-wrap
+// 		.content
+// 			width: 90vw
+//
+// @media (max-width: 640px)
+// 	.bpage-sections,
+// 	.container
+// 		display: block
+//
+// 	bpage-sections.col1
+// 		max-width: 100%
+// 		margin-right: 0
 
 // CONTAINER
 
@@ -37,7 +53,7 @@
 	height: calc(100vh - 56px)
 	// where does z-index go?
 
-bpage-sections
+// bpage-sections
 	.col1
 		position: relative
 		overflow-y: auto
@@ -46,7 +62,7 @@ bpage-sections
 // CONTENT
 
 .bpage-sections
-	.col1
+	// .col1
 		.content
 			margin-left: 0
 			margin-right: auto

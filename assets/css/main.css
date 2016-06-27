@@ -652,7 +652,7 @@ hr {
   .ppage-wrap {
     width: 90vw; } }
 
-.container2 {
+.container3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -719,35 +719,20 @@ ppage-sections.col1 {
   .ppage-sections img:last-of-type {
     margin-bottom: 28px; }
 
-.bpage-wrap {
+.bpage-wrap2 .container2 {
+  height: 100vh; }
+
+.bpage-wrap2 .content {
   display: block;
   width: 80vw;
-  margin: 0 auto; }
+  margin: 12px auto 0 auto; }
 
-@media (max-width: 1024px) {
-  .bpage-wrap {
-    width: 85vw; } }
+.bpage-wrap2 .jspVerticalBar {
+  margin: 3px 3px 0 0;
+  width: 6px; }
 
-@media (max-width: 768px) {
-  .bpage-wrap {
-    width: 90vw; } }
-
-@media (max-width: 640px) {
-  .bpage-sections,
-  .container {
-    display: block; }
-  bpage-sections.col1 {
-    max-width: 100%;
-    margin-right: 0; } }
-
-bpage-sections .col1 {
-  position: relative;
-  overflow-y: auto;
-  overflow-x: hidden; }
-
-.bpage-sections .col1 .content {
-  margin-left: 0;
-  margin-right: auto; }
+.bpage-wrap2 .jspDrag {
+  width: 6px; }
 
 .bpage-sections img {
   opacity: 1;
