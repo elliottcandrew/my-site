@@ -2,11 +2,10 @@
 a(href="{{post.url}}")
 	.bcard
 
+		img(src="/assets/imgs/thumbs/{{post.thumbnail}}", class=".pic")
 		span
-			img(src="/assets/imgs/thumbs/{{post.thumbnail}}", class=".pic")
 			h3 {{post.headline}}
 			.p2 {{post.date | date: "%b %d %Y"}} - {{post.location}}
-			.excerpt
-				p {{post.excerpt | remove: '<p>' | remove: '</p>'}}
+			p {{post.excerpt | remove: '<p>' | remove: '</p>'}}
 
 | {% endfor %}
