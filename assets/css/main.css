@@ -757,6 +757,9 @@ bpage-sections .col1 {
 .bpage-sections p {
   margin-top: 6px; }
 
+.bpage-sections .textlink {
+  margin-bottom: 30px; }
+
 .bpage-wrap {
   display: block;
   width: 80vw;
