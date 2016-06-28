@@ -3,8 +3,8 @@ layout: blog
 title:  "Elliott Andrew | blog"
 date:   2016-05-25
 location: Berlin
-category: blog
-thumbnail: schillerkiez.jpg
+categories: blog
+thumbnail: tempelhof-easy.jpg
 banner: tfe03_400.jpg
 excerpt_separator: <!--more-->
 headline: Stadtteilgarten Schillerkiez

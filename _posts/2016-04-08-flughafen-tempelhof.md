@@ -3,9 +3,9 @@ layout: blog
 title:  "Elliott Andrew | blog"
 date:   2016-04-08
 location: Berlin
-category: blog
-thumbnail: flughafen-tempelhof.png
-banner: TFl01.png
+categories: blog
+thumbnail: flughafen-rear.png
+banner: flughafen-rear_1000.png
 excerpt_separator: <!--more-->
 headline: Flughafen Tempelhof
 tagline: From the center of Nazi meglomania to refugee arrival center

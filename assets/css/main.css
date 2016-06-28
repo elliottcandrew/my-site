@@ -530,7 +530,7 @@ hr {
   position: relative;
   width: 100%;
   max-width: 400px;
-  background: url(/assets/imgs/proj_y3p2.jpg);
+  background: url(/assets/imgs/thumbs/y3p2.jpg);
   background-size: cover;
   background-position: center;
   margin-bottom: 16px; }
@@ -544,7 +544,7 @@ hr {
   position: relative;
   width: 100%;
   max-width: 400px;
-  background: url(/assets/imgs/proj_y3p1.jpg);
+  background: url(/assets/imgs/thumbs/y3p1.jpg);
   background-size: cover;
   background-position: center;
   margin-bottom: 16px; }
@@ -558,7 +558,7 @@ hr {
   position: relative;
   width: 100%;
   max-width: 400px;
-  background: url(/assets/imgs/diss_400.png);
+  background: url(/assets/imgs/thumbs/y3diss.png);
   background-size: cover;
   background-position: center;
   margin-bottom: 16px; }
@@ -805,16 +805,18 @@ bpage-sections .col1 {
   margin-bottom: 6px; }
 
 .layout-inthefield img {
-  max-height: 40vh; }
-
-.layout-inthefield .textlink {
-  margin-bottom: 24px; }
+  max-height: 40vh;
+  margin-bottom: 6px; }
 
 .layout-inthefield hr {
-  margin: 24px 0 30px 0;
   padding: 0;
   opacity: 0.4; }
   .layout-inthefield hr:last-of-type {
     visibility: hidden;
     margin: 0;
     padding: 0; }
+
+.fcard {
+  margin: 24px 0 18px 0; }
+  .fcard h4 {
+    font-size: 11px; }

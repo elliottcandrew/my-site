@@ -3,8 +3,8 @@ layout: blog
 title:  "Elliott Andrew | blog"
 date:   2016-05-18
 location: Berlin
-category: blog
-thumbnail: tempelhofer-feld.jpg
+categories: blog
+thumbnail: tempelhof-look.jpg
 banner: TFe-skate01-400.png
 excerpt_separator: <!--more-->
 headline: Tempelhofer Feld

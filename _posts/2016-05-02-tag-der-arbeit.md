@@ -3,9 +3,9 @@ layout: blog
 title:  "Elliott Andrew | blog"
 date:   2016-05-01
 location: Berlin
-category: blog
-thumbnail: tag-der-arbeit.png
-banner: may04_400.png
+categories: blog
+thumbnail: arbeit-food-1.png
+banner: arbeit-roof_400.png
 excerpt_separator: <!--more-->
 headline: Tag der Arbeit
 tagline: Exploring Berlin on the most hectic day of the year

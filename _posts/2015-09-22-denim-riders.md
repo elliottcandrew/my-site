@@ -3,9 +3,9 @@ layout: blog
 title:  "Elliott Andrew | blog"
 date:   2015-09-22
 location: Dunkirk to Amsterdam
-category: blog
-thumbnail: denim-riders.jpg
-banner: banner01.jpg
+categories: blog
+thumbnail: denim-float.jpg
+banner: denim-float_1920.jpg
 excerpt_separator: <!--more-->
 headline: Denim Riders
 tagline: Cycling from Dunkirk to Amsterdam on the wind of weed smoke
