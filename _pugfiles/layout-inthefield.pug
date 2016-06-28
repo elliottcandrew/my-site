@@ -9,11 +9,13 @@
 				.fcard
 
 					// BANNER
-					img(src="/assets/imgs/blog/{{post.banner}}")
+					a(href="{{post.url}}")
+						img(src="/assets/imgs/blog/{{post.banner}}")
 
 					// TITLE
 					span
-						h2 {{post.headline}}
+						a(href="{{post.url}}")
+							h2 {{post.headline}}
 						h4 {{post.date | date: "%b %d %Y"}} - {{post.location}}
 
 					// CONTENT

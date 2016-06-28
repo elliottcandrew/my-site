@@ -428,8 +428,6 @@ hr {
     background: #ededed;
     -webkit-transition: all 1ms;
             transition: all 1ms; }
-    .bcard:hover .pic {
-      background: #ffdc00; }
     .bcard:hover h3 {
       background: #ffdc00; }
   .bcard img {
@@ -818,5 +816,16 @@ bpage-sections .col1 {
 
 .fcard {
   margin: 24px 0 18px 0; }
+  .fcard h2, .fcard img {
+    -webkit-transition: all 250ms ease-in-out;
+            transition: all 250ms ease-in-out; }
   .fcard h4 {
     font-size: 11px; }
+  .fcard a:hover h2 {
+    color: #f05555;
+    -webkit-transition: all 1ms;
+            transition: all 1ms; }
+  .fcard a:hover img {
+    opacity: 0.8;
+    -webkit-transition: all 1ms;
+            transition: all 1ms; }
