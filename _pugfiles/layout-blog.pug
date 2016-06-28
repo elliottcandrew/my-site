@@ -5,7 +5,8 @@
 				| {% include header.html %}
 
 			.content
-				img(src="/assets/imgs/blog/{{page.banner}}", class=".pic")
+				a(href="/assets/imgs/blog/{{page.banner}}")
+					img(src="/assets/imgs/blog/{{page.banner}}", class=".pic")
 				span
 					h4 {{page.location}}
 					p {{page.date | date: "%b %m %Y"}}

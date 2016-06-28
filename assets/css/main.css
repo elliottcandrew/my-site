@@ -218,7 +218,6 @@ th {
 html {
   padding: 0;
   margin: 0;
-  min-width: 320px;
   background: #f7f7f7; }
 
 body {
@@ -229,6 +228,18 @@ body {
   line-height: 1.6;
   font-family: 'Fira Sans', sans-serif;
   color: #1c1c1c; }
+
+.home-wrap {
+  min-width: 320px;
+  max-width: 1200px; }
+
+.container {
+  min-width: 320px;
+  max-width: 1200px; }
+
+.container2 {
+  min-width: 320px;
+  max-width: 1200px; }
 
 ::-moz-selection {
   background: #ffdc00; }
@@ -632,91 +643,6 @@ hr {
     max-width: 100%;
     margin-right: 0; } }
 
-.ppage-wrap {
-  display: block;
-  width: 80vw;
-  margin: 0 auto; }
-
-.ppage-sections {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1; }
-
-@media (max-width: 1024px) {
-  .ppage-wrap {
-    width: 85vw; } }
-
-@media (max-width: 768px) {
-  .ppage-wrap {
-    width: 90vw; } }
-
-.container3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  will-change: overflow;
-  height: calc(100vh - 56px); }
-
-ppage-sections.col1 {
-  position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin-right: 0;
-  overflow-y: auto;
-  overflow-x: hidden; }
-
-@media (max-width: 640px) {
-  .ppage-sections,
-  .container {
-    display: block; }
-  ppage-sections.col1 {
-    max-width: 100%;
-    margin-right: 0; } }
-
-.col-fixed {
-  position: relative;
-  width: calc(33.3% - 20px);
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-  margin-right: 17px;
-  overflow: hidden; }
-
-@media (max-width: 640px) {
-  .ppage-sections,
-  .container {
-    display: block; }
-  .col1 {
-    max-width: 100%;
-    margin-right: 0; } }
-
-.ppage-sections .col1 .content {
-  margin-left: auto;
-  margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
-.ppage-sections img {
-  width: 100%;
-  max-width: 600px;
-  margin-bottom: 48px; }
-  .ppage-sections img:first-of-type {
-    margin-top: 28px; }
-  .ppage-sections img:last-of-type {
-    margin-bottom: 28px; }
-
 .bpage-wrap2 .bpage-header {
   margin-top: -12px; }
 
@@ -728,7 +654,7 @@ ppage-sections.col1 {
 
 .bpage-wrap2 .content {
   margin-top: 12px;
-  width: 80vw; }
+  width: 100%; }
 
 .bpage-wrap2 .jspVerticalBar {
   margin: 3px 3px 0 0;
@@ -748,59 +674,36 @@ ppage-sections.col1 {
   .bpage-scroll .textlink {
     margin-bottom: 30px; }
 
-.bpage-wrap {
+.bpage-wrap2 .bpage-header {
+  margin-top: -12px; }
+
+.bpage-wrap2 .container2 {
   display: block;
   width: 80vw;
-  margin: 0 auto; }
+  margin: 12px auto 0 auto;
+  padding-left: 10px; }
 
-@media (max-width: 1024px) {
-  .bpage-wrap {
-    width: 85vw; } }
+.bpage-wrap2 .content {
+  margin-top: 12px;
+  width: 100%; }
 
-@media (max-width: 768px) {
-  .bpage-wrap {
-    width: 90vw; } }
+.bpage-wrap2 .jspVerticalBar {
+  margin: 3px 3px 0 0;
+  width: 6px; }
 
-@media (max-width: 640px) {
-  .bpage-sections,
-  .container {
-    display: block; }
-  bpage-sections.col1 {
+.bpage-wrap2 .jspDrag {
+  width: 6px; }
+
+.bpage-scroll {
+  height: 100vh; }
+  .bpage-scroll img {
+    opacity: 1;
     max-width: 100%;
-    margin-right: 0; } }
-
-bpage-sections .col1 {
-  position: relative;
-  overflow-y: auto;
-  overflow-x: hidden; }
-
-.photography .col1 .content {
-  margin-left: 0;
-  margin-right: auto; }
-
-.photography img {
-  max-width: 100%;
-  margin: 0;
-  padding: 0; }
-
-.photography .small, .photography .small-left {
-  width: calc(50% - 3px);
-  float: left;
-  margin-bottom: 6px;
-  padding: 0;
-  margin-top: 0; }
-
-.photography .small-left {
-  margin-right: 6px; }
-
-.photography .spacer object {
-  width: 6px;
-  height: auto;
-  background: pink;
-  float: left; }
-
-.photography .large:last-of-type {
-  margin-bottom: 6px; }
+    margin-bottom: 12px; }
+  .bpage-scroll p {
+    margin-top: 6px; }
+  .bpage-scroll .textlink {
+    margin-bottom: 30px; }
 
 .layout-inthefield img {
   max-height: 40vh;
