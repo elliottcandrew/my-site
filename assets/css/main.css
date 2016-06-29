@@ -769,3 +769,9 @@ hr {
     opacity: 0.8;
     -webkit-transition: all 1ms;
             transition: all 1ms; }
+
+.projects img {
+  float: left;
+  margin: 0 12px 48px 0;
+  max-height: 200vh;
+  max-width: 100%; }
