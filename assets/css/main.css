@@ -233,6 +233,10 @@ body {
   min-width: 320px;
   max-width: 1200px; }
 
+.bpage-wrap {
+  min-width: 320px;
+  max-width: 1200px; }
+
 .container {
   min-width: 320px;
   max-width: 1200px; }
@@ -718,23 +722,32 @@ hr {
 .photography .textlink {
   margin-bottom: 30px; }
 
-.layout-inthefield img {
-  max-height: 40vh;
-  margin-bottom: 6px; }
+.bpage-wrap {
+  width: 80vw;
+  margin: 0 auto; }
 
 .layout-inthefield hr {
   padding: 0;
-  opacity: 0.4; }
+  opacity: 0.4;
+  clear: left; }
   .layout-inthefield hr:last-of-type {
     visibility: hidden;
     margin: 0;
     padding: 0; }
 
 .fcard {
-  margin: 24px 0 18px 0; }
+  margin: 24px 0 18px 0;
+  height: 250px; }
+  .fcard .fcard-blurb {
+    height: 240px;
+    overflow: hidden; }
   .fcard h2, .fcard img {
     -webkit-transition: all 250ms ease-in-out;
             transition: all 250ms ease-in-out; }
+  .fcard img {
+    float: left;
+    max-width: 50%;
+    margin: 0 18px 12px 0; }
   .fcard h4 {
     font-size: 11px; }
   .fcard a:hover h2 {
