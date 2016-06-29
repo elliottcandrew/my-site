@@ -719,8 +719,17 @@ hr {
   .bpage-scroll p {
     margin-top: 6px; }
 
-.photography .textlink {
-  margin-bottom: 30px; }
+.photography {
+  height: 100vh; }
+  .photography .textlink {
+    margin-bottom: 30px; }
+  .photography .comingsoon {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: 25vh; }
+    .photography .comingsoon * {
+      color: #1c1c1c; }
 
 .bpage-wrap {
   width: 80vw;
@@ -739,7 +748,7 @@ hr {
   margin: 24px 0 18px 0;
   height: 250px; }
   .fcard .fcard-blurb {
-    height: 240px;
+    height: 220px;
     overflow: hidden; }
   .fcard h2, .fcard img {
     -webkit-transition: all 250ms ease-in-out;
@@ -748,6 +757,8 @@ hr {
     float: left;
     max-width: 50%;
     margin: 0 18px 12px 0; }
+  .fcard h2 {
+    margin-top: -6px; }
   .fcard h4 {
     font-size: 11px; }
   .fcard a:hover h2 {
