@@ -1,6 +1,6 @@
 ---
 layout: projects
-title:  "Elliott Andrew | Projects"
+title:  "Re-use Mechanisms"
 date:   2016-05-18
 location: Berlin
 categories: projects

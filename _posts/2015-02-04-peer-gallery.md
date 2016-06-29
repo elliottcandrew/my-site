@@ -1,6 +1,6 @@
 ---
 layout: projects
-title:  "Elliott Andrew | Projects"
+title:  "Peer Gallery"
 date:   2015-02-04
 location: Scarborough
 categories: projects

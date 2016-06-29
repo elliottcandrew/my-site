@@ -1,6 +1,6 @@
 ---
 layout: blog
-title:  "Elliott Andrew | blog"
+title:  "Tempelhofer Feld"
 date:   2016-05-18
 location: Berlin
 categories: blog

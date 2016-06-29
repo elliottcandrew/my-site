@@ -1,6 +1,6 @@
 ---
 layout: blog
-title:  "Elliott Andrew | blog"
+title:  "Stadtteilgarten Schillerkiez"
 date:   2016-05-25
 location: Berlin
 categories: blog

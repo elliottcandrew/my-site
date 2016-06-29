@@ -1,6 +1,6 @@
 ---
 layout: blog
-title:  "Elliott Andrew | blog"
+title:  "Tag der Arbeit"
 date:   2016-05-01
 location: Berlin
 categories: blog
