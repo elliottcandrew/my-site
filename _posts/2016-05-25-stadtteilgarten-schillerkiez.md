@@ -5,7 +5,7 @@ date:   2016-05-25
 location: Berlin
 categories: blog
 thumbnail: tempelhof-easy.jpg
-banner: tfe03_400.jpg
+banner: schillerkiez_1200.png
 excerpt_separator: <!--more-->
 headline: Stadtteilgarten Schillerkiez
 tagline: The garden I always wanted but wasn't allowed to build

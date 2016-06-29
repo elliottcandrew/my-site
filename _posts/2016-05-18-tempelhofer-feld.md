@@ -5,7 +5,7 @@ date:   2016-05-18
 location: Berlin
 categories: blog
 thumbnail: tempelhof-look.jpg
-banner: TFe-skate01-400.png
+banner: tempelhof-skate_1200.png
 excerpt_separator: <!--more-->
 headline: Tempelhofer Feld
 tagline: Grilling and chilling

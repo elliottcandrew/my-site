@@ -1,9 +1,11 @@
 .projects
-	.container2
+  .container2
 
-			.bpage-header
-				| {% include header.html %}
+      .bpage-header
+        | {% include header.html %}
 
-			.content
-				//- img(src="/assets/imgs/{{page.banner}}", class=".pic")
-				| {{content}}
+      .content
+        //- img(src="/assets/imgs/{{page.banner}}", class=".pic")
+        | {{content}}
+
+        | {% include module-nav-blog.html %}

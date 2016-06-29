@@ -346,7 +346,6 @@ h4 {
   font-weight: 300; }
 
 .p1 {
-  margin-left: 1px;
   font-family: Fira Mono, monospace;
   font-size: 12px;
   line-height: 1.1;
@@ -596,6 +595,21 @@ hr {
   .pcard-y3diss:hover span {
     background: transparent; } }
 
+.nav-blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 24px 0 24px 0; }
+  .nav-blog .next {
+    margin-left: auto; }
+
+.allblog {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
 .home-wrap {
   display: block;
   width: 80vw;
@@ -671,8 +685,6 @@ hr {
     margin-bottom: 12px; }
   .bpage-scroll p {
     margin-top: 6px; }
-  .bpage-scroll .textlink {
-    margin-bottom: 30px; }
 
 .bpage-wrap2 .bpage-header {
   margin-top: -12px; }
@@ -702,8 +714,9 @@ hr {
     margin-bottom: 12px; }
   .bpage-scroll p {
     margin-top: 6px; }
-  .bpage-scroll .textlink {
-    margin-bottom: 30px; }
+
+.photography .textlink {
+  margin-bottom: 30px; }
 
 .layout-inthefield img {
   max-height: 40vh;

@@ -1,0 +1,12 @@
+.nav-blog
+  | {% if page.previous.url %}
+  a(href="{{page.previous.url}}").prev
+    .textlink &laquo; {{page.previous.headline}}
+  | {% endif %}
+
+  a(href="/in-the-field").textlink.allblog all posts
+
+  |{% if page.next.url %}
+  a(href="{{page.next.url}}").next
+    .textlink {{page.next.headline}} &raquo;
+    | {% endif %}
