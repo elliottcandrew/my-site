@@ -2,4 +2,4 @@ name: Elliott Andrew
 markdown: redcarpet
 highlighter: rouge # or pygments or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
-permalink: /:categories/:title.html
+permalink: /:categories/:title
