@@ -10,6 +10,6 @@
         span
           h4 {{page.location}}
           p {{page.date | date: "%b %m %Y"}}
-        | {{content}}
+        | {{ content | remove_first: '&lt;!--more--&gt;' }}
 
         | {% include module-nav-blog.html %}

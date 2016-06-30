@@ -4,6 +4,7 @@
   img
     position: relative
     max-width: 100%
+    margin-bottom: 36px
 
   .span-svg
     display: flex
@@ -19,25 +20,54 @@
     height: 60px
     opacity: 0.85
 
-  .projectimg-50
+  .projectimg-30
     float: left
     margin: 0 18px 48px 0
+    max-width: 30%
+
+  .projectimg-40
+    float: left
+    margin: 0 18px 48px 0
+    max-width: 40%
+
+  .projectimg-50
+    float: left
+    margin: 6px 18px 48px 0
+    max-width: 50%
+
+  .projectimg-center
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
     max-width: 50%
 
   // TYPE
   p
     position: relative
-    margin-top: 0
+    margin: 0
 
-    font-family: Fira Sans, sans-serif
+    font-family: merriweather, serif
     font-size: 15px
-    // text-align: justify
-    // text-justify: inter-word
+    font-weight: 300
 
     strong
       font-weight: 700
       font-size: 22px
       line-height: 1
+
+  .text-overlay
+    position: absolute
+    display: block
+    top: 20vh
+    left: 72%
+    transform: translateX(-50%)
+    max-width: 300px
+    min-width: 250px
+
+    background: $snow
+    padding: 12px
+
+    z-index: 10
 
   //OTHER
   mark
