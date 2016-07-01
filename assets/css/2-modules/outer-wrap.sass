@@ -1,9 +1,7 @@
 .outer-wrap
 	display: block
 	margin: 0 auto
-
 	// holds scrollbar on right
-	// width: 80vw
 
 	.bpage-header
 		margin-top: -12px
@@ -14,7 +12,7 @@
 		margin: 12px auto 0 auto
 
 		// to offset scrollbar on left
-		// padding-left: 10px
+		padding-left: 10px
 
 	.content
 		margin-top: 12px
@@ -39,6 +37,11 @@
 		.container2
 			width: 90vw
 
+@media (max-width: 330px)
+	.outer-wrap
+		.container2
+			padding-left: 0
+
 // @media (max-width: 640px)
 	.outer-sections,
 	.container
@@ -47,22 +50,3 @@
 	bpage-sections.col1
 		max-width: 100%
 		margin-right: 0
-
-// @media (max-width: 1024px)
-// 	.bpage-wrap
-// 		.content
-// 			width: 85vw
-//
-// @media (max-width: 768px)
-// 	.bpage-wrap
-// 		.content
-// 			width: 90vw
-//
-// @media (max-width: 640px)
-// 	.bpage-sections,
-// 	.container
-// 		display: block
-//
-// 	bpage-sections.col1
-// 		max-width: 100%
-// 		margin-right: 0
