@@ -241,7 +241,7 @@ body {
   min-width: 320px;
   max-width: 1200px; }
 
-.container2 {
+.container-vw {
   min-width: 320px;
   max-width: 1200px; }
 
@@ -664,7 +664,7 @@ hr {
 .bpage-wrap2 .bpage-header {
   margin-top: -12px; }
 
-.bpage-wrap2 .container2 {
+.bpage-wrap2 .container-vw {
   display: block;
   width: 80vw;
   margin: 12px auto 0 auto;
@@ -693,7 +693,7 @@ hr {
 .bpage-wrap2 .bpage-header {
   margin-top: -12px; }
 
-.bpage-wrap2 .container2 {
+.bpage-wrap2 .container-vw {
   display: block;
   width: 80vw;
   margin: 12px auto 0 auto;
