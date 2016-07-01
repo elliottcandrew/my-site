@@ -1,13 +1,25 @@
 // NAV-BLOG
-.nav-blog
-	display: flex
+.nav-blog, .nav-blog-640
 	position: relative
 	margin: 24px 0 24px 0
 
 	.next
 		margin-left: auto
 
-.allblog
-	position: absolute
-	left: 50%
-	transform: translateX(-50%)
+	.allblog
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+
+.nav-blog
+	display: flex
+
+.nav-blog-640
+	display: none
+
+@media (max-width: 640px)
+	.nav-blog-640
+		display: flex
+
+	.nav-blog
+		display: none
