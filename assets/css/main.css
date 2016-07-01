@@ -681,13 +681,13 @@ hr {
 .bpage-wrap2 .jspDrag {
   width: 6px; }
 
-.bpage-scroll {
+.outer-scroll {
   height: 100vh; }
-  .bpage-scroll img {
+  .outer-scroll img {
     opacity: 1;
     max-width: 100%;
     margin-bottom: 12px; }
-  .bpage-scroll p {
+  .outer-scroll p {
     margin-top: 6px; }
 
 .bpage-wrap2 .bpage-header {
@@ -710,13 +710,13 @@ hr {
 .bpage-wrap2 .jspDrag {
   width: 6px; }
 
-.bpage-scroll {
+.outer-scroll {
   height: 100vh; }
-  .bpage-scroll img {
+  .outer-scroll img {
     opacity: 1;
     max-width: 100%;
     margin-bottom: 12px; }
-  .bpage-scroll p {
+  .outer-scroll p {
     margin-top: 6px; }
 
 .photography {

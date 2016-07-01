@@ -25,7 +25,7 @@ $(window).load(function() {
 		}
 	);
 
-	$('.bpage-scroll').each(
+	$('.outer-scroll').each(
 		function()
 		{
 			$(this).jScrollPane();
