@@ -5,7 +5,7 @@ a(href="{{post.url}}")
 	.bcard
 
 		img(src="/assets/imgs/thumbs/{{post.thumbnail}}", class=".pic")
-		span
+		.clear
 			h3 {{post.headline}}
 			.p2 {{post.date | date: "%b %d %Y"}} - {{post.location}}
 			p {{post.excerpt | remove: '<p>' | remove: '</p>'}}
