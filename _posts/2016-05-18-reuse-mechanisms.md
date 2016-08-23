@@ -22,6 +22,8 @@ tagline: Transitional praxis in Berlin's liminal space
 
 ###### In the context of this discourse, I interpret the subsequent re-use of previously vacant space, using the term ‘liminality’ from the Latin, limen meaning ‘a threshold’. In anthropology liminality refers to social or religious ritual, rites of passage at which point those involved are at a threshold between their preliminary state, and that which succeeds and is defined by the ritual process. I translate this to an understanding of place and time in which ‘liminal spaces’ are defined by their use during this transitional stage.
 
-###### The full version of this study will be coming very soon!
+<!-- ###### The full version of this study will be coming very soon! -->
+
+[Read the version here on Issuu](https://issuu.com/deadmongoose/docs/reuse_mechanisms_compressed/1)
 
 [![](/assets/imgs/projects/y3diss-map_1000.png)](/assets/imgs/projects/y3diss-map_1000.png)
