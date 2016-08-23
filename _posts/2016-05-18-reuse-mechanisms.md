@@ -24,6 +24,6 @@ tagline: Transitional praxis in Berlin's liminal space
 
 <!-- ###### The full version of this study will be coming very soon! -->
 
-[Read the version here on Issuu](https://issuu.com/deadmongoose/docs/reuse_mechanisms_compressed/1)
+##### [Read the full version here on Issuu](https://issuu.com/deadmongoose/docs/reuse_mechanisms_compressed/1)
 
 [![](/assets/imgs/projects/y3diss-map_1000.png)](/assets/imgs/projects/y3diss-map_1000.png)
