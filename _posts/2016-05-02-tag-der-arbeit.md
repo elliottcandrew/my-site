@@ -1,7 +1,7 @@
 ---
 layout: blog
 title:  "Tag der Arbeit"
-date:   2016-05-01
+date:   2016-05-02
 location: Berlin
 categories: blog
 thumbnail: arbeit-food-1.png

@@ -1,2 +1,2 @@
-<div class="blog"><div class="container-vw"><div class="bpage-header">{% include header.html %}</div><div class="content"><a href="/assets/imgs/blog/{{page.banner}}"><img class=".pic" src="/assets/imgs/blog/{{page.banner}}"/></a><div class="text"><p class="center">{{page.location}} | {{page.date | date: "%b %m %Y"}}</p>{{ content | remove_first: '&lt;!--more--&gt;' }}
+<div class="blog"><div class="container-vw"><div class="bpage-header">{% include header.html %}</div><div class="content"><a href="/assets/imgs/blog/{{page.banner}}"><img class=".pic" src="/assets/imgs/blog/{{page.banner}}"/></a><div class="text">{{ content | remove_first: '&lt;!--more--&gt;' }}
 {% include module-nav-blog.html %}</div></div></div></div>
