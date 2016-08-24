@@ -7,10 +7,8 @@
       .content
         a(href="/assets/imgs/blog/{{page.banner}}")
           img(src="/assets/imgs/blog/{{page.banner}}", class=".pic")
-        span
-          h4 {{page.location}}
-          p {{page.date | date: "%b %m %Y"}}
-        | {{ content | remove_first: '&lt;!--more--&gt;' }}
+        .text
+          p.center {{page.location}} | {{page.date | date: "%b %m %Y"}}
+          | {{ content | remove_first: '&lt;!--more--&gt;' }}
 
-        | {% include module-nav-blog.html %}
-      
+          | {% include module-nav-blog.html %}

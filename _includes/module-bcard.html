@@ -1,3 +1,3 @@
 {% for post in site.posts %}
-{% if post.categories contains 'blog' %}<a href="{{post.url}}"><div class="bcard"><img class=".pic" src="/assets/imgs/thumbs/{{post.thumbnail}}"/><div class="clear"><h3>{{post.headline}}</h3><div class="p2">{{post.date | date: "%b %d %Y"}} - {{post.location}}</div><p>{{post.excerpt | remove: '<p>' | remove: '</p>'}}</p></div></div></a>{% endif %}
+{% if post.categories contains 'blog' %}<a href="{{post.url}}"><div class="bcard"><img class=".pic" src="/assets/imgs/thumbs/{{post.thumbnail}}"/><div class="clear"><h3>{{post.headline}}</h3><div class="p2">{{post.date | date: "%b %d %Y"}} - {{post.location}}</div><p>{{post.excerpt | remove: '<h5>' | remove: '</h5>' | remove: '<h6>' | remove: '</h6>' | remove: '<p>' | remove: '</p>'}}</p></div></div></a>{% endif %}
 {% endfor %}
