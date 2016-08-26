@@ -19,6 +19,6 @@ tagline: Exploring Berlin on the most hectic day of the year
 
 ######Come the morning of May 2nd, Görlitzer had already returned to its usual host of visitors: lines of weed dealers, locals on their way to work, curious tourists buying cheap weed and so on. The commons really is utterly dependent on a complex interplay of overlapping – sometimes antagonistic, sometimes complimentary – social conditions. In Henri Lefebvre’s immortal words:
 
-#####“(social) space is a (social) product”
+#####*“(social) space is a (social) product”*
 
 ######The venue plays a part, but ultimately it is the users of space that produce its common, social, spatial, temporal wealth.

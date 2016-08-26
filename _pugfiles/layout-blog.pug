@@ -4,12 +4,13 @@
       .bpage-header
         | {% include header.html %}
 
-      .content
+      .bpage-content
         a(href="/assets/imgs/blog/{{page.banner}}")
           img(src="/assets/imgs/blog/{{page.banner}}", class=".pic")
-        .text
-          //- need to fix post.date
-          //- p.center {{page.location}} | {{page.date | date: "%b %m %Y"}}
-          | {{ content | remove_first: '&lt;!--more--&gt;' }}
 
-          | {% include module-nav-blog.html %}
+        .bpage-text
+          p.center {{page.location}} | {{page.date | date: '%B %d %Y'}}
+          p {{ content | remove_first: '&lt;!--more--&gt;' | remove: '<p>' | remove: '</p>' }}
+
+      .bpage-nav
+        | {% include module-nav-blog.html %}
