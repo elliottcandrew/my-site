@@ -218,7 +218,6 @@ th {
 html {
   padding: 0;
   margin: 0;
-  min-width: 320px;
   background: #f7f7f7; }
 
 body {
@@ -229,6 +228,22 @@ body {
   line-height: 1.6;
   font-family: 'Fira Sans', sans-serif;
   color: #1c1c1c; }
+
+.home-wrap {
+  min-width: 320px;
+  max-width: 1200px; }
+
+.bpage-wrap {
+  min-width: 320px;
+  max-width: 1200px; }
+
+.container {
+  min-width: 320px;
+  max-width: 1200px; }
+
+.container2 {
+  min-width: 320px;
+  max-width: 1200px; }
 
 ::-moz-selection {
   background: #ffdc00; }
@@ -300,7 +315,7 @@ h2 {
   font-family: Fira Sans, sans-serif;
   font-size: 14px;
   font-style: normal;
-  font-weight: 500; }
+  font-weight: 700; }
 
 h3 {
   margin: 0;
@@ -335,7 +350,6 @@ h4 {
   font-weight: 300; }
 
 .p1 {
-  margin-left: 1px;
   font-family: Fira Mono, monospace;
   font-size: 12px;
   line-height: 1.1;
@@ -407,7 +421,7 @@ hr {
   position: relative;
   width: 100%;
   max-width: 400px;
-  background: url(/assets/imgs/personal01.png);
+  background: url(/assets/imgs/thumbs/rotterdam-bike.png);
   background-size: cover;
   background-position: center;
   margin-bottom: 16px; }
@@ -428,8 +442,6 @@ hr {
     background: #ededed;
     -webkit-transition: all 1ms;
             transition: all 1ms; }
-    .bcard:hover .pic {
-      background: #ffdc00; }
     .bcard:hover h3 {
       background: #ffdc00; }
   .bcard img {
@@ -530,7 +542,7 @@ hr {
   position: relative;
   width: 100%;
   max-width: 400px;
-  background: url(/assets/imgs/proj_y3p2.jpg);
+  background: url(/assets/imgs/thumbs/y3p2.jpg);
   background-size: cover;
   background-position: center;
   margin-bottom: 16px; }
@@ -544,7 +556,7 @@ hr {
   position: relative;
   width: 100%;
   max-width: 400px;
-  background: url(/assets/imgs/proj_y3p1.jpg);
+  background: url(/assets/imgs/thumbs/y3p1.jpg);
   background-size: cover;
   background-position: center;
   margin-bottom: 16px; }
@@ -558,7 +570,7 @@ hr {
   position: relative;
   width: 100%;
   max-width: 400px;
-  background: url(/assets/imgs/diss_400.png);
+  background: url(/assets/imgs/thumbs/y3diss.png);
   background-size: cover;
   background-position: center;
   margin-bottom: 16px; }
@@ -586,6 +598,21 @@ hr {
   .pcard-y3p1:hover span,
   .pcard-y3diss:hover span {
     background: transparent; } }
+
+.nav-blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 24px 0 24px 0; }
+  .nav-blog .next {
+    margin-left: auto; }
+
+.allblog {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
 
 .home-wrap {
   display: block;
@@ -634,194 +661,117 @@ hr {
     max-width: 100%;
     margin-right: 0; } }
 
-.ppage-wrap {
+.bpage-wrap2 .bpage-header {
+  margin-top: -12px; }
+
+.bpage-wrap2 .container2 {
   display: block;
   width: 80vw;
-  margin: 0 auto; }
+  margin: 12px auto 0 auto;
+  padding-left: 10px; }
 
-.ppage-sections {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1; }
+.bpage-wrap2 .content {
+  margin-top: 12px;
+  width: 100%; }
 
-@media (max-width: 1024px) {
-  .ppage-wrap {
-    width: 85vw; } }
+.bpage-wrap2 .jspVerticalBar {
+  margin: 3px 3px 0 0;
+  width: 6px; }
 
-@media (max-width: 768px) {
-  .ppage-wrap {
-    width: 90vw; } }
+.bpage-wrap2 .jspDrag {
+  width: 6px; }
 
-.container2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  will-change: overflow;
-  height: calc(100vh - 56px); }
-
-ppage-sections.col1 {
-  position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin-right: 0;
-  overflow-y: auto;
-  overflow-x: hidden; }
-
-@media (max-width: 640px) {
-  .ppage-sections,
-  .container {
-    display: block; }
-  ppage-sections.col1 {
+.outer-scroll {
+  height: 100vh; }
+  .outer-scroll img {
+    opacity: 1;
     max-width: 100%;
-    margin-right: 0; } }
+    margin-bottom: 12px; }
+  .outer-scroll p {
+    margin-top: 6px; }
 
-.col-fixed {
-  position: relative;
-  width: calc(33.3% - 20px);
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-  margin-right: 17px;
-  overflow: hidden; }
+.bpage-wrap2 .bpage-header {
+  margin-top: -12px; }
 
-@media (max-width: 640px) {
-  .ppage-sections,
-  .container {
-    display: block; }
-  .col1 {
+.bpage-wrap2 .container2 {
+  display: block;
+  width: 80vw;
+  margin: 12px auto 0 auto;
+  padding-left: 10px; }
+
+.bpage-wrap2 .content {
+  margin-top: 12px;
+  width: 100%; }
+
+.bpage-wrap2 .jspVerticalBar {
+  margin: 3px 3px 0 0;
+  width: 6px; }
+
+.bpage-wrap2 .jspDrag {
+  width: 6px; }
+
+.outer-scroll {
+  height: 100vh; }
+  .outer-scroll img {
+    opacity: 1;
     max-width: 100%;
-    margin-right: 0; } }
+    margin-bottom: 12px; }
+  .outer-scroll p {
+    margin-top: 6px; }
 
-.ppage-sections .col1 .content {
-  margin-left: auto;
-  margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
-.ppage-sections img {
-  width: 100%;
-  max-width: 600px;
-  margin-bottom: 48px; }
-  .ppage-sections img:first-of-type {
-    margin-top: 28px; }
-  .ppage-sections img:last-of-type {
-    margin-bottom: 28px; }
+.photography {
+  height: 100vh; }
+  .photography .textlink {
+    margin-bottom: 30px; }
+  .photography .comingsoon {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: 25vh; }
+    .photography .comingsoon * {
+      color: #1c1c1c; }
 
 .bpage-wrap {
-  display: block;
   width: 80vw;
   margin: 0 auto; }
-
-@media (max-width: 1024px) {
-  .bpage-wrap {
-    width: 85vw; } }
-
-@media (max-width: 768px) {
-  .bpage-wrap {
-    width: 90vw; } }
-
-@media (max-width: 640px) {
-  .bpage-sections,
-  .container {
-    display: block; }
-  bpage-sections.col1 {
-    max-width: 100%;
-    margin-right: 0; } }
-
-bpage-sections .col1 {
-  position: relative;
-  overflow-y: auto;
-  overflow-x: hidden; }
-
-.bpage-sections .col1 .content {
-  margin-left: 0;
-  margin-right: auto; }
-
-.bpage-sections img {
-  opacity: 1;
-  max-width: 100%;
-  margin-bottom: 12px; }
-
-.bpage-sections p {
-  margin-top: 6px; }
-
-.bpage-wrap {
-  display: block;
-  width: 80vw;
-  margin: 0 auto; }
-
-@media (max-width: 1024px) {
-  .bpage-wrap {
-    width: 85vw; } }
-
-@media (max-width: 768px) {
-  .bpage-wrap {
-    width: 90vw; } }
-
-@media (max-width: 640px) {
-  .bpage-sections,
-  .container {
-    display: block; }
-  bpage-sections.col1 {
-    max-width: 100%;
-    margin-right: 0; } }
-
-bpage-sections .col1 {
-  position: relative;
-  overflow-y: auto;
-  overflow-x: hidden; }
-
-.photography .col1 .content {
-  margin-left: 0;
-  margin-right: auto; }
-
-.photography img {
-  max-width: 100%;
-  margin: 0;
-  padding: 0; }
-
-.photography .small, .photography .small-left {
-  width: calc(50% - 3px);
-  float: left;
-  margin-bottom: 6px;
-  padding: 0;
-  margin-top: 0; }
-
-.photography .small-left {
-  margin-right: 6px; }
-
-.photography .spacer object {
-  width: 6px;
-  height: auto;
-  background: pink;
-  float: left; }
-
-.photography .large:last-of-type {
-  margin-bottom: 6px; }
-
-.layout-inthefield img {
-  max-height: 40vh; }
-
-.layout-inthefield .textlink {
-  margin-bottom: 24px; }
 
 .layout-inthefield hr {
-  margin: 24px 0 30px 0;
   padding: 0;
-  opacity: 0.4; }
+  opacity: 0.4;
+  clear: left; }
   .layout-inthefield hr:last-of-type {
     visibility: hidden;
     margin: 0;
     padding: 0; }
+
+.fcard {
+  margin: 24px 0 18px 0;
+  height: 250px; }
+  .fcard .fcard-blurb {
+    height: 220px;
+    overflow: hidden; }
+  .fcard h2, .fcard img {
+    -webkit-transition: all 250ms ease-in-out;
+            transition: all 250ms ease-in-out; }
+  .fcard img {
+    float: left;
+    max-width: 50%;
+    margin: 0 18px 12px 0; }
+  .fcard h2 {
+    margin-top: -6px; }
+  .fcard h4 {
+    font-size: 11px; }
+  .fcard a:hover h2 {
+    color: #f05555;
+    -webkit-transition: all 1ms;
+            transition: all 1ms; }
+  .fcard a:hover img {
+    opacity: 0.8;
+    -webkit-transition: all 1ms;
+            transition: all 1ms; }
+
+.projects img {
+  float: left;
+  margin: 0 12px 48px 0;
+  max-height: 200vh;
+  max-width: 100%; }

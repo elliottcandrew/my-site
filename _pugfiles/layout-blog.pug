@@ -1,13 +1,16 @@
 .blog
-	.container
-		.col1
-			.content
+  .container-vw
 
-				img(src="/assets/imgs/{{page.banner}}", class=".pic")
-				span
-					h4 {{page.location}}
-					p {{page.date | date: "%b %m %Y"}}
-				| {{content}}
+      .bpage-header
+        | {% include header.html %}
 
-				a(href="/in-the-field")
-					.textlink See more blog entries
+      .bpage-content
+        a(href="/assets/imgs/blog/{{page.banner}}")
+          img(src="/assets/imgs/blog/{{page.banner}}", class=".pic")
+
+        .bpage-text
+          p.center {{page.location}} | {{page.date | date: '%B %d %Y'}}
+          p {{ content | remove_first: '&lt;!--more--&gt;' | remove: '<p>' | remove: '</p>' }}
+
+      .bpage-nav
+        | {% include module-nav-blog.html %}

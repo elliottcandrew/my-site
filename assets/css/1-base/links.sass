@@ -19,7 +19,7 @@ a
 .textlink
 	color: $citrus
 	font-family: Fira Mono, monospace
-	font-size: 11px
+	font-size: 12px
 
 	&:hover
 		text-decoration: line-through
@@ -33,15 +33,16 @@ a
 	&:focus,
 	&:active,
 		text-decoration: line-through
-		color: $dark
 
-//.hilink
+.textlink-ul
+	color: $dark
+	font-family: Fira Mono, monospace
+	text-decoration: underline
 
-	*
-		display: inline
-
-	&:hover
-		background: $yellow
+	&:hover,
+	&:focus,
+	&:active,
+		text-decoration: line-through
 
 .tag
 	display: flex

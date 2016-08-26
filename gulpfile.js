@@ -59,8 +59,8 @@ gulp.task('sass', function () {
             onError: browserSync.notify
         }).on('error', sass.logError))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        //.pipe(rename({suffix: '.min', prefix : ''}))
-		//.pipe(minifycss())
+        .pipe(rename({suffix: '.min', prefix : ''}))
+		.pipe(minifycss())
         .pipe(gulp.dest('assets/css'))
         .pipe(gulp.dest('_site/assets/css'))
         .pipe(browserSync.reload({stream:true}));
@@ -115,7 +115,7 @@ gulp.task('watch', function () {
     gulp.watch('assets/js/*.js', ['js']).on("change", browserSync.reload);
     gulp.watch('assets/css/*/*.sass', ['sass']);
     //gulp.watch('assets/css/*/*.scss', ['scss']);
-    gulp.watch(['*/projects/*.html', '*/*.html', '_layouts/*.html', '_posts/*', '_includes/*'], ['jekyll-rebuild']);
+    gulp.watch(['!_site/**/*', '*/*.html', '_layouts/*.html', '_posts/*', '_includes/*'], ['jekyll-rebuild']);
     gulp.watch('_pugfiles/*.pug', ['pug']);
 });
 

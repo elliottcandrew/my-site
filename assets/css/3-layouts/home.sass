@@ -1,22 +1,6 @@
 // HOME
 
-.home-wrap
-	display: block
-	width: 80vw
-	margin: 0 auto
-
-.home-sections
-	flex: 1
-
-@media (max-width: 1024px)
-	.home-wrap
-		width: 85vw
-
-@media (max-width: 768px)
-	.home-wrap
-		width: 90vw
-
-//scroll test
+// scroll test
 
 .container
 	display: flex
@@ -24,8 +8,12 @@
 	backface-visibility: hidden
 	will-change: overflow
 	height: calc(100vh - 56px)
-	// where does z-index go?
+	overflow: auto
 
+@media (max-width: 640px)
+	.home-sections
+		.container
+			height: calc(100vh - 32px)
 
 // columns
 
@@ -39,11 +27,13 @@
 	&:last-child
 		margin-right: 0
 
-@media (max-width: 640px)
-	.home-sections,
-	.container
-		display: block
+// change columns to a single column
 
-	.col1
-		max-width: 100%
-		margin-right: 0
+@media (max-width: 640px)
+	.home-sections
+		.container
+			display: block
+
+		.col1
+			max-width: 100%
+			margin-right: 0
