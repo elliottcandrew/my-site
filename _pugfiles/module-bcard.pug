@@ -8,7 +8,7 @@ a(href="{{post.url}}")
 		.clear
 			h3 {{post.headline}}
 			.p2 {{post.date | date: "%b %d %Y"}} - {{post.location}}
-			p {{post.excerpt | remove: '<p>' | remove: '</p>'}}
+			p {{post.excerpt | remove: '<h5>' | remove: '</h5>' | remove: '<h6>' | remove: '</h6>' | remove: '<p>' | remove: '</p>'}}
 
 | {% endif %}
 | {% endfor %}
