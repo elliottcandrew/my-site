@@ -10,6 +10,16 @@
 	height: calc(100vh - 56px)
 	overflow: auto
 
+// internal scrolling element
+
+.container-scroll
+	position: absolute
+	top: 0px
+	bottom: 0px
+	left: 0px
+	right: -32px
+	overflow: auto
+
 @media (max-width: 640px)
 	.home-sections
 		.container
@@ -19,10 +29,9 @@
 
 .col1
 	position: relative
+	overflow: hidden
 	flex: 1
 	margin-right: 17px
-	overflow-y: auto
-	overflow-x: hidden
 
 	&:last-child
 		margin-right: 0

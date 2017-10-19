@@ -1,31 +1,29 @@
 .columns
 	.container
 		.col1
-			.content
+			.container-scroll
+				.content
 
-				// COLUMN 1
-				h2 About Me
+					// COLUMN 1
+					h2 About Me
 
-				| {%include module-aboutme.html%}
-
-		.col1
-			.content
-
-				// COLUMN 2
-				h2 Projects
-
-				| {%include module-pcard.html%}
-
-				.column-end
-				p more projects coming soon!
+					| {%include module-aboutme.html%}
 
 		.col1
-			.content
+			.container-scroll
+				.content
 
-				// COLUMN 3
-				h2 Fieldwork
+					// COLUMN 2
 
-				| {%include module-bcard.html%}
+					| {%include module-pcard.html%}
 
-				a(href="/fieldwork")
-					.textlink See all blog entries
+		.col1
+			.container-scroll
+				.content
+
+					// COLUMN 3
+
+					| {%include module-bcard.html%}
+
+					a(href="/fieldwork")
+						.textlink See all blog entries
