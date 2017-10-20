@@ -1,5 +1,6 @@
 var gulp        = require('gulp'),
   browserSync = require('browser-sync'),
+  hygienist   = require('hygienist-middleware'),
   sass        = require('gulp-sass'),
   prefix      = require('gulp-autoprefixer'),
   minifycss   = require('gulp-minify-css'),
@@ -41,7 +42,8 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 gulp.task('browser-sync', ['sass', 'js', 'jekyll-build'], function() {
   browserSync({
   server: {
-  baseDir: '_site'
+  baseDir: '_site',
+  middleware: hygienist("_site")
   },
   notify: false
   });
@@ -65,21 +67,6 @@ gulp.task('sass', function () {
   .pipe(gulp.dest('_site/assets/css'))
   .pipe(browserSync.reload({stream:true}));
 });
-
-/**
- * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
-
-gulp.task('sass', function () {
-  return gulp.src('assets/css/main.sass')
-  .pipe(sass({
-  includePaths: ['css'],
-  onError: browserSync.notify
-  }))
-  .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-  .pipe(gulp.dest('_site/assets/css'))
-  .pipe(gulp.dest('assets/css'))
-  .pipe(browserSync.reload({stream:true}));
-});*/
 
 /**
  * Compile Pug
