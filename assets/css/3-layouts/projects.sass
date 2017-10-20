@@ -1,17 +1,12 @@
 .projects
 
-  // width
-
-  .container-vw
-    .content
-      // max-width: 600px
-      margin: 0 auto
-
   // IMAGES
+
   img
     position: relative
-    max-width: 100%
-    margin-bottom: 24px
+    width: 65.9%
+    max-width: 800px
+    margin-bottom: 48px
 
   .span-svg
     display: flex
@@ -48,12 +43,20 @@
     transform: translateX(-50%)
     max-width: 50%
 
-  // TYPE
-  h6
-    position: fixed
-    z-index: 3
-    max-width: calc(40vw - 400px)
+  // TYPE LAYOUT
 
+  .container-text
+    position: fixed
+    top: 84px
+    pointer-events: none
+    z-index: 3
+    width: 80vw
+    max-width: 1200px
+
+  .md6
+    margin-top: -3px
+    width: 31.4166666666666667%
+    float: right
 
   p
     position: relative
@@ -82,6 +85,7 @@
     z-index: 10
 
   //OTHER
+
   mark
     background: $silver
 
