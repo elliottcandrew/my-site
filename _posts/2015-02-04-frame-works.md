@@ -8,17 +8,16 @@ headline: Frame Works Gallery
 tagline: Dynamic work and gallery spaces for local artists in Scarborough
 ---
 
-<div class=container-fixed>
-<div class=container-text>
-<div class=md5>
+<div markdown="1" class="container-fixed">
+<div markdown="1" class="container-text">
 
 Frame Works Gallery
+{: .md5}
 
-</div>
-<div class=md6>
+<div class="md6">
 <br>
 
-<i>Dynamic work and gallery spaces for local artists in Scarborough</i>
+Dynamic work and gallery spaces for local artists in Scarborough
 
 <br>
 <br>

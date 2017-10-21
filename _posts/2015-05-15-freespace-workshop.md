@@ -8,14 +8,13 @@ headline: Freespace Workshop
 tagline: A modular community construction project in the industrial hinterlands of Leeds
 ---
 
-<div class=container-fixed>
-<div class=container-text>
-<div class=md5>
+<div markdown="1" class="container-fixed">
+<div markdown="1" class="container-text">
 
 Freespace Workshop
+{: .md5}
 
-</div>
-<div class=md6>
+<div class="md6">
 <br>
 
 <i>A modular community construction project in the industrial hinterlands of Leeds</i>

@@ -1,5 +1,6 @@
 name: Elliott Andrew
-markdown: kramdown # previously redcarpet
+markdown: kramdown
+parse_block_html: true
 highlighter: rouge # or pygments or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 permalink: /:categories/:title
