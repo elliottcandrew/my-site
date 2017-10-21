@@ -10,12 +10,31 @@ tagline: Dynamic work and gallery spaces for local artists in Scarborough
 
 <div class=container-fixed>
 <div class=container-text>
-<div class=md5>A social framework</div>
-<div class=md6>
+<div class=md5>
 
+Frame Works Gallery
+
+</div>
+<div class=md6>
 <br>
 
-This project is about making space for people—people making space—and it making them. The notion of creating an environment that is defined by activity, and activity that occurs as a result of its environment. This project is an ecosystem of social involvement, it intersects local community with the transient intrigue of tourism, whilst developing an ever-changing collaborative spectacle that belongs to both. The scheme is underscored by it’s capacity for change, it embraces social diversity and it provides an adaptive forum for this diversity to be celebrated.
+<i>Dynamic work and gallery spaces for local artists in Scarborough</i>
+
+<br>
+<br>
+
+<strong>
+
+This project is about making space for people—people making space—and it making them.
+
+</strong>
+
+The notion of creating an environment that is defined by activity, and activity that occurs as a result of its environment. This project is an ecosystem of social involvement, it intersects local community with the transient intrigue of tourism, whilst developing an ever-changing collaborative spectacle that belongs to both. The scheme is underscored by it’s capacity for change, it embraces social diversity and it provides an adaptive forum for this diversity to be celebrated.
+
+<br>
+<br>
+
+<i>You could call it social framework.</i>
 
 </div>
 </div>

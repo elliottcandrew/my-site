@@ -8,7 +8,7 @@ headline: Re-use Mechanisms
 tagline: Transitional praxis in Berlin's liminal space
 ---
 
-[![](/assets/imgs/projects/y3diss-bitte_1000.png)](/assets/imgs/projects/y3diss-bitte_1000.png)
+![alt text](/assets/imgs/projects/y3diss-bitte_1000.png)
 
 ##### I used to regularly explore deserted factories around Derbyshire where I grew up.
 
@@ -26,4 +26,4 @@ tagline: Transitional praxis in Berlin's liminal space
 
 ##### [Read the full version here on Issuu](https://issuu.com/deadmongoose/docs/reuse_mechanisms_compressed/1)
 
-[![](/assets/imgs/projects/y3diss-map_1000.png)](/assets/imgs/projects/y3diss-map_1000.png)
+![alt text](/assets/imgs/projects/y3diss-map_1000.png)
