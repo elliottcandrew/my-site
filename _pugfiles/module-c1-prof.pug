@@ -1,0 +1,12 @@
+| {% for post in site.posts %}
+| {% if post.categories contains 'professional' %}
+
+a(href="{{post.url}}")
+	.card-prof
+
+		img(src="/assets/imgs/thumbs/{{post.thumbnail}}", class=".pic")
+
+| {% endif %}
+| {% endfor %}
+
+p &#9400; Elliott Andrew - all rights reserved

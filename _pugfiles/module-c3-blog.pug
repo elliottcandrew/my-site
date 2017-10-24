@@ -1,0 +1,39 @@
+.card-about
+	p
+		strong Elliott Andrew is a freelance architectural designer, illustrator and maker
+	p
+		a(href="mailto:info@eandrew.xyz").textlink-dark email: info@eandrew.xyz
+	p
+		a(href="/info").textlink > Learn more!
+
+	.media-links
+		//- a(href="http://dribbble.com/elliottandrew", target="_blank", class="icon", title="dribbble")
+			object(data="/assets/imgs/icons/dribbble.svg")
+		a(href="https://www.instagram.com/elliottto/", target="_blank", class="icon", title="instagram")
+			object(data="/assets/imgs/icons/insta.svg")
+		a(href="http://twitter.com/elliottcandrew", target="_blank", class="icon", title="twitter")
+			object(data="/assets/imgs/icons/twitter.svg")
+		a(href="http://de.linkedin.com/in/elliottcandrew", target="_blank", class="icon", title="linkedin")
+			object(data="/assets/imgs/icons/linkedin.svg")
+		a(href="http://elliottandrew.tumblr.com/", target="_blank", class="icon", title="tumblr")
+			object(data="/assets/imgs/icons/tumblr.svg")
+
+
+| {% for post in site.posts %}
+| {% if post.categories contains 'blog' %}
+
+a(href="{{post.url}}")
+	.card-blog
+
+		img(src="/assets/imgs/thumbs/{{post.thumbnail}}", class=".pic")
+		.clear
+			h4
+				strong {{post.headline}}
+			.p2 {{post.date | date: "%b %d %Y"}} - {{post.location}}
+			//- p {{post.excerpt | remove: '<h5>' | remove: '</h5>' | remove: '<h6>' | remove: '</h6>' | remove: '<p>' | remove: '</p>'}}
+
+| {% endif %}
+| {% endfor %}
+
+a(href="/fieldwork")
+	.textlink See all blog entries

@@ -412,12 +412,12 @@ hr {
     .media-links .icon object {
       width: 100%; }
 
-.pcard-photos:before {
+.card-pers-photos:before {
   content: "";
   display: block;
   padding-top: 71%; }
 
-.pcard-photos {
+.card-pers-photos {
   position: relative;
   width: 100%;
   max-width: 400px;
@@ -425,31 +425,31 @@ hr {
   background-size: cover;
   background-position: center;
   margin-bottom: 16px; }
-  .pcard-photos:hover .pcard-title {
+  .card-pers-photos:hover .card-pers-title {
     -webkit-transition: 0ms;
             transition: 0ms;
     opacity: 1;
     background: rgba(0, 0, 0, 0.4); }
 
-.bcard {
+.card-blog {
   display: block;
   position: relative;
   padding-bottom: 2px;
   margin-bottom: 16px;
   -webkit-transition: all 250ms ease-in-out;
           transition: all 250ms ease-in-out; }
-  .bcard:hover {
+  .card-blog:hover {
     background: #ededed;
     -webkit-transition: all 1ms;
             transition: all 1ms; }
-    .bcard:hover h3 {
+    .card-blog:hover h3 {
       background: #ffdc00; }
-  .bcard img {
+  .card-blog img {
     max-width: 100%; }
-  .bcard h3 {
+  .card-blog h3 {
     margin-top: 6px;
     display: inline; }
-  .bcard .p2 {
+  .card-blog .p2 {
     margin-top: -2px; }
 
 .content {
@@ -510,7 +510,7 @@ hr {
     .header ul {
       margin: 0 1px 0 0; } }
 
-.pcard-title {
+.card-pers-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,14 +531,14 @@ hr {
   -webkit-transition: 250ms ease-in-out;
           transition: 250ms ease-in-out; }
 
-.pcard-y3p2:before,
-.pcard-y3p1:before,
-.pcard-y3diss:before {
+.card-pers-y3p2:before,
+.card-pers-y3p1:before,
+.card-pers-y3diss:before {
   content: "";
   display: block;
   padding-top: 125%; }
 
-.pcard-y3p2 {
+.card-pers-y3p2 {
   position: relative;
   width: 100%;
   max-width: 400px;
@@ -546,13 +546,13 @@ hr {
   background-size: cover;
   background-position: center;
   margin-bottom: 16px; }
-  .pcard-y3p2:hover .pcard-title {
+  .card-pers-y3p2:hover .card-pers-title {
     -webkit-transition: 0ms;
             transition: 0ms;
     opacity: 1;
     background: #4d91d6; }
 
-.pcard-y3p1 {
+.card-pers-y3p1 {
   position: relative;
   width: 100%;
   max-width: 400px;
@@ -560,13 +560,13 @@ hr {
   background-size: cover;
   background-position: center;
   margin-bottom: 16px; }
-  .pcard-y3p1:hover .pcard-title {
+  .card-pers-y3p1:hover .card-pers-title {
     -webkit-transition: 0ms;
             transition: 0ms;
     opacity: 1;
     background: #f8a91e; }
 
-.pcard-y3diss {
+.card-pers-y3diss {
   position: relative;
   width: 100%;
   max-width: 400px;
@@ -574,29 +574,29 @@ hr {
   background-size: cover;
   background-position: center;
   margin-bottom: 16px; }
-  .pcard-y3diss:hover .pcard-title {
+  .card-pers-y3diss:hover .card-pers-title {
     -webkit-transition: 0ms;
             transition: 0ms;
     opacity: 1;
     background: #f05555; }
 
 @media (max-width: 640px) {
-  .pcard-title {
+  .card-pers-title {
     opacity: 1; }
-    .pcard-title span {
+    .card-pers-title span {
       background: rgba(255, 255, 255, 0.6);
       padding: 18px 0;
       width: 100%; }
-      .pcard-title span .t1, .pcard-title span .t2 {
+      .card-pers-title span .t1, .card-pers-title span .t2 {
         color: #1c1c1c;
         opacity: 0.9; }
-  .pcard-y3p2:hover .pcard-title,
-  .pcard-y3p1:hover .pcard-title,
-  .pcard-y3diss:hover .pcard-title {
+  .card-pers-y3p2:hover .card-pers-title,
+  .card-pers-y3p1:hover .card-pers-title,
+  .card-pers-y3diss:hover .card-pers-title {
     background: rgba(255, 255, 255, 0.6); }
-  .pcard-y3p2:hover span,
-  .pcard-y3p1:hover span,
-  .pcard-y3diss:hover span {
+  .card-pers-y3p2:hover span,
+  .card-pers-y3p1:hover span,
+  .card-pers-y3diss:hover span {
     background: transparent; } }
 
 .nav-blog {
