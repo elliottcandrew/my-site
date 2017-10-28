@@ -2,15 +2,23 @@
 .columns
 
 	.content
+		position: relative
 		width: calc(100% - 16px)
-		margin-top: 32px
-		padding-top: 56px
+		margin-top: 90px
 		color: $dark
 
+	.col-header
+		position: relative
+		width: inherit
+		left: 50%
+		z-index: 2
+		background: pink
+
 		h2
-			padding-bottom: 6px
-			text-transform: uppercase
+			position: fixed
+			top: 36px
 			margin: 0
+			transform: translateX(-50%)
 
 		p
 			width: calc(100% - 16px)
