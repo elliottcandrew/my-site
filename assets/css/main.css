@@ -226,7 +226,7 @@ body {
   overflow: hidden;
   font-size: 14px;
   line-height: 1.6;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Catamaran', sans-serif;
   color: #1c1c1c; }
 
 .home-wrap {
@@ -306,13 +306,13 @@ a {
 
 h1 {
   margin: 0;
-  font-family: Fira Sans, sans-serif;
+  font-family: Catamaran, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 700; }
 
 h2 {
-  font-family: Fira Sans, sans-serif;
+  font-family: Catamaran, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700; }
@@ -336,7 +336,7 @@ h4 {
 
 .t1 {
   color: #f7f7f7;
-  font-family: Fira Sans, sans-serif;
+  font-family: Catamaran, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -344,7 +344,7 @@ h4 {
 
 .t2 {
   color: #f7f7f7;
-  font-family: Fira Sans, sans-serif;
+  font-family: Catamaran, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300; }
