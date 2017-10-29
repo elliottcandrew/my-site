@@ -1,111 +1,165 @@
-.card-pers-title
-	display: flex
-	letter-spacing: .15em
+.card-pers
+	position: relative
+	margin-bottom: 32px
 
-	margin: 16px 28px
-
-	opacity: 0
-
-	position: absolute
-	top: 0
-	left: 0
-	right: 0
-	bottom: 0
-
-	span
-		flex: 1
-		display: flex
-		flex-direction: column
-		justify-content: space-between
-
-	.t1:nth-child(even)
-		text-align: right
-
-	transition: 250ms ease-in-out
-
-.card-pers-y3p2:before,
-.card-pers-y3p1:before,
-.card-pers-y3diss:before
+	// &::before
 		content: ""
 		display: block
 		padding-top: 125%
 
-//can this be done with a mixin?
-
-.card-pers-y3p2
-	position: relative
-	width: 100%
-	max-width: 400px
-	background: url(/assets/imgs/thumbs/y3p2.jpg)
-	background-size: cover
-	background-position: center
-	margin-bottom: 32px
-
-	.t1
-		color: #f1da7f
-
-	&:hover .card-pers-title
+	&:hover .card-pers-overlay
+		opacity: 1
 		transition: 0ms
-		opacity: 1
-		// background: $blue
+
+	img
+		width: 100%
+		height: auto
+		display: block
+
+	.card-pers-overlay
+		display: flex
+		position: absolute
+
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+
+		margin: 16px 28px
+
+		opacity: 0
+
+		transition: 250ms ease-in-out
+
+	.title-wrap
+		flex: 1
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		color: red
+
+	// same as .t1
+	[class*="word"]
+	  font-family: Catamaran, sans-serif
+	  font-size: 30px
+	  font-style: normal
+	  font-weight: 700
+
+	[class*="word"]:nth-child(even)
+		text-align: right
 
 
-.card-pers-y3p1
-	position: relative
-	width: 100%
-	max-width: 400px
-	background: url(/assets/imgs/thumbs/y3p1.jpg)
-	background-size: cover
-	background-position: center
-	margin-bottom: 32px
-
-	.t1
-		color: #c13737
-
-	&:hover .card-pers-title
-		transition: 0ms
-		opacity: 1
-		// background: $orange
-
-
-.card-pers-y3diss
-	position: relative
-	width: 100%
-	max-width: 400px
-	background: url(/assets/imgs/thumbs/y3diss.png)
-	background-size: cover
-	background-position: center
-	margin-bottom: 32px
-
-	.t1
-		color: $dark
-
-	&:hover .card-pers-title
-		transition: 0ms
-		opacity: 1
-		// background: $citrus
-
-@media (max-width: 640px)
-	.card-pers-title
-		// align-items: flex-start
-		opacity: 1
-
-		span
-			// background: rgba(0, 0, 0, 0.6)
-			background: rgba(255, 255, 255, 0.6)
-			padding: 18px 0
-			width: 100%
-
-			.t1, .t2
-				color: $dark
-				opacity: 0.9
-
-	.card-pers-y3p2:hover,
-	.card-pers-y3p1:hover,
-	.card-pers-y3diss:hover
-
-		.card-pers-title
-			background: rgba(255, 255, 255, 0.6)
-
-		span
-			background: transparent
+// .card-pers-title
+// 	display: flex
+// 	letter-spacing: .15em
+//
+// 	margin: 16px 28px
+//
+// 	opacity: 0
+//
+// 	position: absolute
+// 	top: 0
+// 	left: 0
+// 	right: 0
+// 	bottom: 0
+//
+// 	transition: 250ms ease-in-out
+//
+// 	// title word spacing
+// 	span
+// 		flex: 1
+// 		display: flex
+// 		flex-direction: column
+// 		justify-content: space-between
+//
+// 	// alternating sides
+// 	.t1:nth-child(even)
+// 		text-align: right
+//
+//
+// .card-pers-y3p2:before,
+// .card-pers-y3p1:before,
+// .card-pers-y3diss:before
+// 		content: ""
+// 		display: block
+// 		padding-top: 125%
+//
+// // can this be done with a mixin? or with div ids?
+//
+// .card-pers-y3p2
+// 	position: relative
+// 	width: 100%
+// 	max-width: 400px
+// 	background: url(/assets/imgs/thumbs/y3p2.jpg)
+// 	background-size: cover
+// 	background-position: center
+// 	margin-bottom: 32px
+//
+// 	.t1
+// 		color: red
+//
+// 	&:hover .card-pers-title
+// 		transition: 0ms
+// 		opacity: 1
+// 		// background: $blue
+//
+//
+// .card-pers-y3p1
+// 	position: relative
+// 	width: 100%
+// 	max-width: 400px
+// 	background: url(/assets/imgs/thumbs/y3p1.jpg)
+// 	background-size: cover
+// 	background-position: center
+// 	margin-bottom: 32px
+//
+// 	.t1
+// 		color: red
+//
+// 	&:hover .card-pers-title
+// 		transition: 0ms
+// 		opacity: 1
+// 		// background: $orange
+//
+//
+// .card-pers-y3diss
+// 	position: relative
+// 	width: 100%
+// 	max-width: 400px
+// 	background: url(/assets/imgs/thumbs/y3diss.png)
+// 	background-size: cover
+// 	background-position: center
+// 	margin-bottom: 32px
+//
+// 	.t1
+// 		color: red
+//
+// 	&:hover .card-pers-title
+// 		transition: 0ms
+// 		opacity: 1
+// 		// background: $citrus
+//
+// @media (max-width: 640px)
+// 	.card-pers-title
+// 		// align-items: flex-start
+// 		opacity: 1
+//
+// 		span
+// 			// background: rgba(0, 0, 0, 0.6)
+// 			background: rgba(255, 255, 255, 0.6)
+// 			padding: 18px 0
+// 			width: 100%
+//
+// 			.t1, .t2
+// 				color: $dark
+// 				opacity: 0.9
+//
+// 	.card-pers-y3p2:hover,
+// 	.card-pers-y3p1:hover,
+// 	.card-pers-y3diss:hover
+//
+// 		.card-pers-title
+// 			background: rgba(255, 255, 255, 0.6)
+//
+// 		span
+// 			background: transparent

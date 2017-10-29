@@ -3,7 +3,8 @@ layout: projects
 title:  "Frame Works Gallery"
 date:   2015-02-04
 location: Scarborough
-categories: projects
+categories: personal
+thumbnail: y3p1.jpg
 headline: Frame Works Gallery
 tagline: Dynamic work and gallery spaces for local artists in Scarborough
 ---

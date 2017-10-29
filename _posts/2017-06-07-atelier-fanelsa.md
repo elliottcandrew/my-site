@@ -1,6 +1,6 @@
 ---
 layout: projects
-title:  "Freespace Workshop"
+title:  "Atelier Fanelsa"
 date:   2015-05-20
 location: Leeds
 categories: professional

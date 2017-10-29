@@ -12,16 +12,12 @@
 		width: inherit
 		left: 50%
 		z-index: 2
-		background: pink
 
 		h2
 			position: fixed
 			top: 45px
 			transform: translateX(-50%) translateY(-50%)
 			margin: 0
-
-		p
-			width: calc(100% - 16px)
 
 	.column-end
 		height: 30vh
@@ -32,4 +28,15 @@
 
 	@media (max-width: 640px)
 		.column-end
-			display: none
+			display: none 
+
+	// colour sequence for title overlays
+	// .col1, .col2, .col3
+		a:nth-child(n+1)
+			color: $yella
+
+		// a:nth-child(2n+1)
+			color: pink
+
+		// a:nth-child(3n+1)
+			color: red

@@ -1,6 +1,44 @@
 .card-prof
+	position: relative
 	margin-bottom: 32px
 
+	&:hover .card-prof-overlay
+		opacity: 1
+		transition: 0ms
+
 	img
-		max-width: 100%
+		width: 100%
+		height: auto
 		display: block
+
+	.card-prof-overlay
+		display: flex
+		position: absolute
+
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+
+		margin: 16px 28px
+
+		opacity: 0
+
+		transition: 250ms ease-in-out
+
+	.title-wrap
+		flex: 1
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		color: red
+
+	// same as .t1
+	[class*="word"]
+	  font-family: Catamaran, sans-serif
+	  font-size: 30px
+	  font-style: normal
+	  font-weight: 700
+
+	[class*="word"]:nth-child(even)
+		text-align: right
