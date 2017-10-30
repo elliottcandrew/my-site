@@ -1,3 +1,3 @@
 {% for post in site.posts %}
 {% if post.categories contains 'blog' %}<a href="{{post.url}}"><div class="card-blog"><img class=".pic" src="/assets/imgs/thumbs/{{post.thumbnail}}"/><div class="card-blog-overlay"><div class="card-blog-title"><h2><strong>{{post.headline}}</strong></h2><div class="p2">{{post.tagline}}</div></div></div></div></a>{% endif %}
-{% endfor %}<a href="/fieldwork"><div class="textlink">See all blog entries</div></a>
+{% endfor %}
