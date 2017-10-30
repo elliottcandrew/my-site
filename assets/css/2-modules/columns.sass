@@ -28,15 +28,15 @@
 
 	@media (max-width: 640px)
 		.column-end
-			display: none 
+			display: none
 
 	// colour sequence for title overlays
-	// .col1, .col2, .col3
-		a:nth-child(n+1)
-			color: $yella
+	.col3
+		a:nth-child(3n+1) .card-blog-overlay
+			background-color: $yella
 
-		// a:nth-child(2n+1)
-			color: pink
+		a:nth-child(3n+2) .card-blog-overlay
+			background-color: pink
 
-		// a:nth-child(3n+1)
-			color: red
+		a:nth-child(3n+3) .card-blog-overlay
+			background-color: #6b63df

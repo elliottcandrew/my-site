@@ -26,11 +26,11 @@ a(href="{{post.url}}")
 	.card-blog
 
 		img(src="/assets/imgs/thumbs/{{post.thumbnail}}", class=".pic")
-		.clear
-			h4
-				strong {{post.headline}}
-			.p2 {{post.date | date: "%b %d %Y"}} - {{post.location}}
-			//- p {{post.excerpt | remove: '<h5>' | remove: '</h5>' | remove: '<h6>' | remove: '</h6>' | remove: '<p>' | remove: '</p>'}}
+		.card-blog-overlay
+			.card-blog-title
+				h2
+					strong {{post.headline}}
+				.p2 {{post.tagline}}
 
 | {% endif %}
 | {% endfor %}
