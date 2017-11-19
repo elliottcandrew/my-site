@@ -1,6 +1,6 @@
 ---
 layout: projects
-title:  "Make City Theater Karlshorst"
+title:  "Make City"
 date:   2017-09-11
 location: Berlin
 categories: professional
