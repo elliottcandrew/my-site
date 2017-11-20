@@ -4,7 +4,7 @@
 a(href="{{post.url}}")
 	.card-blog
 
-		img(src="/assets/imgs/thumbs/{{post.thumbnail}}", class=".pic")
+		.pic(style={'background-image': 'url(/assets/imgs/thumbs/{{post.thumbnail}})'})
 		.card-blog-overlay
 			.card-blog-title
 				h2
@@ -13,6 +13,9 @@ a(href="{{post.url}}")
 
 | {% endif %}
 | {% endfor %}
+
+.card-blog
+	.pic-full(style={'background-image': 'url(http://eandrew.xyz/assets/imgs/thumbs/tempelhof-easy.jpg)'})
 //- 
 //- a(href="/fieldwork")
 //- 	.textlink See all blog entries

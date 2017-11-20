@@ -1,70 +1,62 @@
+// alternating sides
+a:nth-child(2n+1) .card-blog
+	flex-direction: row
+
+a:nth-child(2n+2) .card-blog
+	flex-direction: row-reverse
+
 .card-blog
 	display: flex
-	position: relative
+	justify-content: space-between
 	margin-bottom: 32px
+
 	transition: all 250ms ease-in-out
 
 	&:hover
-		img
-			opacity: 0
-			transition: 0ms
-
-		.card-blog-overlay
-			border: solid $red 2px
-			transition: 0ms
-
 		.card-blog-title
-			opacity: 1
-			transition: 0ms
+			text-decoration: underline
+		.pic, .pic-full
+			filter: grayscale(100%) sepia(80%) hue-rotate(-50deg) brightness(88%)
 
-	img
-		width: 100%
-		height: 100%
+	.pic, .pic-full
+		position: relative
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+
 		opacity: .95
 		filter: grayscale(100%)
 
+		&:after
+			content: ""
+			display: block
+
+	.pic
+		width: calc(50% - 16px)
+
+		&:after
+			padding-bottom: 100%
+
+	.pic-full
+		width: 100%
+
+		&:after
+			padding-bottom: 50%
+
 	.card-blog-overlay
-		flex: 1
-		display: flex
-		position: absolute
-
-		top: 0
-		right: 0
-		bottom: 0
-		left: 0
-
-		// border: solid $red 2px
-
-		margin: 2% 2% 2% 2%
-
-		opacity: 1
-
-		transition: 250ms ease-in-out
-
-		// background-color: white
+		width: calc(50% - 16px)
+		// background: pink
 
 	.card-blog-title
-		display: flex
-		flex: 1
-
-		margin: 25px
-
-		flex-direction: column
-		align-items: center
-		align-content: center
-		justify-content: center
-		text-align: center
-		letter-spacing: .2ex
 		color: $red
-		opacity: 0
+		margin: 0
 
-	h4
-		margin-top: 6px
+	h2
+		margin: 0
 		display: inline
 
-
 	.p2
-		margin-top: -2px
+		margin: 0
 
 // colour sequence for title overlays
 // .col3
