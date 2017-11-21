@@ -6,36 +6,25 @@
 
 	.container
 		display: flex
-		position: relative
-		backface-visibility: hidden
-		will-change: overflow
-		height: 100vh
-		overflow: auto
 
-		@media (max-width: 640px)
-			display: block
-
-	// internal scrolling element
-
-	.container-scroll
-		position: absolute
-		top: 0px
-		bottom: 0px
-		left: 0px
-		right: -32px
-		overflow: auto
 
 	// columns
 
 	.col1, .col2, .col3
 		width: calc(100% - 16px)
-		position: relative
-		overflow: hidden
-		flex: 1
 		margin-right: 48px
 
 		&:last-child
 			margin-right: 0
 
-		@media (max-width: 640px)
-			overflow: auto
+	// .col1
+		position: sticky
+		top: 0
+
+	@media (max-width: 640px)
+		.container
+			display: block
+
+		.col1, .col2, .col3
+			width: 100%
+			margin-right: 0
