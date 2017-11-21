@@ -1,49 +1,41 @@
 // HOME
 
-// scroll test
+.home-sections
 
-.container
-	display: flex
-	position: relative
-	backface-visibility: hidden
-	will-change: overflow
-	height: 100vh
-	overflow: auto
+	// scroll test
 
-// internal scrolling element
+	.container
+		display: flex
+		position: relative
+		backface-visibility: hidden
+		will-change: overflow
+		height: 100vh
+		overflow: auto
 
-.container-scroll
-	position: absolute
-	top: 0px
-	bottom: 0px
-	left: 0px
-	right: -32px
-	overflow: auto
-
-@media (max-width: 640px)
-	.home-sections
-		.container
-			height: calc(100vh - 32px)
-
-// columns
-
-.col1, .col2, .col3
-	width: calc(100% - 16px)
-	position: relative
-	overflow: hidden
-	flex: 1
-	margin-right: 48px
-
-	&:last-child
-		margin-right: 0
-
-// change columns to a single column
-
-@media (max-width: 640px)
-	.home-sections
-		.container
+		@media (max-width: 640px)
 			display: block
 
-		.col1
-			max-width: 100%
+	// internal scrolling element
+
+	.container-scroll
+		position: absolute
+		top: 0px
+		bottom: 0px
+		left: 0px
+		right: -32px
+		overflow: auto
+
+	// columns
+
+	.col1, .col2, .col3
+		width: calc(100% - 16px)
+		position: relative
+		overflow: hidden
+		flex: 1
+		margin-right: 48px
+
+		&:last-child
 			margin-right: 0
+
+		@media (max-width: 640px)
+			overflow: auto
