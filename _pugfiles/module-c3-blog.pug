@@ -7,9 +7,13 @@ a(href="{{post.url}}")
 		.pic(style={'background-image': 'url(/assets/imgs/thumbs/{{post.thumbnail}})'})
 		.card-blog-overlay
 			.card-blog-title
-				h2
-					strong {{post.headline}}
-				.p2 {{post.tagline}}
+				span
+					h2
+						strong {{post.headline}}
+					.p2 {{post.tagline}}
+				span
+					.p1 {{post.location}}
+					.p1 {{post.date | date: '%m.%d.%Y'}}
 
 | {% endif %}
 | {% endfor %}

@@ -6,57 +6,64 @@ a:nth-child(2n+2) .card-blog
 	flex-direction: row-reverse
 
 .card-blog
+	width: calc(100% - 16px)
+	// -16px to account for hidden overscroll
 	display: flex
 	justify-content: space-between
 	margin-bottom: 32px
-
-	transition: all 250ms ease-in-out
+	transition: 250ms ease-in-out
+	// why is this not working?
 
 	&:hover
 		.card-blog-title
-			text-decoration: underline
+			color: $red
+			transition: 0ms
 		.pic, .pic-full
-			filter: grayscale(100%) sepia(80%) hue-rotate(-50deg) brightness(88%)
+			filter: grayscale(100%) sepia(80%) hue-rotate(-44deg) brightness(90%) contrast(115%)
+			transition: 0ms
 
 	.pic, .pic-full
 		position: relative
 		background-repeat: no-repeat
 		background-position: center
 		background-size: cover
-
 		opacity: .95
 		filter: grayscale(100%)
-
 		&:after
 			content: ""
 			display: block
 
 	.pic
-		width: calc(50% - 16px)
-
+		width: calc(50% - 12px)
 		&:after
 			padding-bottom: 100%
 
 	.pic-full
 		width: 100%
-
 		&:after
 			padding-bottom: 50%
 
 	.card-blog-overlay
-		width: calc(50% - 16px)
-		// background: pink
+		width: calc(50% - 12px)
 
 	.card-blog-title
-		color: $red
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+
+		span:nth-child(2)
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			margin-bottom: -.4ex
+
+	h2, .p2
 		margin: 0
 
 	h2
-		margin: 0
-		display: inline
-
-	.p2
-		margin: 0
+		margin-top: -.6ex
+		margin-bottom: 12px
 
 // colour sequence for title overlays
 // .col3
