@@ -1,16 +1,17 @@
 var gulp        = require('gulp'),
-  browserSync = require('browser-sync'),
-  hygienist   = require('hygienist-middleware'),
-  sass        = require('gulp-sass'),
-  prefix      = require('gulp-autoprefixer'),
-  minifycss   = require('gulp-minify-css'),
-  jshint      = require('gulp-jshint'),
-  concat      = require('gulp-concat'),
-  uglify      = require('gulp-uglify'),
-  rename      = require('gulp-rename'),
-  cp          = require('child_process'),
-  pug         = require('gulp-pug'),
-  bourbon     = require('bourbon').includePaths;
+  browserSync   = require('browser-sync'),
+  hygienist     = require('hygienist-middleware'),
+  sass          = require('gulp-sass'),
+  prefix        = require('gulp-autoprefixer'),
+  minifycss     = require('gulp-minify-css'),
+  jshint        = require('gulp-jshint'),
+  coffeescript  = require('gulp-coffeescript'),
+  concat        = require('gulp-concat'),
+  uglify        = require('gulp-uglify'),
+  rename        = require('gulp-rename'),
+  cp            = require('child_process'),
+  pug           = require('gulp-pug'),
+  bourbon       = require('bourbon').includePaths;
 
 var messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -77,6 +78,13 @@ gulp.task('pug', function() {
   .pipe(gulp.dest('_includes'));
 });
 
+/* Compile coffeescript */
+
+gulp.task('coffee', function() {
+  gulp.src('assets/js/*.coffee')
+    .pipe(coffeescript({bare: true}))
+    .pipe(gulp.dest('assets/js'));
+});
 
 /*
 ** JS Task
