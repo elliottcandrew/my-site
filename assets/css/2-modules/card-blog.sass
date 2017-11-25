@@ -9,7 +9,6 @@ a:nth-child(2n+2) .card-blog
 	display: flex
 	justify-content: space-between
 	margin-bottom: 32px
-	transition: 250ms ease-in-out
 	// why is this not working?
 
 	&:hover
@@ -27,6 +26,7 @@ a:nth-child(2n+2) .card-blog
 		background-size: cover
 		opacity: .95
 		filter: grayscale(100%)
+		transition: 250ms ease-in-out
 		&:after
 			content: ""
 			display: block
@@ -49,6 +49,7 @@ a:nth-child(2n+2) .card-blog
 		display: flex
 		flex-direction: column
 		justify-content: space-between
+		transition: 250ms ease-in-out
 
 		span:nth-child(2)
 			display: flex
