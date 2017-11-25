@@ -1,23 +1,6 @@
-// $('.loop1').stickyTopBottom
-//   container: $('.col1')
-
-// $('.loop2').stickyTopBottom
-//   container: $('.col2')
-//
-// $('.loop3').stickyTopBottom
-//   container: $('.col3')
-
-// $('.loop3')
-//   .sticky({
-//     context: '.col3'
-//   });
-
 var sticky1Height = $('#sticky1');
 var sticky2Height = $('#sticky2');
 var sticky3Height = $('#sticky3');
-// var viewportHeight = setTimeout(function(){
-//   $(window).height();
-// }, pause);
 var viewportHeight = $(window).height();
 var resizeListener; /* variable that will hold a reference to setTimeout() function */
 var pause = 500; /* the amount of time to wait after the resizing has finished before calling our function */
