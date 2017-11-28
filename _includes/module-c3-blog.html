@@ -1,3 +1,5 @@
 {% for post in site.posts %}
-{% if post.categories contains 'blog' %}<a href="{{post.url}}"><div class="card-blog"><div class="pic" style="background-image:url(/assets/imgs/thumbs/{{post.thumbnail}});"></div><div class="card-blog-overlay"><div class="card-blog-title"><span><h2><strong>{{post.headline}}</strong></h2><div class="p2">{{post.tagline}}</div></span><span><div class="p1">{{post.location}}</div><div class="p1">{{post.date | date: '%m.%d.%Y'}}</div></span></div></div></div></a>{% endif %}
-{% endfor %}<div class="card-blog"><div class="pic-full" style="background-image:url(http://eandrew.xyz/assets/imgs/thumbs/tempelhof-easy.jpg);"></div></div>
+{% if post.categories contains 'blog' %}
+{% if post.categories contains 'image' %}<a href="{{post.url}}"><div class="card-blog"><div class="pic-full" style="background-image:url(/assets/imgs/thumbs/{{post.thumbnail}});"></div></div></a>{% else %}<a href="{{post.url}}"><div class="card-blog"><div class="pic" style="background-image:url(/assets/imgs/thumbs/{{post.thumbnail}});"></div><div class="card-blog-overlay"><div class="card-blog-title"><span><h2><strong>{{post.headline}}</strong></h2><div class="p2">{{post.tagline}}</div></span><span><div class="p1">{{post.location}}</div><div class="p1">{{post.date | date: '%d.%m.%Y'}}</div></span></div></div></div></a>{% endif %}
+{% endif %}
+{% endfor %}

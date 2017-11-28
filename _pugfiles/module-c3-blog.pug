@@ -1,5 +1,12 @@
 | {% for post in site.posts %}
 | {% if post.categories contains 'blog' %}
+| {% if post.categories contains 'image' %}
+
+a(href="{{post.url}}")
+	.card-blog
+		.pic-full(style={'background-image': 'url(/assets/imgs/thumbs/{{post.thumbnail}})'})
+
+| {% else %}
 
 a(href="{{post.url}}")
 	.card-blog
@@ -13,13 +20,24 @@ a(href="{{post.url}}")
 					.p2 {{post.tagline}}
 				span
 					.p1 {{post.location}}
-					.p1 {{post.date | date: '%m.%d.%Y'}}
-
+					.p1 {{post.date | date: '%d.%m.%Y'}}
+					
+| {% endif %}
 | {% endif %}
 | {% endfor %}
 
-.card-blog
-	.pic-full(style={'background-image': 'url(http://eandrew.xyz/assets/imgs/thumbs/tempelhof-easy.jpg)'})
+//- | {% for image in site.static_files %}
+//- |	{% if image.path contains 'assets/imgs/thumbs' %}
+//- 
+//- a(href="{{site.baseurl}}{{image.path}}")
+//- 	.card-blog
+//- 		.pic-full(style={'background-image': 'url({{site.baseurl}}{{image.path}})'})
+//- 
+//- |{% endif %}
+//- |{% endfor %}
+
+//- .card-blog
+//- 	.pic-full(style={'background-image': 'url(http://eandrew.xyz/assets/imgs/thumbs/tempelhof-easy.jpg)'})
 //- 
 //- a(href="/fieldwork")
 //- 	.textlink See all blog entries

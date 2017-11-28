@@ -78,13 +78,13 @@ gulp.task('pug', function() {
   .pipe(gulp.dest('_includes'));
 });
 
-/* Compile coffeescript */
-
-gulp.task('coffee', function() {
-  gulp.src('assets/js/*.coffee')
-    .pipe(coffeescript({bare: true}))
-    .pipe(gulp.dest('assets/js'));
-});
+// /* Compile coffeescript */
+//
+// gulp.task('coffee', function() {
+//   gulp.src('assets/js/*.coffee')
+//     .pipe(coffeescript({bare: true}))
+//     .pipe(gulp.dest('assets/js'));
+// });
 
 /*
 ** JS Task
@@ -110,7 +110,7 @@ gulp.task('watch', function () {
   gulp.watch('assets/js/*.js', ['js']).on("change", browserSync.reload);
   gulp.watch('assets/css/*/*.sass', ['sass']);
   //gulp.watch('assets/css/*/*.scss', ['scss']);
-  gulp.watch(['!_site/**/*', '*/*.html', '_layouts/*.html', '_posts/*', '_includes/*'], ['jekyll-rebuild']);
+  gulp.watch(['!_site/**/*', '*/*.html', '_layouts/*.html', '_posts/*', '*/_posts/*', '_includes/*'], ['jekyll-rebuild']);
   gulp.watch('_pugfiles/*.pug', ['pug']);
 });
 
