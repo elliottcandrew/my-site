@@ -2,7 +2,19 @@
 
 .home-sections
 
-	// scroll test
+	.side-left, .side-right
+		width: 200px
+
+	.side-left
+		margin: 90px 48px 0 12px
+
+	.side-right
+		margin: 90px 12px 0 48px
+		text-align: right
+
+	.side-inner
+		width: 200px
+		position: fixed
 
 	.container
 		display: flex
@@ -10,15 +22,19 @@
 
 	// columns
 
-	.col1, .col2, .col3
+	.col1, .col2
 		width: calc(100% - 16px)
 		margin-right: 48px
 
-		&:last-child
-			margin-right: 0
+	.col3
+		width: calc(100% - 16px)
+		margin-right: 0
 
 	@media (max-width: 640px)
-		.container
+		.side-left, .side-right
+			display: none
+
+		.columns
 			display: block
 
 		.col1, .col2, .col3
