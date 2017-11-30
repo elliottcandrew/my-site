@@ -1,14 +1,15 @@
-// MAIN COLUMNS
+// CENTRAL COLUMNS
+
 .columns
 	flex: 1
-	display: flex
+	display: block
+	max-width: 1200px
+
+	@media (min-width: $bp-med)
+		display: flex
 
 	.content
-		// position: sticky
-		// top: 12px
 		margin-top: 90px
-		// margin-bottom: 12px
-
 		width: 100%
 		color: $dark
 
@@ -21,13 +22,15 @@
 	#sticky3
 		position: sticky
 
-
 	.col-header
-		position: relative
-		// height: 90px
-		width: inherit
-		left: 50%
-		z-index: 2
+		display: none
+
+		@media (min-width: $bp-med)
+			display: block
+			position: relative
+			width: inherit
+			left: 50%
+			z-index: 2
 
 		h2
 			position: fixed
@@ -37,9 +40,3 @@
 
 	.textlink
 		padding-bottom: 32px
-
-	@media (max-width:640px)
-		.content
-			width: 100%
-		.col-header
-			display: none

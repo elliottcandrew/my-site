@@ -1,42 +1,64 @@
 // HOME
 
-.home-sections
+.container
+	display: flex
+	justify-content: space-between
+
+	// side header
 
 	.side-left, .side-right
-		width: 200px
+		display: none
+		@media (min-width: $bp-large)
+			display: block
+			width: 12vw
 
 	.side-left
-		margin: 90px 48px 0 12px
+		@media (min-width: $bp-large)
+			padding-left: 12px
+			padding-right: 32px
+		@media (min-width: $bp-xl)
+			padding-left: 24px
+			padding-right: 32px
+		@media (min-width: $bp-2xl)
+			padding-left: 24px
+			padding-right: 60px
 
 	.side-right
-		margin: 90px 12px 0 48px
-		text-align: right
+		// @media (max-width: $bp-large2) and (min-width: $bp-large)
+		// 	padding-left: 12px
+		// 	padding-right: 32px
+		// 	position: fixed
+		// 	top: 200px
+		// 	color: pink
+		@media (min-width: $bp-large)
+			padding-left: 32px
+			padding-right: 12px
+		@media (min-width: $bp-xl)
+			text-align: right
+			padding-left: 32px
+			padding-right: 24px
+		@media (min-width: $bp-2xl)
+			padding-left: 60px
+			padding-right: 24px
 
 	.side-inner
-		width: 200px
+		margin-top: 90px
+		width: inherit
 		position: fixed
-
-	.container
-		display: flex
-
 
 	// columns
 
+	.col1, .col2, .col3
+		width: 100%
+		min-width: 150px
+
 	.col1, .col2
-		width: calc(100% - 16px)
-		margin-right: 48px
+		@include mr-home
 
 	.col3
-		width: calc(100% - 16px)
 		margin-right: 0
 
-	@media (max-width: 640px)
-		.side-left, .side-right
-			display: none
+	// card layout
 
-		.columns
-			display: block
-
-		.col1, .col2, .col3
-			width: 100%
-			margin-right: 0
+	.card-prof, .card-pers, .card-blog
+		@include mb-home

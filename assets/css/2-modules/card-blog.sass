@@ -5,18 +5,35 @@ a:nth-child(2n+1) .card-blog
 a:nth-child(2n+2) .card-blog
 	flex-direction: row-reverse
 
+#border
+	border: solid $dark 1px
+
 .card-blog
 	display: flex
 	justify-content: space-between
-	margin-bottom: 32px
 
 	&:hover
 		.card-blog-title
-			color: red
+			text-decoration: line-through
 			transition: 0ms
 		.pic, .pic-full
 			// filter: grayscale(100%) sepia(80%) hue-rotate(-44deg) brightness(90%) contrast(115%)
 			transition: 0ms
+		.pic
+			border: solid $dark 1px
+			background-image: url(/assets/imgs/thumbs/cross.svg) !important
+			transition: 0ms
+		// .cross
+			width: 100%
+			position: absolute
+			&:after
+				padding-bottom: 100%
+				content: ""
+				position: absolute
+				border-top: 1px solid  black
+				width: 141.5%
+				transform: rotate(45deg) translate(0, -1px)
+				transform-origin: 0 0
 
 	.pic, .pic-full
 		position: relative
@@ -24,24 +41,28 @@ a:nth-child(2n+2) .card-blog
 		background-position: center
 		background-size: cover
 		opacity: .95
-		transition: 250ms ease-in-out
+		// transition: 250ms ease-in-out
 		&:after
 			content: ""
 			display: block
 
 	.pic
 		width: calc(50% - 12px)
-		// filter: grayscale(100%)
+		margin: 6px
+		filter: grayscale(100%) contrast(110%)
+		border: solid $dark 1px
 		&:after
 			padding-bottom: 100%
 
 	.pic-full
 		width: 100%
+		transition: 250ms ease-in-out
 		&:after
 			padding-bottom: 50%
 
 	.card-blog-overlay
 		width: calc(50% - 12px)
+		margin: 6px
 
 	.card-blog-title
 		height: 100%
@@ -60,17 +81,31 @@ a:nth-child(2n+2) .card-blog
 		margin: 0
 
 	h2
-		margin-top: -.6ex
+		// margin-top: -.6ex
 		margin-bottom: 12px
 
-// colour sequence for title overlays
-// .col3
+	@media (max-width: 1500px)
+		margin-bottom: 2em
 
-		a:nth-child(3n+1) .card-blog-overlay
-			background-color: $yella
+		.card-blog-title
+			.p1:first-child
+				display: none
 
-		a:nth-child(3n+2) .card-blog-overlay
-			background-color: pink
+	@media (max-width: 1300px)
+		margin-bottom: 1.6em
+		span:nth-child(2)
+			display: none !important
 
-		a:nth-child(3n+3) .card-blog-overlay
-			background-color: #6b63df
+	@media (max-width: 1150px)
+		.pic
+			width: 100%
+			&:after
+				padding-bottom: 50%
+		.card-blog-overlay
+			position: absolute
+			display: none
+		h2
+			margin: 10px
+
+		.p2
+			display: none

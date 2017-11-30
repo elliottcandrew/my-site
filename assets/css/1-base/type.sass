@@ -11,12 +11,13 @@ h1
 
 h2
   font-family: Catamaran, sans-serif
-  font-size: 18px
+  font-size: 14px
+  line-height: 1.25
   font-style: normal
   font-weight: 700
 
-  @media (max-width: 1300px)
-    font-size: 14px
+  @media (min-width: $bp-xl)
+    font-size: 18px
 
 h3
   margin: 0
@@ -30,9 +31,12 @@ h3
 h4
   margin: 0
   font-family: Fira Mono, monospace
-  font-size: 16px
+  font-size: 12px
   line-height: 1.6
   font-weight: 500
+
+  @media (min-width: $bp-2xl)
+    font-size: 16px
 
 // project card
 
@@ -50,7 +54,7 @@ h4
   font-style: normal
   font-weight: 700
 
-  @media (max-width: 1300px)
+  @media (max-width: 1500px)
     font-size: 20px
 
 .t2
@@ -62,21 +66,24 @@ h4
 
 // paragraph styles
 
-.p1
+.p1, .p2
   // margin-left: 1px
   font-family: Fira Mono, monospace
   font-size: 12px
   line-height: 1.1
   font-weight: 400
 
-.p2
-  font-family: Catamaran, sans-serif
-  font-size: 14px
+  @media (max-width: 1500px)
+    font-size: 11px
+
+// .p2
+  font-family: Fira Mono, monospace
+  font-size: 12px
   font-style: normal
   line-height: 1.4
   font-weight: 300
 
-  @media (max-width: 1300px)
+  @media (max-width: 1500px)
     font-size: 11px
 
 p

@@ -18,19 +18,19 @@ $(document).ready(function() {
   if ((viewportHeight - sticky1Height.height()) < 102 /* 90 + 12 */){
     $('#sticky1').css({ top: (viewportHeight - sticky1Height.height()) - 12 }); /* set top css as difference between div height and viewport height */
   } else {
-    $('#sticky1').css({ top: 90 });
+    $('#sticky1').css({ top: 60 });
   }
 
   if ((viewportHeight - sticky2Height.height()) < 102){
     $('#sticky2').css({ top: (viewportHeight - sticky2Height.height()) - 12 });
   } else {
-    $('#sticky2').css({ top: 90 });
+    $('#sticky2').css({ top: 60 });
   }
 
   if ((viewportHeight - sticky3Height.height()) < 102){
     $('#sticky3').css({ top: (viewportHeight - sticky3Height.height()) - 12 });
   } else {
-    $('#sticky3').css({ top: 90 });
+    $('#sticky3').css({ top: 60 });
   }
 
   $(window).resize(function(){
@@ -40,19 +40,19 @@ $(document).ready(function() {
       if ((viewportHeight - sticky1Height.height()) < 102){
         $('#sticky1').css({ top: (viewportHeight - sticky1Height.height()) - 12 }); /* set top css as difference between div height and viewport height */
       } else {
-        $('#sticky1').css({ top: 90 });
+        $('#sticky1').css({ top: 60 });
       }
 
       if ((viewportHeight - sticky2Height.height()) < 102){
         $('#sticky2').css({ top: (viewportHeight - sticky2Height.height()) - 12 });
       } else {
-        $('#sticky2').css({ top: 90 });
+        $('#sticky2').css({ top: 60 });
       }
 
       if ((viewportHeight - sticky3Height.height()) < 102){
         $('#sticky3').css({ top: (viewportHeight - sticky3Height.height()) - 12 });
       } else {
-        $('#sticky3').css({ top: 90 });
+        $('#sticky3').css({ top: 60 });
       }
     }, pause);
   });

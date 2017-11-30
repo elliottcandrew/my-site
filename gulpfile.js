@@ -110,7 +110,7 @@ gulp.task('watch', function () {
   gulp.watch('assets/js/*.js', ['js']).on("change", browserSync.reload);
   gulp.watch('assets/css/*/*.sass', ['sass']);
   //gulp.watch('assets/css/*/*.scss', ['scss']);
-  gulp.watch(['!_site/**/*', '*/*.html', '_layouts/*.html', '_posts/*', '*/_posts/*', '_includes/*'], ['jekyll-rebuild']);
+  gulp.watch(['!_site/**/*', '*/*.html', '_layouts/*.html', '_posts/*', '*/_posts/*', '_includes/*', 'assets/imgs/*/*.svg'], ['jekyll-rebuild']);
   gulp.watch('_pugfiles/*.pug', ['pug']);
 });
 

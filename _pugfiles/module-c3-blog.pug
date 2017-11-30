@@ -9,9 +9,10 @@ a(href="{{post.url}}")
 | {% else %}
 
 a(href="{{post.url}}")
-	.card-blog
+	.card-blog(id="border")
 
 		.pic(style={'background-image': 'url(/assets/imgs/thumbs/{{post.thumbnail}})'})
+			.cross
 		.card-blog-overlay
 			.card-blog-title
 				span
