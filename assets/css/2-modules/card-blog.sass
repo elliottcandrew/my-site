@@ -1,11 +1,19 @@
 // alternating sides
-a:nth-child(2n+1) .card-blog
-	flex-direction: row
+a:nth-child(2n+1)
+	.card-blog
+		flex-direction: row
+	.card-blog-overlay
+		// border-left: none
+		border-left: solid $dark 1px
 
-a:nth-child(2n+2) .card-blog
-	flex-direction: row-reverse
+a:nth-child(2n+2)
+	.card-blog
+		flex-direction: row-reverse
+	.card-blog-overlay
+		// border-right: none
+		border-right: solid $dark 1px
 
-#border
+// #border
 	border: solid $dark 1px
 
 .card-blog
@@ -20,20 +28,9 @@ a:nth-child(2n+2) .card-blog
 			// filter: grayscale(100%) sepia(80%) hue-rotate(-44deg) brightness(90%) contrast(115%)
 			transition: 0ms
 		.pic
-			border: solid $dark 1px
+			// border: solid $dark 1px
 			background-image: url(/assets/imgs/thumbs/cross.svg) !important
 			transition: 0ms
-		// .cross
-			width: 100%
-			position: absolute
-			&:after
-				padding-bottom: 100%
-				content: ""
-				position: absolute
-				border-top: 1px solid  black
-				width: 141.5%
-				transform: rotate(45deg) translate(0, -1px)
-				transform-origin: 0 0
 
 	.pic, .pic-full
 		position: relative
@@ -47,10 +44,9 @@ a:nth-child(2n+2) .card-blog
 			display: block
 
 	.pic
-		width: calc(50% - 12px)
-		margin: 6px
+		width: 50%
 		filter: grayscale(100%) contrast(110%)
-		border: solid $dark 1px
+		// border: solid $dark 1px
 		&:after
 			padding-bottom: 100%
 
@@ -61,12 +57,14 @@ a:nth-child(2n+2) .card-blog
 			padding-bottom: 50%
 
 	.card-blog-overlay
-		width: calc(50% - 12px)
-		margin: 6px
+		width: calc(50% - 24px)
+		padding: 12px
+		// border: solid $dark 1px
+		// background: $silver
 
 	.card-blog-title
-		height: 100%
 		display: flex
+		height: 100%
 		flex-direction: column
 		justify-content: space-between
 		transition: 250ms ease-in-out
