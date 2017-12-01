@@ -53,8 +53,8 @@
 		img
 			width: 6vw
 			position: fixed
-			top: 90px
-			right: 4vw
+			top: 89px // to account for visual kerning
+			right: 16px
 			&:after
 				content: ""
 				display: block
@@ -85,6 +85,9 @@
 	.col1, .col2, .col3
 		width: 100%
 		min-width: 150px
+
+	// .col3
+		width: 70%
 
 	.col1, .col2
 		@include mr-home
