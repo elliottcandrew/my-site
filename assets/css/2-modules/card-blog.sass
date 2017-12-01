@@ -4,21 +4,22 @@ a:nth-child(2n+1)
 		flex-direction: row
 	.card-blog-overlay
 		// border-left: none
-		border-left: solid $dark 1px
+		// border-left: solid $dark 1px
 
 a:nth-child(2n+2)
 	.card-blog
 		flex-direction: row-reverse
 	.card-blog-overlay
 		// border-right: none
-		border-right: solid $dark 1px
+		// border-right: solid $dark 1px
 
 // #border
-	border: solid $dark 1px
+	border: solid white 1px
 
 .card-blog
 	display: flex
 	justify-content: space-between
+	background: white
 
 	&:hover
 		.card-blog-title
@@ -28,6 +29,7 @@ a:nth-child(2n+2)
 			// filter: grayscale(100%) sepia(80%) hue-rotate(-44deg) brightness(90%) contrast(115%)
 			transition: 0ms
 		.pic
+			padding: 0
 			// border: solid $dark 1px
 			background-image: url(/assets/imgs/thumbs/cross.svg) !important
 			transition: 0ms
@@ -46,7 +48,8 @@ a:nth-child(2n+2)
 	.pic
 		width: 50%
 		filter: grayscale(100%) contrast(110%)
-		// border: solid $dark 1px
+		// border: solid white 1px
+		// padding: 1px
 		&:after
 			padding-bottom: 100%
 
@@ -60,7 +63,6 @@ a:nth-child(2n+2)
 		width: calc(50% - 24px)
 		padding: 12px
 		// border: solid $dark 1px
-		// background: $silver
 
 	.card-blog-title
 		display: flex
