@@ -7,21 +7,22 @@
 	// side header
 
 	.side-left, .side-right
+		// background: lightgrey
 		display: none
 		@media (min-width: $bp-large)
-			display: block
+			display: flex
 			width: 12vw
 
 	.side-left
-		@media (min-width: $bp-large)
-			padding-left: 12px
-			padding-right: 32px
-		@media (min-width: $bp-xl)
-			padding-left: 24px
-			padding-right: 32px
-		@media (min-width: $bp-2xl)
-			padding-left: 24px
-			padding-right: 60px
+		// @media (min-width: $bp-large)
+		// 	padding-left: 12px
+		// 	padding-right: 32px
+		// @media (min-width: $bp-xl)
+		// 	padding-left: 24px
+		// 	padding-right: 32px
+		// @media (min-width: $bp-2xl)
+		// 	padding-left: 24px
+		// 	padding-right: 60px
 
 	.side-right
 		// @media (max-width: $bp-large2) and (min-width: $bp-large)
@@ -30,21 +31,36 @@
 		// 	position: fixed
 		// 	top: 200px
 		// 	color: pink
-		@media (min-width: $bp-large)
-			padding-left: 32px
-			padding-right: 12px
-		@media (min-width: $bp-xl)
-			text-align: right
-			padding-left: 32px
-			padding-right: 24px
-		@media (min-width: $bp-2xl)
-			padding-left: 60px
-			padding-right: 24px
+		// @media (min-width: $bp-large)
+		// 	padding-left: 32px
+		// 	padding-right: 12px
+		// @media (min-width: $bp-xl)
+		// 	// text-align: right
+		// 	padding-left: 32px
+		// 	padding-right: 24px
+		// @media (min-width: $bp-2xl)
+		// 	padding-left: 60px
+		// 	padding-right: 24px
 
 	.side-inner
-		margin-top: 90px
-		width: inherit
+		z-index: 4
+		width: auto
 		position: fixed
+
+		.span
+			display: inline-block
+
+	.side-right .side-inner
+		right: 28px
+		top: 50%
+		transform: rotate(270deg) translateX(50%)
+		transform-origin: top right
+
+	.side-left .side-inner
+		left: 28px
+		top: 50%
+		transform: rotate(90deg) translateX(-50%)
+		transform-origin: top left
 
 	// columns
 
@@ -60,6 +76,8 @@
 
 	// card layout
 
-	.card-prof, .card-pers, .card-blog
-		// border: solid $dark 1px
+	.card-prof, .card-pers
 		@include mb-home
+
+	.card-blog
+		margin-bottom: 2.5em
