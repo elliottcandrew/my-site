@@ -7,13 +7,21 @@
 	// side header
 
 	.side-left, .side-right
-		// background: lightgrey
 		display: none
 		@media (min-width: $bp-large)
 			display: flex
-			width: 12vw
+			width: 14vw
 
 	.side-left
+		// margin-right: 4em
+		span
+			top: -3px
+			position: fixed
+			width: inherit
+			margin-top: 90px
+			h4
+				margin-left: 16px
+				margin-right: 6em
 		// @media (min-width: $bp-large)
 		// 	padding-left: 12px
 		// 	padding-right: 32px
@@ -41,6 +49,16 @@
 		// @media (min-width: $bp-2xl)
 		// 	padding-left: 60px
 		// 	padding-right: 24px
+
+		img
+			width: 6vw
+			position: fixed
+			top: 90px
+			right: 4vw
+			&:after
+				content: ""
+				display: block
+				padding-bottom: 100%
 
 	.side-inner
 		z-index: 4
@@ -76,8 +94,5 @@
 
 	// card layout
 
-	.card-prof, .card-pers
+	.card-prof, .card-pers, .card-blog
 		@include mb-home
-
-	.card-blog
-		margin-bottom: 2.5em
