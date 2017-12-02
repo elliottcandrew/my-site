@@ -15,8 +15,12 @@ body
 	font-family: 'Catamaran', sans-serif
 	color: $dark
 
-// @media (max-width: 320px)
-// 	margin: 0 10px 0 10px
+	@media(max-width: $bp-med)
+		margin: 0 2.75vw
+	@media(max-width: $bp-large) and (min-width: $bp-med)
+		margin-right: 2.75vw
+	@media(max-width: $bp-large-2) and (min-width: $bp-large)
+		margin: 0 2.75vw
 
 // MIN/MAX PAGE SIZE
 

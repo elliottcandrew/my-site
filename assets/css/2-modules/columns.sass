@@ -5,13 +5,14 @@
 	display: block
 	// max-width: 1200px
 
-	@media (min-width: $bp-med)
+	@media (min-width: $bp-large)
 		display: flex
 
 	.content
-		margin-top: 90px
 		width: 100%
 		color: $dark
+		@media (min-width: $bp-large)
+			margin-top: 90px
 
 	#sticky1
 		position: sticky
@@ -25,7 +26,7 @@
 	.col-header
 		display: none
 
-		@media (min-width: $bp-med)
+		@media (min-width: $bp-large)
 			display: block
 			position: relative
 			width: inherit

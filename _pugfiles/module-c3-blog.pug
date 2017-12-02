@@ -16,12 +16,9 @@ a(href="{{post.url}}")
 		.card-blog-overlay
 			.card-blog-title
 				span
-					h2
-						strong {{post.headline}}
-					.p2 {{post.tagline}}
-				span
-					.p1 {{post.location}}
-					.p1 {{post.date | date: '%d.%m.%Y'}}
+					h2 {{post.headline}}
+					p {{post.tagline}}
+				.p-mono {% assign d = post.date | date: "%-d" %}{% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %}{{post.date | date: ' %b %Y'}}
 					
 | {% endif %}
 | {% endif %}

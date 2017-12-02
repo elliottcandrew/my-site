@@ -10,36 +10,36 @@ h1
   font-weight: 700
 
 h2
+  margin: 0
   font-family: Catamaran, sans-serif
-  font-size: 14px
+  font-size: 16px
   line-height: 1.25
   letter-spacing: .05em
   font-weight: 700
-
+  @media (min-width: $bp-large)
+    font-size: 2.1ex
   @media (min-width: $bp-xl)
-    font-size: 18px
+    font-size: 2.6ex
 
 h3
   margin: 0
-  font-family: Fira Mono, monospace
-  font-size: 12px
-  line-height: 1.1
-  text-decoration: underline
-  text-transform: uppercase
-  font-weight: 400
+  font-family: Catamaran, sans-serif
+  font-size: 16px
+  line-height: 1.25
+  letter-spacing: .05em
+  font-weight: 500
 
 h4
   margin: 0
   font-family: Fira Mono, monospace
-  font-size: 12px
-  line-height: 1.8
-  letter-spacing: .2em
-  // text-transform: uppercase
-
+  font-size: 1.8ex
+  line-height: 1.75
+  letter-spacing: .15em
   font-weight: 500
-
-  @media (min-width: $bp-2xl)
-    font-size: 12px
+  @media (min-width: $bp-large)
+    font-size: 1.8ex
+  @media (min-width: $bp-xl)
+    font-size: 2ex
 
 // project card
 
@@ -53,8 +53,7 @@ h4
 //same as .t1
 [class*="word"]
   font-family: Catamaran, sans-serif
-  font-size: 30px
-  font-style: normal
+  font-size: 4.5ex
   font-weight: 700
 
   @media (max-width: 1500px)
@@ -69,45 +68,27 @@ h4
 
 // paragraph styles
 
-.p1, .p2
-  // margin-left: 1px
+.p-mono
+  margin: 0
   font-family: Fira Mono, monospace
-  font-size: 12px
-  line-height: 1.4
+  font-size: 10px
+  line-height: 1.8
   font-weight: 400
-
-  @media (max-width: 1500px)
-    font-size: 11px
-
-// .p2
-  font-family: Fira Mono, monospace
-  font-size: 12px
-  font-style: normal
-  line-height: 1.4
-  font-weight: 300
-
-  @media (max-width: 1500px)
-    font-size: 11px
+  @media (min-width: $bp-large)
+    font-size: 1.5ex
+  @media (min-width: $bp-xl)
+    font-size: 1.75ex
 
 p
-  font-family: Fira Mono, monospace
-  font-size: 12px
-  line-height: 1.4
-  font-weight: 400
-
-.projects, .blog
-
-  h5
-    font-family: Merriweather, serif
-    font-size: 22px
-    line-height: 1.8
-    font-weight: 700
-
-  h6
-    font-family: Merriweather, serif
-    font-size: 14px
-    line-height: 1.8
-    font-weight: 300
+  margin: 0
+  font-family: Catamaran, sans-serif
+  font-size: 2ex
+  line-height: 1.5
+  font-weight: 500
+  @media (min-width: $bp-large)
+    font-size: 1.75ex
+  @media (min-width: $bp-xl)
+    font-size: 2ex
 
 // modifiers
 
@@ -116,6 +97,3 @@ em
 
 strong
   font-weight: bold
-
-.mono
-  font-family: Fira Mono, monospace

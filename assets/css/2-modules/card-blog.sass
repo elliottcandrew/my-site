@@ -1,14 +1,6 @@
-// alternating sides
-a:nth-child(2n+1)
-	.card-blog
-		flex-direction: row
-
-a:nth-child(2n+2)
-	.card-blog
-		flex-direction: row-reverse
-
 .card-blog
 	display: flex
+	flex-direction: row-reverse
 	justify-content: space-between
 	background: #EEEEEE
 
@@ -34,10 +26,15 @@ a:nth-child(2n+2)
 			display: block
 
 	.pic
-		width: 50%
-		filter: grayscale(100%) contrast(110%)
-		&:after
-			padding-bottom: 100%
+		display: none
+		@media(min-width: $bp-small)
+			display: block
+			width: 33.333333%
+			filter: grayscale(100%) contrast(110%)
+			&:after
+				padding-bottom: 100%
+		@media(min-width: $bp-large)
+			width: 50%
 
 	.pic-full
 		width: 100%
@@ -46,50 +43,24 @@ a:nth-child(2n+2)
 			padding-bottom: 50%
 
 	.card-blog-overlay
-		width: calc(50% - 24px)
-		padding: 12px
+		flex: 1
+		padding: 15px
 
 	.card-blog-title
 		display: flex
 		height: 100%
 		flex-direction: column
 		justify-content: space-between
+		overflow: hidden
+		text-overflow: ellipsis
 		transition: 250ms ease-in-out
 
-		span:nth-child(2)
-			display: flex
-			flex-direction: row
-			justify-content: space-between
-			margin-bottom: -.4ex
+		span:first-child p
+			display: block
+			@media(min-width: $bp-large-2)
+				display: block
 
-	h2, .p2
-		margin: 0
 
 	h2
-		margin-bottom: 12px
-
-	@media (max-width: 1500px)
-		margin-bottom: 2em
-
-		.card-blog-title
-			.p1:first-child
-				display: none
-
-	@media (max-width: 1300px)
-		margin-bottom: 1.6em
-		span:nth-child(2)
-			display: none !important
-
-	@media (max-width: 1150px)
-		.pic
-			width: 100%
-			&:after
-				padding-bottom: 50%
-		.card-blog-overlay
-			position: absolute
-			display: none
-		h2
-			margin: 10px
-
-		.p2
-			display: none
+		@media(min-width: $bp-large)
+			margin-bottom: 6px

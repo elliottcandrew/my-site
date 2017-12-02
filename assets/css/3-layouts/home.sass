@@ -8,57 +8,42 @@
 
 	.side-left, .side-right
 		display: none
-		@media (min-width: $bp-large)
+
+	.side-left
+		@media (min-width: $bp-med)
+			display: flex
+			width: 188px
+			span
+				top: -3px
+				position: fixed
+				width: inherit
+				margin-top: 90px
+				h4
+					margin-left: 15px
+					@include mr-home
+		@media(min-width: $bp-large)
+			display: none
+		@media(min-width: $bp-large-2)
 			display: flex
 			width: 14vw
 
-	.side-left
-		// margin-right: 4em
-		span
-			top: -3px
-			position: fixed
-			width: inherit
-			margin-top: 90px
-			h4
-				margin-left: 16px
-				margin-right: 6em
-		// @media (min-width: $bp-large)
-		// 	padding-left: 12px
-		// 	padding-right: 32px
-		// @media (min-width: $bp-xl)
-		// 	padding-left: 24px
-		// 	padding-right: 32px
-		// @media (min-width: $bp-2xl)
-		// 	padding-left: 24px
-		// 	padding-right: 60px
-
 	.side-right
-		// @media (max-width: $bp-large2) and (min-width: $bp-large)
-		// 	padding-left: 12px
-		// 	padding-right: 32px
-		// 	position: fixed
-		// 	top: 200px
-		// 	color: pink
-		// @media (min-width: $bp-large)
-		// 	padding-left: 32px
-		// 	padding-right: 12px
-		// @media (min-width: $bp-xl)
-		// 	// text-align: right
-		// 	padding-left: 32px
-		// 	padding-right: 24px
-		// @media (min-width: $bp-2xl)
-		// 	padding-left: 60px
-		// 	padding-right: 24px
-
+		display: none
 		img
-			width: 6vw
-			position: fixed
-			top: 89px // to account for visual kerning
-			right: 16px
-			&:after
-				content: ""
+			display: none
+		@media(min-width: $bp-large-2)
+			display: flex
+			width: 14vw
+			img
 				display: block
-				padding-bottom: 100%
+				width: 6vw
+				position: fixed
+				top: 89px // to account for visual kerning
+				right: 15px
+				&:after
+					content: ""
+					display: block
+					padding-bottom: 100%
 
 	.side-inner
 		z-index: 4
@@ -68,26 +53,35 @@
 		.span
 			display: inline-block
 
-	.side-right .side-inner
-		right: 28px
-		top: 50%
-		transform: rotate(270deg) translateX(50%)
-		transform-origin: top right
-
 	.side-left .side-inner
-		left: 28px
-		top: 50%
-		transform: rotate(90deg) translateX(-50%)
-		transform-origin: top left
+		display: none
+		@media (min-width: $bp-large-2)
+			display: block
+			left: 30px
+			top: 50%
+			transform: rotate(90deg) translateX(-50%)
+			transform-origin: top left
+		@media(max-height: 600px)
+			top: calc(100% - 15px)
+			transform: rotate(90deg) translateX(-100%)
+
+	.side-right .side-inner
+		display: none
+		@media(min-width: $bp-large-2)
+			display: block
+			right: 30px
+			top: 50%
+			transform: rotate(270deg) translateX(50%)
+			transform-origin: top right
+		@media(max-height: 600px)
+			top: calc(100% - 15px)
+			transform: rotate(270deg) translateX(100%)
 
 	// columns
 
 	.col1, .col2, .col3
 		width: 100%
 		min-width: 150px
-
-	// .col3
-		width: 70%
 
 	.col1, .col2
 		@include mr-home
