@@ -34,6 +34,9 @@
 			&:after
 				padding-bottom: 100%
 		@media(min-width: $bp-large)
+			display: none
+		@media(min-width: $bp-large-1)
+			display: block
 			width: 50%
 
 	.pic-full
@@ -44,7 +47,9 @@
 
 	.card-blog-overlay
 		flex: 1
-		padding: 15px
+		padding: .75em
+		@media(min-width: $bp-large-2)
+			padding: 1em
 
 	.card-blog-title
 		display: flex
@@ -60,6 +65,9 @@
 			@media(min-width: $bp-large-2)
 				display: block
 
+	.p-mono
+		transform: translateY(3px) // to account for strange bottom padding on card
+		margin-top: 12px
 
 	h2
 		@media(min-width: $bp-large)
