@@ -8,9 +8,30 @@
 	@media (min-width: $bp-large)
 		display: flex
 
+	// columns
+
+	.col1, .col2, .col3
+		width: 100%
+		min-width: 150px
+
+	.col1, .col2
+		@include mr-home
+
+	.col3
+		margin-right: 0
+
+		// card layout
+
+	.card-prof, .card-pers, .card-blog
+		@include mb-home
+
+	// .col3
+		width: 100%
+		@media (min-width: $bp-large)
+			top: 90px
+
 	.content
 		width: 100%
-		color: $dark
 		@media (min-width: $bp-large)
 			margin-top: 90px
 
@@ -29,7 +50,6 @@
 		@media (min-width: $bp-large)
 			display: block
 			position: relative
-			width: inherit
 			left: 50%
 			z-index: 2
 

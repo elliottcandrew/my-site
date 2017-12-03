@@ -9,10 +9,10 @@ var pause = 500; /* the amount of time to wait after the resizing has finished b
 
 $(document).ready(function() {
 
-  // experiment
-  $('.card-blog').wrapAll('<div class="exp-pink" />');
-  $('.card-pers').wrapAll('<div class="exp-grey" />');
-  $('.card-prof').wrapAll('<div class="exp-red" />');
+  // // experiment
+  // $('.card-blog').wrapAll('<div class="exp-pink" />');
+  // $('.card-pers').wrapAll('<div class="exp-grey" />');
+  // $('.card-prof').wrapAll('<div class="exp-red" />');
 
   // wraps each word in a span for alternating alignment
   $(".title-wrap").lettering('words');
