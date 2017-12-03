@@ -9,6 +9,11 @@ var pause = 500; /* the amount of time to wait after the resizing has finished b
 
 $(document).ready(function() {
 
+  // experiment
+  $('.card-blog').wrapAll('<div class="exp-pink" />');
+  $('.card-pers').wrapAll('<div class="exp-grey" />');
+  $('.card-prof').wrapAll('<div class="exp-red" />');
+
   // wraps each word in a span for alternating alignment
   $(".title-wrap").lettering('words');
 
@@ -18,19 +23,19 @@ $(document).ready(function() {
   if ((viewportHeight - sticky1Height.height()) < 102 /* 90 + 12 */){
     $('#sticky1').css({ top: (viewportHeight - sticky1Height.height()) - 12 }); /* set top css as difference between div height and viewport height */
   } else {
-    $('#sticky1').css({ top: 60 });
+    $('#sticky1').css({ top: 90 });
   }
 
   if ((viewportHeight - sticky2Height.height()) < 102){
     $('#sticky2').css({ top: (viewportHeight - sticky2Height.height()) - 12 });
   } else {
-    $('#sticky2').css({ top: 60 });
+    $('#sticky2').css({ top: 90 });
   }
 
   if ((viewportHeight - sticky3Height.height()) < 102){
     $('#sticky3').css({ top: (viewportHeight - sticky3Height.height()) - 12 });
   } else {
-    $('#sticky3').css({ top: 60 });
+    $('#sticky3').css({ top: 90 });
   }
 
   $(window).resize(function(){

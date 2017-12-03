@@ -29,7 +29,7 @@ $black:  #111
 
 // MEDIA QUERIES
 $bp-small: 24em
-$bp-med: 40em
+$bp-med: 34em
 $bp-large: 60em
 $bp-large-1: 70em
 $bp-large-2: 90em
@@ -38,7 +38,9 @@ $bp-2xl: 118em
 
 // GLOBAL MARGINS
 @mixin mb-home
-  margin-bottom: 2.75vw
+  margin-bottom: 5vw
+  @media(min-width: $bp-large)
+    margin-bottom: 2.75vw
 
 @mixin mr-home
   margin-right: 2.75vw
