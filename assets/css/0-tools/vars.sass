@@ -29,12 +29,20 @@ $black:  #111
 
 // MEDIA QUERIES
 $bp-small: 24em
-$bp-med: 34em
-$bp-large: 60em
+$bp-med: 35em
+$bp-large: 62em
 $bp-large-1: 75em
 $bp-large-2: 90em
 $bp-xl: 100em
 $bp-2xl: 118em
+
+// HOME-WRAP AND NAV-COLS WIDTH
+$hw-max-width: 600px
+
+@mixin hw-nav-width
+  min-width: $hw-max-width
+  width: 49.22644163150492vw
+  max-width: 700px
 
 // GLOBAL MARGINS
 @mixin mb-home

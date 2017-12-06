@@ -1,15 +1,21 @@
 // HEADER
-
-.header
-	display: flex
-	flex-direction: row
-	justify-content: space-between
-	margin-top: 5em
-	margin-bottom: 2em
-	// @media(min-width: $bp-med)
-		margin-top: .75em
+.header-wrap
 	@media(min-width: $bp-large)
-		margin: 0
+		height: 90px
+
+	.header
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		margin-top: 5em
+		margin-bottom: 2em
+		@media(min-width: $bp-large)
+			position: fixed
+			height: inherit
+			width: 100%
+			left: 0
+			margin: 0
+			z-index: 5
 
 	.nav-toggle
 		position: fixed
@@ -18,17 +24,95 @@
 		z-index: 5
 		@media(min-width: $bp-med)
 			left: 1.5em
+		@media(min-width: $bp-large)
+			display: none
 
 	span
 		align-self: flex-end
 		max-width: 300px
 		@media(min-width: $bp-med)
 			max-width: 400px
+		@media(min-width: $bp-large)
+			position: fixed
+			top: 90px
+			left: 1em
+			// width: calc(((100vw - 600px) / 2) - 2.5em)
+			width: 200px
+
+	h1
+		@media(min-width: $bp-large)
+			display: none
+
+	h4
+		display: none
+		@media(min-width: $bp-large)
+			display: block
+
+	.nav-cols
+		display: none
+		@media(min-width: $bp-large)
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			position: relative
+			@include hw-nav-width
+			margin: auto 0
+			left: 50%
+			transform: translateX(-50%)
+			a
+				&:hover,
+				&:focus,
+				&:active
+					&:before
+						content: ""
+						position: absolute
+						top: 45%
+						left: -2.5px
+						right: -2.5px
+						height: 2px
+						background: $dark
+			a:first-child
+				transform: translateX(-50%)
+				text-align: center
+			a:nth-child(2)
+				position: fixed
+				left: 50%
+				transform: translateX(-50%)
+				text-align: center
+			a:last-child
+				transform: translateX(50%)
+				text-align: center
+		@media(min-width: $bp-large-2)
+			width: 49.2vw // calculated necessary size to center outer headers
+			max-width: none
 
 	.avatar
 		align-self: flex-end
-		margin-left: 1em
+		margin-left: .5em
 		img
 			width: 75px
 			@media(min-width: $bp-med)
 				width: 100px
+			@media(min-width: $bp-large)
+				position: fixed
+				top: 90px
+				right: 1em
+
+	// TEXT SWITCH FROM h1 to h4
+	.h1-h4
+	  margin: 0
+	  font-family: Catamaran, sans-serif
+	  font-size: 1.618em
+	  font-style: normal
+	  font-weight: 700
+	  @media(min-width: $bp-med)
+	    font-size: 2em
+
+	@media(min-width: $bp-large)
+		.h1-h4
+			margin: 0
+			font-family: Fira Mono, monospace
+			font-size: 1em
+			line-height: 1.75
+			letter-spacing: .15em
+			font-weight: 500

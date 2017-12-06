@@ -1,4 +1,8 @@
 .home-wrap
 	margin: 0 auto
-	@media(max-width: $bp-large)
-		max-width: 600px
+	max-width: $hw-max-width
+	@media(min-width: $bp-large-1)
+		@include hw-nav-width
+	@media(min-width: $bp-large-2)
+		width: auto
+		max-width: none
