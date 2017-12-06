@@ -2,13 +2,17 @@
 
 // headings
 
+// title header
 h1
   margin: 0
   font-family: Catamaran, sans-serif
-  font-size: 22px
+  font-size: 1.618em
   font-style: normal
   font-weight: 700
+  @media (min-width: $bp-med)
+    font-size: 2em
 
+// header header
 h2
   margin: 0
   font-family: Catamaran, sans-serif
@@ -22,17 +26,12 @@ h2
     font-size: 2.6ex
 
 h3
-  margin: 0
-  font-family: Catamaran, sans-serif
-  font-size: 16px
-  line-height: 1.25
-  letter-spacing: .05em
-  font-weight: 500
 
+// info header
 h4
   margin: 0
   font-family: Fira Mono, monospace
-  font-size: 1.8ex
+  font-size: 1em
   line-height: 1.75
   letter-spacing: .15em
   font-weight: 500
@@ -82,7 +81,7 @@ h4
 p
   margin: 0
   font-family: Catamaran, sans-serif
-  font-size: 2ex
+  font-size: 1em
   line-height: 1.5
   font-weight: 500
   @media (min-width: $bp-large)
