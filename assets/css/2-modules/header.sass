@@ -41,7 +41,7 @@
 			position: fixed
 			top: 90px
 			left: 1em
-			width: 200px
+			width: 9.2em
 
 	h1
 		@media(min-width: $bp-large)
@@ -52,44 +52,30 @@
 		@media(min-width: $bp-large)
 			display: block
 
-	.nav-cols
+	.nav-wrap
 		display: none
 		@media(min-width: $bp-large)
-			display: flex
-			flex-direction: row
-			justify-content: space-between
-			position: relative
-			@include home-wrap-nav-width
-			margin: auto 0
-			left: 50%
-			transform: translateX(-50%)
-			.tab-1, .tab-2, .tab-3
-				&:hover,
-				&:focus,
-				&:active
-					&:before
-						content: ""
-						position: absolute
-						top: 100%
-						left: 0
-						right: 0
-						height: 2px
-						background: $dark
-			.tab-1
-				transform: translateX(-50%)
-				text-align: center
-			.tab-2
-				position: fixed
-				left: 50%
-				transform: translateX(-50%)
-				text-align: center
-			.tab-3
-				transform: translateX(50%)
-				text-align: center
-		@media(min-width: $bp-large-2)
-			width: 49.2vw // calculated necessary size to center outer headers
-			max-width: none
-			pointer-events: none
+			display: block
+			position: fixed
+			width: 100%
+			height: inherit
+
+	.nav-inner
+		display: flex
+		position: relative
+		justify-content: space-around
+		@include margin-base
+		top: 50%
+		transform: translateY(-50%)
+
+	.tab-1, .tab-2
+		@include margin-right-home
+
+	.tab-1, .tab-2, .tab-3
+		display: block
+		width: 100%
+		margi
+		text-align: center
 
 	.avatar
 		align-self: flex-end

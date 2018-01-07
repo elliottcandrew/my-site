@@ -30,21 +30,26 @@ $black:  #111
 // MEDIA QUERIES
 $bp-small: 24em
 $bp-med: 35em
-$bp-large: 62em
+$bp-large: 75em
 $bp-large-1: 75em
-$bp-large-2: 90em
+// $bp-large-2: 84em
+$bp-large-3: 90em
 $bp-xl: 100em
 $bp-2xl: 118em
 
 // HOME-WRAP AND NAV-COLS WIDTH
 $home-wrap-max-width: 600px
 
-@mixin home-wrap-nav-width
-  min-width: $home-wrap-max-width
-  width: 49.22644163150492vw
-  max-width: 700px
-
 // GLOBAL MARGINS
+@mixin margin-base
+  margin: 0 5vw
+  @media(min-width: $bp-med)
+    margin: 0 12vw
+  // @media(min-width: $bp-large)
+    margin: 0 20vw
+  @media(min-width: $bp-large-1)
+    margin: 0 14vw
+
 @mixin margin-bottom-home
   margin-bottom: 5vw
   @media(min-width: $bp-large)

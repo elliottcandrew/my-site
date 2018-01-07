@@ -15,19 +15,14 @@ body
 	font-family: 'Catamaran', sans-serif
 	color: $dark
 
-	@media(min-width: $bp-med)
-		margin: 0 12vw
-	// @media(min-width: $bp-large)
-		margin: 0 2.75vw
-	@media(min-width: $bp-large-1)
-		margin: 0 14vw
+	@include margin-base
 
 // MIN/MAX PAGE SIZE
 
 // HOME PAGE + INNER-WRAP PAGES
-.home-wrap, .inner-wrap
-	// min-width: 300px
-	// max-width: 1920px
+// .home-wrap, .inner-wrap
+	min-width: 300px
+	max-width: 1920px
 
 // OUTER-WRAP PAGES
 .container-vw
