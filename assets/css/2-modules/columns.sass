@@ -3,7 +3,6 @@
 .columns
 	flex: 1
 	display: block
-	// max-width: 1200px
 
 	@media (min-width: $bp-large-2)
 		display: flex
@@ -15,7 +14,7 @@
 		min-width: 150px
 
 	.col1, .col2
-		@include mr-home
+		@include margin-right-home
 
 	.col3
 		margin-right: 0
@@ -23,12 +22,10 @@
 		// card layout
 
 	.card-prof, .card-pers, .card-blog
-		@include mb-home
+		@include margin-bottom-home
 
 	.content
 		width: 100%
-		// @media (min-width: $bp-large)
-			margin-top: 90px
 
 	#sticky1
 		position: sticky

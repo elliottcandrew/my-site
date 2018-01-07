@@ -9,6 +9,24 @@ var pause = 500; /* the amount of time to wait after the resizing has finished b
 
 $(document).ready(function() {
 
+  // toggle column visibility in tablet + laptop view
+  // $('.toggle-1').click(function () {
+  //     $('.col2, .col3').hide();
+  // });
+  //
+  // $('.toggle-2').click(function () {
+  //     $('.col1, .col3').hide();
+  // });
+  //
+  // $('.toggle-3').click(function () {
+  //     $('.col1, .col2').hide();
+  // });
+
+  // tab columns
+  $( function() {
+    $(".nav-cols").tabs();
+  });
+
   // wraps each word in a span for alternating alignment
   $(".title-wrap").lettering('words');
 

@@ -59,11 +59,11 @@
 			flex-direction: row
 			justify-content: space-between
 			position: relative
-			@include hw-nav-width
+			@include home-wrap-nav-width
 			margin: auto 0
 			left: 50%
 			transform: translateX(-50%)
-			a
+			.tab-1, .tab-2, .tab-3
 				&:hover,
 				&:focus,
 				&:active
@@ -75,15 +75,15 @@
 						right: 0
 						height: 2px
 						background: $dark
-			a:first-child
+			.tab-1
 				transform: translateX(-50%)
 				text-align: center
-			a:nth-child(2)
+			.tab-2
 				position: fixed
 				left: 50%
 				transform: translateX(-50%)
 				text-align: center
-			a:last-child
+			.tab-3
 				transform: translateX(50%)
 				text-align: center
 		@media(min-width: $bp-large-2)
