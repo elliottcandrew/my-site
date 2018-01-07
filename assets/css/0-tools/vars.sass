@@ -40,6 +40,8 @@ $bp-2xl: 118em
 // HOME-WRAP AND NAV-COLS WIDTH
 $home-wrap-max-width: 600px
 
+$home-margins: 6vw
+
 // GLOBAL MARGINS
 @mixin margin-base
   margin: 0 5vw
@@ -48,12 +50,12 @@ $home-wrap-max-width: 600px
   // @media(min-width: $bp-large)
     margin: 0 20vw
   @media(min-width: $bp-large-1)
-    margin: 0 14vw
+    margin: 0 16vw
 
 @mixin margin-bottom-home
-  margin-bottom: 5vw
+  margin-bottom: $home-margins
   @media(min-width: $bp-large)
-    margin-bottom: 2.75vw
+    margin-bottom: $home-margins
 
 @mixin margin-right-home
-  margin-right: 2.75vw
+  margin-right: $home-margins
