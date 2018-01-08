@@ -3,7 +3,7 @@ layout: projects
 title:  "Atelier Fanelsa"
 date:   2015-05-20
 location: Leeds
-categories: professional
+
 thumbnail: atelier-fanelsa.jpg
 headline: Freespace Workshop
 tagline: A modular community construction project in the industrial hinterlands of Leeds

@@ -3,7 +3,7 @@ layout: projects
 title:  "Free Space Workshop"
 date:   2015-05-20
 location: Leeds
-categories: personal
+
 thumbnail: y3p2.jpg
 headline: Freespace Workshop
 tagline: A modular community construction project in the industrial hinterlands of Leeds

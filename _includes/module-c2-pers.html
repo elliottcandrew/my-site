@@ -1,3 +1,3 @@
 {% for post in site.posts %}
-{% if post.categories contains 'personal' %}<a href="{{post.url}}"><div class="card-pers"><img class=".pic" src="/assets/imgs/thumbs/{{post.thumbnail}}"/><div class="card-pers-overlay"><!-- lettering.js applies span to each child --><div class="title-wrap">{{post.title}}</div></div></div></a>{% endif %}
+{% if post.categories contains 'personal' %}<a href="{{post.url}}"><div class="card-pers"><img class=".pic" src="/assets/imgs/thumbs/{{post.thumbnail}}"/><div class="card-home-overlay"><!-- lettering.js applies span to each child --><div class="title-wrap">{{post.title}}</div></div></div></a>{% endif %}
 {% endfor %}

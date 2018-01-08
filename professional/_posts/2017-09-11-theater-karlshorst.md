@@ -3,7 +3,7 @@ layout: projects
 title:  "Make City"
 date:   2017-09-11
 location: Berlin
-categories: professional
+
 thumbnail: make-city.jpg
 headline: Theater Karlshorst
 tagline: A modular community construction project in the industrial hinterlands of Leeds

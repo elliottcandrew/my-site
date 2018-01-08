@@ -3,7 +3,7 @@ layout: blog
 title:  "Stadtteilgarten Schillerkiez"
 date:   2016-05-25
 location: Berlin
-categories: blog
+
 image: false
 thumbnail: tempelhof-easy.jpg
 banner: schillerkiez_1200.png

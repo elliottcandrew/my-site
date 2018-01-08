@@ -1,12 +1,12 @@
-.card-prof
+.card-pers, .card-prof
 	position: relative
 
 	&:hover
-		.card-prof-overlay
+		.card-home-overlay
 			opacity: 1
 			transition: 0ms
 			background: $snow
-			border: solid 1px $dark
+			border: solid 1px $card-col
 
 	img
 		width: 100%
@@ -15,7 +15,7 @@
 
 		transition: 250ms ease-in-out
 
-	.card-prof-overlay
+	.card-home-overlay
 		display: flex
 		position: absolute
 
@@ -26,9 +26,7 @@
 
 		margin: 0
 		padding: 2.4em
-
 		opacity: 0
-
 		transition: 250ms ease-in-out
 
 	.title-wrap
@@ -39,11 +37,3 @@
 
 	[class*="word"]:nth-child(even)
 		text-align: right
-
-@media (max-width: 1500px)
-	.card-pers
-		margin-bottom: 2em
-
-@media (max-width: 1300px)
-	.card-pers
-		margin-bottom: 1.6em

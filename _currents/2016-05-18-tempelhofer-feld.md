@@ -3,7 +3,7 @@ layout: blog
 title:  "Tempelhofer Feld"
 date:   2016-05-18
 location: Berlin
-categories: blog
+
 thumbnail: tempelhof-look.jpg
 banner: tempelhof-skate_1200.png
 excerpt_separator: <!--more-->

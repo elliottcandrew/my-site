@@ -3,7 +3,7 @@ layout: blog
 title:  "Tag der Arbeit"
 date:   2016-05-02
 location: Berlin
-categories: blog
+
 thumbnail: arbeit-food-1.png
 banner: arbeit-roof_1200.png
 excerpt_separator: <!--more-->

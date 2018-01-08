@@ -3,7 +3,7 @@ layout: blog
 title:  "Flughafen Tempelhof"
 date:   2016-04-08
 location: Berlin
-categories: blog
+
 thumbnail: flughafen-rear.png
 banner: zentral-flughafen_1200.png
 excerpt_separator: <!--more-->
