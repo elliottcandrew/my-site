@@ -1,0 +1,49 @@
+.card-prof
+	position: relative
+
+	&:hover
+		.card-prof-overlay
+			opacity: 1
+			transition: 0ms
+			background: $snow
+			border: solid 1px $dark
+
+	img
+		width: 100%
+		height: auto
+		display: block
+
+		transition: 250ms ease-in-out
+
+	.card-prof-overlay
+		display: flex
+		position: absolute
+
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+
+		margin: 0
+		padding: 2.4em
+
+		opacity: 0
+
+		transition: 250ms ease-in-out
+
+	.title-wrap
+		flex: 1
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+
+	[class*="word"]:nth-child(even)
+		text-align: right
+
+@media (max-width: 1500px)
+	.card-pers
+		margin-bottom: 2em
+
+@media (max-width: 1300px)
+	.card-pers
+		margin-bottom: 1.6em

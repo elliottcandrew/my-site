@@ -40,6 +40,6 @@ The notion of creating an environment that is defined by activity, and activity 
 </div>
 </div>
 
-![alt text](/assets/imgs/projects/y3p1-halftone-frame_1200.png)
+![frame](/assets/imgs/projects/y3p1-halftone-frame_1200.png){:class="md-full"}
 ![alt text](/assets/imgs/projects/y3p1-routes_1200.png)
 ![alt text](/assets/imgs/projects/y3p1-walkway_1000.png)
