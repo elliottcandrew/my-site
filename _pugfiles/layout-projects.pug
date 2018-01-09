@@ -1,10 +1,11 @@
 .projects
-  .container-vw
+	.container-vw
 
-      .bpage-header
-        | {% include module-header-home.html %}
+			.bpage-header
+				| {% include module-header-page.html %}
+				| {% include module-side-tabs.html %}
 
-      .content
-        | {{content}}
+			.content
+				| {{content}}
 
-      | {% include module-nav-blog.html %}
+			| {% include module-nav-blog.html %}

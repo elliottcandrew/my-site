@@ -45,14 +45,12 @@ $home-margins: 6vw
 $card-col: $red
 
 // GLOBAL MARGINS
-@mixin margin-base
-  margin: 0 5vw
+@mixin home-width
+  width: 90vw
   @media(min-width: $bp-med)
-    margin: 0 12vw
-  // @media(min-width: $bp-large)
-    margin: 0 20vw
+    width: 76vw
   @media(min-width: $bp-large-1)
-    margin: 0 16vw
+    width: 68vw
 
 @mixin margin-bottom-home
   margin-bottom: $home-margins

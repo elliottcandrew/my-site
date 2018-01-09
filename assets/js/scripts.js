@@ -14,7 +14,7 @@ $(document).ready(function() {
 
   //STICKY COLUMNS
 
-  // set initial stick point + 12px for bottom-margin
+  // set initial stick point + bottom-margin
   if ((viewportHeight - sticky1Height.height()) < 135 /* 90 + homeMargins */){
     $('#sticky1').css({ top: (viewportHeight - sticky1Height.height()) - homeMargins }); /* set top css as difference between div height and viewport height */
   } else {
