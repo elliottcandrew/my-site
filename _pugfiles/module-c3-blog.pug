@@ -21,13 +21,3 @@ a(href="{{post.url}}" class="card-blog")
 | {% endif %}
 | {% endif %}
 | {% endfor %}
-
-//- | {% for image in site.static_files %}
-//- |	{% if image.path contains 'assets/imgs/thumbs' %}
-//- 
-//- a(href="{{site.baseurl}}{{image.path}}")
-//- 	.card-blog
-//- 		.pic-full(style={'background-image': 'url({{site.baseurl}}{{image.path}})'})
-//- 
-//- |{% endif %}
-//- |{% endfor %}
