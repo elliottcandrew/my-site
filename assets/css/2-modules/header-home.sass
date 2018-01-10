@@ -1,9 +1,9 @@
 // HEADER
-.header-home
+.header-wrap
 	@media(min-width: $bp-large)
 		height: 90px
 
-	.header-wrap
+	.header
 		display: flex
 		flex-direction: row
 		justify-content: space-between
@@ -17,71 +17,71 @@
 			margin: 0
 			z-index: 5
 
-.nav-toggle
-	position: fixed
-	top: 1em
-	transform: translateX(-2px) // account for bounding box
-	z-index: 5
-	@media(min-width: $bp-med)
-		left: 1.25em
-	@media(min-width: $bp-large)
-		display: none
-
-span
-	transform: translateY(.2em) // fine adjustment to align with avatar
-	max-width: 300px
-	@media(min-width: $bp-med)
-		transform: translateY(.45em)
-		max-width: 400px
-	@media(min-width: $bp-large)
-		transform: translateY(-.35em)
+	.nav-toggle
 		position: fixed
-		top: 90px
-		left: 1em
-		width: 9.2em
-
-h1
-	@media(min-width: $bp-large)
-		display: none
-
-h4
-	display: none
-	@media(min-width: $bp-large)
-		display: block
-
-.nav-wrap
-	display: none
-	@media(min-width: $bp-large)
-		display: block
-		position: fixed
-		width: 100%
-		height: inherit
-
-.nav-inner
-	display: flex
-	position: relative
-	justify-content: space-around
-
-	margin: 0 auto
-	@include base-width
-
-	top: 50%
-	transform: translateY(-50%)
-
-.tab-1
-	@include margin-right-home
-
-.tab-1, .tab-2, .tab-3
-	display: block
-	width: 100%
-	text-align: center
-
-.avatar
-	align-self: flex-end
-	margin-left: 1em
-	img
-		width: 75px
+		top: 1em
+		transform: translateX(-2px) // account for bounding box
+		z-index: 5
 		@media(min-width: $bp-med)
+			left: 1.25em
+		@media(min-width: $bp-large)
+			display: none
+
+	span
+		transform: translateY(.2em) // fine adjustment to align with avatar
+		max-width: 300px
+		@media(min-width: $bp-med)
+			transform: translateY(.45em)
+			max-width: 400px
+		@media(min-width: $bp-large)
+			transform: translateY(-.35em)
+			position: fixed
+			top: 90px
+			left: 1em
+			width: 9.2em
+
+	h1
+		@media(min-width: $bp-large)
+			display: none
+
+	h4
+		display: none
+		@media(min-width: $bp-large)
+			display: block
+
+	.nav-wrap
+		display: none
+		@media(min-width: $bp-large)
+			display: block
+			position: fixed
+			width: 100%
+			height: inherit
+
+	.nav-inner
+		display: flex
+		position: relative
+		justify-content: space-around
+
+		margin: 0 auto
+		@include base-width
+
+		top: 50%
+		transform: translateY(-50%)
+
+	.tab-1
+		@include margin-right-home
+
+	.tab-1, .tab-2, .tab-3
+		display: block
+		width: 100%
+		text-align: center
+
+	.avatar
+		align-self: flex-end
+		margin-left: 1em
+		img
+			width: 75px
+			@media(min-width: $bp-med)
 				width: 100px
 			@media(min-width: $bp-large)
 				position: fixed
