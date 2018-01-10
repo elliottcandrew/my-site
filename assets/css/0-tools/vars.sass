@@ -31,14 +31,12 @@ $black:  #111
 $bp-small: 24em
 $bp-med: 35em
 $bp-large: 75em
-$bp-large-1: 75em
 // $bp-large-2: 84em
 $bp-large-3: 90em
 $bp-xl: 100em
 $bp-2xl: 118em
 
 // HOME MARGINS & WIDTHS
-$home-wrap-max-width: 600px
 $home-margins: 6vw
 
 // CARD OVERLAY COLOUR
@@ -46,16 +44,19 @@ $card-col: $red
 
 // GLOBAL MARGINS
 @mixin base-width
-  width: 90vw
-  @media(min-width: $bp-med)
-    width: 76vw
-  @media(min-width: $bp-large-1)
-    width: 68vw
+	width: 90vw
+	margin: 0 auto
+	@media(min-width: $bp-med)
+		width: 76vw
+	@media(min-width: $bp-large)
+		max-width: none
+	@media(min-width: $bp-large)
+		width: 68vw
 
 @mixin margin-bottom-home
-  margin-bottom: $home-margins
-  @media(min-width: $bp-large)
-    margin-bottom: $home-margins
+	margin-bottom: $home-margins
+	@media(min-width: $bp-large)
+		margin-bottom: $home-margins
 
 @mixin margin-right-home
-  margin-right: $home-margins
+	margin-right: $home-margins

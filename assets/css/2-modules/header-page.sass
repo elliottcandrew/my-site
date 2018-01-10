@@ -1,20 +1,24 @@
 // HEADER PAGE
 .header-page
 	@include header-base
+	@media(min-width: $bp-med)
+		margin-top: 90px
 
 	.nav-toggle
 		@include nav-toggle-base
 
 	span
 		transform: translateY($translate-header-span)
+		text-align: center
+		margin: 0 auto
 
 	a
 		display: none
 		@media(min-width: $bp-large)
 			display: block
-			position: relative
-			margin-left: .8em
-			top: 50%
+			position: fixed
+			left: .8em
+			top: 45px
 			transform: translateY(-50%)
 			&:hover
 				text-decoration: line-through

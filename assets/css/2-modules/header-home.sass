@@ -1,17 +1,12 @@
 // Shared header settings
 @mixin header-base
-	display: flex
-	flex-direction: row
-	justify-content: space-between
 	margin-top: 5em
 	margin-bottom: 2.4em
 	@media(min-width: $bp-large)
-		position: fixed
 		height: inherit
 		width: 100%
 		left: 0
 		margin: 0
-		z-index: 5
 
 @mixin nav-toggle-base
 	position: fixed
@@ -32,6 +27,12 @@ $translate-header-span: .2em
 // HEADER HOME
 .header-home
 	@include header-base
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	@media(min-width: $bp-large)
+		position: fixed
+		z-index: 5
 
 	.nav-toggle
 		@include nav-toggle-base

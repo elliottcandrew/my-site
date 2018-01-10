@@ -1,15 +1,15 @@
 .project-wrap
+  max-width: 800px
   @include base-width
-  margin: 0 auto
 
 .projects
   .project-content
-    display: flex
-    flex-wrap: wrap
-
-  .project-content
+    margin-top: 2em
     margin-bottom: $home-margins
-    text-align: center
+    @media(min-width: $bp-large)
+      display: flex
+      flex-wrap: wrap
+      text-align: center
 
   p
     padding-bottom: $home-margins
@@ -19,26 +19,30 @@
       width: 100%
 
   .md-left, .md-right, .md-center
-    display: flex
-    align-items: center
-    margin-top: auto
-    margin-bottom: auto
-
-  .md-left
-    width: calc(50% - #{$home-margins} / 2)
-    align-self: flex-start
-    margin-right: $home-margins
     img
       width: 100%
+    @media(min-width: $bp-large)
+      display: flex
+      align-items: center
+      margin-top: auto
+      margin-bottom: auto
 
-  .md-right
-    width: calc(50% - #{$home-margins} / 2)
-    align-self: flex-end
-    img
-      width: 100%
+  @media(min-width: $bp-large)
+    .md-left
+      width: calc(50% - #{$home-margins} / 2)
+      align-self: flex-start
+      margin-right: $home-margins
+      img
+        width: 100%
 
-  .md-center
-    width: 100%
-    margin: 0 25%
-    img
+    .md-right
+      width: calc(50% - #{$home-margins} / 2)
+      align-self: flex-end
+      img
+        width: 100%
+
+    .md-center
       width: 100%
+      margin: 0 25%
+      img
+        width: 100%
