@@ -1,9 +1,11 @@
 // HEADER
-.header-wrap
-	@media(min-width: $bp-large)
+.project-wrap
+	// @media(min-width: $bp-large)
 		height: 90px
 
 	.header
+		// height: 90px
+		margin: 0
 		margin-top: 5em
 		margin-bottom: 2em
 		@media(min-width: $bp-large)
@@ -14,11 +16,23 @@
 			margin: 0
 			z-index: 5
 
+	.nav-toggle
+		position: fixed
+		top: 1em
+		transform: translateX(-2px) // account for bounding box
+		z-index: 5
+		@media(min-width: $bp-med)
+			left: 1.25em
+		@media(min-width: $bp-large)
+			display: none
+
 	a
-		display: block
-		position: relative
-		margin-left: .8em
-		top: 50%
-		transform: translateY(-50%)
-		&:hover
-			text-decoration: line-through
+		display: none
+		@media(min-width: $bp-large)
+			display: block
+			position: relative
+			margin-left: .8em
+			top: 50%
+			transform: translateY(-50%)
+			&:hover
+				text-decoration: line-through
