@@ -1,34 +1,43 @@
-// HEADER
+// Shared header settings
+@mixin header-base
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	margin-top: 5em
+	margin-bottom: 2.4em
+	@media(min-width: $bp-large)
+		position: fixed
+		height: inherit
+		width: 100%
+		left: 0
+		margin: 0
+		z-index: 5
+
+@mixin nav-toggle-base
+	position: fixed
+	top: 1em
+	transform: translateX(-2px) // account for bounding box
+	z-index: 5
+	@media(min-width: $bp-med)
+		left: 1.25em
+	@media(min-width: $bp-large)
+		display: none
+
+$translate-header-span: .2em
+
 .header-wrap
 	@media(min-width: $bp-large)
 		height: 90px
 
-	.header
-		display: flex
-		flex-direction: row
-		justify-content: space-between
-		margin-top: 5em
-		margin-bottom: 2em
-		@media(min-width: $bp-large)
-			position: fixed
-			height: inherit
-			width: 100%
-			left: 0
-			margin: 0
-			z-index: 5
+// HEADER HOME
+.header-home
+	@include header-base
 
 	.nav-toggle
-		position: fixed
-		top: 1em
-		transform: translateX(-2px) // account for bounding box
-		z-index: 5
-		@media(min-width: $bp-med)
-			left: 1.25em
-		@media(min-width: $bp-large)
-			display: none
+		@include nav-toggle-base
 
 	span
-		transform: translateY(.2em) // fine adjustment to align with avatar
+		transform: translateY($translate-header-span) // fine adjustment to align with avatar
 		max-width: 300px
 		@media(min-width: $bp-med)
 			transform: translateY(.45em)
