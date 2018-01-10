@@ -1,92 +1,44 @@
-// .projects
+.project-wrap
+  @include base-width
+  margin: 0 auto
 
-  // IMAGES
+.projects
+  .project-content
+    display: flex
+    flex-wrap: wrap
 
-  img
-    position: relative
-    width: 65.9%
-    max-width: 800px
-    margin-bottom: 48px
-
-  // TYPE
-
-  .container-fixed
-    position: fixed
-    top: 82px
-    pointer-events: none
-    z-index: 3
-    width: 80vw
-    max-width: 1320px
-
-  .container-text
-    width: 31.4166666666666667%
-    float: right
-
-  .md5
-    font-family: Merriweather, serif
-    font-size: 22px
-    line-height: 1.8
-    font-weight: 700
-
-  .md6
-    font-family: Merriweather, serif
-    font-size: 14px
-    line-height: 1.8
-    font-weight: 300
+  .project-content, .project-title
+    margin-bottom: $home-margins
+    text-align: center
 
   p
-    position: relative
-    margin: 0 0 12px 0
+    padding-bottom: $home-margins
 
-    font-family: merriweather, serif
-    font-size: 14px
-    font-weight: 300
-
-    strong
-      font-weight: 700
-      font-size: 20px
-      line-height: 1
-
-  .text-overlay
-    position: absolute
-    display: block
-    top: 120px
-    left: 72%
-    transform: translateX(-50%)
-    width: 300px
-
-    background: $snow
-    padding: 12px
-
-    z-index: 10
-
-  //OTHER
-
-  mark
-    background: $silver
-
-  @media (max-width: 1024px)
-    .text-overlay
-      p
-        font-size: 12px
-
-        strong
-          font-size: 16px
-
-  @media (max-width: 768px)
-    .text-overlay
-      position: static
-      display: block
-      top: 0
-      left: 0
-      transform: translateX(0)
+  .md-full
+    img
       width: 100%
-      padding: 0
-      margin-bottom: 30px
 
-      p
-        margin: 0
-        font-size: 14px
+  .md-left, .md-right, .md-center
+    display: flex
+    align-items: center
+    margin-top: auto
+    margin-bottom: auto
 
-        strong
-          font-size: 18px
+  .md-left
+    width: calc(50% - #{$home-margins} / 2)
+    align-self: flex-start
+    margin-right: $home-margins
+    img
+      width: 100%
+
+  .md-right
+    width: calc(50% - #{$home-margins} / 2)
+    align-self: flex-end
+    img
+      width: 100%
+
+  .md-center
+    width: 100%
+    margin: 0 25%
+    img
+      width: 100%

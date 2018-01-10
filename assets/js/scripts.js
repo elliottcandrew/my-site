@@ -5,8 +5,6 @@ var resizeListener; /* variable that will hold a reference to setTimeout() funct
 var pause = 500; /* the amount of time to wait after the resizing has finished before calling our function */
 var homeMargins = 45;
 
-// var sticky1Offset = viewportHeight - sticky1Height.height()
-
 $(document).ready(function() {
 
   // wraps each word in a span for alternating alignment

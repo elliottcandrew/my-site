@@ -1,0 +1,24 @@
+// HEADER
+.header-wrap
+	@media(min-width: $bp-large)
+		height: 90px
+
+	.header
+		margin-top: 5em
+		margin-bottom: 2em
+		@media(min-width: $bp-large)
+			position: fixed
+			height: inherit
+			width: 100%
+			left: 0
+			margin: 0
+			z-index: 5
+
+	a
+		display: block
+		position: relative
+		margin-left: .8em
+		top: 50%
+		transform: translateY(-50%)
+		&:hover
+			text-decoration: line-through
