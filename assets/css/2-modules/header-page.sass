@@ -2,8 +2,9 @@
 .header-wrap
 	@media(min-width: $bp-large)
 		height: 90px
+		background: pink
 
-	.header
+	.header-page
 		margin-top: 5em
 		margin-bottom: 2em
 		@media(min-width: $bp-large)
@@ -15,10 +16,12 @@
 			z-index: 5
 
 	a
-		display: block
-		position: relative
-		margin-left: .8em
-		top: 50%
-		transform: translateY(-50%)
-		&:hover
-			text-decoration: line-through
+		display: none
+		@media(min-width: $bp-large)
+			display: block
+			position: relative
+			margin-left: .8em
+			top: 50%
+			transform: translateY(-50%)
+			&:hover
+				text-decoration: line-through
