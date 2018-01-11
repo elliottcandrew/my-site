@@ -14,13 +14,12 @@
   p
     padding-bottom: $home-margins
 
-  .md-full
+  .md-full, .md-left, .md-right, .md-center
+    margin: 0 auto
     img
       width: 100%
 
   .md-left, .md-right, .md-center
-    img
-      width: 100%
     @media(min-width: $bp-large)
       display: flex
       align-items: center

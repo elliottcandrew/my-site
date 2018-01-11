@@ -12,7 +12,7 @@
 		text-align: center
 		margin: 0 auto
 
-	a
+	.nav-back-button
 		display: none
 		@media(min-width: $bp-large)
 			display: block
@@ -22,3 +22,20 @@
 			transform: translateY(-50%)
 			&:hover
 				text-decoration: line-through
+
+				// arrow extension through text
+				.line-thru
+					position: absolute
+					height: 2px
+					right: 0
+					transform: translateY(9px)
+					width: calc(100% - 18px)
+					background: $dark
+
+			a
+				display: flex
+
+			img
+				width: 22px
+				transform: translateY(-2px)
+				margin-right: .2em
