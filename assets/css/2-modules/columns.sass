@@ -9,20 +9,12 @@
 
 	// columns
 
-	.col1, .col2, .col3
+	.col1, .col2
 		width: 100%
 		min-width: 150px
 
 	.col1
 		@include margin-right-home
-
-	// .col3
-		margin-right: 0
-
-		// card layout
-
-	.card-prof, .card-pers, .card-blog
-		@include margin-bottom-home
 
 	.content
 		width: 100%
@@ -53,3 +45,8 @@
 
 	.textlink
 		padding-bottom: 32px
+
+	// allows bottom margin on cards to be active and not mess up js sticky positioning (I hope)
+	.col-bottom-spacer
+		height: 1px
+		background: pink

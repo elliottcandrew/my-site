@@ -3,7 +3,7 @@ var sticky2Height = $('#sticky2');
 var viewportHeight = $(window).height();
 var resizeListener; /* variable that will hold a reference to setTimeout() function */
 var pause = 500; /* the amount of time to wait after the resizing has finished before calling our function */
-var homeMargins = 45;
+var homeMargins = 0;
 
 $(document).ready(function() {
 
