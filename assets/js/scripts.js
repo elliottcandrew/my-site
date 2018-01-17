@@ -25,5 +25,22 @@ $(document).ready(function() {
     }, pause);
   });
 
+  // SLIDE-OUT MENUS
+
+  $('.tab-left').on('click', function(){
+    $('.menu1').toggleClass('clicked');
+  });
+
+  $('.close-1').on('click', function(){
+    $('.menu1').toggleClass('clicked');
+  });
+
+  $('.tab-right').on('click', function(){
+    $('.menu2').toggleClass('clicked');
+  });
+
+  $('.close-2').on('click', function(){
+    $('.menu2').toggleClass('clicked');
+  });
 
 });

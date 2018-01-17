@@ -1,0 +1,68 @@
+$menu-width: 20em
+
+.menu1, .menu2
+  display: none
+
+@media(min-width: $bp-large)
+  .menu1, .menu2
+    display: block
+    position: fixed
+    width: $menu-width
+    transition: all 150ms ease-in-out 0s
+    padding: 1.2em
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 100
+    color: $snow
+
+    h4
+      font-weight: 400 !important
+      &:first-child
+        text-decoration: underline
+
+    ul
+      list-style-type: none
+      padding-left: 0
+
+    a
+      color: white
+      &:hover
+        text-decoration: line-through
+
+  .menu1
+    height: auto
+    left: -23em
+    background: $yella
+    &.clicked
+      left: 1em
+
+    li
+      margin-top: .8em
+      &:first-child
+        margin-top: 1.6em
+
+  .menu2
+    max-height: 80vh
+    right: -23em
+    background: pink
+    &.clicked
+      right: 1em
+
+    li
+      margin-top: 1.6em
+      &:first-child
+        margin-top: 0
+      &:hover
+        cursor: pointer
+        a
+          text-decoration: line-through
+
+  .close-1, .close-2
+    float: right
+    width: 24px
+    height: 24px
+    cursor: pointer
+    background: url('/assets/imgs/icons/ic_close_white_36px.svg')
+    background-position: center
+    background-size: contain
+    background-repeat: no-repeat
