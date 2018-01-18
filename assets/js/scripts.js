@@ -47,4 +47,14 @@ $(document).ready(function() {
     $('.tab-right').toggleClass('clicked');
   });
 
+  // TOUCH MENU
+
+  $('.nav-toggle').on('click', function(){
+    $('.menu-touch').toggleClass('clicked');
+  });
+
+  $('.close-touch').on('click', function(){
+    $('.menu-touch').toggleClass('clicked');
+  });
+
 });
