@@ -8,23 +8,12 @@
 		left: 0
 		margin: 0
 
-.avatar
-	align-self: flex-end
-	margin-left: 1em
-	img
-		width: 75px
-		@media(min-width: $bp-med)
-			width: 100px
-		@media(min-width: $bp-large)
-			position: fixed
-			top: 90px
-			right: 1em
-
 @mixin nav-toggle-base
 	position: fixed
 	top: 1em
 	transform: translateX(-2px) // account for bounding box
 	z-index: 5
+	width: 36px
 	@media(min-width: $bp-med)
 		left: 1.25em
 	@media(min-width: $bp-large)
@@ -97,3 +86,15 @@ $translate-header-span: .2em
 		display: block
 		width: 100%
 		text-align: center
+
+	.avatar
+		align-self: flex-end
+		margin-left: 1em
+		img
+			width: 75px
+			@media(min-width: $bp-med)
+				width: 100px
+			@media(min-width: $bp-large)
+				position: fixed
+				top: 90px
+				right: 1em

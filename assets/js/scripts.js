@@ -25,22 +25,26 @@ $(document).ready(function() {
     }, pause);
   });
 
-  // SLIDE-OUT MENUS
+  // SLIDE-OUT MENUS + hide tab while menu shows
 
   $('.tab-left').on('click', function(){
     $('.menu1').toggleClass('clicked');
+    $('.tab-left').toggleClass('clicked');
   });
 
   $('.close-1').on('click', function(){
     $('.menu1').toggleClass('clicked');
+    $('.tab-left').toggleClass('clicked');
   });
 
   $('.tab-right').on('click', function(){
     $('.menu2').toggleClass('clicked');
+    $('.tab-right').toggleClass('clicked');
   });
 
   $('.close-2').on('click', function(){
     $('.menu2').toggleClass('clicked');
+    $('.tab-right').toggleClass('clicked');
   });
 
 });
