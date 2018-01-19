@@ -61,4 +61,34 @@ $(document).ready(function() {
     $('html').toggleClass('noscroll');
   });
 
+  $('#touch-prof').on('click', function(){
+    // alternate visible column
+    $('.col2').addClass('hide');
+    $('.col1').removeClass('hide');
+    // hide title-home and avatar, switch col-titles
+    $('.title-home').addClass('hide');
+    $('.avatar').addClass('hide');
+    $('.title-prof').addClass('show');
+    $('.title-pers').removeClass('show');
+    // close menu and toggle base scroll
+    $('.menu-touch').toggleClass('clicked');
+    $('body').toggleClass('noscroll');
+    $('html').toggleClass('noscroll');
+  });
+
+  $('#touch-pers').on('click', function(){
+    // alternate visible column
+    $('.col1').addClass('hide');
+    $('.col2').removeClass('hide');
+    // hide title-home and avatar, switch col-titles
+    $('.title-home').addClass('hide');
+    $('.avatar').addClass('hide');
+    $('.title-pers').addClass('show');
+    $('.title-prof').removeClass('show');
+    // close menu and toggle base scroll
+    $('.menu-touch').toggleClass('clicked');
+    $('body').toggleClass('noscroll');
+    $('html').toggleClass('noscroll');
+  });
+
 });

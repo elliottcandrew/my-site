@@ -52,18 +52,31 @@ $translate-header-span: .2em
 	.nav-toggle
 		@include nav-toggle-base
 
-	span
+	.title-home, .title-prof, .title-pers
 		transform: translateY($translate-header-span) // fine adjustment to align with avatar
 		max-width: 300px
 		@media(min-width: $bp-med)
 			transform: translateY(.45em)
 			max-width: 400px
+
+	.title-home
+		&.hide
+			display: none
+			@media(min-width: $bp-large)
+				display: block
 		@media(min-width: $bp-large)
+			display: block
 			transform: translateY(-.35em)
 			position: fixed
 			top: 90px
 			left: 1em
 			width: 9.2em
+
+	.title-prof, .title-pers
+		display: none
+		margin: 0 auto 1em auto
+		&.show
+			display: block
 
 	h1
 		@media(min-width: $bp-large)
@@ -103,6 +116,10 @@ $translate-header-span: .2em
 
 	.avatar
 		@include avatar-base
+		&.hide
+			display: none
+			@media(min-width: $bp-large)
+				display: block
 		@media(min-width: $bp-med)
 			height: 100px
 			width: 100px
