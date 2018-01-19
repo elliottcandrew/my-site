@@ -42,10 +42,9 @@
 		display: none
 		@media(min-width: $bp-large)
 			display: block
-			align-self: flex-end
-			margin-left: 1em
-			img
-				width: 100px
-				position: fixed
-				top: 90px
-				right: 1em
+			@include avatar-base
+			height: 100px
+			width: 100px
+			position: fixed
+			top: 90px
+			right: 1em

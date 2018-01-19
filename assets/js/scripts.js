@@ -51,10 +51,14 @@ $(document).ready(function() {
 
   $('.nav-toggle').on('click', function(){
     $('.menu-touch').toggleClass('clicked');
+    $('body').toggleClass('noscroll');
+    $('html').toggleClass('noscroll');
   });
 
   $('.close-touch').on('click', function(){
     $('.menu-touch').toggleClass('clicked');
+    $('body').toggleClass('noscroll');
+    $('html').toggleClass('noscroll');
   });
 
 });

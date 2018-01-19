@@ -19,6 +19,20 @@
 	@media(min-width: $bp-large)
 		display: none
 
+@mixin avatar-base
+	width: 75px
+	min-width: 75px
+	height: 75px
+	border-radius: 50%
+	background: red
+	transition: 0ms
+	align-self: flex-end
+	margin-left: 1em
+	&:hover
+		filter: brightness(200%)
+		box-shadow: 0px 2px 15px 5px rgba(0,0,0,0.1)
+		transition: 150ms ease-in-out
+
 $translate-header-span: .2em
 
 .header-wrap
@@ -88,13 +102,11 @@ $translate-header-span: .2em
 		text-align: center
 
 	.avatar
-		align-self: flex-end
-		margin-left: 1em
-		img
-			width: 75px
-			@media(min-width: $bp-med)
-				width: 100px
-			@media(min-width: $bp-large)
-				position: fixed
-				top: 90px
-				right: 1em
+		@include avatar-base
+		@media(min-width: $bp-med)
+			height: 100px
+			width: 100px
+		@media(min-width: $bp-large)
+			position: fixed
+			top: 90px
+			right: 1em

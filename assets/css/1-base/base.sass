@@ -1,11 +1,9 @@
-// BASE
-
 html
 	min-width: 240px
 	padding: 0
 	margin:	0
 
-	background: $snow
+	background: white
 
 body
 	-webkit-font-smoothing: antialiased
@@ -19,3 +17,12 @@ body
 	line-height: 1.6
 	font-family: 'Catamaran', sans-serif
 	color: $dark
+
+html, body
+	&.noscroll
+		height: 100%
+		position: relative
+		overflow: hidden
+		@media(min-width: $bp-large)
+			height: auto
+			overflow: auto
