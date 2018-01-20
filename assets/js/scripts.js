@@ -11,7 +11,6 @@ $(document).ready(function() {
   $(".title-wrap").lettering('words');
 
   //STICKY COLUMNS
-
   // set initial stick point + bottom-margin
   $('#sticky1').css({ top: (viewportHeight - sticky1Height.height()) - homeMargins });
   $('#sticky2').css({ top: (viewportHeight - sticky2Height.height()) - homeMargins });
@@ -26,7 +25,6 @@ $(document).ready(function() {
   });
 
   // SLIDE-OUT MENUS + hide tab while menu shows
-
   $('.tab-left').on('click', function(){
     $('.menu1').toggleClass('clicked');
     $('.tab-left').toggleClass('clicked');
@@ -48,7 +46,6 @@ $(document).ready(function() {
   });
 
   // TOUCH MENU
-
   $('.nav-toggle').on('click', function(){
     $('.menu-touch').toggleClass('clicked');
     $('body').toggleClass('noscroll');
@@ -56,36 +53,6 @@ $(document).ready(function() {
   });
 
   $('.close-touch').on('click', function(){
-    $('.menu-touch').toggleClass('clicked');
-    $('body').toggleClass('noscroll');
-    $('html').toggleClass('noscroll');
-  });
-
-  $('#touch-prof').on('click', function(){
-    // alternate visible column
-    $('.col2').addClass('hide');
-    $('.col1').removeClass('hide');
-    // hide title-home and avatar, switch col-titles
-    $('.title-home').addClass('hide');
-    $('.avatar').addClass('hide');
-    $('.title-prof').addClass('show');
-    $('.title-pers').removeClass('show');
-    // close menu and toggle base scroll
-    $('.menu-touch').toggleClass('clicked');
-    $('body').toggleClass('noscroll');
-    $('html').toggleClass('noscroll');
-  });
-
-  $('#touch-pers').on('click', function(){
-    // alternate visible column
-    $('.col1').addClass('hide');
-    $('.col2').removeClass('hide');
-    // hide title-home and avatar, switch col-titles
-    $('.title-home').addClass('hide');
-    $('.avatar').addClass('hide');
-    $('.title-pers').addClass('show');
-    $('.title-prof').removeClass('show');
-    // close menu and toggle base scroll
     $('.menu-touch').toggleClass('clicked');
     $('body').toggleClass('noscroll');
     $('html').toggleClass('noscroll');

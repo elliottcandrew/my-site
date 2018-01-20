@@ -2,11 +2,15 @@
 layout: default
 ---
 
-<div class="outer-wrap">
+<div class="page-wrap">
 
-	<div class="outer-scroll">
+	{% include module-header-page.html %}
+	{% include module-side-tabs.html %}
+	{% include module-menu-touch.html %}
 
-		{% include layout-blog.html %}
+	<div class="page-sections">
+
+		{% include layout-projects.html %}
 
 	</div>
 
