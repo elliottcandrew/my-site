@@ -1,3 +1,14 @@
 .page-wrap
   max-width: 800px
-  @include base-width
+  width: 90vw
+  margin: 0 auto
+  @media(min-width: $bp-med)
+    width: 70vw
+  @media(min-width: $bp-large)
+    max-width: none
+    width: 50vw
+
+  text-align: center
+
+  a:hover
+    text-decoration: line-through

@@ -8,9 +8,11 @@
 		@include nav-toggle-base
 
 	span
+		display: block
 		transform: translateY($translate-header-span)
-		text-align: center
 		margin: 0 auto
+		@media(min-width: $bp-large)
+			max-width: 800px
 
 	.nav-back-button
 		display: none
