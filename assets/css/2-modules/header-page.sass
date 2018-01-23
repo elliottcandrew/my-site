@@ -1,3 +1,5 @@
+// Global header settings in header-home (eg. header-wrap)
+
 // HEADER PAGE
 .header-page
 	@include header-base
@@ -11,8 +13,12 @@
 		display: block
 		transform: translateY($translate-header-span)
 		margin: 0 auto
+		text-align: center
 		@media(min-width: $bp-large)
 			max-width: 800px
+
+	h1
+		margin-bottom: .25em
 
 	.nav-back-button
 		display: none

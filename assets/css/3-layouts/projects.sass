@@ -4,60 +4,63 @@
 
 .projects
   .project-content
-    margin-top: 4em
-    margin-bottom: $home-margins
+    margin: 4em auto $home-margins auto
     @media(min-width: $bp-large)
+      // calc add margins to account for margins on either side of children
+      max-width: calc(1200px + #{$home-margins}) !important
       display: flex
       flex-wrap: wrap
 
-  h1, h2, h3, h4, p
-    margin: 0 auto
-
-  .md-full, .md-small, .md-center, .md-text-small, .md-text-small-center, .md-text-block, .md-800
-    padding-top: calc(#{$home-margins} / 2)
-    padding-bottom: calc(#{$home-margins} / 2)
-    margin: 0 auto
-    &:first-child
-      padding-top: 0
+  .md-full, .md-center, .md-small, .text-block
+    padding-bottom: $home-margins
+    // half margin on both sides to allow centering of md-small
+    margin-left: calc(#{$home-margins} / 2
+    margin-right: calc(#{$home-margins} / 2
     img
       width: 100%
 
-  .md-small, .md-center, .md-text-small, .md-text-small-center, .md-text-block, .md-800
-    @media(min-width: $bp-large)
-      min-height: 5em
-      display: flex
-      align-items: center
-      margin-top: auto
-      margin-bottom: auto
-
   @media(min-width: $bp-large)
-
-    .md-small
-      width: calc(50% - #{$home-margins})
-      padding-right: calc(#{$home-margins} / 2)
-      padding-left: calc(#{$home-margins} / 2)
-      img
-        width: 100%
+    .md-full
+      width: 100%
 
     .md-center
       width: 100%
-      margin: 0 25%
+      img
+        display: block
+        max-width: 800px
+        margin: 0 auto
+
+    .md-small
+      width: calc(50% - (#{$home-margins}))
+
+    .text-block, #text, #text-center, #text-top, #text-space, #text-space-center
+      max-width: 800px
+      margin-left: auto
+      margin-right: auto
+
+    #text-center
       text-align: center
-      img
-        width: 100%
 
-    .md-800
-      max-width: 800px
-      img
-        width: 100%
+    #text-top
+      display: flex
+      flex-direction: column
+      justify-content: center
+      padding-bottom: 1.6ex
 
-    .md-text-block
-      max-width: 800px
+    #text-space
+      display: flex
+      flex-direction: column
+      justify-content: center
+      // ensure text isn't crowded out if only one line
+      min-height: $home-margins
+      margin-top: auto
+      margin-bottom: auto
 
-    .md-text-small, .md-text-small-center
-      width: calc(50% - #{$home-margins})
-      margin-right: calc(#{$home-margins} / 2)
-      margin-left: calc(#{$home-margins} / 2)
-
-    .md-text-small-center
+    #text-space-center
+      display: flex
+      flex-direction: column
+      justify-content: center
+      min-height: $home-margins
+      margin-top: auto
+      margin-bottom: auto
       text-align: center
