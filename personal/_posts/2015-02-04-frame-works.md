@@ -14,9 +14,9 @@ This project is an ecosystem of social involvement, it intersects local communit
 ![alt text](/assets/imgs/projects/y3p1-routes_1200.png)
 {: .md-full}
 
-# Creating an environment that is defined by activity - and in turn activity that occurs as a result of its environment.
-{: .md-small}
-{: #text-space-center}
+##### Creating an environment that is defined by activity - and in turn activity that occurs as a result of its environment.
+{: .md-inset-left}
+{: #text-space}
 
 ![alt text](/assets/imgs/projects/y3p1-frame-graphic.jpg)
 {: .md-small}

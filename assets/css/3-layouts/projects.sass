@@ -11,12 +11,14 @@
       display: flex
       flex-wrap: wrap
 
-  .md-full, .md-center, .md-small, .text-block
+  .md-full, .md-center, .md-small, .md-small-inset, .text-block
     padding-bottom: $home-margins
+    // background: pink
     // half margin on both sides to allow centering of md-small
     margin-left: calc(#{$home-margins} / 2
     margin-right: calc(#{$home-margins} / 2
     img
+      // opacity: .75
       width: 100%
 
   @media(min-width: $bp-large)
@@ -32,6 +34,16 @@
 
     .md-small
       width: calc(50% - (#{$home-margins}))
+
+    .md-inset-left, .md-inset-right
+      width: calc(50% - (#{$home-margins}))
+      width: calc(50% - (#{$home-margins} * 2))
+
+    .md-inset-left
+      padding-left: calc(#{$home-margins} / 2)
+
+    .md-inset-right
+      padding-right: calc(#{$home-margins} / 2)
 
     .text-block, #text, #text-center, #text-top, #text-space, #text-space-center
       max-width: 800px
@@ -55,6 +67,8 @@
       min-height: $home-margins
       margin-top: auto
       margin-bottom: auto
+      width: calc(50% - (#{$home-margins} * 2))
+      padding-left: calc(#{$home-margins} / 2)
 
     #text-space-center
       display: flex
