@@ -1,0 +1,64 @@
+.bottom-nav
+
+  span
+    text-align: center
+
+  .bottom-nav-content
+    @include base-width
+    max-width: 800px
+    margin-top: 4em
+    margin-bottom: 6em
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    @media(min-width: $bp-large)
+      max-width: 1200px
+
+  // .container
+    position: relative
+
+  .card-bottom-nav
+    width: 16vw
+    transition: 250ms ease-in-out
+
+    &:hover
+      .card-home-overlay
+        opacity: 1
+        transition: 0ms
+        background: $base-background-color
+        border: solid 2px $card-border-color
+
+  .card-bottom-nav:after
+    display: block
+    content: ""
+    padding-bottom: 100%
+
+  .card-home-overlay
+    width: 16vw
+    position: absolute
+    border: solid 2px rgba(0,0,0,0)
+    opacity: 0
+    transition: 250ms ease-in-out
+
+  .card-home-overlay:after
+    display: block
+    content: ""
+    padding-bottom: 100%
+
+  .title-wrap
+    // background: pink
+    position: absolute
+    transform: translateX(1.5vw) translateY(1vw)
+    height: 14vw
+    width: 13vw
+    font-size: 12px
+    flex: 1
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+  [class*="word"]:nth-child(odd)
+    text-align: left
+
+  [class*="word"]:nth-child(even)
+    text-align: right

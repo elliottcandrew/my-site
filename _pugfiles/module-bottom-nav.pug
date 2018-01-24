@@ -1,0 +1,18 @@
+.bottom-nav
+
+  span
+    p More stuff
+
+  .bottom-nav-content
+    
+    | {% assign posts = site.posts | sample:3 %}
+    | {% for post in posts %}
+
+    a(href="{{post.url}}", style="background-image: url(/assets/imgs/thumbs/{{post.thumbnail}}); background-position: center; background-size: cover; background-repeat: norepeat").card-bottom-nav
+      .card-home-overlay
+      
+        // lettering.js applies span to each child
+        .title-wrap
+          | {{post.title}}
+
+    | {% endfor %}

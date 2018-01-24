@@ -4,7 +4,7 @@
 
 .projects
   .project-content
-    margin: 4em auto $home-margins auto
+    margin: 4em auto 12em auto
     @media(min-width: $bp-large)
       // calc add margins to account for margins on either side of children
       max-width: calc(1200px + #{$home-margins}) !important
@@ -13,12 +13,13 @@
 
   .md-full, .md-center, .md-small, .md-small-inset, .text-block
     padding-bottom: $home-margins
-    // background: pink
+    &:last-child
+      padding-bottom: 0
     // half margin on both sides to allow centering of md-small
-    margin-left: calc(#{$home-margins} / 2
-    margin-right: calc(#{$home-margins} / 2
+    @media(min-width: $bp-large)
+      margin-left: calc(#{$home-margins} / 2
+      margin-right: calc(#{$home-margins} / 2
     img
-      // opacity: .75
       width: 100%
 
   @media(min-width: $bp-large)
