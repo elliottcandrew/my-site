@@ -48,11 +48,6 @@
 
 	.avatar
 		display: none
+		@include avatar-base
 		@media(min-width: $bp-large)
 			display: block
-			@include avatar-base
-			height: 100px
-			width: 100px
-			position: fixed
-			top: 90px
-			right: 1em

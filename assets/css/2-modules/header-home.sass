@@ -29,6 +29,12 @@ $avatar-size: 5em
 	transition: 0ms
 	align-self: flex-end
 	margin-left: 1em
+	@media(min-width: $bp-med)
+		@include size($avatar-size)
+	@media(min-width: $bp-large)
+		position: fixed
+		top: 90px
+		right: 1em
 	&:hover
 		filter: brightness(200%)
 		box-shadow: 0px 2px 15px 5px rgba(0,0,0,0.1)
@@ -122,9 +128,3 @@ $translate-header-span: .2em
 			display: none
 			@media(min-width: $bp-large)
 				display: block
-		@media(min-width: $bp-med)
-			@include size($avatar-size)
-		@media(min-width: $bp-large)
-			position: fixed
-			top: 90px
-			right: 1em
