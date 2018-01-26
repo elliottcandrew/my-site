@@ -20,33 +20,27 @@
       max-width: 1200px
 
   .card-bottom-nav
-    // filter: grayscale(100%)
-    width: $card-width
-    transition: 250ms ease-in-out
-
+    width: calc(#{$card-width} - 4px)
+    // background: $bg-col
+    border: solid 2px $card-col
+    filter: grayscale(100%)
     &:hover
       .card-home-overlay
         opacity: 1
         transition: 0ms
-        background: $bg-col
-        border: solid 2px $card-col
-
-  .card-bottom-nav:after
-    display: block
-    content: ""
-    padding-bottom: 100%
 
   .card-home-overlay
-    width: calc(#{$card-width} - 4px)
+    width: $card-width
     position: absolute
-    border: solid 2px rgba(0,0,0,0)
+    transform: translate(-2px, -2px)
     opacity: 0
-    transition: 250ms ease-in-out
 
-  .card-home-overlay:after
-    display: block
-    content: ""
-    padding-bottom: 100%
+  .card-bottom-nav, .card-home-overlay
+    transition: 250ms ease-in-out
+    &:after
+      display: block
+      content: ""
+      padding-bottom: 100%
 
   .title-wrap
     position: absolute
