@@ -19,10 +19,11 @@
 	@media(min-width: $bp-large)
 		display: none
 
+$avatar-size: 5em
 @mixin avatar-base
-	width: 75px
-	min-width: 75px
-	height: 75px
+	@include size(calc(#{$avatar-size} / 1.2))
+	min-width: calc(#{$avatar-size} / 1.2)
+	min-height: calc(#{$avatar-size} / 1.2)
 	border-radius: 50%
 	background: red
 	transition: 0ms
@@ -122,8 +123,7 @@ $translate-header-span: .2em
 			@media(min-width: $bp-large)
 				display: block
 		@media(min-width: $bp-med)
-			height: 100px
-			width: 100px
+			@include size($avatar-size)
 		@media(min-width: $bp-large)
 			position: fixed
 			top: 90px

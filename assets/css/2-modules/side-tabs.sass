@@ -29,7 +29,7 @@
 
 // SIDE MENUS
 
-$side-menu-width: 20em
+$side-menu-width: 19em
 $side-menu-color: white
 
 .menu1, .menu2
@@ -64,7 +64,7 @@ $side-menu-color: white
 
   .menu1
     height: auto
-    left: -23em
+    left: calc((#{$side-menu-width} + 3em) * (-1))
     background: $menu-color
     &.clicked
       left: 1em
@@ -75,7 +75,7 @@ $side-menu-color: white
         margin-top: 1.6em
 
   .menu2
-    right: -23em
+    right: calc((#{$side-menu-width} + 3em) * (-1))
     background: $menu-color
     &.clicked
       right: 1em
