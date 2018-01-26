@@ -1,9 +1,11 @@
 .bottom-nav
-
   $card-width: 16vw
-
-  // position: absolute
-  // margin: 0 auto
+  $bg-col: $snow
+  $card-col: $dark
+  background: $bg-col
+  border-top: solid 2px $card-col
+  padding-top: 6em
+  padding-bottom: 6em
 
   span
     text-align: center
@@ -11,8 +13,6 @@
   .bottom-nav-content
     @include base-width
     max-width: 800px
-    margin-top: 4em
-    margin-bottom: 6em
     display: flex
     flex-direction: row
     justify-content: space-between
@@ -20,16 +20,16 @@
       max-width: 1200px
 
   .card-bottom-nav
-    width: $card-width
     // filter: grayscale(100%)
+    width: $card-width
     transition: 250ms ease-in-out
 
     &:hover
       .card-home-overlay
         opacity: 1
         transition: 0ms
-        background: $base-background-color
-        border: solid 2px $card-border-color
+        background: $bg-col
+        border: solid 2px $card-col
 
   .card-bottom-nav:after
     display: block
@@ -60,7 +60,9 @@
     justify-content: space-between
 
   [class*="word"]:nth-child(odd)
+    color: $card-col
     text-align: left
 
   [class*="word"]:nth-child(even)
+    color: $card-col
     text-align: right
