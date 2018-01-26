@@ -13,44 +13,42 @@
 .card-home:nth-child(4n + 1)
 	margin-top: 10em
 	margin-bottom: 2em
-	margin-right: 2vw
-	margin-left: 14vw
+	margin-right: 6vw
+	margin-left: 0
 
 .card-home:nth-child(4n + 2)
-	margin-top: 2em
+	margin-top: 6em
 	margin-bottom: 5em
-	margin-right: 2vw
-	margin-left: auto
+	margin-right: 4vw
+	margin-left: 3vw
 
 .card-home:nth-child(4n + 3)
-	margin-top: 8em
+	margin-top: 2em
 	margin-bottom: 1em
-	margin-right: 6vw
-	margin-left: 5vw
-
-.card-home:nth-child(4n + 4)
-	margin-top: 5em
-	margin-bottom: 4em
-	margin-right: 10vw
+	margin-right: 0
 	margin-left: auto
 
+.card-home:nth-child(4n + 4)
+	margin-top: 4em
+	margin-bottom: 4em
+	margin-right: 6vw
+	margin-left: 8vw
+
 .card-home
-	float: left
 	display: block
 	position: relative
-	// &:nth-child(even)
-		margin-left: auto
-		margin-right: 0
+	height: 100%
 
 	&:hover
 		.card-home-overlay
 			opacity: 1
 			transition: 0ms
-			background: $base-background-color
-			border: solid 2px $card-border-color
+			// background: $base-background-color
+			// border: solid 2px $card-border-color
 
 	img
 		position: relative
+		display: block
 		max-width: 100%
 		height: auto
 		display: block
@@ -58,9 +56,10 @@
 		transition: 250ms ease-in-out
 
 	.card-home-overlay
+		flex: 1
 		display: flex
 		position: absolute
-		border: solid 2px rgba(0,0,0,0)
+		// border: solid 2px rgba(0,0,0,0)
 		height: auto
 
 		top: 0
