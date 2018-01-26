@@ -1,1 +1,4 @@
-<div class="columns"><div class="col1"><div class="content" id="sticky1">{%include module-c1-prof.html%}<div class="col-bottom-spacer"></div></div></div><div class="col2"><div class="content" id="sticky2">{%include module-c2-pers.html%}<div class="col-bottom-spacer"></div></div></div></div>
+<div class="columns">{% for post in site.posts %}
+{% if post.categories contains 'blog' %}
+{% else %}<a class="card-home" href="{{post.url}}"><img src="/assets/imgs/thumbs/{{post.thumbnail}}"/><div class="card-home-overlay"><!-- lettering.js applies span to each child--><div class="title-wrap">{{post.title}}</div></div></a>{% endif %}
+{% endfor %}</div>

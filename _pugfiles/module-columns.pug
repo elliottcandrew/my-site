@@ -1,11 +1,29 @@
 .columns
-	.col1
+
+	| {% for post in site.posts %}
+	| {% if post.categories contains 'blog' %}
+
+	| {% else %}
+
+	a(href="{{post.url}}").card-home
+		img(src="/assets/imgs/thumbs/{{post.thumbnail}}")
+		.card-home-overlay
+			
+			// lettering.js applies span to each child
+			.title-wrap
+				| {{post.title}}
+
+	| {% endif %}
+	| {% endfor %}
+	
+	
+	//- .col1
 		.content(id="sticky1")
 
 			| {%include module-c1-prof.html%}
 			.col-bottom-spacer
 
-	.col2
+	//- .col2
 		.content(id="sticky2")
 
 			| {%include module-c2-pers.html%}

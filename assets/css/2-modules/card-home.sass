@@ -1,10 +1,46 @@
-.card-pers, .card-prof
+// .card-home
+	background: lightgrey
+	img
+		opacity: .75
+
+// @for $i from 1 to 6
+	.card-home:nth-child(5n + #{$i})
+		padding-top: random(6) + 1 + vw
+		padding-right: random(4) + 2 + em
+		padding-bottom: random(6) + 1 + em
+		padding-left: random(4) + 2 + vw
+
+.card-home:nth-child(4n + 1)
+	margin-top: 10em
+	margin-bottom: 2em
+	margin-right: 2vw
+	margin-left: 14vw
+
+.card-home:nth-child(4n + 2)
+	margin-top: 2em
+	margin-bottom: 5em
+	margin-right: 2vw
+	margin-left: auto
+
+.card-home:nth-child(4n + 3)
+	margin-top: 8em
+	margin-bottom: 1em
+	margin-right: 6vw
+	margin-left: 5vw
+
+.card-home:nth-child(4n + 4)
+	margin-top: 5em
+	margin-bottom: 4em
+	margin-right: 10vw
+	margin-left: auto
+
+.card-home
+	float: left
+	display: block
 	position: relative
-	@include margin-bottom-home
-	@media(min-width: $bp-xl)
-		max-width: 800px
+	// &:nth-child(even)
 		margin-left: auto
-		margin-right: auto
+		margin-right: 0
 
 	&:hover
 		.card-home-overlay
@@ -14,7 +50,8 @@
 			border: solid 2px $card-border-color
 
 	img
-		width: 100%
+		position: relative
+		max-width: 100%
 		height: auto
 		display: block
 
@@ -24,6 +61,7 @@
 		display: flex
 		position: absolute
 		border: solid 2px rgba(0,0,0,0)
+		height: auto
 
 		top: 0
 		right: 0
