@@ -6,6 +6,7 @@ location: Leeds
 thumbnail: atelier-fanelsa.jpg
 headline: Atelier Fanelsa
 tagline: I spent 4 months working with this small, community-focused design practice in Berlin
+tag: Illustration & Technical Drawing
 ---
 
 ![alt text](/assets/imgs/professional/fanelsa-budenheim.jpg)

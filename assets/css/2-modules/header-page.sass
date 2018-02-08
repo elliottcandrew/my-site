@@ -2,52 +2,53 @@
 
 // HEADER PAGE
 .header-page
-	@include header-base
-	@media(min-width: $bp-med)
-		margin-top: 90px
+  @include header-base
+  @media(min-width: $bp-med)
+    margin-top: 90px
 
-	.nav-toggle
-		@include nav-toggle-base
+  .nav-toggle
+    @include nav-toggle-base
 
-	span
-		display: block
-		transform: translateY($translate-header-span)
-		margin: 0 auto
-		text-align: center
-		@media(min-width: $bp-large)
-			max-width: 800px
+  span
+    display: block
+    transform: translateY($translate-header-span)
+    margin: 0 auto
+    text-align: center
+    animation: 750ms ease-in-out img-fade-in
+    @media(min-width: $bp-large)
+      max-width: 800px
 
-	h1
-		margin-bottom: .25em
+  h1
+    margin-bottom: .25em
 
-	.nav-back-button
-		display: none
-		@media(min-width: $bp-large)
-			display: block
-			position: fixed
-			left: .8em
-			top: 45px
-			transform: translateY(-50%)
-			&:hover
-				// arrow extension through text
-				.line-thru
-					position: absolute
-					height: 2px
-					right: 0
-					transform: translateY(9px)
-					width: calc(100% - 18px)
-					background: $base-type-color
+  .nav-back-button
+    display: none
+    @media(min-width: $bp-large)
+      display: block
+      position: fixed
+      left: .8em
+      top: 45px
+      transform: translateY(-50%)
+      &:hover
+        // arrow extension through text
+        .line-thru
+          position: absolute
+          height: 2px
+          right: 0
+          transform: translateY(9px)
+          width: calc(100% - 18px)
+          background: $base-type-color
 
-			a
-				display: flex
+      a
+        display: flex
 
-			img
-				width: 22px
-				transform: translateY(-2px)
-				margin-right: .2em
+      img
+        width: 22px
+        transform: translateY(-2px)
+        margin-right: .2em
 
-	.avatar
-		display: none
-		@include avatar-base
-		@media(min-width: $bp-large)
-			display: block
+  .avatar
+    display: none
+    @include avatar-base
+    @media(min-width: $bp-large)
+      display: block

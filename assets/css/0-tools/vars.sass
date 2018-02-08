@@ -48,14 +48,14 @@ $menu-color: $electric
 
 // HOME MARGINS & WIDTHS
 $home-margins: 5vw
-$card-margin-base: 4
+$card-margin-base: 2em
 @mixin home-grid-margins
-	margin-bottom: 4em
+	margin-bottom: calc(#{$card-margin-base} * 2)
 	@media(min-width: $bp-med)
-		margin-right: 2em
+		margin-right: calc(#{$card-margin-base} * 1)
 	@media(min-width: $bp-large)
-		margin-right: 4em
-		margin-bottom: 8em
+		margin-right: calc(#{$card-margin-base} * 2)
+		margin-bottom: calc(#{$card-margin-base} * 4)
 
 // GLOBAL WIDTH
 @mixin base-width
@@ -74,3 +74,10 @@ $card-margin-base: 4
 
 @mixin margin-right-home
 	margin-right: $home-margins
+
+// ANIMATIONS
+@keyframes img-fade-in
+	0%
+		opacity: 0
+	100%
+		opacity: 1

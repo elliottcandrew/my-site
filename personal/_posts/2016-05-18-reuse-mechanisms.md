@@ -6,6 +6,7 @@ location: Berlin
 thumbnail: y3diss.jpg
 headline: Re-use Mechanisms
 tagline: Transitional praxis in Berlin's liminal space
+tag: Architecture
 ---
 
 ![alt text](/assets/imgs/projects/y3diss-bitte_1000.png)

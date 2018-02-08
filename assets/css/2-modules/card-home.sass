@@ -8,7 +8,10 @@
 			opacity: 1
 			transition: 0ms
 			// background: $base-background-color
-			// border: solid 2px $card-border-color
+			border: solid 2px $card-border-color
+		img
+			visibility: hidden
+			transition: 0ms
 
 	img
 		position: relative
@@ -20,11 +23,18 @@
 
 		transition: 250ms ease-in-out
 
+	.hanging-tag
+		letter-spacing: .1em
+		font-weight: 500
+		position: absolute
+		margin-top: .2em
+		margin-left: -1px
+
 	.card-home-overlay
 		flex: 1
 		display: flex
 		position: absolute
-		// border: solid 2px rgba(0,0,0,0)
+		border: solid 2px rgba(0,0,0,0)
 		height: auto
 
 		top: 0
@@ -33,7 +43,7 @@
 		left: 0
 
 		margin: 0
-		padding: 2.4em
+		padding: 1.2em 2em .8em 2em
 		opacity: 0
 		transition: 250ms ease-in-out
 

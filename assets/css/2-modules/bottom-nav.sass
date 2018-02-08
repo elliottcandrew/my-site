@@ -2,8 +2,7 @@
   $card-width: 16vw
   $bg-col: $snow
   $card-col: $dark
-  background: $bg-col
-  border-top: solid 2px $card-col
+  background: #f6e1e5
   padding-top: 6em
   padding-bottom: 6em
 
@@ -21,9 +20,7 @@
 
   .card-bottom-nav
     width: calc(#{$card-width} - 4px)
-    // background: $bg-col
     border: solid 2px $card-col
-    filter: grayscale(100%)
     &:hover
       .card-home-overlay
         opacity: 1
@@ -32,6 +29,7 @@
   .card-home-overlay
     width: $card-width
     position: absolute
+    background: #f6e1e5
     transform: translate(-2px, -2px)
     opacity: 0
 

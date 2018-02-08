@@ -6,6 +6,7 @@ location: Leeds
 thumbnail: y3p2.jpg
 headline: Freespace Workshop
 tagline: A modular community construction project in the industrial hinterlands of Leeds
+tag: Architecture
 ---
 
 ![alt text](/assets/imgs/projects/y3p2-rain_600.jpg)
