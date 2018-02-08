@@ -48,8 +48,16 @@ $menu-color: $electric
 
 // HOME MARGINS & WIDTHS
 $home-margins: 5vw
+$card-margin-base: 4
+@mixin home-grid-margins
+	margin-bottom: 4em
+	@media(min-width: $bp-med)
+		margin-right: 2em
+	@media(min-width: $bp-large)
+		margin-right: 4em
+		margin-bottom: 8em
 
-// GLOBAL MARGINS
+// GLOBAL WIDTH
 @mixin base-width
 	width: 90vw
 	margin: 0 auto
@@ -57,7 +65,7 @@ $home-margins: 5vw
 		width: 76vw
 	@media(min-width: $bp-large)
 		max-width: none
-		width: 68vw
+		width: 85vw
 
 @mixin margin-bottom-home
 	margin-bottom: $home-margins

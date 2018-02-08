@@ -1,52 +1,15 @@
 // CENTRAL COLUMNS
 
 .columns
-	display: block
 	margin: 0 auto
+	// padding-left: 4em
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	// background: pink
+	// @media(min-width: $bp-large)
+		width: 85vw
+		max-width: 1400px
 
-	@media (min-width: $bp-large)
-		display: flex
-		flex-wrap: wrap
-		justify-content: space-between
-
-	// // columns
-  //
-	// .col1, .col2
-	// 	width: 100%
-	// 	min-width: 150px
-  //
-	// .col1
-	// 	@include margin-right-home
-  //
-	// .content
-	// 	width: 100%
-  //
-	// #sticky1
-	// 	position: sticky
-  //
-	// #sticky2
-	// 	position: sticky
-  //
-	// .col-header
-	// 	display: none
-  //
-	// 	@media (min-width: $bp-large)
-	// 		display: block
-	// 		position: relative
-	// 		left: 50%
-	// 		z-index: 2
-  //
-	// 	h2
-	// 		position: fixed
-	// 		top: 45px
-	// 		transform: translateX(-50%) translateY(-50%)
-	// 		margin: 0
-  //
-	// .textlink
-	// 	padding-bottom: 32px
-  //
-	// // allows bottom margin on cards to be active and not mess up js sticky positioning (I hope)
-	// .col-bottom-spacer
-	// 	height: 1px
-	// 	background: white
-	// 	opacity: 0
+	.card-home
+		@include home-grid-margins

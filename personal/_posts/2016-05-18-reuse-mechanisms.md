@@ -3,7 +3,7 @@ layout: projects
 title:  "Re-use Mechanisms"
 date:   2016-05-18
 location: Berlin
-thumbnail: y3diss.png
+thumbnail: y3diss.jpg
 headline: Re-use Mechanisms
 tagline: Transitional praxis in Berlin's liminal space
 ---
