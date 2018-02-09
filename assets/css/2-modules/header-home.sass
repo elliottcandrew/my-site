@@ -1,12 +1,6 @@
 // HEADER HOME
 $translate-header-span: .2em
 
-.header-wrap
-	color: $base-type-color
-	@media(min-width: $bp-large)
-		height: 90px
-
-// HEADER HOME
 .header-home
 	@include header-base
 	display: flex
@@ -19,20 +13,29 @@ $translate-header-span: .2em
 	.touch-toggle
 		@include touch-toggle-base
 
-	.title-home
-		transform: translateY($translate-header-span) // fine adjustment to align with avatar
-		max-width: 300px
-		@media(min-width: $bp-med)
-			transform: translateY(.45em)
-			max-width: 400px
+	.header-nav
+		position: relative
+		display: flex
+		top: 2em
+		left: .8em
+		h1:after
+			content: "EA"
+			@media(min-width: $bp-med)
+				content: "Elliott Andrew"
 
-	.title-home
-		&.hide
-			display: none
-			@media(min-width: $bp-large)
-				display: block
-		@media(min-width: $bp-large)
-			display: none
+	.line-graphic
+		height: 2px
+		margin: 0 .75em
+		transform: translateY(1.6em)
+		width: 4em
+		background: $base-type-color
+
+	ul
+		list-style-type: none
+		padding: 0
+
+	li
+		margin-bottom: .75em
 
 	.avatar
 		@include avatar-base
