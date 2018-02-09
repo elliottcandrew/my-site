@@ -14,38 +14,34 @@
     transform: translateY($translate-header-span)
     margin: 0 auto
     text-align: center
-    animation: 750ms ease-in-out img-fade-in
+    @include page-fade-in
     @media(min-width: $bp-large)
       max-width: 800px
 
   h1
     margin-bottom: .25em
 
+  $back-button-size: 22px
   .nav-back-button
     display: none
     @media(min-width: $bp-large)
+      height: $back-button-size
       display: block
       position: fixed
       left: .8em
-      top: 45px
+      top: 4.6em
       transform: translateY(-50%)
-      &:hover
-        // arrow extension through text
-        .line-thru
-          position: absolute
-          height: 2px
-          right: 0
-          transform: translateY(9px)
-          width: calc(100% - 18px)
-          background: $base-type-color
 
       a
-        display: flex
+        display: block
+        width: 2em
+        transition: 50ms ease-in
+        &:hover
+          padding-right: .2em
+          margin-left: -.2em
 
       img
-        width: 22px
-        transform: translateY(-2px)
-        margin-right: .2em
+        width: $back-button-size
 
   .avatar
     display: none

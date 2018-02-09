@@ -7,40 +7,46 @@
 .menu1
   .close-1
   .menu1-content
-    h4 Contact
+    h2 Contact
     br
-    h4
+    p
       | If you are interested in a commission, would like to inquire about a project or just want to chat, get in touch
       br
       ul
         li
-          a(href="http://instagram.com/ellidot/", target="_blank" ) instagram: ellidot
+          p
+            a(href="http://instagram.com/ellidot/", target="_blank" ) > instagram: ellidot
         li
-          a(href="http://twitter.com/elliottcandrew", target="_blank" ) twitter: elliottcandrew
+          p
+            a(href="http://twitter.com/elliottcandrew", target="_blank" ) > twitter: elliottcandrew
         li
-          a(href="mailto:info@eandrew.xyz") email: info@eandrew.xyz
+          p
+            a(href="mailto:info@eandrew.xyz") > email: info@eandrew.xyz
       br
-      a(href="/info") > more information
+      p
+        a(href="/info") > more information
 
 .menu2
   .close-2
   .menu2-content
-    h4 Blog
+    h2 Blog
     br
     //- h4 A collection of thoughts, excerpts and articles
-    h4
+    p
       ul
         | {% for post in site.posts %}
         | {% if post.categories contains 'blog' %}
         
         li
-          a(href="{{post.url}}")
-              | {{post.tagline}}
-              br
-              | {% assign d = post.date | date: "%-d" %}{% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %}{{post.date | date: ' %b %Y'}}
+          p
+            a(href="{{post.url}}")
+                | > {{post.tagline}}
+                br
+                | {% assign d = post.date | date: "%-d" %}{% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %}{{post.date | date: ' %b %Y'}}
 
         | {% endif %}
         | {% endfor %}
       br
-      a(href="/blog")
-        | > see all posts
+      p
+        a(href="/blog")
+          | > see all posts

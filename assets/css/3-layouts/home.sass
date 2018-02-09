@@ -1,13 +1,15 @@
 // HOME GRID LAYOUT
+.home-wrap
+	background: #e7ecf3
+
 .home-grid
-	// background: lightgrey
 	@include base-width
 	display: flex
 	flex-wrap: wrap
 	justify-content: center
 	margin: 0 auto
 	padding-top: 14em
-	animation: 750ms ease-in-out img-fade-in
+	@include page-fade-in
 	@media(min-width: $bp-med)
 		transform: translateX(calc(#{$card-margin-base} / 2)) // to account for margin-right on card-home
 	@media(min-width: $bp-large)

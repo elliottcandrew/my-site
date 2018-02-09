@@ -44,7 +44,8 @@ $bp-2xl: 118em
 $base-background-color: $snow
 $base-type-color: $dark
 $card-border-color: $dark
-$menu-color: $electric
+$menu-color: $snow
+$side-menu-color: $black
 
 // HOME MARGINS & WIDTHS
 $home-margins: 5vw
@@ -63,9 +64,12 @@ $card-margin-base: 2em
 	width: 90vw
 	margin: 0 auto
 	@media(min-width: $bp-med)
-		width: 76vw
+		width: 85vw
 	@media(min-width: $bp-large)
-		max-width: none
+		width: 92vw
+		margin: 0 auto
+	@media(min-width: $bp-xl)
+		max-width: 1800px
 		width: 85vw
 
 @mixin margin-bottom-home
@@ -76,59 +80,21 @@ $card-margin-base: 2em
 @mixin margin-right-home
 	margin-right: $home-margins
 
-// SHARED HEADER SETTINGS
-$avatar-size: 5em
-
-@mixin header-base
-	color: $base-type-color
-	margin-top: 5em
-	margin-bottom: 2.4em
-	@media(min-width: $bp-large)
-		width: 100%
-		left: 0
-		margin: 0
-
-@mixin touch-toggle-base
-	position: fixed
-	top: 1em
-	transform: translateX(-2px) // account for bounding box
-	z-index: 5
-	width: 36px
-	@media(min-width: $bp-med)
-		left: 1.25em
-	@media(min-width: $bp-large)
-		display: none
-
-@mixin avatar-base
-	@include size(calc(#{$avatar-size} / 1.2))
-	min-width: calc(#{$avatar-size} / 1.2)
-	min-height: calc(#{$avatar-size} / 1.2)
-	border-radius: 50%
-	background: red
-	transition: 0ms
-	align-self: flex-end
-	margin-left: 1em
-	@media(min-width: $bp-med)
-		@include size($avatar-size)
-	@media(min-width: $bp-large)
-		position: fixed
-		top: 2.65em
-		right: 1em
-	&:hover
-		filter: brightness(200%)
-		box-shadow: 0px 2px 15px 5px rgba(0,0,0,0.1)
-		transition: 150ms ease-in-out
-
 // ANIMATIONS
-@keyframes color-flash
-	25%
-		background-color: #f2efd6
-	50%
-		background-color: #f6e1e5
-	75%
-		background-color: #e9f4db
+@mixin page-fade-in
+	animation: 750ms ease-in-out img-fade-in
+
+@keyframes avatar-flash
+	20%
+		background-color: red
+	40%
+		background-color: #4e8c36
+	60%
+		background-color: #fa9b96
+	80%
+		background-color: $yella
 	100%
-		background-color: #e7ecf3
+		background-color: $electric
 
 @keyframes img-fade-in
 	0%
