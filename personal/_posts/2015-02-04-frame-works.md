@@ -6,7 +6,7 @@ location: Scarborough
 thumbnail: y3p1.jpg
 headline: Frame Works Gallery
 tagline: Dynamic work and gallery spaces for local artists in Scarborough
-tag: Architecture
+tag: University Project
 ---
 
 This project is an ecosystem of social involvement, it intersects local community with the transient intrigue of tourism, whilst developing an ever-changing collaborative spectacle that belongs to both. The scheme is underscored by it’s capacity for change, it embraces social diversity and it provides an adaptive forum for this diversity to be celebrated.
