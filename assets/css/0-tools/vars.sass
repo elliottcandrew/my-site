@@ -80,10 +80,10 @@ $card-margin-base: 2em
 $avatar-size: 5em
 
 @mixin header-base
+	color: $base-type-color
 	margin-top: 5em
 	margin-bottom: 2.4em
 	@media(min-width: $bp-large)
-		height: inherit
 		width: 100%
 		left: 0
 		margin: 0
@@ -112,7 +112,7 @@ $avatar-size: 5em
 		@include size($avatar-size)
 	@media(min-width: $bp-large)
 		position: fixed
-		top: 90px
+		top: 2.65em
 		right: 1em
 	&:hover
 		filter: brightness(200%)
@@ -120,6 +120,16 @@ $avatar-size: 5em
 		transition: 150ms ease-in-out
 
 // ANIMATIONS
+@keyframes color-flash
+	25%
+		background-color: #f2efd6
+	50%
+		background-color: #f6e1e5
+	75%
+		background-color: #e9f4db
+	100%
+		background-color: #e7ecf3
+
 @keyframes img-fade-in
 	0%
 		opacity: 0
