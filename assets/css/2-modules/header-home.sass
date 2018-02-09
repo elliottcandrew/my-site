@@ -1,45 +1,4 @@
-// Shared header settings
-@mixin header-base
-	margin-top: 5em
-	margin-bottom: 2.4em
-	@media(min-width: $bp-large)
-		height: inherit
-		width: 100%
-		left: 0
-		margin: 0
-
-@mixin nav-toggle-base
-	position: fixed
-	top: 1em
-	transform: translateX(-2px) // account for bounding box
-	z-index: 5
-	width: 36px
-	@media(min-width: $bp-med)
-		left: 1.25em
-	@media(min-width: $bp-large)
-		display: none
-
-$avatar-size: 5em
-@mixin avatar-base
-	@include size(calc(#{$avatar-size} / 1.2))
-	min-width: calc(#{$avatar-size} / 1.2)
-	min-height: calc(#{$avatar-size} / 1.2)
-	border-radius: 50%
-	background: red
-	transition: 0ms
-	align-self: flex-end
-	margin-left: 1em
-	@media(min-width: $bp-med)
-		@include size($avatar-size)
-	@media(min-width: $bp-large)
-		position: fixed
-		top: 90px
-		right: 1em
-	&:hover
-		filter: brightness(200%)
-		box-shadow: 0px 2px 15px 5px rgba(0,0,0,0.1)
-		transition: 150ms ease-in-out
-
+// HEADER HOME
 $translate-header-span: .2em
 
 .header-wrap
@@ -57,10 +16,10 @@ $translate-header-span: .2em
 		position: fixed
 		z-index: 5
 
-	.nav-toggle
-		@include nav-toggle-base
+	.touch-toggle
+		@include touch-toggle-base
 
-	.title-home, .title-prof, .title-pers
+	.title-home
 		transform: translateY($translate-header-span) // fine adjustment to align with avatar
 		max-width: 300px
 		@media(min-width: $bp-med)
@@ -73,54 +32,7 @@ $translate-header-span: .2em
 			@media(min-width: $bp-large)
 				display: block
 		@media(min-width: $bp-large)
-			display: block
-			transform: translateY(-.35em)
-			position: fixed
-			top: 90px
-			left: 1em
-			width: 9.2em
-
-	.title-prof, .title-pers
-		display: none
-		margin: 0 auto 1em auto
-		&.show
-			display: block
-
-	h1
-		@media(min-width: $bp-large)
 			display: none
-
-	// h4
-		display: none
-		@media(min-width: $bp-large)
-			display: block
-
-	.nav-wrap
-		display: none
-		@media(min-width: $bp-large)
-			display: block
-			position: fixed
-			width: 100%
-			height: inherit
-
-	.nav-inner
-		display: flex
-		position: relative
-		justify-content: space-around
-
-		margin: 0 auto
-		@include base-width
-
-		top: 50%
-		transform: translateY(-50%)
-
-	.tab-1
-		@include margin-right-home
-
-	.tab-1, .tab-2, .tab-3
-		display: block
-		width: 100%
-		text-align: center
 
 	.avatar
 		@include avatar-base

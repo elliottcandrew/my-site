@@ -38,7 +38,7 @@ $(document).ready(function() {
   });
 
   // TOUCH MENU
-  $('.nav-toggle, .close-touch').on('click', function(){
+  $('.touch-toggle, .close-touch').on('click', function(){
     $('.menu-touch').toggleClass('clicked');
     $('body, html').toggleClass('noscroll');
   });
