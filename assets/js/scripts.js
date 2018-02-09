@@ -29,12 +29,19 @@ $(document).ready(function() {
   });
 
   // SLIDE-OUT MENUS + hide tab while menu shows
-  $('.tab-left, .close-1').on('click', function(){
+  $('.tab-left, .close-1').on('click', function() {
     $('.menu1, .tab-left').toggleClass('clicked');
+    return false;
   });
 
-  $('.tab-right, .close-2').on('click', function(){
+  $('.tab-right, .close-2').on('click', function() {
     $('.menu2, .tab-right').toggleClass('clicked');
+    return false;
+  });
+
+  $('html').on('click', function() {
+    $('.menu1, .tab-left').removeClass('clicked');
+    $('.menu2, .tab-right').removeClass('clicked');
   });
 
   // TOUCH MENU
@@ -45,7 +52,7 @@ $(document).ready(function() {
 
   // CYCLE THROUGh BODY COLOURS ON CARD HOVER
   $(".card-home").mouseenter(function() {
-    $("html").css("background", colors[(counter++)%colors.length]);
+    $(".home-wrap").css("background", colors[(counter++)%colors.length]);
   });
 
 });
