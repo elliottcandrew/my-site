@@ -2,73 +2,48 @@
 $header-content-top: 3.1em
 $avatar-size: 5em
 
-@mixin header-base
-	color: $base-type-color
-	@media(min-width: $bp-large)
-		width: 100%
-		left: 0
-		margin: 0
-
-@mixin touch-toggle-base
-	position: fixed
-	top: 1em
-	left: .9em
-	z-index: 5
-	width: 27px
-	@media(min-width: $bp-large)
-		display: none
-
-@mixin avatar-base
-	position: absolute
-	top: calc(#{$header-content-top} + .65em)
-	right: 1em
-	@include size(calc(#{$avatar-size} / 1.2))
-	min-width: calc(#{$avatar-size} / 1.2)
-	min-height: calc(#{$avatar-size} / 1.2)
-	border-radius: 50%
-	background: red
-	transition: 0ms
-	align-self: flex-end
-	margin-left: 1em
-	animation: 1250ms step-start avatar-flash infinite
-	animation-play-state: paused
-	@media(min-width: $bp-med)
-		@include size($avatar-size)
-	@media(min-width: $bp-large)
-		position: fixed
-		right: 1em
-	&:hover
-		animation-play-state: running
-		box-shadow: 0px 2px 15px 5px rgba(0,0,0,0.06)
-		transition: 150ms ease-in-out
-
 // HEADER HOME
 $translate-header-span: .2em
 
 .header-home
-	width: 100%
-	@include header-base
+	color: $base-type-color
 	position: absolute
-	display: flex
-	flex-direction: row
-	justify-content: space-between
 	@media(min-width: $bp-large)
+		width: 100%
+		left: 0
+		margin: 0
 		position: fixed
 		z-index: 5
 
 	.touch-toggle
-		@include touch-toggle-base
+		position: fixed
+		top: 1em
+		left: .9em
+		z-index: 5
+		width: 27px
+		@media(min-width: $bp-large)
+			display: none
 
 	.header-nav
+		// background: pink
 		position: relative
 		display: flex
 		top: $header-content-top
 		left: .8em
 		z-index: 6
+		a
+			height: 3em
+
 		h1:after
 			content: "EA"
 			@media(min-width: $bp-med)
 				content: "Elliott Andrew"
+
+	// // remove navigation elements for all pages other than homepage
+	// .line-graphic, ul
+	// 	/* {% if page.categories %} */
+	// 	display: none
+	// 	/* {% endif %} */
 
 	.line-graphic
 		height: 2px
@@ -91,7 +66,28 @@ $translate-header-span: .2em
 		margin-bottom: .75em
 
 	.avatar
-		@include avatar-base
+		position: absolute
+		top: calc(#{$header-content-top} + .65em)
+		right: 1em
+		@include size(calc(#{$avatar-size} / 1.2))
+		min-width: calc(#{$avatar-size} / 1.2)
+		min-height: calc(#{$avatar-size} / 1.2)
+		border-radius: 50%
+		background: red
+		transition: 0ms
+		align-self: flex-end
+		margin-left: 1em
+		animation: 1250ms step-start avatar-flash infinite
+		animation-play-state: paused
+		@media(min-width: $bp-med)
+			@include size($avatar-size)
+		@media(min-width: $bp-large)
+			position: fixed
+			right: 1em
+		&:hover
+			animation-play-state: running
+			box-shadow: 0px 2px 15px 5px rgba(0,0,0,0.06)
+			transition: 150ms ease-in-out
 		&.hide
 			display: none
 			@media(min-width: $bp-large)

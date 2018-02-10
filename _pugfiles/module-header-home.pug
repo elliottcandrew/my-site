@@ -6,7 +6,11 @@
 		//- h4 Elliott is a freelance architectural designer, illustrator and maker
 		
 	.header-nav
-		h1
+		a(href="/")
+			h1
+			
+		//- | {% if page.homepage %}
+		
 		.line-graphic
 		ul
 			li
@@ -15,5 +19,7 @@
 				h2 Architecture
 			li
 				h2 Furniture
+					
+		//- | {% endif %}
 	
 	a(href="/").avatar
