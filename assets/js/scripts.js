@@ -8,10 +8,10 @@ var homeMargins = 0;
 // colour cycle
 var counter = 0;
 var colors = [
-  "#f2efd6",
-  "#f6e1e5",
   "#e9f4db",
-  "#e7ecf3"
+  "#f6e1e5",
+  "#e7ecf3",
+  "#e9e6e1"
 ];
 
 $(document).ready(function() {
@@ -52,7 +52,7 @@ $(document).ready(function() {
 
   // CYCLE THROUGh BODY COLOURS ON CARD HOVER
   $(".card-home").mouseenter(function() {
-    $(".home-wrap").css("background", colors[(counter++)%colors.length]);
+    $("html").css("background", colors[(counter++)%colors.length]);
   });
 
 });

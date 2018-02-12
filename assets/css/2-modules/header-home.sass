@@ -1,15 +1,14 @@
-// SHARED HEADER SETTINGS
-$header-content-top: 3.1em
-$avatar-size: 5em
-
 // HEADER HOME
-$translate-header-span: .2em
-
 .header-home
+	$content-top: 3.1em
+	$avatar-size: 5em
+	$translate-header-span: .2em
+
 	color: $base-type-color
 	position: absolute
+	width: 100%
 	@media(min-width: $bp-large)
-		width: 100%
+		top: 0
 		left: 0
 		margin: 0
 		position: fixed
@@ -25,10 +24,10 @@ $translate-header-span: .2em
 			display: none
 
 	.header-nav
-		// background: pink
+		height: 0
 		position: relative
 		display: flex
-		top: $header-content-top
+		top: $content-top
 		left: .8em
 		z-index: 6
 		a
@@ -36,14 +35,8 @@ $translate-header-span: .2em
 
 		h1:after
 			content: "EA"
-			@media(min-width: $bp-med)
+			@media(min-width: $bp-small)
 				content: "Elliott Andrew"
-
-	// // remove navigation elements for all pages other than homepage
-	// .line-graphic, ul
-	// 	/* {% if page.categories %} */
-	// 	display: none
-	// 	/* {% endif %} */
 
 	.line-graphic
 		height: 2px
@@ -67,17 +60,15 @@ $translate-header-span: .2em
 
 	.avatar
 		position: absolute
-		top: calc(#{$header-content-top} + .65em)
+		top: calc(#{$content-top} + .65em)
 		right: 1em
 		@include size(calc(#{$avatar-size} / 1.2))
 		min-width: calc(#{$avatar-size} / 1.2)
 		min-height: calc(#{$avatar-size} / 1.2)
 		border-radius: 50%
-		background: red
-		transition: 0ms
 		align-self: flex-end
-		margin-left: 1em
-		animation: 1250ms step-start avatar-flash infinite
+		transition: 0ms
+		animation: 1250ms step-start bg-flash infinite
 		animation-play-state: paused
 		@media(min-width: $bp-med)
 			@include size($avatar-size)
@@ -88,7 +79,7 @@ $translate-header-span: .2em
 			animation-play-state: running
 			box-shadow: 0px 2px 15px 5px rgba(0,0,0,0.06)
 			transition: 150ms ease-in-out
-		&.hide
+		// &.hide
 			display: none
 			@media(min-width: $bp-large)
 				display: block

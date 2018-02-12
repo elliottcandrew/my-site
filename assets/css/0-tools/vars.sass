@@ -8,7 +8,6 @@ $teal:    #39cccc
 $green:   #2ecc40
 $olive:   #3d9970
 $lime:    #01ff70
-$yella:   #F1CA50
 
 // Warm
 $yellow:  #ffdc00
@@ -21,6 +20,8 @@ $citrus:  #f05555
 
 // Bold
 $electric: #3333ff
+$grass: #4e8c36
+$honey:   #F1CA50
 
 // Grey Scale
 $white:  #fff
@@ -41,7 +42,7 @@ $bp-xl: 100em
 $bp-2xl: 118em
 
 // GLOBAL COLOURS
-$base-background-color: $snow
+$base-background-color: #e9e6e1
 $base-type-color: $dark
 $card-border-color: $dark
 $menu-color: $snow
@@ -84,15 +85,15 @@ $card-margin-base: 2em
 @mixin page-fade-in
 	animation: 750ms ease-in-out img-fade-in
 
-@keyframes avatar-flash
+@keyframes bg-flash
 	20%
-		background-color: red
+		background-color: tomato
 	40%
-		background-color: #4e8c36
+		background-color: $grass
 	60%
 		background-color: #fa9b96
 	80%
-		background-color: $yella
+		background-color: $honey
 	100%
 		background-color: $electric
 

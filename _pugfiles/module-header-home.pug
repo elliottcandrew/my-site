@@ -1,16 +1,13 @@
 .header-home
 	.touch-toggle
 		img(src="assets/imgs/icons/ic_menu_black_36px.svg")
-	//- .title-home
-		h1 Elliott is a freelance architectural designer, illustrator and maker
-		//- h4 Elliott is a freelance architectural designer, illustrator and maker
 		
+	a(href="/").avatar
+	
 	.header-nav
 		a(href="/")
 			h1
-			
-		//- | {% if page.homepage %}
-		
+		| {% if page.homepage %}
 		.line-graphic
 		ul
 			li
@@ -19,7 +16,4 @@
 				h2 Architecture
 			li
 				h2 Furniture
-					
-		//- | {% endif %}
-	
-	a(href="/").avatar
+		| {% endif %}
