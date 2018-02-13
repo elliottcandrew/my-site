@@ -41,19 +41,25 @@
 	.line-graphic
 		height: 2px
 		margin: 0 .5em
-		transform: translateY(26px)
+		transform: translateY(17px)
 		width: 4em
 		background: $base-type-color
-		@media(min-width: $bp-med)
+		@media(min-width: $bp-med) /* animation between breaks inline with title */
+			transform: none
+			margin-top: calc(5px + 2vw)
+		@media(min-width: $bp-large)
 			margin: 0 .75em
 			transform: translateY(26px)
 
 	ul
-		transform: translateY(-2px)
 		padding: 0
 		list-style-type: none
-		@media(min-width: $bp-med)
-			transform: translateY(-2px)
+		transform: translateY(-7px)
+		@media(min-width: $bp-med) /* animation between breaks inline with title */
+			margin-top: calc(1vw + 10px)
+		@media(min-width: $bp-large)
+			margin-top: 0
+			transform: translateY(13px)
 		&:hover
 			.current .dot
 				opacity: 0
