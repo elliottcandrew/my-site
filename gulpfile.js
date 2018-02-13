@@ -2,6 +2,7 @@ var gulp        = require('gulp'),
   browserSync   = require('browser-sync'),
   hygienist     = require('hygienist-middleware'),
   sass          = require('gulp-sass'),
+  scss          = require('gulp-scss'),
   prefix        = require('gulp-autoprefixer'),
   minifycss     = require('gulp-minify-css'),
   jshint        = require('gulp-jshint'),
@@ -57,7 +58,6 @@ gulp.task('browser-sync', ['sass', 'js', 'jekyll-build'], function() {
 gulp.task('sass', function () {
   return gulp.src('assets/css/main.sass')
   .pipe(sass({
-  //includePaths: [bourbon],
   includePaths: ['css'],
   onError: browserSync.notify
   }).on('error', sass.logError))
@@ -77,14 +77,6 @@ gulp.task('pug', function() {
   .pipe(pug())
   .pipe(gulp.dest('_includes'));
 });
-
-// /* Compile coffeescript */
-//
-// gulp.task('coffee', function() {
-//   gulp.src('assets/js/*.coffee')
-//     .pipe(coffeescript({bare: true}))
-//     .pipe(gulp.dest('assets/js'));
-// });
 
 /*
 ** JS Task
@@ -108,8 +100,10 @@ gulp.task('js', function() {
  */
 gulp.task('watch', function () {
   gulp.watch('assets/js/*.js', ['js']).on("change", browserSync.reload);
+  gulp.watch('assets/css/*.sass', ['sass']);
   gulp.watch('assets/css/*/*.sass', ['sass']);
-  //gulp.watch('assets/css/*/*.scss', ['scss']);
+  gulp.watch('assets/css/*/*.scss', ['sass']);
+  gulp.watch('assets/css/*/*/*.scss', ['sass']);
   gulp.watch(['!_site/**/*', '*/*.html', '_layouts/*.html', '_posts/*', '*/_posts/*', '_includes/*', 'assets/imgs/*/*.svg'], ['jekyll-rebuild']);
   gulp.watch('_pugfiles/*.pug', ['pug']);
 });

@@ -1,5 +1,4 @@
-$type-base: 1.4em
-$type-ratio: 1.618
+//TYPE
 
 h1, h2, h3, h4, h5, h6, p, [class*="word"]
   margin: 0
@@ -11,32 +10,32 @@ h1, h2, h3, [class*="word"]
   line-height: 1.4
 
 h1
-  font-size: calc(#{$type-base} * #{$type-ratio} * 2)
+  @include ms-respond(font-size,2)
 
 h2, [class*="word"]
-  font-size: calc(#{$type-base} * #{$type-ratio})
+  @include ms-respond(font-size,1)
 
 h3
-  font-size: $type-base
+  @include ms-respond(font-size,0)
 
 h4
   font-family: 'Nunito', sans-serif
-  font-size: calc(#{$type-base} * #{$type-ratio})
+  @include ms-respond(font-size,1)
 
 h5
   font-family: 'PT Serif', serif
-  font-size: calc(#{$type-base} * #{$type-ratio})
+  @include ms-respond(font-size,1)
   font-style: italic
 
 h6
   font-family: 'Nunito Sans', sans-serif
-  font-size: calc(#{$type-base} / #{$type-ratio})
+  font-size: ms(-1)
   font-weight: 500
   letter-spacing: .1em
 
 p
   font-family: 'Nunito Sans', sans-serif
-  font-size: $type-base
+  @include ms-respond(font-size,0)
   font-weight: 400
   line-height: 1.6
 
