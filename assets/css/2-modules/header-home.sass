@@ -23,7 +23,7 @@
 		@media(min-width: $bp-large)
 			display: none
 
-	.header-nav
+	.header-title
 		height: 0
 		position: relative
 		display: flex
@@ -41,35 +41,73 @@
 	.line-graphic
 		height: 2px
 		margin: 0 .5em
-		transform: translateY(1.2em)
+		transform: translateY(26px)
 		width: 4em
 		background: $base-type-color
 		@media(min-width: $bp-med)
 			margin: 0 .75em
-			transform: translateY(1.6em)
+			transform: translateY(26px)
 
 	ul
-		transform: translateY(-.25em)
+		transform: translateY(-2px)
 		padding: 0
 		list-style-type: none
 		@media(min-width: $bp-med)
-			transform: translateY(-.1em)
+			transform: translateY(-2px)
+		&:hover
+			.current .dot
+				opacity: 0
+				transition: 250ms ease-in-out
 
 	li
-		margin-bottom: .75em
+		padding-bottom: .75em
+		&:last-of-type
+			padding-bottom: 0
+		&:hover,
+		&:active,
+		&:focus
+			.dot
+				opacity: 1
+				transition: 0ms
+
+	h3
+		display: inline-block
+
+	.dot
+		display: none
+		@media(min-width: $bp-med)
+			@include size(5px)
+			border-radius: 50%
+			background: tomato
+			display: inline-block
+			margin-left: .5em
+			transform: translateY(-3px)
+			opacity: 0
+			transition: 250ms ease-in-out
+
+	.current:hover
+		.dot
+			opacity: 1 !important
+
+	.current .dot
+		opacity: 1
+		transition: 0ms
 
 	.avatar
 		position: absolute
 		top: calc(#{$content-top} + .65em)
 		right: 1em
+		align-self: flex-end
+
 		@include size(calc(#{$avatar-size} / 1.2))
 		min-width: calc(#{$avatar-size} / 1.2)
 		min-height: calc(#{$avatar-size} / 1.2)
 		border-radius: 50%
-		align-self: flex-end
+
 		transition: 0ms
 		animation: 1250ms step-start bg-flash infinite
 		animation-play-state: paused
+
 		@media(min-width: $bp-med)
 			@include size($avatar-size)
 		@media(min-width: $bp-large)
@@ -79,7 +117,3 @@
 			animation-play-state: running
 			box-shadow: 0px 2px 15px 5px rgba(0,0,0,0.06)
 			transition: 150ms ease-in-out
-		// &.hide
-			display: none
-			@media(min-width: $bp-large)
-				display: block

@@ -4,16 +4,22 @@
 		
 	a(href="/").avatar
 	
-	.header-nav
+	.header-title
 		a(href="/")
 			h2
 		| {% if page.homepage %}
 		.line-graphic
-		ul
+		ul.header-nav
 			li
-				h3 Visualization
+				a(href="/visualization")
+					h3 Visualization
+					.dot
 			li
-				h3 Architecture
+				a(href="/architecture")
+					h3 Architecture
+					.dot
 			li
-				h3 Furniture
+				a(href="/furniture")
+					h3 Furniture
+					.dot
 		| {% endif %}

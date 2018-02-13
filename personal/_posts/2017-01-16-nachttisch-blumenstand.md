@@ -6,7 +6,8 @@ location: Berlin
 thumbnail: blumenstand.jpg
 headline: Furniture Forays
 tagline: A first step into CNC-routed furniture design
-tag: Furniture
+hanger: Furniture
+tags: furn
 ---
 
 ![alt text](/assets/imgs/projects/blumenstand.jpg)

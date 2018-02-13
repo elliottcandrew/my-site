@@ -50,9 +50,18 @@ $(document).ready(function() {
     $('body, html').toggleClass('noscroll');
   });
 
-  // CYCLE THROUGh BODY COLOURS ON CARD HOVER
+  // CYCLE THROUGH BODY COLOURS ON CARD HOVER
   $(".card-home").mouseenter(function() {
     $("html").css("background", colors[(counter++)%colors.length]);
+  });
+
+  //CURRENT PAGE INDICATION
+  var pathname = (window.location.pathname);
+
+  $('.header-nav li a').each(function() {
+    if ($(this).attr("href") == pathname) {
+      $(this).addClass('current');
+    }
   });
 
 });

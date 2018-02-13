@@ -1,9 +1,7 @@
 .home-grid
 
 	| {% for post in site.posts %}
-	| {% if post.categories contains 'blog' %}
-
-	| {% else %}
+	| {% if post.tags contains 'arch' %}
 
 	a(href="{{post.url}}").card-home
 		img(src="/assets/imgs/thumbs/{{post.thumbnail}}")

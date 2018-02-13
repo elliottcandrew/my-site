@@ -6,7 +6,8 @@ location: Scarborough
 thumbnail: y3p1.jpg
 headline: Frame Works Gallery
 tagline: Dynamic work and gallery spaces for local artists in Scarborough
-tag: University Project
+hanger: University Project
+tags: [viz, arch]
 ---
 
 # Frame Works Gallery
