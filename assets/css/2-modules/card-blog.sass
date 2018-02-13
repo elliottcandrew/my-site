@@ -1,74 +1,33 @@
 .card-blog
-	display: flex
-	flex-direction: row-reverse
-	justify-content: space-between
-	background: #e2e2e2
-
+	position: relative
+	display: block
+	padding-bottom: 1.4em
+	height: 100%
 	&:hover
-		.card-blog-title
-			text-decoration: line-through
-			transition: 0ms
-		.pic, .pic-full
-			transition: 0ms
-		.pic
-			padding: 0
-			background-image: url(/assets/imgs/thumbs/cross.svg) !important
-			transition: 0ms
+		.dot
+			opacity: 1
 
-	.pic, .pic-full
-		position: relative
-		background-repeat: no-repeat
-		background-position: center
-		background-size: cover
-		opacity: .95
-		&:after
-			content: ""
-			display: block
+	span
+		display: inline-block
+		// background: lightgrey
 
-	.pic
-		display: none
-		@media(min-width: $bp-small)
-			display: block
-			width: 33.333333%
-			filter: grayscale(100%) contrast(110%)
-			&:after
-				padding-bottom: 100%
-		@media(min-width: $bp-large)
-			display: none
-		@media(min-width: $bp-large-3)
-			display: block
-			width: 50%
+	h4
+		margin-bottom: -.1em
 
-	.pic-full
-		width: 100%
+	h6
+		margin-top: .6em
+
+	.dot
+		position: absolute
+		// top: 1.4em
+		left: -2.2em
+		top: 1.6em
+		// right: -1.8em
+
+		@include size(16px)
+		border-radius: 50%
+		background: tomato
+		margin-left: .5em
+		transform: translateY(-3px)
 		transition: 250ms ease-in-out
-		&:after
-			padding-bottom: 50%
-
-	.card-blog-overlay
-		flex: 1
-		padding: .75em
-		@media(min-width: $bp-large-3)
-			padding: 1em
-
-	.card-blog-title
-		display: flex
-		height: 100%
-		flex-direction: column
-		justify-content: space-between
-		overflow: hidden
-		text-overflow: ellipsis
-		transition: 250ms ease-in-out
-
-		span:first-child p
-			display: block
-			@media(min-width: $bp-large-3)
-				display: block
-
-	.p-mono
-		transform: translateY(3px) // to account for strange bottom padding on card
-		margin-top: 6px
-
-	h2
-		@media(min-width: $bp-large)
-			margin-bottom: 6px
+		opacity: 0

@@ -2,7 +2,8 @@
   .tab-left
     h6 contact
   .tab-right
-    h6 blog
+    a(href="/blog")
+      h6 blog
 
 .menu1
   .close-1
@@ -24,14 +25,13 @@
             a(href="mailto:info@eandrew.xyz") > email: info@eandrew.xyz
       br
       p
-        a(href="/info") > more information
+        a(href="/contact") > more information
 
-.menu2
+//- .menu2
   .close-2
   .menu2-content
     h3 Blog
     br
-    //- h4 A collection of thoughts, excerpts and articles
     p
       ul
         | {% for post in site.posts %}
