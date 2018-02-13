@@ -7,23 +7,17 @@
 		.dot
 			opacity: 1
 
+	// screwy solution to shit css underlining
 	span
-		display: inline-block
-		// background: lightgrey
-
-	h4
-		margin-bottom: -.1em
+		background-image: linear-gradient(to right, #000 0%, #000 100%)
+		background-repeat: repeat-x
+		background-position: 0 100%
+		background-size: 100% 2px
 
 	h6
-		margin-top: .6em
+		margin-top: .4em
 
 	.dot
-		position: absolute
-		// top: 1.4em
-		left: -2.2em
-		top: 1.6em
-		// right: -1.8em
-
 		@include size(16px)
 		border-radius: 50%
 		background: tomato
@@ -31,3 +25,9 @@
 		transform: translateY(-3px)
 		transition: 250ms ease-in-out
 		opacity: 0
+
+		position: absolute
+		left: -2.2em
+		top: 1em
+		@media(min-width: $bp-med)
+			top: 1.65em

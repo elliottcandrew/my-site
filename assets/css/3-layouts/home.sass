@@ -1,16 +1,20 @@
 // HOME GRID LAYOUT
-
 .home-grid
 	@include base-width
+	@include page-fade-in
+	max-width: 1800px
 	display: flex
 	flex-wrap: wrap
 	justify-content: center
+
 	margin: 0 auto
-	padding-top: 14em
-	@include page-fade-in
+	padding-top: 15em
+
 	@media(min-width: $bp-med)
+		padding-top: calc(12.8em + 5vw) /* variable adjustment to match resizing text */
 		transform: translateX(calc(#{$card-margin-base} / 2)) // to account for margin-right on card-home
 	@media(min-width: $bp-large)
+		padding-top: 15em
 		transform: translateX(#{$card-margin-base})
 
 	.card-home

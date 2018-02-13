@@ -2,12 +2,12 @@
 	.touch-toggle
 		img(src="/assets/imgs/icons/ic_menu_black_36px.svg")
 	
-	a(href="/", id="{% unless page.homepage %}hide-touch{% endunless %}").avatar <!-- adds id on non homepages -->
+	a(href="/", id="{% unless page.id == 'home' %}non-home{% endunless %}").avatar <!-- adds id on non homepages -->
 	
-	.header-title(id="{% unless page.homepage %}hide-touch{% endunless %}")
+	.header-title(id="{% unless page.id == 'home' %}non-home{% endunless %}")
 		a(href="/")
-			h2
-		| {% if page.homepage %} <!-- only build nav if on homepage -->
+			h2 <!-- css applies content here -->
+		| {% if page.id contains 'home' or page.id contains 'blog' %} <!-- only build nav if on homepage or blog -->
 		.line-graphic
 		ul.header-nav
 			li

@@ -1,6 +1,7 @@
 // HEADER HOME
 .header-home
 	$content-top: 3.1em
+	$touch-content-top: calc(#{$content-top} * 1.6)
 	$avatar-size: 5em
 	$translate-header-span: .2em
 
@@ -16,8 +17,9 @@
 
 	.touch-toggle
 		position: fixed
-		top: 1em
-		left: .9em
+		top: 1.4em
+		left: 50%
+		transform: translateX(-50%)
 		z-index: 5
 		width: 27px
 		@media(min-width: $bp-large)
@@ -27,16 +29,22 @@
 		height: 0
 		position: relative
 		display: flex
-		top: $content-top
-		left: .8em
+		top: $touch-content-top
+		left: 2.5vw
 		z-index: 6
-		a
-			height: 3em
+		@media(min-width: $bp-large)
+			top: $content-top
+			left: .8em
 
-		h2:after
-			content: "EA"
-			@media(min-width: $bp-small)
-				content: "Elliott Andrew"
+	a
+		height: 3em
+
+	h2
+		display: inline-block
+	h2:after
+		content: "EA"
+		@media(min-width: $bp-small)
+			content: "Elliott Andrew"
 
 	.line-graphic
 		height: 2px
@@ -99,8 +107,8 @@
 
 	.avatar
 		position: absolute
-		top: calc(#{$content-top} + .65em)
-		right: 1em
+		top: calc(#{$touch-content-top} + .65em)
+		right: 2.55vw
 		align-self: flex-end
 
 		@include size(calc(#{$avatar-size} / 1.2))
@@ -115,6 +123,7 @@
 		@media(min-width: $bp-med)
 			@include size($avatar-size)
 		@media(min-width: $bp-large)
+			top: calc(#{$content-top} + .65em)
 			position: fixed
 			right: 1em
 		&:hover
@@ -122,7 +131,10 @@
 			box-shadow: 0px 2px 15px 5px rgba(0,0,0,0.06)
 			transition: 150ms ease-in-out
 
-	#hide-touch
+	#non-home
 		display: none
 		@media(min-width: $bp-large)
-			display: block
+			display: flex
+
+		h2:after
+			content: "EA"

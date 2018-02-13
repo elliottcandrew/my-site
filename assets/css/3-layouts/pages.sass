@@ -1,10 +1,13 @@
 .page-wrap
-  max-width: 800px
-  margin: 18em auto 0 auto
-  @media(min-width: $bp-med)
-    max-width: none
-    width: 60vw
+  .page-sections
+    @include base-width
+    @include page-fade-in
+    padding-top: 10em
+    max-width: 800px
+    @media(min-width: $bp-med)
+      max-width: 1000px
+    @media(min-width: $bp-large)
+      padding-top: 15em
 
   .title
-    // text-align: center
     margin-bottom: .8em
