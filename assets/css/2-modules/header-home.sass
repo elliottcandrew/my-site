@@ -74,16 +74,14 @@
 		display: inline-block
 
 	.dot
-		display: none
-		@media(min-width: $bp-med)
-			@include size(5px)
-			border-radius: 50%
-			background: tomato
-			display: inline-block
-			margin-left: .5em
-			transform: translateY(-3px)
-			opacity: 0
-			transition: 250ms ease-in-out
+		@include size(5px)
+		border-radius: 50%
+		background: tomato
+		display: inline-block
+		margin-left: .5em
+		transform: translateY(-3px)
+		opacity: 0
+		transition: 250ms ease-in-out
 
 	.current:hover
 		.dot
@@ -117,3 +115,8 @@
 			animation-play-state: running
 			box-shadow: 0px 2px 15px 5px rgba(0,0,0,0.06)
 			transition: 150ms ease-in-out
+
+	#hide-touch
+		display: none
+		@media(min-width: $bp-large)
+			display: block

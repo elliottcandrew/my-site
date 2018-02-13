@@ -1,13 +1,13 @@
 .header-home
 	.touch-toggle
-		img(src="assets/imgs/icons/ic_menu_black_36px.svg")
-		
-	a(href="/").avatar
+		img(src="/assets/imgs/icons/ic_menu_black_36px.svg")
 	
-	.header-title
+	a(href="/", id="{% unless page.homepage %}hide-touch{% endunless %}").avatar <!-- adds id on non homepages -->
+	
+	.header-title(id="{% unless page.homepage %}hide-touch{% endunless %}")
 		a(href="/")
 			h2
-		| {% if page.homepage %}
+		| {% if page.homepage %} <!-- only build nav if on homepage -->
 		.line-graphic
 		ul.header-nav
 			li
