@@ -9,6 +9,9 @@ tagline: Dynamic work and gallery spaces for local artists in Scarborough
 tag: University Project
 ---
 
+# Frame Works Gallery
+{: .text-block}
+
 This project is an ecosystem of social involvement, it intersects local community with the transient intrigue of tourism, whilst developing an ever-changing collaborative spectacle that belongs to both. The scheme is underscored by it’s capacity for change, it embraces social diversity and it provides an adaptive forum for this diversity to be celebrated.
 {: .text-block}
 
@@ -19,10 +22,10 @@ This project is an ecosystem of social involvement, it intersects local communit
 {: .md-inset-left}
 {: #text-space}
 
-![alt text](/assets/imgs/projects/y3p1-frame-graphic.jpg)
-{: .md-small}
+<!-- ![alt text](/assets/imgs/projects/y3p1-frame-graphic.jpg)
+{: .md-small} -->
 
-![alt text](/assets/imgs/projects/y3p1-frame-assembly.jpg)
+![alt text](/assets/imgs/projects/y3p1-frame-assembly.png)
 {: .md-full}
 
 ![alt text](/assets/imgs/projects/y3p1-montage-beach.jpg)
@@ -31,6 +34,6 @@ This project is an ecosystem of social involvement, it intersects local communit
 ![alt text](/assets/imgs/projects/y3p1-model-blue.jpg)
 {: .md-center}
 
-# A social framework
+##### A social framework
 {: .md-center}
 {: #text-center}

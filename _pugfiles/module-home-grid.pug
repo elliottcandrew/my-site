@@ -7,7 +7,8 @@
 
 	a(href="{{post.url}}").card-home
 		img(src="/assets/imgs/thumbs/{{post.thumbnail}}")
-		.hanging-tag {{post.tag}}
+		.hanging-tag
+			h6 {{post.tag}}
 		.card-home-overlay
 			
 			// lettering.js applies span to each child

@@ -1,118 +1,50 @@
-// TYPE
+$type-base: 1.4em
+$type-ratio: 1.618
 
-$type-base: 1em
-$type-ratio: 1.414
-
-// headings
-
-// title header
-h1
+h1, h2, h3, h4, h5, h6, p, [class*="word"]
   margin: 0
-  font-family: Catamaran, sans-serif
-  font-size: 1.618em
-  font-style: normal
-  font-weight: 700
-  @media (min-width: $bp-med)
-    font-size: 2em
-
-// header header
-h2
-  margin: 0
-  font-family: Catamaran, sans-serif
-  font-size: 1em
-  line-height: 1.25
   letter-spacing: .05em
-  font-weight: 700
-  @media (min-width: $bp-med)
-    font-size: 1.2em
-  @media (min-width: $bp-xl)
-    font-size: 1.2em
+
+h1, h2, h3, [class*="word"]
+  font-family: 'Nunito Sans', sans-serif
+  font-weight: 800
+  line-height: 1.4
+
+h1
+  font-size: calc(#{$type-base} * #{$type-ratio} * 2)
+
+h2, [class*="word"]
+  font-size: calc(#{$type-base} * #{$type-ratio})
 
 h3
-  margin: 0
-  font-family: Catamaran, sans-serif
-  font-size: 16px
-  line-height: 1.25
-  letter-spacing: .05em
-  font-weight: 500
-  @media (min-width: $bp-large)
-    font-size: 2.2ex
-  @media (min-width: $bp-xl)
-    font-size: 2.6ex
+  font-size: $type-base
 
-// info header
 h4
-  margin: 0
-  font-family: Fira Mono, monospace
-  font-size: 1em
-  line-height: 1.75
-  letter-spacing: .15em
-  font-weight: 500
-  @media (min-width: $bp-large)
-    font-size: 1.8ex
-  @media (min-width: $bp-xl)
-    font-size: 2ex
+  font-family: 'Nunito', sans-serif
+  font-size: calc(#{$type-base} * #{$type-ratio})
 
 h5
-  margin: 0
-  font-family: Catamaran, sans-serif
-  font-size: 1.618em
-  font-style: normal
-  font-weight: 700
-  @media (min-width: $bp-med)
-    font-size: 1.618em
+  font-family: 'PT Serif', serif
+  font-size: calc(#{$type-base} * #{$type-ratio})
+  font-style: italic
 
-// project card
-
-.t1
-  color: $dark
-  font-family: Catamaran, sans-serif
-  font-size: 30px
-  font-style: normal
-  font-weight: 700
-
-[class*="word"]
-  font-family: Catamaran, sans-serif
-  font-weight: 700
-  color: $card-border-color
-  font-size: 1.942em
-  @media(min-width: $bp-med)
-    font-size: 3.142em
-
-.t2
-  color: $dark
-  font-family: Catamaran, sans-serif
-  font-size: 14px
-  font-style: normal
+h6
+  font-family: 'Nunito Sans', sans-serif
+  font-size: calc(#{$type-base} / #{$type-ratio})
   font-weight: 500
-
-// paragraph styles
-
-.p-mono
-  margin: 0
-  font-family: Fira Mono, monospace
-  font-size: 1.75ex
-  line-height: 1.8
-  font-weight: 400
-  @media (min-width: $bp-large)
-    font-size: 1.5ex
-  @media (min-width: $bp-xl)
-    font-size: 1.75ex
+  letter-spacing: .1em
 
 p
-  margin: 0
-  font-family: Catamaran, sans-serif
-  font-size: 2.2ex
-  line-height: 1.5
-  letter-spacing: .05em
-  font-weight: 300
-  @media (min-width: $bp-large)
-    font-size: 1em
-  @media (min-width: $bp-xl)
-    font-size: 1.414em
+  font-family: 'Nunito Sans', sans-serif
+  font-size: $type-base
+  font-weight: 400
+  line-height: 1.6
 
-// modifiers
+// CARD TITLE OVERLAY
+[class*="word"]
+  color: $card-border-color
 
+// MODIFIERS
 em
   font-style: italic
 
