@@ -1,5 +1,38 @@
 .home-grid
 
+	a(href="#").card-home
+		img(src="/assets/imgs/thumbs/img.jpg")
+		.hanger
+			h6 Test Card
+		.card-home-overlay
+			
+			// lettering.js applies span to each child
+			.title-wrap
+				| This is a test
+				
+
+	a(href="#").card-home
+		img(src="/assets/imgs/thumbs/test.jpg" srcset="/assets/imgs/thumbs/img.jpg 1x, /assets/imgs/thumbs/img@2x.jpg 2x")
+		.hanger
+			h6 Test Card
+		.card-home-overlay
+			
+			// lettering.js applies span to each child
+			.title-wrap
+				| This is a test
+				
+	//- a(href="#").card-home
+	//- 	img(src="/assets/imgs/thumbs/test.jpg" srcset="/assets/imgs/thumbs/test.jpg 500w, /assets/imgs/thumbs/test@2x.jpg 1000w, /assets/imgs/thumbs/test@3x.jpg 1500w" sizes="(min-width: 1600px) 36vw, (min-width: 1200px) 48vw, (min-width: 640px) 81vw, 93vw")
+	//- 	.hanger
+	//- 		h6 Test Card
+	//- 	.card-home-overlay
+	//- 
+	//- 		// lettering.js applies span to each child
+	//- 		.title-wrap
+	//- 			| This is a test
+
+	// ORIGINAL STUFF BELOW
+
 	| {% for post in site.posts %}
 	| {% if post.categories contains 'blog' %}
 

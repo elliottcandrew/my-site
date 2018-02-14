@@ -1,4 +1,4 @@
-<div class="home-grid">{% for post in site.posts %}
+<div class="home-grid"><a class="card-home" href="#"><img src="/assets/imgs/thumbs/img.jpg"/><div class="hanger"><h6>Test Card</h6></div><div class="card-home-overlay"><!-- lettering.js applies span to each child--><div class="title-wrap">This is a test</div></div></a><a class="card-home" href="#"><img src="/assets/imgs/thumbs/test.jpg" srcset="/assets/imgs/thumbs/img.jpg 1x, /assets/imgs/thumbs/img@2x.jpg 2x"/><div class="hanger"><h6>Test Card</h6></div><div class="card-home-overlay"><!-- lettering.js applies span to each child--><div class="title-wrap">This is a test</div></div></a><!-- ORIGINAL STUFF BELOW-->{% for post in site.posts %}
 {% if post.categories contains 'blog' %}
 {% else %}<a class="card-home" href="{{post.url}}"><img src="/assets/imgs/thumbs/{{post.thumbnail}}"/><div class="hanger"><h6>{{post.hanger}}</h6></div><div class="card-home-overlay"><!-- lettering.js applies span to each child--><div class="title-wrap">{{post.title}}</div></div></a>{% endif %}
 {% endfor %}</div>
