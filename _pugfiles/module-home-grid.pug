@@ -1,19 +1,23 @@
 .home-grid
 
 	| {% for post in site.posts %}
-	| {% if post.categories contains 'blog' %}
+	| {% unless post.categories contains 'blog' %}
 
-	| {% else %}
-
-	a(href="{{post.url}}").card-home
-		img(src="/assets/imgs/thumbs/{{post.thumbnail}}")
+	a(href="{{post.url}}", id="{{post.shape}}").card-home
+		// srcset include for responsive thumbnail images
+		img(
+			src="{{ site.thumb_url }}/568/{{ post.thumb }}",
+			srcset="{% for width in site.thumb-srcset %}{{ site.thumb_url }}/{{ width }}/{{ post.thumb }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}",
+			sizes="{{ site.sizes }}",
+			alt="{{ post.title }}")
+		
 		.hanger
-			h6 {{post.hanger}}
+			h6 {{ post.hanger }}
 		.card-home-overlay
 			
 			// lettering.js applies span to each child
 			.title-wrap
 				| {{post.title}}
 
-	| {% endif %}
+	| {% endunless %}
 	| {% endfor %}

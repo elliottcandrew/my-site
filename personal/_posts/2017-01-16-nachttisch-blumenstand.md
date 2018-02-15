@@ -8,6 +8,9 @@ headline: Furniture Forays
 tagline: A first step into CNC-routed furniture design
 hanger: Furniture
 tags: furn
+
+shape: portrait
+thumb: nacht-tisch.jpg
 ---
 
 ![alt text](/assets/imgs/projects/blumenstand.jpg)

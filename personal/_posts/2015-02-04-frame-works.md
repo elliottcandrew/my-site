@@ -8,6 +8,9 @@ headline: Frame Works Gallery
 tagline: Dynamic work and gallery spaces for local artists in Scarborough
 hanger: University Project
 tags: [viz, arch]
+
+shape: portrait
+thumb: y3p1.jpg
 ---
 
 # Frame Works Gallery

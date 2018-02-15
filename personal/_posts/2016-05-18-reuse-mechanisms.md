@@ -8,6 +8,9 @@ headline: Re-use Mechanisms
 tagline: Transitional praxis in Berlin's liminal space
 hanger: Bachelor Thesis
 tags: arch
+
+shape: landscape
+thumb: y3diss.jpg
 ---
 
 ![alt text](/assets/imgs/projects/y3diss-bitte_1000.png)

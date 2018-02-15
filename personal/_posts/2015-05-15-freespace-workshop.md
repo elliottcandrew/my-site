@@ -8,6 +8,9 @@ headline: Freespace Workshop
 tagline: A modular community construction project in the industrial hinterlands of Leeds
 hanger: University Project
 tags: [viz, arch]
+
+shape: portrait
+thumb: y3p2.jpg
 ---
 
 ![alt text](/assets/imgs/projects/y3p2-rain_600.jpg)

@@ -8,6 +8,9 @@ headline: Urban Drift
 tagline: Concept Visualisation for a redevelopment concept for Theater Karlshorst in East Berlin
 hanger: Concept Visualization
 tags: arch
+
+shape: square
+thumb: make-city.png
 ---
 
 ![alt text](/assets/imgs/professional/makecity-karlshorst-exploded.jpg)
