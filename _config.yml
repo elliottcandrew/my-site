@@ -4,3 +4,10 @@ parse_block_html: true
 highlighter: rouge # or pygments or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 permalink: /:categories/:title
+
+image_url: /assets/imgs/test
+
+srcset:
+  - 400
+  - 800
+  - 1200
