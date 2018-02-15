@@ -1,0 +1,9 @@
+source 'https://rubygems.org/'
+
+gem 'jekyll'
+
+group :jekyll_plugins do
+  gem 'jekyll-pug'
+  gem 'jekyll-seo-tag'
+  # gem 'http_parser.rb', '~> 0.6.0'
+end
