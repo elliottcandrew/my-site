@@ -1,4 +1,0 @@
-{% for post in site.posts %}
-{% if post.categories contains 'blog' %}
-{% else %}<a href="{{post.url}}"><div class="card-prof"><img class=".pic" src="/assets/imgs/thumbs/{{post.thumbnail}}"/><div class="card-home-overlay"><!-- lettering.js applies span to each child--><div class="title-wrap">{{post.title}}</div></div></div></a>{% endif %}
-{% endfor %}

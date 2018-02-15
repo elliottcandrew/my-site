@@ -1,3 +1,0 @@
-<div class="home-grid">{% for post in site.posts %}
-{% unless post.categories contains 'blog' %}<a class="card-home" href="{{post.url}}" id="{{post.shape}}"><!-- srcset include for responsive thumbnail images--><img src="{{ site.thumb_url }}/568/{{ post.thumb }}" srcset="{% for width in site.thumb-srcset %}{{ site.thumb_url }}/{{ width }}/{{ post.thumb }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}" sizes="{{ site.sizes }}" alt="{{ post.title }}"/><div class="hanger"><h6>{{ post.hanger }}</h6></div><div class="card-home-overlay"><!-- lettering.js applies span to each child--><div class="title-wrap">{{post.title}}</div></div></a>{% endunless %}
-{% endfor %}</div>
