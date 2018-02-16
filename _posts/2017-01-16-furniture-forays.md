@@ -15,7 +15,7 @@ thumb: nacht-tisch.jpg
 image:
   - src: blumenstand.jpg
     alt: 'Blumenstand'
-  - src: nachttisch.jpg
+  - src: nacht-tisch.jpg
     alt: 'Nachttisch'
 ---
 

@@ -1,7 +1,11 @@
-// CARD HOME
+// CARD HOME + BOTTOM-NAV
 
-a(href="{{post.url}}", id="{{post.shape}}").card-home
-  // srcset include for responsive thumbnail images
+a(
+  href="{{post.url}}",
+  id="{{post.shape}}",
+  class="{% if page.id == 'home' %}card-home{% else %}card-bottom-nav{% endif %}") <!-- assign class based on page -->
+
+  //- srcset include for responsive thumbnail images
   img(
     src="{{ site.thumb_url }}/568/{{ post.thumb }}",
     srcset="{% for width in site.thumb-srcset %}{{ site.thumb_url }}/{{ width }}/{{ post.thumb }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}",
@@ -10,8 +14,8 @@ a(href="{{post.url}}", id="{{post.shape}}").card-home
   
   .hanger
     h6 {{ post.hanger }}
-  .card-home-overlay
     
-    // lettering.js applies span to each child
+  .card-home-overlay
+    //- lettering.js applies span to each child
     .title-wrap
       | {{post.title}}

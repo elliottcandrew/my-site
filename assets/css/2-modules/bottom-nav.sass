@@ -1,61 +1,97 @@
 .bottom-nav
-  $card-width: 16vw
-  $bg-col: #fa9b96
-  $card-col: $dark
 
-  background: $bg-col
-  padding-top: 6em
-  padding-bottom: 6em
+	.bottom-nav-content
+		@include base-width
+		max-width: 1800px
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
 
-  span
-    text-align: center
+		margin: 0 auto
+		padding-top: 4em
 
-  .bottom-nav-content
-    @include base-width
-    max-width: 800px
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    @media(min-width: $bp-large)
-      max-width: 1200px
+		@media(min-width: $bp-med)
+			transform: translateX(calc(#{$card-margin-base} / 2)) // to account for margin-right on card-home
+		@media(min-width: $bp-large)
+			transform: translateX(#{$card-margin-base})
 
-  .card-bottom-nav
-    width: calc(#{$card-width} - 4px)
-    border: solid 2px $card-col
-    &:hover
-      .card-home-overlay
-        opacity: 1
-        transition: 0ms
+	.card-bottom-nav
+		@extend .card-home
+		@include home-grid-margins
 
-  .card-home-overlay
-    width: $card-width
-    position: absolute
-    background: $bg-col
-    transform: translate(-2px, -2px)
-    opacity: 0
+	#square
+		max-width: 500px
+		max-height: 500px
 
-  .card-bottom-nav, .card-home-overlay
-    transition: 250ms ease-in-out
-    &:after
-      display: block
-      content: ""
-      padding-bottom: 100%
+	#landscape
+		max-width: 568px
+		max-height: 400px
 
-  .title-wrap
-    position: absolute
-    transform: translateX(1.5vw) translateY(1vw)
-    height: calc(#{$card-width} - 2vw)
-    width: calc(#{$card-width} - 3vw)
-    font-size: calc(1.942em / 3)
-    flex: 1
-    display: flex
-    flex-direction: column
-    justify-content: space-between
+	#portrait
+		max-width: 400px
+		max-height: 568px
 
-  [class*="word"]:nth-child(odd)
-    color: $card-col
-    text-align: left
+	span > p
+		text-align: center
 
-  [class*="word"]:nth-child(even)
-    color: $card-col
-    text-align: right
+// .bottom-nav
+	$card-width: 16vw
+	$bg-col: #fa9b96
+	$card-col: $dark
+
+	background: $bg-col
+	padding-top: 6em
+	padding-bottom: 6em
+
+	span
+		text-align: center
+
+	.bottom-nav-content
+		@include base-width
+		max-width: 800px
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		@media(min-width: $bp-large)
+			max-width: 1200px
+
+	.card-bottom-nav
+		width: calc(#{$card-width} - 4px)
+		border: solid 2px $card-col
+		&:hover
+			.card-home-overlay
+				opacity: 1
+				transition: 0ms
+
+	.card-home-overlay
+		width: $card-width
+		position: absolute
+		background: $bg-col
+		transform: translate(-2px, -2px)
+		opacity: 0
+
+	.card-bottom-nav, .card-home-overlay
+		transition: 250ms ease-in-out
+		&:after
+			display: block
+			content: ""
+			padding-bottom: 100%
+
+	.title-wrap
+		position: absolute
+		transform: translateX(1.5vw) translateY(1vw)
+		height: calc(#{$card-width} - 2vw)
+		width: calc(#{$card-width} - 3vw)
+		font-size: calc(1.942em / 3)
+		flex: 1
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+
+	[class*="word"]:nth-child(odd)
+		color: $card-col
+		text-align: left
+
+	[class*="word"]:nth-child(even)
+		color: $card-col
+		text-align: right

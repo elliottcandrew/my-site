@@ -3,12 +3,12 @@ layout: blog
 title:  "Tempelhofer Feld"
 date:   2016-05-18
 location: Berlin
-
-thumbnail: tempelhof-look.jpg
-banner: tempelhof-skate_1200.png
+thumb: tempelhof-skate.jpg
+banner: tempelhof-skate.png
 excerpt_separator: <!--more-->
 headline: Tempelhofer Feld
 tagline: Grilling and chilling
+hanger: Blog Post
 ---
 
 #####Standing at any point in Tempelhofer Feld you can always see the top half of TV Tower; it can’t really be escaped in Berlin. <!--more--> The needle-like structure is an icon of the city’s corporate interests, from the highest vantage point in the city it looks down at the huge park—the park looks back in defiance.

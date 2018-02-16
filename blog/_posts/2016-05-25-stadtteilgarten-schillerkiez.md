@@ -3,13 +3,13 @@ layout: blog
 title:  "Stadtteilgarten Schillerkiez"
 date:   2016-05-25
 location: Berlin
-
 image: false
-thumbnail: tempelhof-easy.jpg
-banner: schillerkiez_1200.png
+thumb: schillerkiez.jpg
+banner: schillerkiez.png
 excerpt_separator: <!--more-->
 headline: Stadtteilgarten Schillerkiez
 tagline: The curious case of a garden in the middle of an airfield
+hanger: Blog Post
 ---
 
 ######Although conserved by law after the 2014 referendum victory, the park is still under threat from private development plans and council efforts to overturn the 2014 referendum result. <!--more--> This is the source of renewed legal struggle for the citizen’s initiative ‘100% Tempelhofer Feld’ who are compaigning for another referendum, to force the city council to respect referenda outcomes. Canvassing for local campaigns such as above, regularly take place at the park gates, unlike other parts of the city known for demonstrations – such as Kotbusser Tor for example – the park doesn’t seem to attract much political antagonism. Perhaps a symptom of the sites tenuous legal status and the terms of its permitted existence.
