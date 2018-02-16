@@ -1,6 +1,6 @@
-// srcset include for responsive images
-// attributes assigned in post front matter
+//- srcset include for responsive images
+//- attributes assigned in post front matter
 img(
-  src="{{image_url}}/{{image.src}}.{{ image.ext }}",
-  srcset="{% for width in site.srcset %}{{ site.image_url }}/{{ image.src }}@{{ width }}.{{ image.ext }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}",
+  src="{{site.post_url}}/{{image.src}}",
+  srcset="{% for width in site.post-srcset %}{{ site.post_url }}/{{ width }}/{{ image.src }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}",
   alt="{{ image.alt }}")

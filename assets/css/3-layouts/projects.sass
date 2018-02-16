@@ -1,5 +1,5 @@
 .project-wrap
-  max-width: 800px
+  // max-width: 800px
   @include base-width
 
 .projects
@@ -8,79 +8,86 @@
     @include page-fade-in
     @media(min-width: $bp-large)
       // calc add margins to account for margins on either side of children
-      max-width: calc(1200px + #{$home-margins}) !important
+      // max-width: calc(1200px + #{$home-margins}) !important
+      max-width: 1200px
       display: flex
       flex-wrap: wrap
 
   // temporary width style - REMOVE WHEN IMPROVING LAYOUT
+  p
+    width: 100%
+    position: relative
+    margin: 0 auto 4em auto
+
   p > img
-    max-width: 800px
+    position: relative
+    max-width: 1200px
 
-  .md-full, .md-center, .md-small, .md-inset-left, .md-inset-right, .text-block
-    padding-bottom: $home-margins
-    &:last-child
-      padding-bottom: 0
-    // half margin on both sides to allow centering of md-small
-    @media(min-width: $bp-large)
-      margin-left: calc(#{$home-margins} / 2
-      margin-right: calc(#{$home-margins} / 2
-    img
-      width: 100%
-
-  @media(min-width: $bp-large)
-    .md-full
-      width: 100%
-
-    .md-center
-      width: 100%
-      img
-        display: block
-        max-width: 800px
-        margin: 0 auto
-
-    .md-small
-      width: calc(50% - (#{$home-margins}))
-
-    .md-inset-left, .md-inset-right
-      width: calc(50% - (#{$home-margins}))
-      width: calc(50% - (#{$home-margins} * 2))
-
-    .md-inset-left
-      padding-left: calc(#{$home-margins} / 2)
-
-    .md-inset-right
-      padding-right: calc(#{$home-margins} / 2)
-
-    .text-block, #text, #text-center, #text-top, #text-space, #text-space-center
-      max-width: 800px
-      margin-left: auto
-      margin-right: auto
-
-    #text-center
-      text-align: center
-
-    #text-top
-      display: flex
-      flex-direction: column
-      justify-content: center
-      padding-bottom: 1.6ex
-
-    #text-space
-      display: flex
-      flex-direction: column
-      justify-content: center
-      // ensure text isn't crowded out if only one line
-      min-height: $home-margins
-      margin-top: auto
-      margin-bottom: auto
-      width: calc(50% - (#{$home-margins} * 2))
-      padding-left: calc(#{$home-margins} / 2)
-
-    #text-space-center
-      display: flex
-      flex-direction: column
-      justify-content: center
-      min-height: $home-margins
-      margin-top: auto
-      margin-bottom: auto
-      text-align: center
+  // .md-full, .md-center, .md-small, .md-inset-left, .md-inset-right, .text-block
+  //   padding-bottom: $home-margins
+  //   &:last-child
+  //     padding-bottom: 0
+  //   // half margin on both sides to allow centering of md-small
+  //   @media(min-width: $bp-large)
+  //     margin-left: calc(#{$home-margins} / 2
+  //     margin-right: calc(#{$home-margins} / 2
+  //   img
+  //     width: 100%
+  //
+  // @media(min-width: $bp-large)
+  //   .md-full
+  //     width: 100%
+  //
+  //   .md-center
+  //     width: 100%
+  //     img
+  //       display: block
+  //       max-width: 800px
+  //       margin: 0 auto
+  //
+  //   .md-small
+  //     width: calc(50% - (#{$home-margins}))
+  //
+  //   .md-inset-left, .md-inset-right
+  //     width: calc(50% - (#{$home-margins}))
+  //     width: calc(50% - (#{$home-margins} * 2))
+  //
+  //   .md-inset-left
+  //     padding-left: calc(#{$home-margins} / 2)
+  //
+  //   .md-inset-right
+  //     padding-right: calc(#{$home-margins} / 2)
+  //
+  //   .text-block, #text, #text-center, #text-top, #text-space, #text-space-center
+  //     max-width: 800px
+  //     margin-left: auto
+  //     margin-right: auto
+  //
+  //   #text-center
+  //     text-align: center
+  //
+  //   #text-top
+  //     display: flex
+  //     flex-direction: column
+  //     justify-content: center
+  //     padding-bottom: 1.6ex
+  //
+  //   #text-space
+  //     display: flex
+  //     flex-direction: column
+  //     justify-content: center
+  //     // ensure text isn't crowded out if only one line
+  //     min-height: $home-margins
+  //     margin-top: auto
+  //     margin-bottom: auto
+  //     width: calc(50% - (#{$home-margins} * 2))
+  //     padding-left: calc(#{$home-margins} / 2)
+  //
+  //   #text-space-center
+  //     display: flex
+  //     flex-direction: column
+  //     justify-content: center
+  //     min-height: $home-margins
+  //     margin-top: auto
+  //     margin-bottom: auto
+  //     text-align: center

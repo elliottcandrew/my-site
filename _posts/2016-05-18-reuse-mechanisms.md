@@ -11,10 +11,16 @@ tags: arch
 
 shape: landscape
 thumb: y3diss.jpg
+
+image:
+  - src: y3diss-bitte.jpg
+    alt: 'Bitte Lebn'
+  - src: y3diss-map.png
+    alt: 'Diss Map'
 ---
 
-![alt text](/assets/imgs/projects/y3diss-bitte_1000.png)
-{: .md-center}
+{% assign image = page.image[0] %}
+{% include snippet-srcset.html %}
 
 *[The following is an excerpt from my Bachelor's Thesis]*
 {: .md-center}
@@ -43,5 +49,5 @@ In the context of this discourse, I interpret the subsequent re-use of previousl
 <!-- # [Read the full version here on Issuu](https://issuu.com/deadmongoose/docs/reuse_mechanisms_compressed/1)
 {: .md-text-block} -->
 
-![alt text](/assets/imgs/projects/y3diss-map_1000.png)
-{: .md-full}
+{% assign image = page.image[1] %}
+{% include snippet-srcset.html %}

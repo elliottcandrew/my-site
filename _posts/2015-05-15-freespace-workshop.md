@@ -11,10 +11,18 @@ tags: [viz, arch]
 
 shape: portrait
 thumb: y3p2.jpg
+
+image:
+  - src: y3p2-rain.jpg
+    alt: 'Frame Works Rain'
+  - src: y3p2-stages.jpg
+    alt: 'Frame Works Stages'
+  - src: y3p2-diagrams.jpg
+    alt: 'Frame Works Diagrams'
 ---
 
-![alt text](/assets/imgs/projects/y3p2-rain_600.jpg)
-{: .md-center}
+{% assign image = page.image[0] %}
+{% include snippet-srcset.html %}
 
 # Sitting on the banks of the Leeds-Liverpool Canal, the Freespace workshop is a civic venue for all manner of design and fabrication.
 {: .md-center}
@@ -27,8 +35,8 @@ The Freespace Project aims to empower people to take ownership and responsibilit
 Space should be free for everyone
 {: .text-block}
 
-![alt text](/assets/imgs/projects/y3p2-stages_1200.png)
-{: .md-full}
+{% assign image = page.image[1] %}
+{% include snippet-srcset.html %}
 
-![alt text](/assets/imgs/projects/y3p2-diagrams_1200.png)
-{: .md-full}
+{% assign image = page.image[2] %}
+{% include snippet-srcset.html %}

@@ -11,10 +11,16 @@ tags: furn
 
 shape: portrait
 thumb: nacht-tisch.jpg
+
+image:
+  - src: blumenstand.jpg
+    alt: 'Blumenstand'
+  - src: nachttisch.jpg
+    alt: 'Nachttisch'
 ---
 
-![alt text](/assets/imgs/projects/blumenstand.jpg)
-{: .md-center}
+{% assign image = page.image[0] %}
+{% include snippet-srcset.html %}
 
-![alt text](/assets/imgs/projects/nachttisch.jpg)
-{: .md-center}
+{% assign image = page.image[1] %}
+{% include snippet-srcset.html %}

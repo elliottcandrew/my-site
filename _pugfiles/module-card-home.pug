@@ -5,7 +5,7 @@ a(href="{{post.url}}", id="{{post.shape}}").card-home
   img(
     src="{{ site.thumb_url }}/568/{{ post.thumb }}",
     srcset="{% for width in site.thumb-srcset %}{{ site.thumb_url }}/{{ width }}/{{ post.thumb }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}",
-    sizes="{{ site.sizes }}",
+    sizes="{{ site.thumb-sizes }}",
     alt="{{ post.title }}")
   
   .hanger

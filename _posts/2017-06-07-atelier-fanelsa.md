@@ -11,23 +11,26 @@ thumbnail: atelier-fanelsa.jpg
 
 shape: square
 thumb: atelier-fanelsa.jpg
+
 image:
-  - src: test
-    ext: jpg
-    alt: 'this is a test'
+  - src: fanelsa-budenheim.jpg
+    alt: 'Budenheim'
+  - src: fanelsa-ernst.jpg
+    alt: 'Ernst'
+  - src: fanelsa-hundert.jpg
+    alt: 'Hundert'
+  - src: fanelsa-palmenhaus.jpg
+    alt: 'Palmenhaus'
 ---
 
 {% assign image = page.image[0] %}
 {% include snippet-srcset.html %}
 
-<!-- ![alt text](/assets/imgs/professional/fanelsa-budenheim.jpg)
-{: .md-center}
+{% assign image = page.image[1] %}
+{% include snippet-srcset.html %}
 
-![alt text](/assets/imgs/professional/fanelsa-ernst.jpg)
-{: .md-center}
+{% assign image = page.image[2] %}
+{% include snippet-srcset.html %}
 
-![alt text](/assets/imgs/professional/fanelsa-hundert.jpg)
-{: .md-center}
-
-![alt text](/assets/imgs/professional/fanelsa-palmenhaus.jpg)
-{: .md-full} -->
+{% assign image = page.image[3] %}
+{% include snippet-srcset.html %}

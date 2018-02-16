@@ -5,22 +5,42 @@ highlighter: rouge # or pygments or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 permalink: /:categories/:title
 
-image_url: /assets/imgs/test
+post_url: /assets/imgs/posts
 thumb_url: /assets/imgs/thumbs
 
-srcset:
+post-srcset:
   - 400
   - 800
   - 1200
+  - 2400
 
 thumb-srcset:
   - 568
   - 1136
   - 1704
 
-sizes: '(min-width: 40em) 568px, 100vw'
+# post-sizes: '(min-width: 640px) 568px, 100vw' # 640px = 40em break point
+thumb-sizes: '(min-width: 640px) 568px, 100vw' # 640px = 40em break point
 
 mini_magick:
+
+  post-small:
+    source: /assets/imgs/posts/_import
+    destination: /assets/imgs/posts/400
+    resize: "400x400"
+  post-medium:
+    source: /assets/imgs/posts/_import
+    destination: /assets/imgs/posts/800
+    resize: "800x800"
+  post-large:
+    source: /assets/imgs/posts/_import
+    destination: /assets/imgs/posts/1200
+    resize: "1200x1200"
+  post-xlarge:
+    source: /assets/imgs/posts/_import
+    destination: /assets/imgs/posts/2400
+    resize: "2400x2400"
+
   thumb-small:
     source: /assets/imgs/thumbs/_import
     destination: /assets/imgs/thumbs/568

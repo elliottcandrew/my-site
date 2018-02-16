@@ -11,10 +11,16 @@ tags: arch
 
 shape: square
 thumb: make-city.png
+
+image:
+  - src: makecity-karlshorst-exploded.jpg
+    alt: 'Make City Karlshorst Exploded'
+  - src: makecity-karlshorst-plan.jpg
+    alt: 'Make City Karlshorst Plan'
 ---
 
-![alt text](/assets/imgs/professional/makecity-karlshorst-exploded.jpg)
-{: .md-center}
+{% assign image = page.image[0] %}
+{% include snippet-srcset.html %}
 
-![alt text](/assets/imgs/professional/makecity-karlshorst-plan.jpg)
-{: .md-full}
+{% assign image = page.image[1] %}
+{% include snippet-srcset.html %}
