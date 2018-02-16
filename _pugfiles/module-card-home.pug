@@ -3,7 +3,7 @@
 a(
   href="{{post.url}}",
   id="{{post.shape}}",
-  class="{% if page.id == 'home' %}card-home{% else %}card-bottom-nav{% endif %}") <!-- assign class based on page -->
+  class="{% if page.id contains 'home' %}card-home{% else %}card-bottom-nav{% endif %}") <!-- assign class based on page -->
 
   //- srcset include for responsive thumbnail images
   img(

@@ -34,14 +34,8 @@ $(document).ready(function() {
     return false;
   });
 
-  // $('.tab-right, .close-2').on('click', function() {
-  //   $('.menu2, .tab-right').toggleClass('clicked');
-  //   return false;
-  // });
-
   $('html').on('click', function() {
     $('.menu1, .tab-left').removeClass('clicked');
-    // $('.menu2, .tab-right').removeClass('clicked');
   });
 
   // TOUCH MENU
