@@ -1,1 +1,1 @@
-<img src="{{site.post_url}}/{{image.src}}" srcset="{% for width in site.post-srcset %}{{ site.post_url }}/{{ width }}/{{ image.src }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}" alt="{{ image.alt }}"/>
+<img class="{{ image.class }}" src="{{site.post_url}}/400/{{image.src}}" srcset="{% for width in site.post-srcset %}{{ site.post_url }}/{{ width }}/{{ image.src }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}" alt="{{ image.alt }}"/>

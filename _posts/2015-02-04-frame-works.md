@@ -15,10 +15,12 @@ thumb: y3p1.jpg
 image:
   - src: y3p1-routes.jpg
     alt: 'Routes'
+    class: wrap-width
   - src: y3p1-frame-assembly.jpg
     alt: 'Frame Assembly'
   - src: y3p1-beach.jpg
     alt: 'Montage Beach'
+    class: wrap-width
   - src: y3p1-model-blue.jpg
     alt: 'Model Blue'
 ---
@@ -32,13 +34,15 @@ This project is an ecosystem of social involvement, it intersects local communit
 
 ##### Creating an environment that is defined by activity - and in turn activity that occurs as a result of its environment.
 
-{% assign image = page.image[1] %}
+{% assign image = page.image[3] %}
 {% include snippet-srcset.html %}
+
+##### Creating an environment that is defined by activity - and in turn activity that occurs as a result of its environment.
 
 {% assign image = page.image[2] %}
 {% include snippet-srcset.html %}
 
-{% assign image = page.image[3] %}
+{% assign image = page.image[1] %}
 {% include snippet-srcset.html %}
 
-##### A social framework
+## A social framework

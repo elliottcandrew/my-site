@@ -10,6 +10,7 @@ var gulp        = require('gulp'),
   concat        = require('gulp-concat'),
   uglify        = require('gulp-uglify'),
   rename        = require('gulp-rename'),
+  replace       = require('gulp-replace'),
   cp            = require('child_process'),
   pug           = require('gulp-pug'),
   bourbon       = require('bourbon').includePaths;
@@ -56,7 +57,8 @@ gulp.task('browser-sync', ['sass', 'js', 'jekyll-build'], function() {
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
 gulp.task('sass', function () {
-  return gulp.src('assets/css/main.sass')
+  return gulp.src('assets/css/_main.sass')
+  // compile sass to css
   .pipe(sass({
   includePaths: ['css'],
   onError: browserSync.notify
@@ -82,7 +84,7 @@ gulp.task('pug', function() {
 ** JS Task
 */
 gulp.task('js', function() {
-  return gulp.src('assets/js/scripts.js')
+  return gulp.src('assets/js/_scripts.js')
   .pipe(jshint())
   .pipe(jshint.reporter('default'))
   .pipe(concat('scripts.js'))

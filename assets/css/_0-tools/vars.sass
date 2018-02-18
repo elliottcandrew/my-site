@@ -1,0 +1,102 @@
+// VARS
+
+// cool
+$aqua:    #7fdbff
+$blue:    #4d91d6
+$navy:    #001f3f
+$teal:    #39cccc
+$green:   #2ecc40
+$olive:   #3d9970
+$lime:    #01ff70
+
+// Warm
+$yellow:  #ffdc00
+$orange:  #f8a91e
+$red:     #ff2500
+$fuchsia: #f012be
+$purple:  #b10dc9
+$maroon:  #85144b
+$citrus:  #f05555
+
+// Bold
+$electric:	#3333ff
+$grass:			#4e8c36
+$honey:			#F1CA50
+
+// Grey Scale
+$white:  #fff
+$snow:   #f7f7f7
+$silver: #ddd
+$grey:   #aaa
+$dark:   #1c1c1c
+$black:  #111
+
+
+// MEDIA QUERIES
+$bp-small: 24em
+$bp-med: 40em
+$bp-large: 75em
+// $bp-large-2: 84em
+$bp-large-3: 90em
+$bp-xl: 100em
+$bp-2xl: 118em
+
+// GLOBAL COLOURS
+$base-background-color: #e9e6e1
+$base-type-color: $dark
+$card-border-color: $dark
+$menu-color: $snow
+$side-menu-color: $dark
+
+// HOME MARGINS & WIDTHS
+$home-margins: 5vw
+$card-margin-base: 2em
+
+@mixin home-grid-margins
+	margin-bottom: calc(#{$card-margin-base} * 2)
+	@media(min-width: $bp-med)
+		margin-right: calc(#{$card-margin-base} * 1)
+	@media(min-width: $bp-large)
+		margin-right: calc(#{$card-margin-base} * 2)
+		margin-bottom: calc(#{$card-margin-base} * 4)
+
+// GLOBAL WIDTH
+@mixin base-width
+	width: 90vw
+	margin: 0 auto
+	@media(min-width: $bp-med)
+		width: 85vw
+	@media(min-width: $bp-large)
+		width: 92vw
+	// @media(min-width: $bp-xl)
+		width: 85vw
+
+@mixin margin-bottom-home
+	margin-bottom: $home-margins
+	@media(min-width: $bp-large)
+		margin-bottom: $home-margins
+
+@mixin margin-right-home
+	margin-right: $home-margins
+
+// ANIMATIONS
+@mixin page-fade-in
+	animation: 750ms ease-in-out img-fade-in
+
+@keyframes bg-flash
+	20%
+		background-color: tomato
+	40%
+		background-color: $grass
+	60%
+		background-color: #fa9b96
+	80%
+		background-color: $honey
+	100%
+		background-color: $electric
+
+@keyframes img-fade-in
+	0%
+		opacity: 0
+	100%
+		opacity: 1
