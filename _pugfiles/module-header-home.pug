@@ -4,7 +4,7 @@
 	
 	a(href="/", id="{% unless page.id == 'home' %}non-home{% endunless %}").avatar <!-- remove avatar on non-home mobile -->
 	
-	.header-title(id="{% if page.id contains 'sorted' or 'blog' %}home-sorted{% elsif page.id != 'home' %}non-home{% endif %}") <!-- truncate title on non-home pages -->
+	.header-title(id="{% if page.id == 'home' %}{% elsif page.id contains 'sorted' or 'blog' %}home-sorted{% elsif page.id != 'home' %}non-home{% endif %}") <!-- truncate title on non-home pages -->
 		a(href="/")
 			h2 <!-- css applies content here -->
 		.line-graphic

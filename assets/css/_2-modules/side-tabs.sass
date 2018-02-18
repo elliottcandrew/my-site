@@ -41,7 +41,7 @@ $side-menu-width: 19em
   display: none
 
 @media(min-width: $bp-large)
-  .menu1, .menu2
+  .menu1
     display: block
     position: fixed
     width: $side-menu-width
@@ -54,52 +54,38 @@ $side-menu-width: 19em
     border: 2px solid $dark
     text-align: left
     box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.1)
-
-    h4
-      font-weight: 400 !important
-      &:first-child
-        text-decoration: underline
-
-    p
-      font-size: 1.2em
-
-    ul
-      list-style-type: none
-      padding-left: 0
-
-    a
-      color: $side-menu-color
-      &:hover
-        text-decoration: line-through
-
-  .menu1
     height: auto
     left: calc((#{$side-menu-width} + 3em) * (-1))
     background: $menu-color
     &.clicked
       left: 1em
 
-    li
-      margin-top: .8em
-      &:first-child
-        margin-top: 1.6em
+    p
+      font-size: 1.2em
+      display: inline-block
 
-  .menu2
-    right: calc((#{$side-menu-width} + 3em) * (-1))
-    background: $menu-color
-    &.clicked
-      right: 1em
+    ul
+      list-style-type: none
+      padding-left: 0
 
     li
-      margin-top: 1.6em
-      &:first-child
-        margin-top: 0
+      margin-bottom: .5em
       &:hover
-        cursor: pointer
-        a
-          text-decoration: line-through
+        .dot
+          opacity: 1
+          transition: 0ms
+      & p
+        font-weight: 700
 
-  .close-1, .close-2
+    .dot
+      @include dot(5px)
+      display: inline-block
+      margin-left: .5em
+      transform: translateY(-.1em)
+      transition: 250ms ease-in-out
+      opacity: 0
+
+  .close-1
     float: right
     width: 24px
     height: 24px

@@ -1,0 +1,40 @@
+.info
+
+  span
+    display: block
+    margin-bottom: 4em
+    &:first-of-type *
+      font-weight: 400
+
+  h6
+    position: absolute
+    text-align: right
+    margin-top: .7em
+    right: calc(50% + 400px + 4em)
+    // text-transform: uppercase
+    // font-weight: 700
+
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+    display: inline-block
+  a:hover
+
+  li
+    margin-bottom: .5em
+    &:hover
+      .dot
+        opacity: 1
+        transition: 0ms
+    & p
+      display: inline-block
+      font-weight: 700
+
+  .dot
+    @include dot(11px)
+    position: absolute
+    margin-left: -1.25em
+    transform: translateY(-1.4em)
+    transition: 250ms ease-in-out
+    opacity: 0
