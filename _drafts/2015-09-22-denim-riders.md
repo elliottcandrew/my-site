@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: projects
 title:  "Denim Riders"
 date:   2015-09-22
 location: Dunkirk to Amsterdam

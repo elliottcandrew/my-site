@@ -1,11 +1,12 @@
-//TYPE
+// Modularscale vars found in relevant subfolder
 
+//TYPE
 h1, h2, h3, h4, h5, h6, p, [class*="word"]
   margin: 0
   padding: 0
-  letter-spacing: .05em
+  letter-spacing: .02em
 
-h1, h2, h3, [class*="word"]
+h1, h2, h3, h4, [class*="word"]
   font-family: 'Nunito', sans-serif
   font-weight: 700
   line-height: 1.4
@@ -18,18 +19,20 @@ h2, [class*="word"]
 
 h3
   @include ms-respond(font-size,0)
+  font-weight: 500
 
 h4
-  font-family: 'Nunito', sans-serif
+  // font-family: 'Nunito Sans', sans-serif
   @include ms-respond(font-size,1)
 
 h5
   font-family: 'PT Serif', serif
   @include ms-respond(font-size,1)
+  font-weight: 700
   font-style: italic
 
 h6
-  font-family: 'Nunito', sans-serif
+  font-family: 'Nunito Sans', sans-serif
   font-size: ms(-1)
   font-weight: 500
   letter-spacing: .1em

@@ -23,6 +23,7 @@ image:
 ---
 
 ##### Sitting on the banks of the Leeds-Liverpool Canal, the Freespace workshop is a civic venue for all manner of design and fabrication.
+{: .blockquote }
 
 {% assign image = page.image[0] %}
 {% include snippet-srcset.html %}

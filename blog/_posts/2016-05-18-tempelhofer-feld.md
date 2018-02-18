@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: projects
 title:  "Tempelhofer Feld"
 date:   2016-05-18
 location: Berlin

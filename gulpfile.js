@@ -57,14 +57,13 @@ gulp.task('browser-sync', ['sass', 'js', 'jekyll-build'], function() {
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
 gulp.task('sass', function () {
-  return gulp.src('assets/css/_main.sass')
-  // compile sass to css
+  return gulp.src('assets/css/main.sass')
   .pipe(sass({
   includePaths: ['css'],
   onError: browserSync.notify
   }).on('error', sass.logError))
   .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-  .pipe(rename({suffix: '.min', prefix : ''}))
+  .pipe(rename('main.min.css'))
   .pipe(minifycss())
   .pipe(gulp.dest('assets/css'))
   .pipe(gulp.dest('_site/assets/css'))

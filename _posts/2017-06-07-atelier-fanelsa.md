@@ -21,6 +21,7 @@ image:
     alt: 'Hundert'
   - src: fanelsa-palmenhaus.jpg
     alt: 'Palmenhaus'
+    class: max-1200
 ---
 
 {% assign image = page.image[0] %}

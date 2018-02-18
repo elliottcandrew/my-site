@@ -1,45 +1,93 @@
-.project-wrap
-  // max-width: 800px
+.project-sections
   @include base-width
-
-.projects
-  $blockquote-offset: 6.3em
-  $blockquote-inset: 1.5em
   margin: 0 auto
 
-  .project-content
-    max-width: 1200px
-    margin: 10em auto 12em auto
+  $blockquote-offset: 5.75em
+  $blockquote-inset: 5%
+  $vert-margin: 2rem
 
-  p, h1, h2, h3, h4, h6
-    padding: 0 16.667%
+  .project-content
+    @include page-fade-in
+    max-width: 1200px
+    margin: 0 auto
+    padding: 10em 0 6em 0
+    @media(min-width: $bp-large)
+      padding: 15em 0 12em 0
+
+  // TITLE
+  .project-title
+    display: block
+    margin-bottom: $vert-margin
+    @media(min-width: $bp-med)
+      margin-bottom: $vert-margin*2
+    h1, .tagline, h6
+      margin-bottom: 0
+    .tagline
+      margin-top: 1.2rem
+    h6
+      margin-top: .5rem
+
+  // TYPE SETTINGS
+  p, h1, h2, h3, h4, h5, h6
+    max-width: 800px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: $vert-margin
+    @media(min-width: $bp-med)
+      margin-bottom: $vert-margin*2
+    @media(min-width: $bp-large)
+      max-width: none
+      padding: 0 16.667% // internal paragraph width
 
   p
-    margin: 4em 0
-
-  h5
     position: relative
-    width: 40%
-    margin-top: -#{$blockquote-offset}
-    margin-left: $blockquote-inset
-    margin-right: auto
-    transform: translateY($blockquote-offset)
-    z-index: 10
+    height: 100%
 
-  h5:nth-of-type(even)
-    margin-left: auto
-    margin-right: $blockquote-inset
-
+  // IMAGE WIDTHS - BREAKOUT OF P TAGS
   p > img
-    // max-width: 66.67%
     max-width: 800px
-    position: relative
-    left: 50%
-    transform: translateX(-50%)
+    width: 100%
+    margin-top: $vert-margin
+    @media(min-width: $bp-med)
+      margin-top: $vert-margin*2
+    @media(min-width: $bp-large)
+      max-width: 800px
+      display: block
+      position: relative
+      width: 150%
+      left: 50%
+      transform: translateX(-50%)
 
-  .wrap-width
-    // max-width: 100%
+  // MARKDOWN PROPERTIES
+  .blockquote
+    @media(min-width: $bp-large)
+      padding: 0
+      position: relative
+      width: 40%
+      margin-left: $blockquote-inset
+      margin-top: -#{$blockquote-offset}
+      // padding-top: 1em
+      transform: translateY($blockquote-offset) /* vert alignment with overlapped imgs */
+      z-index: 10
+
+  .align-right
+    @media(min-width: $bp-large)
+      margin-left: auto
+      margin-right: $blockquote-inset
+
+  .max-800, .max-1200, .tall-img
+    display: block
+    margin-left: auto
+    margin-right: auto
+
+  .tall-img
+    @media(min-width: $bp-small)
+      width: 66.667%
+    @media(min-width: $bp-large)
+      width: 100%
+
+  .max-800
+    max-width: 800px
+
+  .max-1200
     max-width: 1200px
-
-  .screen-width
-    max-width: 90vw

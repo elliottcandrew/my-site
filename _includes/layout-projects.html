@@ -1,1 +1,2 @@
-<div class="projects"><div class="project-content"><h1>{{ page.title }}</h1>{{content}}</div></div>
+<div class="project-content"><div class="project-title"><h1><span>{{ page.title }}</span></h1>{% if page.tagline %}<p class="tagline">{{ page.tagline }}</p>{% endif %}
+{% if page.date %}<h6>{% assign d = page.date | date: "%-d" %}{% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %}{{page.date | date: ' %b %Y'}}</h6>{% endif %}</div>{{content}}</div>

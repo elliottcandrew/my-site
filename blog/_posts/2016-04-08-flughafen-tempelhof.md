@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: projects
 title:  "Flughafen Tempelhof"
 date:   2016-04-08
 location: Berlin

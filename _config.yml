@@ -12,7 +12,6 @@ post-srcset:
   - 400
   - 800
   - 1200
-  - 2400
 
 thumb-srcset:
   - 568
