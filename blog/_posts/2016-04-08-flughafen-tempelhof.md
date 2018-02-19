@@ -11,11 +11,11 @@ tagline: From the center of Nazi meglomania to refugee arrival center
 hanger: Blog Post
 ---
 
-### The site of the Airlift that served as West-Berlin’s lifeline during the Cold War is now the largest covered refugee shelter in Europe. <!--more-->
+##### The site of the Airlift that served as West-Berlin’s lifeline during the Cold War is now the largest covered refugee shelter in Europe. <!--more-->
 
 Flughafen Tempelhof has had an eventful history. Air-traffic operation began in 1923 and prior to it’s closure by referendum in 2008, it was arguably the longest functioning airport in the world.6 Construction of the building as we know it today began in 1934, instigated by the National Socialist Party as part of the “meglomaniac project of World Capital Germania”.
 
-##### As the sun sets over Tempelhofer Feld, the monolithic canopy of the airport forms an artificial horizon that frames the pink and purple hues of the sky. It is a disarming sight for such an imposing structure.
+As the sun sets over Tempelhofer Feld, the monolithic canopy of the airport forms an artificial horizon that frames the pink and purple hues of the sky. It is a disarming sight for such an imposing structure.
 
 The building itself forms a huge arc around the west perimeter of the airfield, stretching 1.2km with U-bahn stops at either end. The interior is equally vast, with 300,000sqm of largely uninterupted space it is clear why the city government decided to reuse it as a refugee shelter. The main tenants however are the Berlin Polizei, they have rented parts of the building since 1951 and now occupy approximately 46,000sqm.
 

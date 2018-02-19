@@ -11,7 +11,7 @@ tagline: Grilling and chilling
 hanger: Blog Post
 ---
 
-### Standing at any point in Tempelhofer Feld you can always see the top half of TV Tower; it can’t really be escaped in Berlin. <!--more--> The needle-like structure is an icon of the city’s corporate interests, from the highest vantage point in the city it looks down at the huge park—the park looks back in defiance.
+Standing at any point in Tempelhofer Feld you can always see the top half of TV Tower; it can’t really be escaped in Berlin. <!--more--> The needle-like structure is an icon of the city’s corporate interests, from the highest vantage point in the city it looks down at the huge park—the park looks back in defiance.
 
 In 2014 a referendum to block 4700 apartments being built on the site was voted in favour of by 64.3%. In doing so, Berliners excersised a stubborn right to this part of the city, even in the face of strong government and media campaigns for its development. As a result of the referendum a conseravation act was written into law, forbidding development of any sort on the site. Only temporary structures can be erected and even park benches and portable toilets receive close scrutiny. Two years on and the citizens initiative ‘100% Tempelhofer Feld’ are once again campaigning to save the park, this time to force the government to stick to their word.
 
