@@ -1,40 +1,60 @@
-.info
+.about
+  $about-margin: 2em
 
-  span
-    display: block
-    margin-bottom: 4em
-    &:first-of-type *
-      font-weight: 400
+  h2
+    font-weight: 400
+    margin-bottom: $about-margin*1.5
+    @media(min-width: $bp-med)
+      margin-bottom: $about-margin*2
+
+  .about-container
+    @media(min-width: $bp-med)
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+
+  .about-section
+    margin-bottom: $about-margin*1.5
+    @media(min-width: $bp-med)
+      width: 46%
+      margin-bottom: $about-margin*2
+    @media(min-width: $bp-large)
+      width: 46%
 
   h6
-    position: absolute
-    text-align: right
-    margin-top: .7em
-    right: calc(50% + 400px + 4em)
-    // text-transform: uppercase
-    // font-weight: 700
+    margin-bottom: 1em
+    @media(min-width: $bp-large)
+      position: absolute
+      margin-bottom: 0
+      margin-top: .7em
+      transform: translateX(calc(-100% - 2em))
 
   ul
     list-style: none
     margin: 0
     padding: 0
     display: inline-block
-  a:hover
 
   li
+    @extend p
     margin-bottom: .5em
     &:hover
       .dot
         opacity: 1
         transition: 0ms
-    & p
+    & a
       display: inline-block
       font-weight: 700
 
   .dot
-    @include dot(11px)
+    @include dot(8px)
+    transform: translateY(.6em)
+    display: inline-block
     position: absolute
-    margin-left: -1.25em
-    transform: translateY(-1.4em)
+    margin-left: .5em
     transition: 250ms ease-in-out
     opacity: 0
+    @media(min-width: $bp-large)
+      @include dot(11px)
+      transform: translateY(.58em)
