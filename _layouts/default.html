@@ -10,13 +10,21 @@
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="/assets/css/main.min.css">
 
-		<!-- Google -->
-		<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,,400i,700,700i|Nunito+Sans:300,400,500,700,800,900' rel='stylesheet' type='text/css'>
-    <script src="/assets/js/ganalytics.js"></script>
-
 		<!-- JQuery -->
 		<script src="/assets/js/jquery-2.2.4.js"></script>
 		<script src="/assets/js/jquery.lettering.js"></script>
+
+		<!-- Google -->
+		<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,,400i,700,700i|Nunito+Sans:300,400,500,700,800,900' rel='stylesheet' type='text/css'>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-78970236-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-78970236-1');
+		</script>
 
 		<!-- Favicon -->
 		<link rel="apple-touch-icon" sizes="180x180" href="/assets/imgs/favicon/apple-touch-icon.png">
@@ -34,7 +42,7 @@
 		<div class="content">
 
 			{{ content }}
-			
+
 		</div>
 
 			{% include module-footer.html %}
