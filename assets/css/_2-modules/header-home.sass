@@ -35,9 +35,8 @@
     @media(min-width: $bp-large)
       top: $content-top
       margin-left: .8em
-
-  a
-    height: 3em
+    a
+      height: 3em
 
   h2
     display: inline-block
@@ -77,12 +76,13 @@
     padding-bottom: .75em
     &:last-of-type
       padding-bottom: 0
-    &:hover,
-    &:active,
-    &:focus
-      .dot
-        opacity: 1
-        transition: 0ms
+    a
+      &:hover,
+      &:active,
+      &:focus
+        .dot
+          opacity: 1
+          transition: 0ms
 
   h3
     display: inline-block
