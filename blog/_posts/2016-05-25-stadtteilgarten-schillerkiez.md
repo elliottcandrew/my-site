@@ -4,12 +4,14 @@ title:  "Stadtteilgarten Schillerkiez"
 date:   2016-05-25
 location: Berlin
 image: false
-thumb: schillerkiez.jpg
 banner: schillerkiez.png
 excerpt_separator: <!--more-->
 headline: Stadtteilgarten Schillerkiez
 tagline: The curious case of a garden in the middle of an airfield
 hanger: Blog Post
+
+shape: portrait
+thumb: schillerkiez.jpg
 ---
 
 ##### Although conserved by law after the 2014 referendum victory, the park is still under threat from private development plans and council efforts to overturn the 2014 referendum result. <!--more-->

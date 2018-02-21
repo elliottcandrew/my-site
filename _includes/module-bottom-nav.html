@@ -1,4 +1,10 @@
-<div class="bottom-nav"><span><p>More stuff</p></span><div class="bottom-nav-content">{% assign posts = site.posts | sample:3 %}
+<div class="bottom-nav"><span><p>More stuff</p></span><div class="bottom-nav-content">{% assign posts = site.posts | sample:4 %}
 {% for post in posts %}
+{% if post.url != page.url %}
+{% if forloop.index < 4 or found %}
 {% include module-card-home.html %}
+{% endif %}
+{% else %}
+{% assign found = true %}
+{% endif %}
 {% endfor %}</div></div>

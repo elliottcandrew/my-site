@@ -13,15 +13,15 @@ shape: square
 thumb: atelier-fanelsa.jpg
 
 image:
+  - src: fanelsa-palmenhaus.jpg
+    alt: 'Palmenhaus'
+    class: max-1200
   - src: fanelsa-budenheim.jpg
     alt: 'Budenheim'
   - src: fanelsa-ernst.jpg
     alt: 'Ernst'
   - src: fanelsa-hundert.jpg
     alt: 'Hundert'
-  - src: fanelsa-palmenhaus.jpg
-    alt: 'Palmenhaus'
-    class: max-1200
 ---
 
 {% assign image = page.image[0] %}

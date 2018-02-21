@@ -3,12 +3,14 @@ layout: projects
 title:  "Tag der Arbeit"
 date:   2016-05-02
 location: Berlin
-thumb: arbeit-roof.jpg
 banner: arbeit-roof.png
 excerpt_separator: <!--more-->
 headline: Tag der Arbeit
 tagline: Exploring Berlin on the most hectic day of the year
 hanger: Blog Post
+
+shape: portrait
+thumb: arbeit-roof.jpg
 ---
 
 It was May 1st recently. In England that might not mean too much, but in Germany it is the national holiday Tag der Arbeit (workers’ day). <!--more--> The day has a rich history, especially in the capital. Traditionally protesters gather in large numbers, supporting a variety of causes and Kotbusser Tor, often the nucleus of demonstrations, invariably descends into violent confrontations with police.

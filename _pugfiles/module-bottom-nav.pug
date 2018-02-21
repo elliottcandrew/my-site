@@ -5,22 +5,17 @@
 
   .bottom-nav-content
     
-    | {% assign posts = site.posts | sample:3 %}
+    //- Provide sample of 3 posts while excluding any posts that match current page
+    
+    | {% assign posts = site.posts | sample:4 %}
     | {% for post in posts %}
+    | {% if post.url != page.url %}
+    | {% if forloop.index < 4 or found %}
 
     | {% include module-card-home.html %}
-
-    | {% endfor %}
     
-    //- | {% assign posts = site.posts | sample:3 %}
-    //- | {% for post in posts %}
-    //- 
-    //- a(href="{{post.url}}").card-bottom-nav
-    //- 
-    //-   // lettering.js applies span to each child
-    //-   .title-wrap
-    //-     | {{post.title}}
-    //- 
-    //-   .card-home-overlay(style="background-image: url(/assets/imgs/thumbs/{{post.thumbnail}}); background-position: center; background-size: cover; background-repeat: norepeat")
-    //- 
-    //- | {% endfor %}
+    | {% endif %}
+    | {% else %}
+    | {% assign found = true %}
+    | {% endif %}
+    | {% endfor %}

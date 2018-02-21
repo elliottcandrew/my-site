@@ -3,12 +3,14 @@ layout: projects
 title:  "Flughafen Tempelhof"
 date:   2016-04-08
 location: Berlin
-thumb: flughafen-rear.jpg
 banner: zentral-flughafen_1200.png
 excerpt_separator: <!--more-->
 headline: Flughafen Tempelhof
 tagline: From the center of Nazi meglomania to refugee arrival center
 hanger: Blog Post
+
+shape: portrait
+thumb: flughafen-rear.jpg
 ---
 
 ##### The site of the Airlift that served as West-Berlin’s lifeline during the Cold War is now the largest covered refugee shelter in Europe. <!--more-->
