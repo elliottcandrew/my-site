@@ -10,9 +10,11 @@ shape: square
 thumb: atelier-fanelsa.jpg
 
 image:
-  - src: fanelsa-palmenhaus.jpg
+  - src: fanelsa-palmenhaus.png
     alt: 'Palmenhaus'
     class: max-1200
+  - src: fanelsa-palmenhaus-2.jpg
+    alt: 'Palmenhaus Internal'
   - src: fanelsa-budenheim.jpg
     alt: 'Budenheim'
   - src: fanelsa-ernst.jpg
@@ -31,4 +33,7 @@ image:
 {% include snippet-srcset.html %}
 
 {% assign image = page.image[3] %}
+{% include snippet-srcset.html %}
+
+{% assign image = page.image[4] %}
 {% include snippet-srcset.html %}
