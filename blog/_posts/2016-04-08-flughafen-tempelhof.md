@@ -1,11 +1,10 @@
 ---
-layout: projects
+layout: post
 title:  "Flughafen Tempelhof"
 date:   2016-04-08
 location: Berlin
 banner: zentral-flughafen_1200.png
 excerpt_separator: <!--more-->
-headline: Flughafen Tempelhof
 tagline: From the center of Nazi meglomania to refugee arrival center
 hanger: Blog Post
 

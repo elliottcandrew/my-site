@@ -1,13 +1,10 @@
 ---
-layout: projects
+layout: post
 title:  "Atelier Fanelsa"
-date:   2015-05-20
 location: Leeds
-headline: Atelier Fanelsa
 tagline: I spent 4 months working with this small, community-focused design practice in Berlin
 hanger: Illustration & Technical Drawing
 tags: [viz, arch]
-thumbnail: atelier-fanelsa.jpg
 
 shape: square
 thumb: atelier-fanelsa.jpg

@@ -1,11 +1,10 @@
 ---
-layout: projects
+layout: post
 title:  "Tag der Arbeit"
 date:   2016-05-02
 location: Berlin
 banner: arbeit-roof.png
 excerpt_separator: <!--more-->
-headline: Tag der Arbeit
 tagline: Exploring Berlin on the most hectic day of the year
 hanger: Blog Post
 

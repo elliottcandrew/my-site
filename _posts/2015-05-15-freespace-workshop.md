@@ -1,10 +1,7 @@
 ---
-layout: projects
+layout: post
 title:  "Free Space Workshop"
-date:   2015-05-20
 location: Leeds
-thumbnail: y3p2.jpg
-headline: Freespace Workshop
 tagline: A modular community construction project in the industrial hinterlands of Leeds
 hanger: University Project
 tags: [viz, arch]

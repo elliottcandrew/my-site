@@ -1,12 +1,11 @@
 ---
-layout: projects
+layout: post
 title:  "Tempelhofer Feld"
 date:   2016-05-18
 location: Berlin
 thumb: tempelhof-skate.jpg
 banner: tempelhof-skate.png
 excerpt_separator: <!--more-->
-headline: Tempelhofer Feld
 tagline: Grilling and chilling
 hanger: Blog Post
 

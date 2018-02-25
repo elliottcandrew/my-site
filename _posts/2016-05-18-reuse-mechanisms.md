@@ -1,10 +1,7 @@
 ---
-layout: projects
+layout: post
 title:  "Re-use Mechanisms"
-date:   2016-05-18
 location: Berlin
-thumbnail: y3diss.jpg
-headline: Re-use Mechanisms
 tagline: The following is an excerpt from my Bachelor's Thesis
 hanger: Bachelor Thesis
 tags: arch

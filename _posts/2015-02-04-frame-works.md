@@ -1,10 +1,7 @@
 ---
-layout: projects
+layout: post
 title: "Frame Works Gallery"
-date: 2015-02-04
 location: Scarborough
-thumbnail: y3p1.jpg
-headline: Frame Works Gallery
 tagline: Dynamic work and gallery spaces for local artists in Scarborough
 hanger: University Project
 tags: [viz, arch]

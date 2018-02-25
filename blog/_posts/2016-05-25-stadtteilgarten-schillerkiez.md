@@ -1,12 +1,11 @@
 ---
-layout: projects
+layout: post
 title:  "Stadtteilgarten Schillerkiez"
 date:   2016-05-25
 location: Berlin
 image: false
 banner: schillerkiez.png
 excerpt_separator: <!--more-->
-headline: Stadtteilgarten Schillerkiez
 tagline: The curious case of a garden in the middle of an airfield
 hanger: Blog Post
 
