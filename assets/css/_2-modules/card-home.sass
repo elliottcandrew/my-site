@@ -3,14 +3,15 @@
 	position: relative
 	height: 100%
 
-	&:hover
-		.card-home-overlay
-			opacity: 1
-			border: solid 2px $card-border-color
-			transition: 0ms
-		img
-			visibility: hidden
-			transition: 0ms
+	@media not all and (hover: none)
+		&:hover
+			.card-home-overlay
+				opacity: 1
+				border: solid 2px $card-border-color
+				transition: 0ms
+			img
+				visibility: hidden
+				transition: 0ms
 
 	img
 		position: relative
