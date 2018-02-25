@@ -12,7 +12,9 @@ id: home
 	{% include module-side-tabs.html %}
 	{% include module-menu-touch.html %}
 
-	<div class="home-grid">
+	{% include module-home-grid.html %}
+
+	<!-- <div class="home-grid">
 
 		{% for post in site.posts %}
 		{% unless post.categories contains 'blog' %}
@@ -22,7 +24,7 @@ id: home
 		{% endunless %}
 		{% endfor %}
 
-	</div>
+	</div> -->
 
 </div>
 

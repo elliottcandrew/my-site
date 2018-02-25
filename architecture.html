@@ -11,15 +11,7 @@ sort: arch
 	{% include module-side-tabs.html %}
 	{% include module-menu-touch.html %}
 
-	<div class="home-grid">
-		{% for post in site.posts %}
-		{% if post.tags contains 'arch' %}
-
-		{% include module-card-home.html %}
-
-		{% endif %}
-		{% endfor %}
-	</div>
+	{% include module-home-grid.html %}
 
 </div>
 

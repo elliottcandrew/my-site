@@ -1,0 +1,5 @@
+<div class="home-grid">{% for post in site.posts %}
+{% unless post.categories contains 'blog' %}
+{% include module-card-home.html %}
+{% endunless %}
+{% endfor %}</div>
