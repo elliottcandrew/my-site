@@ -11,32 +11,37 @@ h1, h2, h3, h4, [class*="word"]
   font-weight: 700
   line-height: 1.4
 
+// Titles
 h1
   @include ms-respond(font-size,2)
   font-weight: 800
 
+// Primary Navigation
 h2, [class*="word"]
   @include ms-respond(font-size,1)
 
+// Secondary Navigation
 h3
   @include ms-respond(font-size,0)
   font-weight: 500
 
+// Currently deprecated (used in blog-all)
 h4
-  // font-family: 'Nunito Sans', sans-serif
   @include ms-respond(font-size,1)
 
+// Blockquote
 h5
   font-family: 'PT Serif', serif
   @include ms-respond(font-size,1)
   font-weight: 700
   font-style: italic
 
+// Hanger + small nav
 h6
   font-family: 'Nunito Sans', sans-serif
-  font-size: ms(-1)
+  @include ms-respond(font-size,-1)
   font-weight: 500
-  letter-spacing: .1em
+  letter-spacing: .075em
 
 p
   font-family: 'Nunito Sans', sans-serif
