@@ -8,9 +8,9 @@ var homeMargins = 0;
 // colour cycle
 var counter = 0;
 var colors = [
-  "#e9f4db",
-  "#f6e1e5",
-  "#e7ecf3",
+  "#ecf6e0",
+  "#f8e8eb",
+  "#ecf0f5",
   "#e9e6e1"
 ];
 
