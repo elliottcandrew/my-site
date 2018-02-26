@@ -10,6 +10,9 @@ shape: portrait
 thumb: nacht-tisch.jpg
 
 image:
+  - src: tables-animated.gif
+    alt: 'Animated Tables'
+    class: max-1200
   - src: blumenstand.jpg
     alt: 'Blumenstand'
   - src: nacht-tisch.jpg
@@ -20,4 +23,7 @@ image:
 {% include snippet-srcset.html %}
 
 {% assign image = page.image[1] %}
+{% include snippet-srcset.html %}
+
+{% assign image = page.image[2] %}
 {% include snippet-srcset.html %}
