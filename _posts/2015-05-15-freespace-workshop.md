@@ -25,7 +25,7 @@ image:
 The space provides affordable facilities, work units, tools and advance machinery for all to use while aiming to bring life to a forgotten strip of waterside industry that has historically isolated neighbouring communities from Leeds city centre and, more recently become the unwitting host to the creeping gentrification of up-river, luxury housing developments.  
 
 ##### Sitting on the banks of the Leeds-Liverpool Canal, the Freespace workshop is a civic venue for all manner of design and fabrication.
-{: .blockquote }
+{: .blockquote .overlap }
 
 {% assign image = page.image[1] %}
 {% include snippet-srcset.html %}

@@ -18,16 +18,6 @@ $(document).ready(function() {
 
   $(".title-wrap").lettering('words'); /* wraps each word in a span for alternating alignment*/
 
-  //STICKY COLUMNS
-  $('#sticky1, #sticky2').css({ top: (viewportHeight - sticky1Height.height()) - homeMargins }); /* set initial stick point + bottom-margin*/
-
-  $(window).resize(function(){
-    clearTimeout(resizeListener); /* every time the window resize is called cancel the setTimeout() function */
-    resizeListener = setTimeout(function(){
-      $('#sticky1, #sticky2').css({ top: (viewportHeight - sticky1Height.height()) - homeMargins }); /* set top css as difference between div height and viewport height */
-    }, pause);
-  });
-
   // SLIDE-OUT MENUS + hide tab while menu shows
   $('.tab-left, .close-1').on('click', function() {
     $('.menu1, .tab-left').toggleClass('clicked');

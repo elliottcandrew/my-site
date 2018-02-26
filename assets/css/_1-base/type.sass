@@ -1,33 +1,38 @@
 // Modularscale vars found in relevant subfolder
 
-//TYPE
+//All Type
 h1, h2, h3, h4, h5, h6, p, [class*="word"]
   margin: 0
   padding: 0
   letter-spacing: .02em
 
-h1, h2, h3, h4, [class*="word"]
+// Titles
+h1
+  @include ms-respond(font-size,2)
   font-family: 'Nunito', sans-serif
   font-weight: 700
   line-height: 1.4
 
-// Titles
-h1
-  @include ms-respond(font-size,2)
-  font-weight: 800
-
 // Primary Navigation
 h2, [class*="word"]
   @include ms-respond(font-size,1)
+  font-family: 'Nunito', sans-serif
+  font-weight: 700
+  line-height: 1.4
 
 // Secondary Navigation
 h3
   @include ms-respond(font-size,0)
-  font-weight: 500
+  font-family: 'Nunito', sans-serif
+  font-weight: 700
+  line-height: 1.4
 
 // Currently deprecated (used in blog-all)
 h4
   @include ms-respond(font-size,1)
+  font-family: 'Nunito', sans-serif
+  font-weight: 700
+  line-height: 1.4
 
 // Blockquote
 h5
@@ -38,13 +43,13 @@ h5
 
 // Hanger + small nav
 h6
-  font-family: 'Nunito Sans', sans-serif
-  @include ms-respond(font-size,-1)
-  font-weight: 500
+  font-family: 'Nunito', sans-serif
+  font-size: ms(-1)
+  font-weight: 400
   letter-spacing: .075em
 
 p
-  font-family: 'Nunito Sans', sans-serif
+  font-family: 'Nunito', sans-serif
   @include ms-respond(font-size,0)
   font-weight: 400
   line-height: 1.6

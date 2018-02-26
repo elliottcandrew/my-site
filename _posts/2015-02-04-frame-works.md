@@ -30,7 +30,7 @@ This project is an ecosystem of social involvement, it intersects local communit
 {% include snippet-srcset.html %}
 
 ##### Creating an environment that is defined by activity - and in turn activity that occurs as a result of its environment.
-{: .blockquote }
+{: .blockquote .overlap }
 
 {% assign image = page.image[3] %}
 {% include snippet-srcset.html %}

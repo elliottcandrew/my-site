@@ -90,7 +90,7 @@ gulp.task('js', function() {
   .pipe(gulp.dest('assets/js'))
   .pipe(rename('scripts.min.js'))
   .pipe(uglify())
-  // .pipe(gulp.dest('assets/js'))
+  .pipe(gulp.dest('assets/js'))
   .pipe(gulp.dest('_site/assets/js'));
 });
 

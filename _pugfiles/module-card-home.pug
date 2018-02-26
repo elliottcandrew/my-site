@@ -11,7 +11,7 @@ a(
     srcset="{% for width in site.thumb-srcset %}{{ site.thumb_url }}/{{ width }}/{{ post.thumb }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}",
     sizes="{{ site.thumb-sizes }}",
     alt="{{ post.title }}")
-  
+
   .hanger
     h6 {{ post.hanger }}
     
