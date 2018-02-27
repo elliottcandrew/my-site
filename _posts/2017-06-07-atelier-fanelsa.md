@@ -2,7 +2,7 @@
 layout: post
 title:  "Atelier Fanelsa"
 location: Leeds
-tagline: I spent 4 months working with this small, community-focused design practice in Berlin
+tagline: Selected works completed while working at Atelier Fanelsa
 hanger: Illustration & Technical Drawing
 tags: [viz, arch]
 
@@ -18,11 +18,22 @@ image:
     alt: 'Hundert'
 ---
 
+
+
 {% assign image = page.image[0] %}
 {% include snippet-srcset.html %}
+
+Budenheim - Competition entry - 2017
+{: .hanger }
 
 {% assign image = page.image[1] %}
 {% include snippet-srcset.html %}
 
+Baumschulenweg - Atelier design for garage space - 2017
+{: .hanger }
+
 {% assign image = page.image[2] %}
 {% include snippet-srcset.html %}
+
+Hundert - Competition entry - 2017
+{: .hanger }

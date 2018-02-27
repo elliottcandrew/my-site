@@ -24,7 +24,9 @@ image:
     class: max-800 tall-img
 ---
 
-This project is an ecosystem of social involvement, it intersects local community with the transient intrigue of tourism, whilst developing an ever-changing collaborative spectacle that belongs to both. The scheme is underscored by it’s capacity for change, it embraces social diversity and it provides an adaptive forum for this diversity to be celebrated.
+This project is an ecosystem of social involvement, it intersects local community with the transient intrigue of tourism while creating an ever-changing and collaborative spectacle that belongs to both. The scheme is underscored by it’s capacity for change, it embraces social diversity and provides an adaptive forum for this diversity to be celebrated.
+<br><br>
+It can be best described as a social framework
 
 {% assign image = page.image[0] %}
 {% include snippet-srcset.html %}
@@ -40,5 +42,3 @@ This project is an ecosystem of social involvement, it intersects local communit
 
 {% assign image = page.image[1] %}
 {% include snippet-srcset.html %}
-
-## A social framework

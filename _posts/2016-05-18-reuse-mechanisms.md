@@ -2,7 +2,7 @@
 layout: post
 title:  "Re-use Mechanisms"
 location: Berlin
-tagline: The following is an excerpt from my Bachelor's Thesis
+tagline: An excerpt from my Bachelor's Thesis
 hanger: Bachelor Thesis
 tags: arch
 
@@ -23,9 +23,7 @@ image:
 {% assign image = page.image[0] %}
 {% include snippet-srcset.html %}
 
-**As a teenager I would regularly explore deserted factories around Derbyshire where I grew up.**  
-&nbsp;  
-Old Victorian potteries and grand mills, the industrial hinterlands of Derby and Sheffield, all entertained my curious fascination with these crumbling reminders of the past. I moved to Berlin some months ago and immediately noticed many similarities between abandoned spaces here and those back home. There are physical similarities of course, but it is the social contexts that seem to surround disused spaces and how they are sometimes re-used, that intrigued me more. The preconditions for spaces falling into disuse are often localised to the city or country, whereas instances whereby people instigate re-use of these spaces, seem to be part of a much wider socio-spatial phenomenon.
+**As a teenager I would regularly explore deserted factories around Derbyshire where I grew up.** Old Victorian potteries and grand mills, the industrial hinterlands of Derby and Sheffield, all entertained my curious fascination with these crumbling reminders of the past. I moved to Berlin some months ago and immediately noticed many similarities between abandoned spaces here and those back home. There are physical similarities of course, but it is the social contexts that seem to surround disused spaces and how they are sometimes re-used, that intrigued me more. The preconditions for spaces falling into disuse are often localised to the city or country, whereas instances whereby people instigate re-use of these spaces, seem to be part of a much wider socio-spatial phenomenon.
 
 ##### “Berlin is a pioneer in re-using buildings that were left over after the division of the city” <sup>1</sup>
 {: .blockquote .overlap .hanging }
@@ -39,9 +37,9 @@ The indeterminate provides the setting, however here we are concerned less with 
 &nbsp;  
 In the context of this discourse, I interpret the subsequent re-use of previously vacant space, using the term ‘liminality’ from the Latin, limen meaning "a threshold". In anthropology liminality refers to social or religious ritual, rites of passage at which point those involved are at a threshold between their preliminary state, and that which succeeds and is defined by the ritual process. I translate this to an understanding of place and time in which ‘liminal spaces’ are defined by their use during this transitional stage.
 
-[> Read the full version here on Issuu](https://issuu.com/deadmongoose/docs/reuse_mechanisms_compressed/1)
+[Read the full version here on Issuu](https://issuu.com/deadmongoose/docs/reuse_mechanisms_compressed/1)
 
 {% assign image = page.image[2] %}
 {% include snippet-srcset.html %}
 
-###### [1. “How Berliners Refused To Give Tempelhof Airport Over To Developers”. the Guardian. N.p., 2015. Web. 7 May 2016.](https://www.theguardian.com/cities/2015/mar/05/how-berliners-refused-to-give-tempelhof-airport-over-to-developers)
+###### 1. “How Berliners Refused To Give Tempelhof Airport Over To Developers”. the Guardian. N.p., 2015. Web. 7 May 2016. [link](https://www.theguardian.com/cities/2015/mar/05/how-berliners-refused-to-give-tempelhof-airport-over-to-developers)

@@ -4,6 +4,7 @@ html, body
 	padding: 0
 	margin: 0
 
+	// Stop mobile scrolling when touch menu is visible
 	&.noscroll
 		height: 100%
 		position: relative
@@ -14,8 +15,8 @@ html, body
 
 html
 	min-width: 240px
-
 	background: $base-background-color
+	transition: 500ms ease-in-out
 
 body
 	-webkit-font-smoothing: antialiased
