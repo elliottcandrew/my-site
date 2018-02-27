@@ -6,8 +6,8 @@ tagline: A first step into CNC-routed furniture design
 hanger: Furniture
 tags: furn
 
-shape: portrait
-thumb: nacht-tisch.jpg
+shape: square
+thumb: blumenstand.gif
 
 image:
   - src: tables-animated.gif
