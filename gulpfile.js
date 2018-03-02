@@ -1,16 +1,19 @@
-var gulp      = require('gulp'),
-  browserSync = require('browser-sync'),
-  sass        = require('gulp-sass'),
-  prefix      = require('gulp-autoprefixer'),
-  minifycss   = require('gulp-minify-css'),
-  jshint      = require('gulp-jshint'),
-  concat      = require('gulp-concat'),
-  uglify      = require('gulp-uglify'),
-  rename      = require('gulp-rename'),
-  cp          = require('child_process'),
-  pug         = require('gulp-pug'),
-  bourbon     = require('bourbon').includePaths;
-  deploy      = require('gulp-gh-pages');
+var gulp        = require('gulp'),
+  browserSync   = require('browser-sync'),
+  hygienist     = require('hygienist-middleware'),
+  sass          = require('gulp-sass'),
+  scss          = require('gulp-scss'),
+  prefix        = require('gulp-autoprefixer'),
+  minifycss     = require('gulp-minify-css'),
+  jshint        = require('gulp-jshint'),
+  concat        = require('gulp-concat'),
+  uglify        = require('gulp-uglify'),
+  rename        = require('gulp-rename'),
+  replace       = require('gulp-replace'),
+  cp            = require('child_process'),
+  pug           = require('gulp-pug'),
+  bourbon       = require('bourbon').includePaths;
+  ghPages       = require('gulp-gh-pages');
 
 var messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -112,7 +115,12 @@ gulp.task('watch', function () {
 gulp.task('default', ['browser-sync', 'watch']);
 
 /* Deploy Jekyll _site build to gh-pages branch ready to host */
-gulp.task('deploy', ['jekyll-build'], function () {
+// gulp.task('deploy', ['jekyll-build'], function () {
+//   return gulp.src('./_site/**/*')
+//   .pipe(deploy());
+// });
+
+gulp.task('deploy', function () {
   return gulp.src('./_site/**/*')
-  .pipe(deploy());
+  .pipe(ghPages());
 });

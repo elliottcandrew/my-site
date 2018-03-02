@@ -1,6 +1,7 @@
 name: Elliott Andrew
 markdown: kramdown
-github: [metadata] encoding: UTF-8 kramdown: input: GFM hard_wrap: false
+github: [metadata]
+# repo: elliottcandrew/my-site
 parse_block_html: true
 highlighter: rouge # or pygments or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
