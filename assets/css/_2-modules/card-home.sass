@@ -1,0 +1,57 @@
+.card-home
+	display: block
+	position: relative
+	height: 100%
+
+	@media not all and (hover: none)
+		&:hover
+			.card-home-overlay
+				opacity: 1
+				border: solid 2px $card-border-color
+				transition: 0ms
+			img
+				visibility: hidden
+				transition: 0ms
+
+	img
+		position: relative
+		display: block
+		width: 100%
+		height: auto
+		display: block
+
+		transition: 250ms ease-in-out
+
+	.hanger
+		letter-spacing: .1em
+		font-weight: 500
+		position: absolute
+		margin-top: .8em
+		width: 100%
+		text-align: center
+
+	.card-home-overlay
+		flex: 1
+		display: flex
+		position: absolute
+		border: solid 2px rgba(0,0,0,0)
+		height: auto
+
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+
+		margin: 0
+		padding: 1.2em 2em .8em 2em
+		opacity: 0
+		transition: 250ms ease-in-out
+
+	.title-wrap
+		flex: 1
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+
+	[class*="word"]:nth-child(even)
+		text-align: right

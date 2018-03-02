@@ -1,0 +1,51 @@
+.tab-wrap
+  .tab-left
+    h6 Contact
+  .tab-right
+    a(href="/about")
+      h6 About
+
+.menu1
+  .close-1
+  .menu1-content
+    h3 Get in touch
+    br
+    p
+      | Elliott is a freelance architectural designer, illustrator and maker. If you are interested in a commission, would like to inquire about a project then what are you waiting for, get in touch:
+    ul
+      li
+        a(href="http://instagram.com/ellidot/", target="_blank" )
+          p instagram: ellidot
+          .dot
+      li
+        a(href="https://www.linkedin.com/in/elliott-andrew/")
+          p linkedin: Elliott Andrew
+          .dot
+      li
+        a(href="mailto:info@eandrew.xyz")
+          p email: info@eandrew.xyz
+          .dot
+
+//- .menu2
+  .close-2
+  .menu2-content
+    h3 Blog
+    br
+    p
+      ul
+        | {% for post in site.posts %}
+        | {% if post.categories contains 'blog' %}
+        
+        li
+          p
+            a(href="{{post.url}}")
+                | > {{post.tagline}}
+                br
+                | {% assign d = post.date | date: "%-d" %}{% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %}{{post.date | date: ' %b %Y'}}
+
+        | {% endif %}
+        | {% endfor %}
+      br
+      p
+        a(href="/blog")
+          | > see all posts

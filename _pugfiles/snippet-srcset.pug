@@ -1,0 +1,9 @@
+//- srcset include for responsive images
+//- attributes assigned in post front matter
+img(
+  src="{{site.post_url}}/400/{{image.src}}",
+  srcset="{% for width in site.post-srcset %}{{ site.post_url }}/{{ width }}/{{ image.src }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}",
+  alt="{{ image.alt }}",
+  class="{{ image.class }}")
+  
+//- add if statement to remove empty class attr

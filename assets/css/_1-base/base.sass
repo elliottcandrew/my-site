@@ -1,0 +1,35 @@
+html, body
+	height: 100%
+	min-height: 100%
+	padding: 0
+	margin: 0
+
+	// Stop mobile scrolling when touch menu is visible
+	&.noscroll
+		height: 100%
+		position: relative
+		overflow: hidden
+		@media(min-width: $bp-large)
+			height: auto
+			overflow: auto
+
+html
+	min-width: 240px
+	background: $base-background-color
+	transition: 500ms ease-in-out
+
+body
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+	font-size: 15px
+	line-height: 1.6
+	font-family: 'Catamaran', sans-serif
+	color: $dark
+
+	// align footer to bottom of all pages if content < 100vh
+	display: flex
+	flex-direction: column
+	flex-wrap: nowrap
+	.content
+		flex: 1 0 auto

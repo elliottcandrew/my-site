@@ -1,9 +1,9 @@
 ---
-layout: blog
+layout: post
 title:  "Denim Riders"
 date:   2015-09-22
 location: Dunkirk to Amsterdam
-categories: blog
+
 thumbnail: denim-float.jpg
 banner: denim-float_1920.jpg
 excerpt_separator: <!--more-->

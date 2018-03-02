@@ -1,0 +1,27 @@
+.header-home
+	.touch-toggle
+		img(src="/assets/imgs/icons/ic_menu_black_36px.svg")
+	
+	a(href="/", id="{% unless page.id == 'home' %}non-home{% endunless %}").avatar <!-- remove avatar on non-home mobile -->
+	
+	.header-title(id="{% if page.id == 'home' %}{% elsif page.id contains 'sorted' or 'blog' %}home-sorted{% elsif page.id != 'home' %}non-home{% endif %}") <!-- truncate title on non-home pages -->
+		a(href="/")
+			h2 <!-- css applies content here -->
+		.line-graphic
+		ul.header-nav
+			li
+				a(href="/architecture")
+					h3 Architecture
+					.dot
+			li
+				a(href="/visualization")
+					h3 Visualization
+					.dot
+			li
+				a(href="/furniture")
+					h3 Furniture
+					.dot
+			//- li
+				a(href="/blog/")
+					h3 Blog
+					.dot

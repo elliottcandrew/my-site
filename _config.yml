@@ -1,5 +1,52 @@
 name: Elliott Andrew
-markdown: redcarpet
+markdown: kramdown
+# github: [metadata]
+# repository:
+parse_block_html: true
 highlighter: rouge # or pygments or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 permalink: /:categories/:title
+
+post_url: /assets/imgs/posts
+thumb_url: /assets/imgs/thumbs
+
+post-srcset:
+  - 400
+  - 800
+  - 1200
+
+thumb-srcset:
+  - 568
+  - 1136
+  - 1704
+
+# post-sizes: '(min-width: 640px) 568px, 100vw' # 640px = 40em break point
+thumb-sizes: '(min-width: 640px) 568px, 100vw' # 640px = 40em break point
+
+mini_magick:
+
+  post-small:
+    source: /assets/imgs/posts/_import
+    destination: /assets/imgs/posts/400
+    resize: "400"
+  post-medium:
+    source: /assets/imgs/posts/_import
+    destination: /assets/imgs/posts/800
+    resize: "800"
+  post-large:
+    source: /assets/imgs/posts/_import
+    destination: /assets/imgs/posts/1200
+    resize: "1200"
+
+  thumb-small:
+    source: /assets/imgs/thumbs/_import
+    destination: /assets/imgs/thumbs/568
+    resize: "568x568"
+  thumb-medium:
+    source: /assets/imgs/thumbs/_import
+    destination: /assets/imgs/thumbs/1136
+    resize: "1136x1136"
+  thumb-large:
+    source: /assets/imgs/thumbs/_import
+    destination: /assets/imgs/thumbs/1704
+    resize: "1704x1704"

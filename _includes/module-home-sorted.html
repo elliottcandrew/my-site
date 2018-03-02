@@ -1,0 +1,10 @@
+<div class="home-grid">{% assign arch-posts = site.posts | where: "tags","arch" %}
+{% assign viz-posts = site.posts | where: "tags","viz" %}
+{% assign furn-posts = site.posts | where: "tags","furn" %}
+{% if page.url == '/architecture' %}
+{% for post in arch-posts %}{% include module-card-home.html %}{% endfor %}
+{% elsif page.url == '/visualization' %}
+{% for post in viz-posts %}{% include module-card-home.html %}{% endfor %}
+{% elsif page.url == '/furniture' %}
+{% for post in furn-posts %}{% include module-card-home.html %}{% endfor %}
+{% endif %}</div>
