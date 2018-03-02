@@ -120,7 +120,7 @@ gulp.task('default', ['browser-sync', 'watch']);
 //   .pipe(deploy());
 // });
 
-gulp.task('deploy', function () {
+gulp.task('deploy', ['jekyll-build'], function () {
   return gulp.src('./_site/**/*')
   .pipe(gulp.dest('docs'));
 });
