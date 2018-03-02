@@ -1,0 +1,38 @@
+.bottom-nav
+
+	.bottom-nav-content
+		@include base-width
+		max-width: 1800px
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+
+		margin: 0 auto
+		padding-top: 4em
+
+		@media(min-width: $bp-med)
+			transform: translateX(calc(#{$card-margin-base} / 2)) // to account for margin-right on card-home
+		@media(min-width: $bp-large)
+			transform: translateX(#{$card-margin-base})
+
+	.card-bottom-nav
+		@extend .card-home
+		@include home-grid-margins
+
+	#square
+		max-width: calc(500px * .75)
+		max-height: calc(500px * .75)
+
+	#landscape
+		max-width: calc(568px * .75)
+		max-height: calc(400px * .75)
+
+	#portrait
+		max-width: calc(400px * .75)
+		max-height: calc(568px * .75)
+
+	span > p
+		text-align: center
+
+	[class*="word"]
+	  @include ms-respond(font-size,0)

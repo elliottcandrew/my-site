@@ -1,0 +1,33 @@
+// HOME GRID LAYOUT
+.home-grid
+	@include base-width
+	@include page-fade-in
+	max-width: 1800px
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+
+	margin: 0 auto
+	padding-top: 17em
+
+	@media(min-width: $bp-med)
+		padding-top: calc(14.8em + 5vw) /* variable adjustment to match resizing text */
+		transform: translateX(calc(#{$card-margin-base} / 2)) // to account for margin-right on card-home
+	@media(min-width: $bp-large)
+		padding-top: 17em
+		transform: translateX(#{$card-margin-base})
+
+	.card-home
+		@include home-grid-margins
+
+	#square
+		max-width: 500px
+		max-height: 500px
+
+	#landscape
+		max-width: 568px
+		max-height: 400px
+
+	#portrait
+		max-width: 400px
+		max-height: 568px

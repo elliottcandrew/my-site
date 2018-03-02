@@ -1,0 +1,103 @@
+$side-menu-width: 19em
+
+// SIDE TABS
+
+.tab-wrap
+  display: none
+  color: $base-type-color
+  @media(min-width: $bp-large)
+    display: block
+
+    .tab-left, .tab-right
+      position: fixed
+      top: 50%
+      z-index: 10
+      cursor: pointer
+
+      &.clicked
+        opacity: 0
+
+    .tab-left
+      left: 0
+      transform: rotate(90deg) translateY(-.55em) translateX(-50%) translateX(-1.5em)
+      transform-origin: bottom left
+      &:hover
+        transform: rotate(90deg) translateY(-.70em) translateX(-50%) translateX(-1.5em)
+
+    .tab-right
+      right: 0
+      transform: rotate(270deg) translateY(-.55em) translateX(50%) translateX(1.5em)
+      transform-origin: bottom right
+      &:hover
+        transform: rotate(270deg) translateY(-.70em) translateX(50%) translateX(1.5em)
+
+    h6
+      font-weight: 700
+      text-transform: uppercase
+
+// SIDE MENUS
+
+.menu1
+  display: none
+
+@media(min-width: $bp-large)
+  .menu1
+    display: block
+    position: fixed
+    width: $side-menu-width
+    transition: all 215ms cubic-bezier(0.175, 0.885, 0.32, 1.27)
+    padding: 1.2em
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 100
+    color: $side-menu-color
+    border: 2px solid $dark
+    text-align: left
+    box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.1)
+    height: auto
+    left: calc((#{$side-menu-width} + 3em) * (-1))
+    background: $menu-color
+    &.clicked
+      left: 1em
+
+    p
+      font-size: 1.2em
+      display: inline-block
+
+    ul
+      list-style-type: none
+      padding-left: 0
+
+    li
+      margin-bottom: .5em
+      a
+        &:hover,
+        &:active,
+        &:focus
+          .dot
+            opacity: 1
+            transition: 0ms
+      // &:hover
+        .dot
+          opacity: 1
+          transition: 0ms
+      & p
+        font-weight: 700
+
+    .dot
+      @include dot(5px)
+      display: inline-block
+      margin-left: .5em
+      transform: translateY(-.1em)
+      transition: 250ms ease-in-out
+      opacity: 0
+
+  .close-1
+    float: right
+    width: 24px
+    height: 24px
+    cursor: pointer
+    background: url('/assets/imgs/icons/ic_close_white_36px.svg')
+    background-position: center
+    background-size: contain
+    background-repeat: no-repeat

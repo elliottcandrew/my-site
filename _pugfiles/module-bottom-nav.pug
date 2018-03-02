@@ -1,0 +1,21 @@
+.bottom-nav
+
+  span
+    p More stuff
+
+  .bottom-nav-content
+    
+    //- Provide sample of 3 posts while excluding any posts that match current page
+    
+    | {% assign posts = site.posts | sample:4 %}
+    | {% for post in posts %}
+    | {% if post.url != page.url %}
+    | {% if forloop.index < 4 or found %}
+
+    | {% include module-card-home.html %}
+    
+    | {% endif %}
+    | {% else %}
+    | {% assign found = true %}
+    | {% endif %}
+    | {% endfor %}

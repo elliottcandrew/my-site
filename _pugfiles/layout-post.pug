@@ -1,0 +1,20 @@
+.post-content
+	
+	.post-title
+		h1 {{ page.title }}
+			
+		| {% if page.tagline %}
+		p.tagline {{ page.tagline }}
+		| {% endif %}
+		
+		//- Show full date for blog posts and only the year for all other posts
+		span
+			h6
+				| {{ page.hanger }} |
+				| {% if page.hanger contains "Blog" %}
+				| {% assign d = page.date | date: "%-d" %}{% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %}{{page.date | date: ' %b %Y'}}
+				| {% else %}
+				| {{ page.date | date: '%Y' }}
+				| {% endif %}
+		
+	| {{content}}

@@ -1,0 +1,108 @@
+.post-sections
+  @include base-width
+  margin: 0 auto
+  $vert-margin: 2rem
+
+  .post-content
+    @include page-fade-in
+    max-width: 1200px
+    margin: 0 auto
+    padding: 17em 0 6em 0
+    @media(min-width: $bp-large)
+      padding: 15em 0 12em 0
+
+  // TITLE
+  .post-title
+    display: block
+    margin-bottom: $vert-margin*1.5
+    text-align: center
+    @media(min-width: $bp-med)
+      margin-bottom: $vert-margin*3
+    h1, .tagline, h6
+      margin-bottom: 0
+    .tagline
+      margin-top: 1rem
+    h6
+      margin-top: 1.5rem
+
+  // TYPE SETTINGS
+  p, h1, h2, h3, h4, h5, h6
+    max-width: 800px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: $vert-margin
+    @media(min-width: $bp-med)
+      margin-bottom: $vert-margin*2
+    @media(min-width: $bp-large)
+      max-width: none
+      padding: 0 16.667% // internal paragraph width
+
+  p
+    position: relative
+    height: 100%
+
+  // IMAGE WIDTHS - BREAKOUT OF P TAGS
+  p > img
+    max-width: 800px
+    width: 100%
+    margin-top: $vert-margin
+    @media(min-width: $bp-med)
+      margin-top: $vert-margin*2
+    @media(min-width: $bp-large)
+      max-width: 800px
+      display: block
+      position: relative
+      width: 150%
+      left: 50%
+      transform: translateX(-50%)
+
+  // MARKDOWN PROPERTIES
+  $overlap-offset: 5.75em
+  $overlap-inset: 5%
+
+  .blockquote
+    @media(min-width: $bp-large)
+      padding: 0
+      position: relative
+      width: 40%
+      margin-left: $overlap-inset
+
+  .hanging
+    text-indent: -.5em
+
+  .overlap
+    @media(min-width: $bp-large)
+      position: relative
+      margin-top: -#{$overlap-offset}
+      transform: translateY($overlap-offset) /* vert alignment with overlapped imgs */
+      z-index: 10
+
+  .align-right
+    @media(min-width: $bp-large)
+      margin-left: auto
+      margin-right: $overlap-inset
+
+  .hanger
+    margin-left: -1px
+    margin-top: -$vert-margin*.75
+    // @include ms-respond(font-size,-1)
+    font-size: ms(-1)
+    @media(min-width: $bp-med)
+      margin-top: -$vert-margin*1.5
+
+  .max-800, .max-1200, .tall-img
+    display: block
+    margin-left: auto
+    margin-right: auto
+
+  .tall-img
+    @media(min-width: $bp-small)
+      width: 66.667%
+    @media(min-width: $bp-large)
+      width: 100%
+
+  .max-800
+    max-width: 800px
+
+  .max-1200
+    max-width: 1200px

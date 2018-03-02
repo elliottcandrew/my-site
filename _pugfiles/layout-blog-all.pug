@@ -1,0 +1,14 @@
+h1.title Blog
+
+| {% for post in site.posts %}
+| {% if post.categories contains 'blog' %}
+
+a(href="{{post.url}}").card-blog
+  h4 
+    span {{post.tagline}}
+  .dot
+  h6 {% assign d = post.date | date: "%-d" %}{% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %}{{post.date | date: ' %b %Y'}}
+  //- p {{ post.excerpt | strip_html }}
+
+| {% endif %}
+| {% endfor %}

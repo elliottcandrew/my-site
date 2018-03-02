@@ -3,15 +3,26 @@ layout: default
 title: Elliott Andrew
 headline: Elliott Andrew
 tagline: Urbanist + Sustainist + Designer
+id: home
 ---
 
 <div class="home-wrap">
 
-	{% include header.html %}
+	{% include module-header.html %}
+	{% include module-side-tabs.html %}
+	{% include module-menu-touch.html %}
 
-	<div class="home-sections">
+	<!-- {% include module-home-grid.html %} -->
 
-		{% include columns.html %}
+	<div class="home-grid">
+
+		{% for post in site.posts %}
+		{% unless post.categories contains 'blog' %}
+
+		{% include module-card-home.html %}
+
+		{% endunless %}
+		{% endfor %}
 
 	</div>
 

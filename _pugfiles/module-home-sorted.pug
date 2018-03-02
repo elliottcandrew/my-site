@@ -1,0 +1,17 @@
+.home-grid
+  //- assign sorted post collections based on tags contained in front matter
+  | {% assign arch-posts = site.posts | where: "tags","arch" %}
+  | {% assign viz-posts = site.posts | where: "tags","viz" %}
+  | {% assign furn-posts = site.posts | where: "tags","furn" %}
+  
+  //- only display relevant sorted collection for the page url
+  | {% if page.url == '/architecture' %}
+  | {% for post in arch-posts %}{% include module-card-home.html %}{% endfor %}
+  
+  | {% elsif page.url == '/visualization' %}
+  | {% for post in viz-posts %}{% include module-card-home.html %}{% endfor %}
+  
+  | {% elsif page.url == '/furniture' %}
+  | {% for post in furn-posts %}{% include module-card-home.html %}{% endfor %}
+  
+  | {% endif %}
