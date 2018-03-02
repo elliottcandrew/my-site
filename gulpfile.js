@@ -122,5 +122,5 @@ gulp.task('default', ['browser-sync', 'watch']);
 
 gulp.task('deploy', function () {
   return gulp.src('./_site/**/*')
-  .pipe(ghPages());
+  .pipe(gulp.dest('docs'));
 });
