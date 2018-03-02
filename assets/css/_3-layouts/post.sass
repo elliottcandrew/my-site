@@ -83,9 +83,12 @@
       margin-right: $overlap-inset
 
   .hanger
-    margin-top: -$vert-margin*1.5
     margin-left: -1px
-    @include ms-respond(font-size,-1)
+    margin-top: -$vert-margin*.75
+    // @include ms-respond(font-size,-1)
+    font-size: ms(-1)
+    @media(min-width: $bp-med)
+      margin-top: -$vert-margin*1.5
 
   .max-800, .max-1200, .tall-img
     display: block

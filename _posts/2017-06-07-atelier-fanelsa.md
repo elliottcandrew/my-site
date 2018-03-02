@@ -10,6 +10,8 @@ shape: square
 thumb: atelier-fanelsa.jpg
 
 image:
+  - src: fanelsa-san-riemo.jpg
+    alt: 'San Riemo'
   - src: fanelsa-budenheim.jpg
     alt: 'Budenheim'
   - src: fanelsa-ernst.jpg
@@ -18,21 +20,25 @@ image:
     alt: 'Hundert'
 ---
 
-
-
 {% assign image = page.image[0] %}
 {% include snippet-srcset.html %}
 
-Budenheim - Competition entry - 2017
+San Riemo - Co-housing Competition entry - 2017
 {: .hanger }
 
 {% assign image = page.image[1] %}
 {% include snippet-srcset.html %}
 
-Baumschulenweg - Atelier design for garage space - 2017
+Budenheim - Competition entry - 2017
 {: .hanger }
 
 {% assign image = page.image[2] %}
+{% include snippet-srcset.html %}
+
+Baumschulenweg - Atelier design for garage space - 2017
+{: .hanger }
+
+{% assign image = page.image[3] %}
 {% include snippet-srcset.html %}
 
 Hundert - Competition entry - 2017
