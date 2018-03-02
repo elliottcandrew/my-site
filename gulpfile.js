@@ -1,4 +1,4 @@
-var gulp        = require('gulp'),
+var gulp      = require('gulp'),
   browserSync = require('browser-sync'),
   sass        = require('gulp-sass'),
   prefix      = require('gulp-autoprefixer'),
@@ -10,6 +10,7 @@ var gulp        = require('gulp'),
   cp          = require('child_process'),
   pug         = require('gulp-pug'),
   bourbon     = require('bourbon').includePaths;
+  deploy      = require('gulp-gh-pages');
 
 var messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -104,6 +105,11 @@ gulp.task('js', function() {
   .pipe(uglify())
   .pipe(gulp.dest('assets/js'))
   .pipe(gulp.dest('_site/assets/js'));
+});
+
+gulp.task('deploy', ["jekyll-build"], function( {
+  return gulp.src('./_site/**/*')
+  .pipe(deploy());
 });
 
 
