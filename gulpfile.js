@@ -15,6 +15,8 @@ var gulp        = require('gulp'),
   bourbon       = require('bourbon').includePaths;
   ghPages       = require('gulp-gh-pages');
   gm            = require('gulp-gm');
+  newer         = require('gulp-newer');
+  sync          = require('gulp-sync-dir');
 
 var messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -96,6 +98,107 @@ gulp.task('js', function() {
 });
 
 
+/* Checks for removed images in source and reflects changes in destination */
+gulp.task('sync', function() {
+  sync({
+    src: 'assets/imgs/thumbs/_portrait',
+    target: '_site/assets/imgs/thumbs/400'
+  });
+  sync({
+    src: 'assets/imgs/thumbs/_portrait',
+    target: '_site/assets/imgs/thumbs/800'
+  });
+  sync({
+    src: 'assets/imgs/thumbs/_portrait',
+    target: '_site/assets/imgs/thumbs/1200'
+  });
+  sync({
+    src: 'assets/imgs/thumbs/_square',
+    target: '_site/assets/imgs/thumbs/500'
+  });
+  sync({
+    src: 'assets/imgs/thumbs/_square',
+    target: '_site/assets/imgs/thumbs/1000'
+  });
+  sync({
+    src: 'assets/imgs/thumbs/_square',
+    target: '_site/assets/imgs/thumbs/1500'
+  });
+  sync({
+    src: 'assets/imgs/thumbs/_landscape',
+    target: '_site/assets/imgs/thumbs/568'
+  });
+  sync({
+    src: 'assets/imgs/thumbs/_landscape',
+    target: '_site/assets/imgs/thumbs/1136'
+  });
+  sync({
+    src: 'assets/imgs/thumbs/_landscape',
+    target: '_site/assets/imgs/thumbs/1704'
+  });
+});
+
+/* Coalesce any .gif files */
+gulp.task('coalesce', function() {
+  gulp.src('assets/imgs/test/*.gif')
+  .pipe(gm(function(gmfile) {
+    return gmfile.coalesce()
+  }))
+  .pipe(gulp.dest('assets/imgs/test'));
+});
+
+/* Synced folders for original images - resizes build from these destinations */
+gulp.task('gm', function() {
+  gulp.src('assets/imgs/thumbs/_portrait/*')
+  .pipe(gm(function (gmfile) {return gmfile.resize(400)} ))
+  .pipe(gulp.dest('_site/assets/imgs/thumbs/400'));
+
+  gulp.src('assets/imgs/thumbs/_portrait/*')
+  .pipe(gm(function (gmfile) {return gmfile.resize(800)} ))
+  .pipe(gulp.dest('_site/assets/imgs/thumbs/800'));
+
+  gulp.src('assets/imgs/thumbs/_portrait/*')
+  .pipe(gm(function (gmfile) {return gmfile.resize(1200)} ))
+  .pipe(gulp.dest('_site/assets/imgs/thumbs/1200'));
+
+  gulp.src('assets/imgs/thumbs/_square/*')
+  .pipe(gm(function (gmfile) {return gmfile.resize(500)} ))
+  .pipe(gulp.dest('_site/assets/imgs/thumbs/500'));
+
+  gulp.src('assets/imgs/thumbs/_square/*')
+  .pipe(gm(function (gmfile) {return gmfile.resize(1000)} ))
+  .pipe(gulp.dest('_site/assets/imgs/thumbs/1000'));
+
+  gulp.src('assets/imgs/thumbs/_square/*')
+  .pipe(gm(function (gmfile) {return gmfile.resize(1500)} ))
+  .pipe(gulp.dest('_site/assets/imgs/thumbs/1500'));
+
+  gulp.src('assets/imgs/thumbs/_landscape/*')
+  .pipe(gm(function (gmfile) {return gmfile.resize(568)} ))
+  .pipe(gulp.dest('_site/assets/imgs/thumbs/568'));
+
+  gulp.src('assets/imgs/thumbs/_landscape/*')
+  .pipe(gm(function (gmfile) {return gmfile.resize(1136)} ))
+  .pipe(gulp.dest('_site/assets/imgs/thumbs/1136'));
+
+  gulp.src('assets/imgs/thumbs/_landscape/*')
+  .pipe(gm(function (gmfile) {return gmfile.resize(1704)} ))
+  .pipe(gulp.dest('_site/assets/imgs/thumbs/1704'));
+
+  gulp.src('assets/imgs/posts/_import/*')
+  .pipe(gm(function (gmfile) {return gmfile.resize(1200)} ))
+  .pipe(gulp.dest('_site/assets/imgs/posts/1200'));
+
+  gulp.src('assets/imgs/posts/_import/*')
+  .pipe(gm(function (gmfile) {return gmfile.resize(800)} ))
+  .pipe(gulp.dest('_site/assets/imgs/posts/800'));
+
+  gulp.src('assets/imgs/posts/_import/*')
+  .pipe(gm(function (gmfile) {return gmfile.resize(400)} ))
+  .pipe(gulp.dest('_site/assets/imgs/posts/400'));
+});
+
+
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
@@ -106,6 +209,8 @@ gulp.task('watch', function () {
   gulp.watch('assets/css/**/*.scss', ['sass']);
   gulp.watch(['!_site/**/*', '!node_modules/**/*', '!.sass-cache/**/*', '_includes/*', '*.html', '**/*.md', 'assets/imgs/*/_import/*'], ['jekyll-rebuild']);
   gulp.watch('_pugfiles/*.pug', ['pug']);
+  gulp.watch(['assets/imgs/thumbs/**/*.gif', 'assets/imgs/posts/_import/*.gif'], ['coalesce']);
+  gulp.watch(['assets/imgs/thumbs/**/*', 'assets/imgs/posts/_import/*'], ['gm']);
 });
 
 
@@ -115,21 +220,8 @@ gulp.task('watch', function () {
  */
 gulp.task('default', ['browser-sync', 'watch']);
 
-/* Deploy Jekyll _site build to gh-pages branch ready to host */
-// gulp.task('deploy', ['jekyll-build'], function () {
-//   return gulp.src('./_site/**/*')
-//   .pipe(ghPages());
-// });
-
+/* Deploy Jekyll _site build to /docs ready to host */
 gulp.task('deploy', ['jekyll-build'], function () {
   return gulp.src('./_site/**/*')
   .pipe(gulp.dest('docs'));
-});
-
-gulp.task('gm', function () {
-  gulp.src('assets/imgs/*/_import/*.*')
-  .pipe(gm(function (gmfile) {
-    return gmfile.resize(400);
-  } ))
-  .pipe(gulp.dest('assets/imgs/test'));
 });
