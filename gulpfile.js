@@ -14,6 +14,7 @@ var gulp        = require('gulp'),
   pug           = require('gulp-pug'),
   bourbon       = require('bourbon').includePaths;
   ghPages       = require('gulp-gh-pages');
+  gm            = require('gulp-gm');
 
 var messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -117,10 +118,18 @@ gulp.task('default', ['browser-sync', 'watch']);
 /* Deploy Jekyll _site build to gh-pages branch ready to host */
 // gulp.task('deploy', ['jekyll-build'], function () {
 //   return gulp.src('./_site/**/*')
-//   .pipe(deploy());
+//   .pipe(ghPages());
 // });
 
 gulp.task('deploy', ['jekyll-build'], function () {
   return gulp.src('./_site/**/*')
   .pipe(gulp.dest('docs'));
+});
+
+gulp.task('gm', function () {
+  gulp.src('assets/imgs/*/_import/*.*')
+  .pipe(gm(function (gmfile) {
+    return gmfile.resize(400);
+  } ))
+  .pipe(gulp.dest('assets/imgs/test'));
 });
